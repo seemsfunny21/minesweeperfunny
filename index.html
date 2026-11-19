@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071426"><meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="MinesweeperFunny">
+<title>MinesweeperFunny — Ναρκαλιευτής</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#071426;color:#edf7ff;font:15px system-ui,-apple-system,"Segoe UI",sans-serif}body{background:radial-gradient(ellipse at 50% -12%,#164a78 0,#071426 65%)}button,select{font:inherit;touch-action:manipulation}button{cursor:pointer}.shell{max-width:680px;margin:auto;padding:clamp(10px,3vw,24px) 12px 40px}.hero{text-align:center;border:1px solid #24476d;border-radius:21px;padding:16px 10px 13px;background:linear-gradient(145deg,#133d65bb,#0b2038cc);box-shadow:0 12px 30px #0005}.hero .symbol{font-size:32px;filter:drop-shadow(0 0 16px #30a1fc99)}h1{font-size:clamp(21px,5vw,28px);margin:4px 0;color:#ecf8ff;letter-spacing:-.6px}.sub{font-size:12px;color:#95b4ce;margin:3px 0 0}.panel{margin-top:10px;border:1px solid #234260;border-radius:18px;background:#0b2038dd;padding:13px;box-shadow:0 8px 30px #0004}.row{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.metric{border:1px solid #294f72;border-radius:12px;padding:9px 4px;text-align:center;background:#0b2a48}.metric small{display:block;color:#91b8d8;font-size:11px}.metric strong{display:block;font-variant-numeric:tabular-nums;font-size:20px;color:#e4f5ff;margin-top:2px}.controls{margin-top:10px}.btn,select{border:1px solid #32608a;color:#d9f0ff;background:linear-gradient(160deg,#153e67,#0d2846);padding:9px 12px;border-radius:12px;min-height:40px}.btn.main,.btn.active{background:linear-gradient(145deg,#1981cd,#135487);border-color:#56b4fa;color:#fff}.btn:disabled{opacity:.4}.btn:focus-visible,.cell:focus-visible{outline:2px solid #a5dbff;outline-offset:2px}.message{text-align:center;min-height:30px;padding:10px 4px;color:#b9d8f1;font-size:13px}.board-scroll{overflow-x:auto;overscroll-behavior-x:contain;padding:2px 0 10px}.board{--columns:9;--sz:32px;display:grid;grid-template-columns:repeat(var(--columns),var(--sz));gap:2px;margin:auto;width:max-content;padding:7px;background:#091a2d;border:1px solid #2e6188;border-radius:13px;box-shadow:0 0 20px #1d88e633}.cell{width:var(--sz);height:var(--sz);padding:0;border:1px solid #4480aa;border-radius:5px;background:linear-gradient(145deg,#2f6a99,#174365);color:#f1f8ff;font-weight:800;font-size:calc(var(--sz)*.53);display:flex;align-items:center;justify-content:center;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;line-height:1;box-shadow:inset 0 1px #ffffff29}.cell.open{background:#102940;border-color:#19374e;box-shadow:none}.cell.flag{color:#ffdb7c}.cell.mine{background:#7a2537;border-color:#c95664}.cell.hit{background:#d13e4b}.n1{color:#6bbdff}.n2{color:#6fde9f}.n3{color:#ff987e}.n4{color:#aeafff}.n5{color:#e87cd4}.n6{color:#76e3dd}.n7{color:#fff}.n8{color:#c5cdd9}.footer{text-align:center;color:#819fbb;font-size:12px;line-height:1.55}.best{margin-top:8px;text-align:center;color:#aed6f5;font-size:12px}@media(max-width:370px){.shell{padding-inline:7px}.panel{padding:8px}.btn,select{padding:8px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="hero"><div class="symbol" aria-hidden="true">💣</div><h1>MinesweeperFunny</h1><p class="sub">Ναρκαλιευτής · Βρες όλες τις ασφαλείς θέσεις</p></header>
+<section class="panel">
+<div class="stats"><div class="metric"><small>Νάρκες</small><strong id="remaining">10</strong></div><div class="metric"><small>Χρόνος</small><strong id="timer">00:00</strong></div><div class="metric"><small>Νίκες</small><strong id="wins">0</strong></div></div>
+<div class="row controls"><label for="level" class="sub">Δυσκολία</label><select id="level"><option value="easy">Εύκολο 9×9</option><option value="medium">Μεσαίο 12×12</option><option value="hard">Δύσκολο 16×16</option></select><button class="btn main" id="new">↻ Νέο παιχνίδι</button><button class="btn" id="flagMode" aria-pressed="false">🚩 Σημαία: OFF</button></div>
+<div class="message" id="message" role="status" aria-live="polite">Πάτησε ένα τετράγωνο για να ξεκινήσεις.</div>
+<div class="board-scroll" id="scroll"><div class="board" id="board" role="grid" aria-label="Πλέγμα ναρκαλιευτή"></div></div>
+<div class="best" id="best"></div>
+<p class="footer">Πάτημα: αποκάλυψη · Παρατεταμένο πάτημα ή δεξί κλικ: σημαία · Πάτημα αριθμού: άνοιγμα γειτονικών κελιών, όταν οι σημαίες συμφωνούν</p>
+</section>
+</main>
+<script>
+(function(){
+'use strict';
+const MODES={easy:[9,9,10],medium:[12,12,22],hard:[16,16,40]},STORE='minesweeperfunny:v1',STATS='minesweeperfunny:stats';
+const $=id=>document.getElementById(id);
+let level='easy',cells=[],first=true,done=false,flags=0,time=0,selectedFlag=false,paused=false,elapsed=0,since=0,tick=null,stats={};
+try{stats=JSON.parse(localStorage.getItem(STATS)||'{}')||{}}catch(_){}
+const params=()=>MODES[level],idx=(r,c)=>r*params()[1]+c;
+function neighbors(i){const [rows,cols]=params(),r=Math.floor(i/cols),c=i%cols,out=[];for(let dr=-1;dr<=1;dr++)for(let dc=-1;dc<=1;dc++){let rr=r+dr,cc=c+dc;if((dr||dc)&&rr>=0&&cc>=0&&rr<rows&&cc<cols)out.push(idx(rr,cc));}return out;}
+function save(){try{localStorage.setItem(STORE,JSON.stringify({level,cells,first,done,flags,elapsed:elapsed+(since&&!paused&&!done?Date.now()-since:0)}));}catch(_){}}
+function timeNow(){return elapsed+(since&&!paused&&!done?Date.now()-since:0);}
+function format(ms){const t=Math.floor(ms/1000);return String(Math.floor(t/60)).padStart(2,'0')+':'+String(t%60).padStart(2,'0');}
+function pause(){if(since){elapsed+=Date.now()-since;since=0;}paused=true;save();}
+function resume(){if(done||first)return;paused=false;if(!since)since=Date.now();}
+function updateTimer(){$('timer').textContent=format(timeNow());}
+function updateStats(){const [,,mineCount]=params(),st=stats[level]||{wins:0,best:null};$('remaining').textContent=String(mineCount-flags);$('wins').textContent=String(st.wins||0);$('best').textContent=st.best==null?'Καλύτερος χρόνος: —':'Καλύτερος χρόνος: '+format(st.best);}
+function status(text){$('message').textContent=text;}
+function resize(){const cols=params()[1],space=Math.min(document.documentElement.clientWidth-42,640);$('board').style.setProperty('--columns',cols);$('board').style.setProperty('--sz',Math.max(19,Math.min(42,Math.floor((space-14-(cols-1)*2)/cols)))+'px');}
+function draw(){const root=$('board');root.replaceChildren();const frag=document.createDocumentFragment();for(let i=0;i<cells.length;i++){const c=cells[i],btn=document.createElement('button');btn.type='button';btn.className='cell'+(c.open?' open':'')+(c.flag?' flag':'')+(c.open&&c.mine?' mine':'')+(c.hit?' hit':'')+(c.open&&!c.mine&&c.near?' n'+c.near:'');btn.dataset.i=String(i);btn.setAttribute('role','gridcell');btn.setAttribute('aria-label',(c.open?(c.mine?'Νάρκη':c.near+' γειτονικές νάρκες'):(c.flag?'Σημαία':'Κρυφό κελί')));btn.textContent=c.flag&&!c.open?'⚑':c.open?(c.mine?'✹':c.near||''):'';frag.appendChild(btn);}root.appendChild(frag);resize();updateStats();updateTimer();}
+function newGame(){pause();elapsed=0;since=0;paused=false;first=true;done=false;flags=0;selectedFlag=false;$('flagMode').classList.remove('active');$('flagMode').setAttribute('aria-pressed','false');$('flagMode').textContent='🚩 Σημαία: OFF';const [rows,cols]=params();cells=Array.from({length:rows*cols},()=>({mine:false,near:0,open:false,flag:false,hit:false}));status('Πάτησε ένα τετράγωνο για να ξεκινήσεις.');draw();save();}
+function plant(safe){const blocked=new Set([safe,...neighbors(safe)]),pool=cells.map((_,i)=>i).filter(i=>!blocked.has(i));for(let i=pool.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}for(const i of pool.slice(0,params()[2]))cells[i].mine=true;for(let i=0;i<cells.length;i++)cells[i].near=neighbors(i).filter(j=>cells[j].mine).length;}
+function finish(win,hit){done=true;if(since){elapsed+=Date.now()-since;since=0;}if(!win){cells.forEach(c=>{if(c.mine)c.open=true;});if(hit!=null)cells[hit].hit=true;status('💥 Πάτησες νάρκη! Δοκίμασε ξανά.');}else{cells.forEach(c=>{if(c.mine)c.flag=true;});flags=params()[2];const st=stats[level]||{wins:0,best:null};st.wins=(st.wins||0)+1;st.best=st.best==null?elapsed:Math.min(st.best,elapsed);stats[level]=st;try{localStorage.setItem(STATS,JSON.stringify(stats));}catch(_){}status('🏆 Συγχαρητήρια! Καθάρισες το πεδίο σε '+format(elapsed)+'.');}}
+function expand(start){const queue=[start],visited=new Set();while(queue.length){const i=queue.pop();if(visited.has(i))continue;visited.add(i);const c=cells[i];if(c.open||c.flag)continue;if(c.mine){finish(false,i);return;}c.open=true;if(c.near===0)for(const n of neighbors(i))if(!cells[n].open&&!cells[n].flag)queue.push(n);}}
+function checkWin(){if(!done&&cells.every(c=>c.mine||c.open))finish(true);}
+function reveal(i){if(paused||done||i<0||i>=cells.length)return;const c=cells[i];if(c.flag)return;if(c.open){if(c.near&&neighbors(i).filter(j=>cells[j].flag).length===c.near){for(const j of neighbors(i)){if(!cells[j].open&&!cells[j].flag){expand(j);if(done)break;}}}checkWin();draw();save();return;}if(first){plant(i);first=false;since=Date.now();status('Καλή επιτυχία!');}expand(i);checkWin();draw();save();}
+function flag(i){if(paused||done||i<0||i>=cells.length)return;const c=cells[i];if(c.open)return;c.flag=!c.flag;flags+=c.flag?1:-1;draw();save();}
+function resumeIfNeeded(){if(document.visibilityState==='visible'&&isActive)resume();else pause();}
+let isActive=true;
+window.addEventListener('message',e=>{if(e.origin!==location.origin)return;if(e.data&&e.data.type==='minesweeperfunny:visibility'){isActive=!!e.data.active;resumeIfNeeded();}});
+document.addEventListener('visibilitychange',resumeIfNeeded);
+let suppressedUntil=0,touchX=null;
+$('board').addEventListener('pointerdown',e=>{const btn=e.target.closest('.cell');if(!btn||e.pointerType==='mouse')return;touchX={i:Number(btn.dataset.i),timer:setTimeout(()=>{if(touchX){flag(touchX.i);suppressedUntil=Date.now()+650;if(navigator.vibrate)navigator.vibrate(20);touchX=null;}},480)};});
+function cancelTouch(){if(touchX){clearTimeout(touchX.timer);touchX=null;}}
+$('board').addEventListener('pointerup',cancelTouch);$('board').addEventListener('pointercancel',cancelTouch);$('board').addEventListener('pointerleave',cancelTouch);
+$('board').addEventListener('contextmenu',e=>{const b=e.target.closest('.cell');if(!b)return;e.preventDefault();flag(Number(b.dataset.i));});
+$('board').addEventListener('click',e=>{const b=e.target.closest('.cell');if(!b||Date.now()<suppressedUntil)return;const i=Number(b.dataset.i);selectedFlag?flag(i):reveal(i);});
+$('new').addEventListener('click',newGame);
+$('level').addEventListener('change',e=>{level=e.target.value;newGame();});
+$('flagMode').addEventListener('click',()=>{selectedFlag=!selectedFlag;$('flagMode').classList.toggle('active',selectedFlag);$('flagMode').setAttribute('aria-pressed',String(selectedFlag));$('flagMode').textContent='🚩 Σημαία: '+(selectedFlag?'ON':'OFF');});
+window.addEventListener('resize',resize);
+try{const v=JSON.parse(localStorage.getItem(STORE)||'null');if(v&&MODES[v.level]&&Array.isArray(v.cells)&&v.cells.length===MODES[v.level][0]*MODES[v.level][1]){level=v.level;cells=v.cells;first=!!v.first;done=!!v.done;flags=Number(v.flags)||0;elapsed=Number(v.elapsed)||0;$('level').value=level;status(done?'Παρτίδα ολοκληρωμένη — πάτησε Νέο παιχνίδι.':'Η αποθηκευμένη παρτίδα συνεχίζεται.');draw();resume();}else newGame();}catch(_){newGame();}
+tick=setInterval(()=>{if(since&&!paused&&!done){updateTimer();if(Math.floor(timeNow()/1000)%5===0)save();}},250);
+})();
+</script>
+</body>
+</html>
