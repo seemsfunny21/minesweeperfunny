@@ -7,6 +7,33 @@
 <title>MinesweeperFunny — Ναρκαλιευτής</title>
 <style>
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#071426;color:#edf7ff;font:15px system-ui,-apple-system,"Segoe UI",sans-serif}body{background:radial-gradient(ellipse at 50% -12%,#164a78 0,#071426 65%)}button,select{font:inherit;touch-action:manipulation}button{cursor:pointer}.shell{max-width:680px;margin:auto;padding:clamp(10px,3vw,24px) 12px 40px}.hero{text-align:center;border:1px solid #24476d;border-radius:21px;padding:16px 10px 13px;background:linear-gradient(145deg,#133d65bb,#0b2038cc);box-shadow:0 12px 30px #0005}.hero .symbol{font-size:32px;filter:drop-shadow(0 0 16px #30a1fc99)}h1{font-size:clamp(21px,5vw,28px);margin:4px 0;color:#ecf8ff;letter-spacing:-.6px}.sub{font-size:12px;color:#95b4ce;margin:3px 0 0}.panel{margin-top:10px;border:1px solid #234260;border-radius:18px;background:#0b2038dd;padding:13px;box-shadow:0 8px 30px #0004}.row{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.metric{border:1px solid #294f72;border-radius:12px;padding:9px 4px;text-align:center;background:#0b2a48}.metric small{display:block;color:#91b8d8;font-size:11px}.metric strong{display:block;font-variant-numeric:tabular-nums;font-size:20px;color:#e4f5ff;margin-top:2px}.controls{margin-top:10px}.btn,select{border:1px solid #32608a;color:#d9f0ff;background:linear-gradient(160deg,#153e67,#0d2846);padding:9px 12px;border-radius:12px;min-height:40px}.btn.main,.btn.active{background:linear-gradient(145deg,#1981cd,#135487);border-color:#56b4fa;color:#fff}.btn:disabled{opacity:.4}.btn:focus-visible,.cell:focus-visible{outline:2px solid #a5dbff;outline-offset:2px}.message{text-align:center;min-height:30px;padding:10px 4px;color:#b9d8f1;font-size:13px}.board-scroll{overflow-x:auto;overscroll-behavior-x:contain;padding:2px 0 10px}.board{--columns:9;--sz:32px;display:grid;grid-template-columns:repeat(var(--columns),var(--sz));gap:2px;margin:auto;width:max-content;padding:7px;background:#091a2d;border:1px solid #2e6188;border-radius:13px;box-shadow:0 0 20px #1d88e633}.cell{width:var(--sz);height:var(--sz);padding:0;border:1px solid #4480aa;border-radius:5px;background:linear-gradient(145deg,#2f6a99,#174365);color:#f1f8ff;font-weight:800;font-size:calc(var(--sz)*.53);display:flex;align-items:center;justify-content:center;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;line-height:1;box-shadow:inset 0 1px #ffffff29}.cell.open{background:#102940;border-color:#19374e;box-shadow:none}.cell.flag{color:#ffdb7c}.cell.mine{background:#7a2537;border-color:#c95664}.cell.hit{background:#d13e4b}.n1{color:#6bbdff}.n2{color:#6fde9f}.n3{color:#ff987e}.n4{color:#aeafff}.n5{color:#e87cd4}.n6{color:#76e3dd}.n7{color:#fff}.n8{color:#c5cdd9}.footer{text-align:center;color:#819fbb;font-size:12px;line-height:1.55}.best{margin-top:8px;text-align:center;color:#aed6f5;font-size:12px}@media(max-width:370px){.shell{padding-inline:7px}.panel{padding:8px}.btn,select{padding:8px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Compact mobile playfield: the grid, not ornamental header, gets room. */
+.help-details{margin:8px auto 0;max-width:540px;border:1px solid #426c8c70;background:#102d48ba;border-radius:10px;color:#a9cce6;font-size:11px;text-align:center}
+.help-details summary{padding:8px;cursor:pointer;list-style:none;font-weight:750}
+.help-details summary::-webkit-details-marker{display:none}
+.help-details[open] summary{border-bottom:1px solid #426c8c70;color:#e5f7ff}
+.help-details p{margin:0;padding:7px 10px 10px;font-size:11px;line-height:1.4}
+@media(max-width:600px){
+ .shell{padding:6px 6px 13px}
+ .hero{padding:7px 7px 6px;border-radius:13px}
+ .hero .symbol{font-size:20px}
+ .hero h1{font-size:19px;margin:0}
+ .hero .sub{display:none}
+ .panel{margin-top:5px;padding:7px;border-radius:13px}
+ .stats{gap:5px}
+ .metric{padding:4px 3px;border-radius:8px}
+ .metric small{font-size:10px}
+ .metric strong{font-size:17px;margin-top:0}
+ .controls{margin-top:6px;gap:5px}
+ .controls .btn,.controls select{min-height:35px;padding:6px 8px;font-size:12px;border-radius:8px}
+ .controls>label{font-size:11px}
+ .message{min-height:20px;padding:4px 2px;font-size:11px}
+ .board-scroll{padding:2px 0 5px}
+ .board{padding:6px}
+ .best{margin-top:5px;font-size:11px}
+}
+
 </style>
 </head>
 <body>
@@ -18,7 +45,10 @@
 <div class="message" id="message" role="status" aria-live="polite">Πάτησε ένα τετράγωνο για να ξεκινήσεις.</div>
 <div class="board-scroll" id="scroll"><div class="board" id="board" role="grid" aria-label="Πλέγμα ναρκαλιευτή"></div></div>
 <div class="best" id="best"></div>
-<p class="footer">Πάτημα: αποκάλυψη · Παρατεταμένο πάτημα ή δεξί κλικ: σημαία · Πάτημα αριθμού: άνοιγμα γειτονικών κελιών, όταν οι σημαίες συμφωνούν</p>
+<details class="help-details">
+ <summary>ⓘ Οδηγίες χειρισμού</summary>
+ <p>Πάτημα: αποκάλυψη · Παρατεταμένο πάτημα ή δεξί κλικ: σημαία · Πάτημα αριθμού: άνοιγμα γειτονικών κελιών, όταν οι σημαίες συμφωνούν.</p>
+</details>
 </section>
 </main>
 <script>
@@ -38,7 +68,7 @@ function resume(){if(done)return;paused=false;if(!first&&!since)since=Date.now()
 function updateTimer(){$('timer').textContent=format(timeNow());}
 function updateStats(){const [,,mineCount]=params(),st=stats[level]||{wins:0,best:null};$('remaining').textContent=String(mineCount-flags);$('wins').textContent=String(st.wins||0);$('best').textContent=st.best==null?'Καλύτερος χρόνος: —':'Καλύτερος χρόνος: '+format(st.best);}
 function status(text){$('message').textContent=text;}
-function resize(){const cols=params()[1],space=Math.min(document.documentElement.clientWidth-42,640);$('board').style.setProperty('--columns',cols);$('board').style.setProperty('--sz',Math.max(19,Math.min(42,Math.floor((space-14-(cols-1)*2)/cols)))+'px');}
+function resize(){const cols=params()[1],space=Math.max(0,Math.min($('scroll').clientWidth-4,640));$('board').style.setProperty('--columns',cols);$('board').style.setProperty('--sz',Math.max(16,Math.min(42,Math.floor((space-14-(cols-1)*2)/cols)))+'px');}
 function draw(){const root=$('board');root.replaceChildren();const frag=document.createDocumentFragment();for(let i=0;i<cells.length;i++){const c=cells[i],btn=document.createElement('button');btn.type='button';btn.className='cell'+(c.open?' open':'')+(c.flag?' flag':'')+(c.open&&c.mine?' mine':'')+(c.hit?' hit':'')+(c.open&&!c.mine&&c.near?' n'+c.near:'');btn.dataset.i=String(i);btn.setAttribute('role','gridcell');btn.setAttribute('aria-label',(c.open?(c.mine?'Νάρκη':c.near+' γειτονικές νάρκες'):(c.flag?'Σημαία':'Κρυφό κελί')));btn.textContent=c.flag&&!c.open?'⚑':c.open?(c.mine?'✹':c.near||''):'';frag.appendChild(btn);}root.appendChild(frag);resize();updateStats();updateTimer();}
 function newGame(){pause();elapsed=0;since=0;paused=false;first=true;done=false;flags=0;selectedFlag=false;$('flagMode').classList.remove('active');$('flagMode').setAttribute('aria-pressed','false');$('flagMode').textContent='🚩 Σημαία: OFF';const [rows,cols]=params();cells=Array.from({length:rows*cols},()=>({mine:false,near:0,open:false,flag:false,hit:false}));status('Πάτησε ένα τετράγωνο για να ξεκινήσεις.');draw();save();}
 function plant(safe){const blocked=new Set([safe,...neighbors(safe)]),pool=cells.map((_,i)=>i).filter(i=>!blocked.has(i));for(let i=pool.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}for(const i of pool.slice(0,params()[2]))cells[i].mine=true;for(let i=0;i<cells.length;i++)cells[i].near=neighbors(i).filter(j=>cells[j].mine).length;}
