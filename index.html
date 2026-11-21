@@ -34,6 +34,26 @@
  .best{margin-top:5px;font-size:11px}
 }
 
+
+/* Single, consistent top-right settings gear for Minesweeper. */
+.hero{position:relative;padding-left:48px;padding-right:48px}
+.mine-gear{position:absolute;right:10px;top:10px;display:grid;place-items:center;
+ width:37px;height:37px;border:1px solid #69b9e6;border-radius:11px;
+ background:linear-gradient(145deg,#205c88,#0d3659);color:#eefaff;
+ font-size:23px;line-height:1;box-shadow:0 2px 9px #0005}
+.mine-gear:focus-visible{outline:2px solid #a8eeff;outline-offset:2px}
+#settingsDialog{box-sizing:border-box;width:min(92vw,430px);max-height:85dvh;overflow:auto;
+ padding:19px;background:linear-gradient(145deg,#174c76,#0a2948);
+ border:1px solid #78c9f3;border-radius:17px;box-shadow:0 20px 45px #000c;color:#edf8ff}
+#settingsDialog::backdrop{background:#010b19dc}
+#settingsDialog h2{margin:0 0 12px;text-align:center;font-size:21px}
+#settingsDialog h3{margin:12px 0 7px;font-size:15px;color:#e1f8ff}
+#settingsDialog p{font-size:13px;line-height:1.65;color:#c5e2f6;margin:0 0 12px}
+#settingsDialog .btn,#settingsDialog .funny-help-btn{display:block;width:100%;min-height:42px;margin:8px 0}
+@media(max-width:600px){
+ .hero{padding-left:39px;padding-right:39px}
+ .mine-gear{top:6px;right:6px;width:32px;height:32px;font-size:21px}
+}
 </style>
 <style id="game-dialog-theme">
 .game-dialog-cover{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:12px;background:#021426d9;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
@@ -111,19 +131,23 @@ body>.suite-game-banner{width:min(calc(100% - 24px),720px);margin:12px auto 10px
 <body>
 <main class="shell">
 <div class="suite-game-banner"><img src="./hero-banner.svg" width="900" height="300" alt="" aria-hidden="true" decoding="async"></div>
-<header class="hero"><div class="symbol" aria-hidden="true">💣</div><h1>MinesweeperFunny</h1><p class="sub">Ναρκαλιευτής · Βρες όλες τις ασφαλείς θέσεις</p></header>
+<header class="hero"><div class="symbol" aria-hidden="true">💣</div><h1>MinesweeperFunny</h1><p class="sub">Ναρκαλιευτής · Βρες όλες τις ασφαλείς θέσεις</p><button class="mine-gear" id="gear" type="button" aria-label="Ρυθμίσεις και οδηγίες χειρισμού" aria-haspopup="dialog" aria-expanded="false">⚙</button></header>
 <section class="panel">
 <div class="stats"><div class="metric"><small>Νάρκες</small><strong id="remaining">10</strong></div><div class="metric"><small>Χρόνος</small><strong id="timer">00:00</strong></div><div class="metric"><small>Νίκες</small><strong id="wins">0</strong></div></div>
 <div class="row controls"><label for="level" class="sub">Δυσκολία</label><select id="level"><option value="easy">Εύκολο 9×9</option><option value="medium">Μεσαίο 12×12</option><option value="hard">Δύσκολο 16×16</option></select><button class="btn main" id="new">↻ Νέο παιχνίδι</button><button class="btn" id="flagMode" aria-pressed="false">🚩 Σημαία: OFF</button></div>
 <div class="message" id="message" role="status" aria-live="polite">Πάτησε ένα τετράγωνο για να ξεκινήσεις.</div>
 <div class="board-scroll" id="scroll"><div class="board" id="board" role="grid" aria-label="Πλέγμα ναρκαλιευτή"></div></div>
 <div class="best" id="best"></div>
-<details class="help-details">
- <summary>ⓘ Οδηγίες χειρισμού</summary>
- <p>Πάτημα: αποκάλυψη · Παρατεταμένο πάτημα ή δεξί κλικ: σημαία · Πάτημα αριθμού: άνοιγμα γειτονικών κελιών, όταν οι σημαίες συμφωνούν.</p>
-</details>
 </section>
 </main>
+<dialog id="settingsDialog" aria-labelledby="mineSettingsTitle">
+ <h2 id="mineSettingsTitle">⚙ Ρυθμίσεις &amp; οδηγίες</h2>
+ <h3>ⓘ Οδηγίες χειρισμού</h3>
+ <p><strong>Αποκάλυψη:</strong> πάτησε ένα κλειστό τετράγωνο.
+ <strong>Σημαία:</strong> δεξί κλικ στον υπολογιστή ή παρατεταμένο πάτημα στο κινητό. Εναλλακτικά, χρησιμοποίησε το κουμπί «🚩 Σημαία» πάνω από το ταμπλό.
+ <strong>Αριθμοί:</strong> πάτησε έναν ανοιχτό αριθμό για να αποκαλύψεις τους γείτονές του όταν οι σημαίες συμφωνούν.</p>
+ <button id="closeSettings" class="btn main" type="button">Επιστροφή στο παιχνίδι</button>
+</dialog>
 <script>
 (function(){
 'use strict';
@@ -160,7 +184,11 @@ function cancelTouch(){if(touchX){clearTimeout(touchX.timer);touchX=null;}}
 $('board').addEventListener('pointerup',cancelTouch);$('board').addEventListener('pointercancel',cancelTouch);$('board').addEventListener('pointerleave',cancelTouch);
 $('board').addEventListener('contextmenu',e=>{const b=e.target.closest('.cell');if(!b)return;e.preventDefault();flag(Number(b.dataset.i));});
 $('board').addEventListener('click',e=>{const b=e.target.closest('.cell');if(!b||Date.now()<suppressedUntil)return;const i=Number(b.dataset.i);selectedFlag?flag(i):reveal(i);});
-$('new').addEventListener('click',newGame);
+const settingsDialog=$('settingsDialog');
+ $('gear').addEventListener('click',()=>{settingsDialog.showModal();$('gear').setAttribute('aria-expanded','true')});
+ $('closeSettings').addEventListener('click',()=>settingsDialog.close());
+ settingsDialog.addEventListener('close',()=>{$('gear').setAttribute('aria-expanded','false');$('gear').focus()});
+ $('new').addEventListener('click',newGame);
 $('level').addEventListener('change',e=>{level=e.target.value;newGame();});
 $('flagMode').addEventListener('click',()=>{selectedFlag=!selectedFlag;$('flagMode').classList.toggle('active',selectedFlag);$('flagMode').setAttribute('aria-pressed',String(selectedFlag));$('flagMode').textContent='🚩 Σημαία: '+(selectedFlag?'ON':'OFF');});
 window.addEventListener('resize',resize);
