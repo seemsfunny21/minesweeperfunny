@@ -187,8 +187,8 @@
   },
   "gift_men_car": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Oldtimer-2013_model_car_20130309_150849.JPG",
-    "source": "https://commons.wikimedia.org/wiki/File:Kyosho_BMW_760Li_(E66)_-_open_front.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Kyosho_BMW_760Li_(E66)_-_open_front.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:KYOSHO_BMW_M3.JPG",
     "visual_review": "pending"
   },
   "gift_men_motorbike": {
@@ -201,6 +201,84 @@
     "status": "replaced",
     "previous": "https://commons.wikimedia.org/wiki/File:Xbox-360-Pro-wController.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Xbox_Wireless_Controller_Carbon_Black.jpg",
+    "visual_review": "pending"
+  },
+  "pet_parrot": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:African_grey_parrot.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Psittacus_erithacus_-pet_parrot-8a.jpg",
+    "visual_review": "pending"
+  },
+  "motor_moped": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Honda_Super_Cub_C125_(parked)_in_Kopi_7_-_Palembang,_SS_(1_Jan_2023).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Osaka_Auto_Messe_2019_(93)_-_Honda_Super_Cub_C125_(2BJ-JA48).jpg",
+    "visual_review": "pending"
+  },
+  "car_super": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_LP610-4.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:2017_Lamborghini_Huracan_LP610-4_2.jpg",
+    "visual_review": "pending"
+  },
+  "pet_dog": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dog.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Golden_retriever_exploring_a_sunny_backyard_with_green_grass_and_a_flower_arrangement_nearby.jpg",
+    "visual_review": "pending"
+  },
+  "travel_paris": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_seen_from_the_Palais_de_Chaillot.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:La_tour_eiffel_depuis_le_trocad%C3%A9ro_-_panoramio.jpg",
+    "visual_review": "pending"
+  },
+  "home_studio": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:John_Brooke_Fieldhouse_interior_in_West_London_maximising_use_of_flexible_space_in_a_studio_apartment.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Studio_apartment_in_Finland.jpg",
+    "visual_review": "pending"
+  },
+  "home_house": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Namibia_-_Semi-Detached_House_01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:26_East_Avenue,_Blairstown,_NJ.jpg",
+    "visual_review": "pending"
+  },
+  "art_painting": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Oval_portrait_miniature_of_girl_oil_painting_by_Valentine_Manchon_Duchesne_-_with_scale.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Frederick_Waters.Wattsdedham_Watermill.Oil_Painting_Constable_Country.Circa_1850.Framed.jpg",
+    "visual_review": "pending"
+  },
+  "art_sculpture": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Marble_sculpture_Gulbenkian_March_2014-1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Predjamski_grad_-_doprsje_grofa_Janeza_Karla_Filipa_Kobencla_(A._Ollivier).jpg",
+    "visual_review": "pending"
+  },
+  "gift_general_music": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Musical_instruments_of_Karbi_Tribe.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Enjoying_a_cozy_afternoon_with_coffee_and_vinyl_records_at_home.jpg",
+    "visual_review": "pending"
+  },
+  "gift_women_teddy": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Little_girl_hugs_teddy_bear_toy.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Teddy_bear_on_the_window_sill_02.jpg",
+    "visual_review": "pending"
+  },
+  "gift_general_plant": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Among_the_branches_of_a_potted_jade_plant.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Aeonium_tabuliforme_(4694028465).jpg",
+    "visual_review": "pending"
+  },
+  "gift_general_heart": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Ornament_in_The_Heart_of_Europe.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Plush_stuffed_heart_bears_with_candy_and_red_boxes_(16806018870).jpg",
     "visual_review": "pending"
   }
 }

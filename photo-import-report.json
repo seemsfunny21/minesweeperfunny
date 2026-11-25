@@ -43,9 +43,9 @@
   },
   "motor_moped": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Honda_Super_Cub_C125_(parked)_in_Kopi_7_-_Palembang,_SS_(1_Jan_2023).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Osaka_Auto_Messe_2019_(93)_-_Honda_Super_Cub_C125_(2BJ-JA48).jpg",
     "license": "CC BY-SA 4.0",
-    "representative": false,
+    "representative": true,
     "path": "images/motorcycles/motor_moped.webp"
   },
   "vehicle_suv": {
@@ -71,9 +71,9 @@
   },
   "car_super": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_LP610-4.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:2017_Lamborghini_Huracan_LP610-4_2.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": false,
+    "representative": true,
     "path": "images/cars/car_super.webp"
   },
   "motor_adventure": {
@@ -162,9 +162,9 @@
   },
   "pet_dog": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dog.jpg",
-    "license": "CC BY-SA 4.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Golden_retriever_exploring_a_sunny_backyard_with_green_grass_and_a_flower_arrangement_nearby.jpg",
+    "license": "CC BY 2.0",
+    "representative": true,
     "path": "images/pets/pet_dog.webp"
   },
   "travel_islands": {
@@ -176,9 +176,9 @@
   },
   "travel_paris": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_seen_from_the_Palais_de_Chaillot.jpg",
-    "license": "CC BY-SA 4.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:La_tour_eiffel_depuis_le_trocad%C3%A9ro_-_panoramio.jpg",
+    "license": "CC BY-SA 3.0",
+    "representative": true,
     "path": "images/travel/travel_paris.webp"
   },
   "travel_maldives": {
@@ -393,9 +393,9 @@
   },
   "home_studio": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:John_Brooke_Fieldhouse_interior_in_West_London_maximising_use_of_flexible_space_in_a_studio_apartment.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Studio_apartment_in_Finland.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": false,
+    "representative": true,
     "path": "images/houses/home_studio.webp"
   },
   "home_apartment": {
@@ -407,8 +407,8 @@
   },
   "home_house": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Namibia_-_Semi-Detached_House_01.jpg",
-    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:26_East_Avenue,_Blairstown,_NJ.jpg",
+    "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/houses/home_house.webp"
   },
@@ -463,16 +463,16 @@
   },
   "art_painting": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Oval_portrait_miniature_of_girl_oil_painting_by_Valentine_Manchon_Duchesne_-_with_scale.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Frederick_Waters.Wattsdedham_Watermill.Oil_Painting_Constable_Country.Circa_1850.Framed.jpg",
     "license": "Public domain",
-    "representative": false,
+    "representative": true,
     "path": "images/art/art_painting.webp"
   },
   "art_sculpture": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Marble_sculpture_Gulbenkian_March_2014-1.jpg",
-    "license": "CC BY-SA 3.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Predjamski_grad_-_doprsje_grofa_Janeza_Karla_Filipa_Kobencla_(A._Ollivier).jpg",
+    "license": "CC BY 2.0",
+    "representative": true,
     "path": "images/art/art_sculpture.webp"
   },
   "art_collection": {
@@ -687,8 +687,8 @@
   },
   "gift_general_music": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Musical_instruments_of_Karbi_Tribe.jpg",
-    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Enjoying_a_cozy_afternoon_with_coffee_and_vinyl_records_at_home.jpg",
+    "license": "CC BY 2.0",
     "representative": true,
     "path": "images/gifts/general/gift_general_music.webp"
   },
@@ -715,7 +715,7 @@
   },
   "gift_men_car": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Kyosho_BMW_760Li_(E66)_-_open_front.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:KYOSHO_BMW_M3.JPG",
     "license": "CC BY-SA 3.0",
     "representative": true,
     "path": "images/gifts/men/gift_men_car.webp"
@@ -757,9 +757,9 @@
   },
   "gift_women_teddy": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Little_girl_hugs_teddy_bear_toy.jpg",
-    "license": "CC BY 2.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Teddy_bear_on_the_window_sill_02.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true,
     "path": "images/gifts/women/gift_women_teddy.webp"
   },
   "gift_women_dress": {
@@ -827,15 +827,15 @@
   },
   "gift_general_plant": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Among_the_branches_of_a_potted_jade_plant.jpg",
-    "license": "CC0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Aeonium_tabuliforme_(4694028465).jpg",
+    "license": "CC BY-SA 2.0",
+    "representative": true,
     "path": "images/gifts/general/gift_general_plant.webp"
   },
   "gift_general_heart": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Ornament_in_The_Heart_of_Europe.jpg",
-    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Plush_stuffed_heart_bears_with_candy_and_red_boxes_(16806018870).jpg",
+    "license": "CC BY 2.0",
     "representative": true,
     "path": "images/gifts/general/gift_general_heart.webp"
   },
@@ -946,9 +946,9 @@
   },
   "pet_parrot": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:African_grey_parrot.jpg",
-    "license": "CC0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Psittacus_erithacus_-pet_parrot-8a.jpg",
+    "license": "CC BY 2.0",
+    "representative": true,
     "path": "images/pets/pet_parrot.webp"
   },
   "amenity_console": {
