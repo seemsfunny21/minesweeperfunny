@@ -336,5 +336,51 @@
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:CASIO_G-Shock_GW-M5610U.jpg",
     "license": "CC BY-SA 4.0"
+  },
+  "gift_men_glasses": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:RayBanAviator.jpg",
+    "license": "CC BY 2.5"
+  },
+  "gift_men_headphones": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_men_ball": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Football_Adidas_Finale_17_Capitano.jpg",
+    "license": "CC0"
+  },
+  "gift_men_football": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:DZL_grip_Sock_%26_Nike_Football_Image.png",
+    "license": "CC BY 4.0"
+  },
+  "gift_men_bike": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_men_guitar": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Bass_guitar_headstock_-_Yamaha.jpg",
+    "license": "CC BY-SA 3.0"
+  },
+  "gift_men_wallet": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_men_shoes": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Geox_used_shoes_0001.JPG",
+    "license": "CC BY-SA 3.0"
+  },
+  "gift_men_backpack": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Eastpak_Sugarbush_backpack_black.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_men_toolkit": {
+    "status": "not_saved",
+    "attempts": []
   }
 }
