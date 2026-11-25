@@ -600,8 +600,9 @@
   },
   "gift_flower": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Elevators_vestibule_with_flower_bouquets_at_InterContinental_Hotel_Singapore.jpg",
-    "license": "CC BY-SA 4.0"
+    "source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_general_cake": {
     "status": "saved",
@@ -629,8 +630,10 @@
     "license": "CC0"
   },
   "gift_general_heart": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Ornament_in_The_Heart_of_Europe.jpg",
+    "license": "Public domain",
+    "representative": true
   },
   "gift_general_balloon": {
     "status": "saved",
@@ -649,8 +652,9 @@
   },
   "gift_general_flowers": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Elevators_vestibule_with_flower_bouquets_at_InterContinental_Hotel_Singapore.jpg",
-    "license": "CC BY-SA 4.0"
+    "source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_general_holiday": {
     "status": "saved",
@@ -672,8 +676,10 @@
     "attempts": []
   },
   "gift_chocolate": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Green_and_Black%27s_dark_chocolate_bar_2.jpg",
+    "license": "CC0",
+    "representative": true
   },
   "gift_star": {
     "status": "saved",
@@ -691,7 +697,9 @@
     "license": "CC BY-SA 4.0"
   },
   "gift_women_heels": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:High_Heels_(1921)_-_1.jpg",
+    "license": "Public domain",
+    "representative": true
   }
 }
