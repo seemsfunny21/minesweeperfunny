@@ -112,5 +112,65 @@
     "previous": "https://commons.wikimedia.org/wiki/File:Intex_pool,_Interboot_2020,_Friedrichshafen_(IB200178).jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Pool_in_the_back_yard_-_Mid-City_New_Orleans_2010.jpg",
     "visual_review": "pending"
+  },
+  "home_mansion": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Mount_Vernon_Estate_Mansion_2.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Mansion_exterior.jpg",
+    "visual_review": "pending"
+  },
+  "home_island": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Condos_on_Isleta_Marina,_a_private_island_of_Fajardo,_Puerto_Rico.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Anantara_Kihavah_-_Aerial_Hero_Shot_2024.jpg",
+    "visual_review": "pending"
+  },
+  "gift_women_perfume": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Bottle_of_L%27Aimant_perfume_-_Coty_-1927-1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Coco_mademoiselle.jpg",
+    "visual_review": "pending"
+  },
+  "gift_general_icecream": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Apple_cake_with_vanilla_ice_cream_2.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bowl_~_Ice_cream.jpg",
+    "visual_review": "pending"
+  },
+  "gift_general_pizza": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Pizza_box_at_a_fan_convention.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita.JPG",
+    "visual_review": "pending"
+  },
+  "gift_men_toolkit": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:JOBOX_tool_box,_Huntington_Station.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Set_of_metal_tools_in_a_blue_box_arranged_neatly.jpg",
+    "visual_review": "pending"
+  },
+  "gift_men_guitar": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Bass_guitar_headstock_-_Yamaha.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Yamaha_FG110_Acoustic_Guitar.JPG",
+    "visual_review": "pending"
+  },
+  "travel_world": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Seattle_(WA,_USA),_P-I_Globe_--_2022_--_1708.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Travel._Trip._Vacation._Top_view_airplane_with_touristic_map_(52136224054).jpg",
+    "visual_review": "pending"
+  },
+  "gift_general_holiday": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Miami_Beach_-_Holiday_Inn.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Scenic_view_of_a_resort_pool_area_overlooking_a_beach_and_mountains.jpg",
+    "visual_review": "pending"
+  },
+  "gift_general_trip": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Travel_Suitcase_Display,_Bic_Camera,_Akihabara_(40507976702).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tropical_Beach_with_Palm_Trees.jpg",
+    "visual_review": "pending"
   }
 }

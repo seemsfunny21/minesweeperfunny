@@ -428,16 +428,16 @@
   },
   "home_mansion": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Mount_Vernon_Estate_Mansion_2.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Mansion_exterior.jpg",
     "license": "CC BY-SA 3.0",
-    "representative": false,
+    "representative": true,
     "path": "images/houses/home_mansion.webp"
   },
   "home_island": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Condos_on_Isleta_Marina,_a_private_island_of_Fajardo,_Puerto_Rico.jpg",
-    "license": "CC BY-SA 2.5",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Anantara_Kihavah_-_Aerial_Hero_Shot_2024.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true,
     "path": "images/luxury/home_island.webp"
   },
   "amenity_garden": {
@@ -526,9 +526,9 @@
   },
   "gift_men_guitar": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Bass_guitar_headstock_-_Yamaha.jpg",
-    "license": "CC BY-SA 3.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Yamaha_FG110_Acoustic_Guitar.JPG",
+    "license": "Public domain",
+    "representative": true,
     "path": "images/gifts/men/gift_men_guitar.webp"
   },
   "gift_men_wallet": {
@@ -554,8 +554,8 @@
   },
   "gift_men_toolkit": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:JOBOX_tool_box,_Huntington_Station.jpg",
-    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Set_of_metal_tools_in_a_blue_box_arranged_neatly.jpg",
+    "license": "CC BY 2.0",
     "representative": true,
     "path": "images/gifts/men/gift_men_toolkit.webp"
   },
@@ -582,8 +582,8 @@
   },
   "gift_women_perfume": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Bottle_of_L%27Aimant_perfume_-_Coty_-1927-1.jpg",
-    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Coco_mademoiselle.jpg",
+    "license": "CC BY 3.0",
     "representative": true,
     "path": "images/gifts/women/gift_women_perfume.webp"
   },
@@ -694,22 +694,22 @@
   },
   "gift_general_icecream": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Apple_cake_with_vanilla_ice_cream_2.jpg",
-    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bowl_~_Ice_cream.jpg",
+    "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/gifts/general/gift_general_icecream.webp"
   },
   "gift_general_pizza": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Pizza_box_at_a_fan_convention.jpg",
-    "license": "CC BY 2.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita.JPG",
+    "license": "CC BY 2.5",
+    "representative": true,
     "path": "images/gifts/general/gift_general_pizza.webp"
   },
   "travel_world": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Seattle_(WA,_USA),_P-I_Globe_--_2022_--_1708.jpg",
-    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Travel._Trip._Vacation._Top_view_airplane_with_touristic_map_(52136224054).jpg",
+    "license": "CC BY 2.0",
     "representative": true,
     "path": "images/travel/travel_world.webp"
   },
@@ -820,9 +820,9 @@
   },
   "gift_general_trip": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Travel_Suitcase_Display,_Bic_Camera,_Akihabara_(40507976702).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tropical_Beach_with_Palm_Trees.jpg",
     "license": "CC0",
-    "representative": false,
+    "representative": true,
     "path": "images/gifts/general/gift_general_trip.webp"
   },
   "gift_general_plant": {
@@ -869,9 +869,9 @@
   },
   "gift_general_holiday": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Miami_Beach_-_Holiday_Inn.jpg",
-    "license": "Public domain",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Scenic_view_of_a_resort_pool_area_overlooking_a_beach_and_mountains.jpg",
+    "license": "CC BY 2.0",
+    "representative": true,
     "path": "images/gifts/general/gift_general_holiday.webp"
   },
   "gift_general_celebration": {
