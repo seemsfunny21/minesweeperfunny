@@ -382,5 +382,48 @@
   "gift_men_toolkit": {
     "status": "not_saved",
     "attempts": []
+  },
+  "gift_men_gaming": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Xbox-360-Pro-wController.jpg",
+    "license": "Public domain"
+  },
+  "gift_men_sneakers": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_women_bag": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_women_perfume": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_women_ring": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Pandora,_Atlas,_Rings_-_Rev_232_(24579092143).png",
+    "license": "Public domain"
+  },
+  "gift_women_jewel": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_women_bracelet": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Pandora_bracelet.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_women_cosmetics": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_women_earrings": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_women_necklace": {
+    "status": "not_saved",
+    "attempts": []
   }
 }
