@@ -172,5 +172,35 @@
     "previous": "https://commons.wikimedia.org/wiki/File:Travel_Suitcase_Display,_Bic_Camera,_Akihabara_(40507976702).jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Tropical_Beach_with_Palm_Trees.jpg",
     "visual_review": "pending"
+  },
+  "amenity_bbq": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Gasgrill_Weber_Q100.jpg",
+    "visual_review": "pending"
+  },
+  "gift_men_grill": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Gasgrill_Weber_Q100.jpg",
+    "visual_review": "pending"
+  },
+  "gift_men_car": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Oldtimer-2013_model_car_20130309_150849.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Kyosho_BMW_760Li_(E66)_-_open_front.jpg",
+    "visual_review": "pending"
+  },
+  "gift_men_motorbike": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Indian_Brave_Model_R_250cc_motorcycle.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:2016_Yamaha_XV1600_Wild_Star.jpg",
+    "visual_review": "pending"
+  },
+  "gift_men_gaming": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Xbox-360-Pro-wController.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Xbox_Wireless_Controller_Carbon_Black.jpg",
+    "visual_review": "pending"
   }
 }

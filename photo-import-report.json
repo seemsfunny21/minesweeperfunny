@@ -309,15 +309,15 @@
   },
   "amenity_bbq": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
-    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Gasgrill_Weber_Q100.jpg",
+    "license": "CC BY-SA 3.0",
     "representative": true,
     "path": "images/amenities/amenity_bbq.webp"
   },
   "gift_men_grill": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
-    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Gasgrill_Weber_Q100.jpg",
+    "license": "CC BY-SA 3.0",
     "representative": true,
     "path": "images/gifts/men/gift_men_grill.webp"
   },
@@ -561,9 +561,9 @@
   },
   "gift_men_gaming": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Xbox-360-Pro-wController.jpg",
-    "license": "Public domain",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Xbox_Wireless_Controller_Carbon_Black.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true,
     "path": "images/gifts/men/gift_men_gaming.webp"
   },
   "gift_men_sneakers": {
@@ -715,14 +715,14 @@
   },
   "gift_men_car": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Oldtimer-2013_model_car_20130309_150849.JPG",
-    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kyosho_BMW_760Li_(E66)_-_open_front.jpg",
+    "license": "CC BY-SA 3.0",
     "representative": true,
     "path": "images/gifts/men/gift_men_car.webp"
   },
   "gift_men_motorbike": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Indian_Brave_Model_R_250cc_motorcycle.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:2016_Yamaha_XV1600_Wild_Star.jpg",
     "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/gifts/men/gift_men_motorbike.webp"
