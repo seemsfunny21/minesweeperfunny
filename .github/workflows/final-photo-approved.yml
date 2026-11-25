@@ -27,7 +27,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: final-photo-candidates
-          run-id: '45695253444'
+          run-id: '45695913816'
           github-token: ${{ github.token }}
           path: /tmp/approved-final-photos
       - run: python scripts/import_final_approved.py

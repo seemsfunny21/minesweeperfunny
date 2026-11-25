@@ -32,7 +32,7 @@ for code,p,data in pending:
     photos[code]={'src':'./'+p['path'],**meta}
     report[code]={'status':'saved','source':p['source'],'license':p['license'],'representative':True,'path':p['path']}
     quality[code]={'status':'replaced','previous':p['previous'],'source':p['source'],'visual_review':'approved_candidate_contact_sheet','sha256':p['sha256']}
-    audit['entries'][code].update({'candidate_review':'selected','candidate_artifact':15059599803,'current_source':p['source'],'publication':'verified_local_bytes','final_visual_review':'pending_published_catalog_review'})
+    audit['entries'][code].update({'candidate_review':'selected','candidate_artifact':15060179300,'current_source':p['source'],'publication':'verified_local_bytes','final_visual_review':'pending_published_catalog_review'})
 catalog.write_text(prefix+json.dumps(photos,ensure_ascii=False,separators=(',',':'))+';\n')
 for path,value in [(report_path,report),(quality_path,quality),(audit_path,audit)]:path.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
 print('Verified and imported',len(pending),'reviewed Wikimedia application assets')
