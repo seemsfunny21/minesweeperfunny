@@ -414,22 +414,22 @@
   },
   "home_maisonette": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:A_very_patriotic_maisonette,_St_Giles_View,_Pontefract_(27th_January_2024).jpg",
-    "license": "CC BY-SA 4.0",
-    "representative": false,
+    "source": "https://www.pexels.com/photo/house-in-town-16849899/",
+    "license": "Pexels License",
+    "representative": true,
     "path": "images/houses/home_maisonette.webp"
   },
   "home_villa": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Luxury_Villa_Zakynthos.jpg",
-    "license": "CC BY-SA 4.0",
-    "representative": false,
+    "source": "https://www.pexels.com/photo/modern-luxury-villa-with-infinity-pool-31817156/",
+    "license": "Pexels License",
+    "representative": true,
     "path": "images/houses/home_villa.webp"
   },
   "home_mansion": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Mansion_exterior.jpg",
-    "license": "CC BY-SA 3.0",
+    "source": "https://www.pexels.com/photo/pool-in-a-mansion-in-the-evening-26859062/",
+    "license": "Pexels License",
     "representative": true,
     "path": "images/houses/home_mansion.webp"
   },
@@ -449,8 +449,8 @@
   },
   "amenity_gym": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Colorful_gym_equipment.jpg",
-    "license": "CC BY-SA 4.0",
+    "source": "https://www.pexels.com/photo/modern-home-gym-interior-with-fitness-equipment-36777945/",
+    "license": "Pexels License",
     "representative": true,
     "path": "images/amenities/amenity_gym.webp"
   },
@@ -477,8 +477,8 @@
   },
   "art_collection": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Interior_of_Christchurch_Art_Gallery,_New_Zealand_02.jpg",
-    "license": "CC BY-SA 4.0",
+    "source": "https://www.pexels.com/photo/paintings-inside-building-3004909/",
+    "license": "Pexels License",
     "representative": true,
     "path": "images/art/art_collection.webp"
   },
@@ -666,9 +666,9 @@
   },
   "gift_general_puzzle": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Ravensburger_Stoffpuzzle_Schaf_2.jpg",
-    "license": "CC BY-SA 3.0 de",
-    "representative": false,
+    "source": "https://www.pexels.com/photo/jigsaw-puzzle-pieces-4000309/",
+    "license": "Pexels License",
+    "representative": true,
     "path": "images/gifts/general/gift_general_puzzle.webp"
   },
   "gift_general_donut": {
@@ -701,8 +701,8 @@
   },
   "gift_general_pizza": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita.JPG",
-    "license": "CC BY 2.5",
+    "source": "https://www.pexels.com/photo/delicious-margherita-pizza-on-plate-34322095/",
+    "license": "Pexels License",
     "representative": true,
     "path": "images/gifts/general/gift_general_pizza.webp"
   },
@@ -806,9 +806,9 @@
   },
   "gift_general_book": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Princess_Marys_Gift_Book-0009.png",
-    "license": "Public domain",
-    "representative": false,
+    "source": "https://www.pexels.com/photo/top-view-of-a-book-lying-on-the-table-12189613/",
+    "license": "Pexels License",
+    "representative": true,
     "path": "images/gifts/general/gift_general_book.webp"
   },
   "gift_general_ticket": {

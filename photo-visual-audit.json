@@ -380,22 +380,31 @@
       "source": "https://commons.wikimedia.org/wiki/File:A_very_patriotic_maisonette,_St_Giles_View,_Pontefract_(27th_January_2024).jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Basic brick terrace",
-      "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_review": "selected",
+      "candidate_artifact": 15060515371,
+      "current_source": "https://www.pexels.com/photo/house-in-town-16849899/",
+      "publication": "verified_local_bytes",
+      "final_visual_review": "pending_published_catalog_review"
     },
     "home_villa": {
       "source": "https://commons.wikimedia.org/wiki/File:Luxury_Villa_Zakynthos.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Building detail, no luxury setting",
-      "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_review": "selected",
+      "candidate_artifact": 15060515371,
+      "current_source": "https://www.pexels.com/photo/modern-luxury-villa-with-infinity-pool-31817156/",
+      "publication": "verified_local_bytes",
+      "final_visual_review": "pending_published_catalog_review"
     },
     "home_mansion": {
       "source": "https://commons.wikimedia.org/wiki/File:Mansion_exterior.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Historic mansion, not contemporary luxury",
-      "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_review": "selected",
+      "candidate_artifact": 15060515371,
+      "current_source": "https://www.pexels.com/photo/pool-in-a-mansion-in-the-evening-26859062/",
+      "publication": "verified_local_bytes",
+      "final_visual_review": "pending_published_catalog_review"
     },
     "home_island": {
       "source": "https://commons.wikimedia.org/wiki/File:Anantara_Kihavah_-_Aerial_Hero_Shot_2024.jpg",
@@ -411,8 +420,11 @@
       "source": "https://commons.wikimedia.org/wiki/File:Colorful_gym_equipment.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Small miscellaneous equipment, not gym",
-      "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_review": "selected",
+      "candidate_artifact": 15060515371,
+      "current_source": "https://www.pexels.com/photo/modern-home-gym-interior-with-fitness-equipment-36777945/",
+      "publication": "verified_local_bytes",
+      "final_visual_review": "pending_published_catalog_review"
     },
     "art_painting": {
       "source": "https://commons.wikimedia.org/wiki/File:Oval_portrait_miniature_of_girl_oil_painting_by_Valentine_Manchon_Duchesne_-_with_scale.jpg",
@@ -444,8 +456,11 @@
       "source": "https://commons.wikimedia.org/wiki/File:Interior_of_Christchurch_Art_Gallery,_New_Zealand_02.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Empty gallery",
-      "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_review": "selected",
+      "candidate_artifact": 15060515371,
+      "current_source": "https://www.pexels.com/photo/paintings-inside-building-3004909/",
+      "publication": "verified_local_bytes",
+      "final_visual_review": "pending_published_catalog_review"
     },
     "gift_men_watch": {
       "source": "https://commons.wikimedia.org/wiki/File:CASIO_G-Shock_GW-M5610U.jpg",
@@ -520,8 +535,11 @@
       "source": "https://commons.wikimedia.org/wiki/File:Ravensburger_Stoffpuzzle_Schaf_2.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Children's fabric puzzle",
-      "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_review": "selected",
+      "candidate_artifact": 15060515371,
+      "current_source": "https://www.pexels.com/photo/jigsaw-puzzle-pieces-4000309/",
+      "publication": "verified_local_bytes",
+      "final_visual_review": "pending_published_catalog_review"
     },
     "gift_general_donut": {
       "source": "https://commons.wikimedia.org/wiki/File:Doughnut_2.jpg",
@@ -552,8 +570,11 @@
       "source": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita.JPG",
       "thumbnail_review": "needs_replacement",
       "note": "Several boxes, not inviting pizza",
-      "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_review": "selected",
+      "candidate_artifact": 15060515371,
+      "current_source": "https://www.pexels.com/photo/delicious-margherita-pizza-on-plate-34322095/",
+      "publication": "verified_local_bytes",
+      "final_visual_review": "pending_published_catalog_review"
     },
     "gift_men_tie": {
       "source": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
@@ -623,8 +644,11 @@
       "source": "https://commons.wikimedia.org/wiki/File:Princess_Marys_Gift_Book-0009.png",
       "thumbnail_review": "needs_replacement",
       "note": "Title page rather than book",
-      "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_review": "selected",
+      "candidate_artifact": 15060515371,
+      "current_source": "https://www.pexels.com/photo/top-view-of-a-book-lying-on-the-table-12189613/",
+      "publication": "verified_local_bytes",
+      "final_visual_review": "pending_published_catalog_review"
     },
     "gift_general_ticket": {
       "source": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
