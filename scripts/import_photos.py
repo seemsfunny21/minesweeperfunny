@@ -1,4 +1,4 @@
-import base64,hashlib,html,io,json,re,time,unicodedata,urllib.parse,urllib.request
+import base64,html,io,json,re,time,unicodedata,urllib.parse,urllib.request
 from pathlib import Path
 from PIL import Image, ImageOps
 CANDIDATES = {
@@ -259,24 +259,46 @@ SEARCH_TARGETS = {
   "gift_general_flowers": "flower bouquet",
   "gift_general_holiday": "beach holiday",
   "gift_general_celebration": "party decoration",
-  "gift_general_diamond": "cut diamond"
-}
-VERIFIED = {
-  "Casio F-91W.jpg": [
-    "NotFromUtrecht",
-    "CC BY-SA 3.0",
-    "https://creativecommons.org/licenses/by-sa/3.0/"
-  ],
-  "PlayStation 5 and DualSense.jpg": [
-    "Osh33m",
-    "CC BY-SA 4.0",
-    "https://creativecommons.org/licenses/by-sa/4.0/"
-  ],
-  "Toyota Yaris Hybrid (XP210) 1X7A0366.jpg": [
-    "Alexander Migl",
-    "CC BY-SA 4.0",
-    "https://creativecommons.org/licenses/by-sa/4.0/"
-  ]
+  "gift_general_diamond": "cut diamond",
+  "vehicle_citycar": "Toyota Yaris",
+  "car_sedan": "Toyota Corolla sedan",
+  "vehicle_suv": "BMW X3",
+  "car_cabrio": "Mazda MX5",
+  "vehicle_sport": "Porsche 911",
+  "car_super": "Lamborghini Huracan",
+  "vehicle_scooter": "Honda PCX 125",
+  "motor_adventure": "Honda Africa Twin",
+  "motor_super": "BMW S1000RR",
+  "watch_casual": "Casio F91W",
+  "art_watch": "Rolex Submariner",
+  "amenity_console": "PlayStation 5",
+  "gift_men_console": "PlayStation 5",
+  "phone_basic": "Samsung Galaxy A16",
+  "gift_general_phone": "Samsung Galaxy A16",
+  "phone_ultra": "iPhone 16 Pro Max",
+  "art_camera": "Canon EOS R50",
+  "gift_general_camera": "Canon EOS R50",
+  "art_guitar": "Yamaha F310",
+  "motor_moped": "Honda Super Cub",
+  "vehicle_motorbike": "Honda CB500 Hornet",
+  "motor_sport": "Yamaha R7",
+  "phone_mid": "Redmi Note 14",
+  "phone_advanced": "Samsung Galaxy A56",
+  "watch_smart": "Garmin Venu 3",
+  "watch_premium": "Tissot PRX",
+  "watch_luxury": "Omega Seamaster",
+  "pet_fish": "goldfish aquarium",
+  "pet_rabbit": "domestic rabbit",
+  "pet_cat": "domestic cat",
+  "pet_dog": "domestic dog",
+  "pet_parrot": "African grey parrot",
+  "travel_islands": "Santorini Oia",
+  "travel_paris": "Eiffel Tower Paris",
+  "travel_maldives": "Maldives island",
+  "phone_fold": "Samsung Galaxy Z Fold6",
+  "phone_flagship": "iPhone 16",
+  "art_piano": "Yamaha U1",
+  "gift_general_game": "Monopoly board"
 }
 ROOT = Path(__file__).resolve().parent.parent
 UA = "PredictionsCatalog/1.0 (Wikimedia Commons attribution; https://github.com/seemsfunny21/predictions)"
@@ -290,20 +312,7 @@ def get(url):
             time.sleep(3*(attempt+1))
 def clean(s):
     return " ".join(html.unescape(re.sub(r"<[^>]+>"," ",s)).split())
-def direct_verified(name):
-    author,license,license_url=VERIFIED[name]
-    filename=name.replace(" ","_")
-    digest=hashlib.md5(filename.encode("utf-8")).hexdigest()
-    url="https://upload.wikimedia.org/wikipedia/commons/"+digest[0]+"/"+digest[:2]+"/"+urllib.parse.quote(filename)
-    raw=get(url)
-    if len(raw)>25000000: raise ValueError("too large")
-    with Image.open(io.BytesIO(raw)) as im:
-        im=ImageOps.exif_transpose(im).convert("RGB")
-        im.thumbnail((480,360),Image.Resampling.LANCZOS)
-        out=io.BytesIO(); im.save(out,format="WEBP",quality=78,method=6)
-    return {"src":"data:image/webp;base64,"+base64.b64encode(out.getvalue()).decode(),"author":author,"license":license,"licenseUrl":license_url,"source":"https://commons.wikimedia.org/wiki/File:"+urllib.parse.quote(filename),"modified":"Resized and converted to WebP"}
 def read_photo(name):
-    if name in VERIFIED: return direct_verified(name)
 
     query=urllib.parse.urlencode({"action":"query","titles":"File:"+name,"prop":"imageinfo","iiprop":"url|extmetadata","iiurlwidth":"480","format":"json","formatversion":"2"})
     page=json.loads(get("https://commons.wikimedia.org/w/api.php?"+query))["query"]["pages"][0]
@@ -311,7 +320,7 @@ def read_photo(name):
     val=lambda key: clean(meta.get(key,{}).get("value",""))
     license=val("LicenseShortName")
     license_url=val("LicenseUrl")
-    if not (re.fullmatch(r"CC BY(?:-SA)? [234]\\.\\d(?: [A-Za-z]+)?",license) or license in ("CC0","CC0 1.0","Public domain")): raise ValueError("unapproved license "+license)
+    if not (re.fullmatch(r"CC BY(?:-SA)? [234]\.\d(?: [A-Za-z]+)?",license) or license in ("CC0","CC0 1.0","Public domain")): raise ValueError("unapproved license "+license)
     if license.startswith("CC BY") and not license_url.startswith("https://creativecommons.org/licenses/"): 
         if license_url.startswith("http://creativecommons.org/licenses/"): license_url="https://"+license_url[7:]
         else: raise ValueError("invalid license URL")
@@ -337,15 +346,16 @@ def normalized(s):
     return re.sub(r"[^a-z0-9]","",unicodedata.normalize("NFKD",s).lower())
 def discover(terms):
     # Require every model/subject token in the actual filename, not just search relevance.
-    query=urllib.parse.urlencode({"action":"query","list":"search","srnamespace":6,"srlimit":12,"srsearch":terms+" filetype:bitmap","format":"json","formatversion":"2"})
+    query=urllib.parse.urlencode({"action":"query","list":"search","srnamespace":6,"srlimit":25,"srsearch":terms+" filetype:bitmap","format":"json","formatversion":"2"})
     data=json.loads(get("https://commons.wikimedia.org/w/api.php?"+query))
-    required=[normalized(t) for t in terms.split() if len(t)>1]
+    required=normalized(terms)
+    tokens=[normalized(t) for t in terms.split() if normalized(t)]
     found=[]
     for hit in data.get("query",{}).get("search",[]):
         title=hit["title"].removeprefix("File:")
-        if all(t in normalized(title) for t in required) and re.search(r"\\.(jpe?g|png|webp)$",title,re.I):
+        if (required in normalized(title) or all(t in normalized(title) for t in tokens)) and re.search(r"\.(jpe?g|png|webp)$",title,re.I):
             found.append(title)
-    return found[:3]
+    return found[:4]
 path=ROOT/"photo-catalog.js"
 old={}
 if path.exists():
@@ -361,7 +371,7 @@ for code in dict.fromkeys(['vehicle_citycar','watch_casual','amenity_console','g
         print("KEEP",code,flush=True)
         continue
     if code in SEARCH_TARGETS:
-        try: names=list(dict.fromkeys(names+discover(SEARCH_TARGETS[code])))
+        try: names=list(dict.fromkeys(discover(SEARCH_TARGETS[code])+names))
         except Exception as e: print("SEARCH SKIP",code,str(e),flush=True)
     for name in names:
         try:
