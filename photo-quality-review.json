@@ -1,116 +1,116 @@
 {
   "amenity_garden": {
-    "status": "failed",
-    "candidate": "Garden area with flowers and greenery.jpg",
-    "reason": "Unapproved license: CC BY 2.0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Gardena_Schlauchtrommel.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Garden_area_with_flowers_and_greenery.jpg",
     "visual_review": "pending"
   },
   "home_apartment": {
-    "status": "failed",
-    "candidate": "Modern living room with stylish furniture and a view of the outdoors in a cozy apartment setting.jpg",
-    "reason": "Unapproved license: CC BY 2.0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Empty_apartment_living_room.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_living_room_with_stylish_furniture_and_a_view_of_the_outdoors_in_a_cozy_apartment_setting.jpg",
     "visual_review": "pending"
   },
   "gift_general_cake": {
-    "status": "failed",
-    "candidate": "Birthday Cake (decorated).jpg",
-    "reason": "Unapproved license: CC BY 3.0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:My_birthday_cake!_Oops_there%27s_only_half_left!.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Birthday_Cake_(decorated).jpg",
     "visual_review": "pending"
   },
   "gift_men_tie": {
-    "status": "failed",
-    "candidate": "Neckties.jpg",
-    "reason": "Unapproved license: CC BY 2.0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Necktie_(drawing).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
     "visual_review": "pending"
   },
   "gift_men_suit": {
-    "status": "failed",
-    "candidate": "Grey and navy suit on mannequin.jpg",
-    "reason": "Unapproved license: CC BY-SA 2.0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:French_mens_suit_1765_LACMA.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Grey_and_navy_suit_on_mannequin.jpg",
     "visual_review": "pending"
   },
   "gift_men_shoes": {
-    "status": "failed",
-    "candidate": "Geox Sneakers black 2025.jpg",
-    "reason": "Unapproved license: FAL",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Geox_used_shoes_0001.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Geox_Sneakers_black_2025.jpg",
     "visual_review": "pending"
   },
   "gift_women_heels": {
-    "status": "failed",
-    "candidate": "A pair of high-heeled shoes.jpg",
-    "reason": "Unapproved license: CC BY 2.0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:High_Heels_(1921)_-_1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:A_pair_of_high-heeled_shoes.jpg",
     "visual_review": "pending"
   },
   "gift_general_movie": {
-    "status": "failed",
-    "candidate": "Auditorium at Maxim in May 2024.jpg",
-    "reason": "Unapproved license: CC BY-SA 4.0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Film_reel._Kodachrome_movie_film_roll_cameras_only_Daylight_type._Baugnez_44_Historical_Center_WW2_museum_2012.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Auditorium_at_Maxim_in_May_2024.jpg",
     "visual_review": "pending"
   },
   "gift_general_plane": {
-    "status": "failed",
-    "candidate": "An airplane takes off in the sunset.jpg",
-    "reason": "Unapproved license: CC BY-SA 4.0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Help_airplane_passengers.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:An_airplane_takes_off_in_the_sunset.jpg",
     "visual_review": "pending"
   },
   "gift_coffee": {
-    "status": "failed",
-    "candidate": "Latte art, espresso with cup and saucer on wood table.jpg",
-    "reason": "Unapproved license: CC BY 2.0",
+    "status": "replaced",
+    "previous": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Latte_art,_espresso_with_cup_and_saucer_on_wood_table.jpg",
     "visual_review": "pending"
   },
   "gift_women_jewel": {
-    "status": "failed",
-    "candidate": "Swarovski crystal snowflake pendant 02.jpg",
-    "reason": "Unapproved license: CC0",
+    "status": "replaced",
+    "previous": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Swarovski_crystal_snowflake_pendant_02.jpg",
     "visual_review": "pending"
   },
   "gift_women_spa": {
-    "status": "failed",
-    "candidate": "YHI Spa treatment room at Paradisus by Meliá Bali.jpg",
-    "reason": "Unapproved license: CC BY-SA 4.0",
+    "status": "replaced",
+    "previous": null,
+    "source": "https://commons.wikimedia.org/wiki/File:YHI_Spa_treatment_room_at_Paradisus_by_Meli%C3%A1_Bali.jpg",
     "visual_review": "pending"
   },
   "vehicle_bike": {
-    "status": "failed",
-    "candidate": "A city bike.jpg",
-    "reason": "Unapproved license: CC BY-SA 4.0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Man_riding_a_bicycle_in_a_snowstorm_in_Quebec_city,_Quebec,_Canada.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
     "visual_review": "pending"
   },
   "gift_men_bike": {
-    "status": "failed",
-    "candidate": "A city bike.jpg",
-    "reason": "Unapproved license: CC BY-SA 4.0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Man_riding_a_bicycle_in_a_snowstorm_in_Quebec_city,_Quebec,_Canada.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
     "visual_review": "pending"
   },
   "vehicle_roadbike": {
-    "status": "failed",
-    "candidate": "Giant Road Bike.jpg",
-    "reason": "Unapproved license: CC BY-SA 4.0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Britannica_Bicycle_Road-Racer.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Giant_Road_Bike.jpg",
     "visual_review": "pending"
   },
   "bike_carbon": {
-    "status": "failed",
-    "candidate": "Rennrad Racing Bicycle noBG.jpg",
-    "reason": "Unapproved license: CC BY-SA 4.0",
+    "status": "replaced",
+    "previous": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Rennrad_Racing_Bicycle_noBG.jpg",
     "visual_review": "pending"
   },
   "tech_laptop": {
-    "status": "failed",
-    "candidate": "Laptop on a desk.jpg",
-    "reason": "Unapproved license: CC0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Lenovo_Ideapad_100-15IBY_-_cristaux_liquides_(5_dioptries).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Laptop_on_a_desk.jpg",
     "visual_review": "pending"
   },
   "gift_men_laptop": {
-    "status": "failed",
-    "candidate": "Laptop on a desk.jpg",
-    "reason": "Unapproved license: CC0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Lenovo_Ideapad_100-15IBY_-_cristaux_liquides_(5_dioptries).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Laptop_on_a_desk.jpg",
     "visual_review": "pending"
   },
   "amenity_pool": {
-    "status": "failed",
-    "candidate": "Pool in the back yard - Mid-City New Orleans 2010.jpg",
-    "reason": "Unapproved license: CC BY 2.0",
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Intex_pool,_Interboot_2020,_Friedrichshafen_(IB200178).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pool_in_the_back_yard_-_Mid-City_New_Orleans_2010.jpg",
     "visual_review": "pending"
   }
 }

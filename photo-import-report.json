@@ -211,8 +211,8 @@
   },
   "vehicle_bike": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Man_riding_a_bicycle_in_a_snowstorm_in_Quebec_city,_Quebec,_Canada.jpg",
-    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+    "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/bicycles/vehicle_bike.webp"
   },
@@ -232,14 +232,17 @@
   },
   "vehicle_roadbike": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Britannica_Bicycle_Road-Racer.jpg",
-    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Giant_Road_Bike.jpg",
+    "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/bicycles/vehicle_roadbike.webp"
   },
   "bike_carbon": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Rennrad_Racing_Bicycle_noBG.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true,
+    "path": "images/bicycles/bike_carbon.webp"
   },
   "bike_pro": {
     "status": "saved",
@@ -271,16 +274,16 @@
   },
   "tech_laptop": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Lenovo_Ideapad_100-15IBY_-_cristaux_liquides_(5_dioptries).jpg",
-    "license": "CC BY-SA 4.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Laptop_on_a_desk.jpg",
+    "license": "CC0",
+    "representative": true,
     "path": "images/technology/tech_laptop.webp"
   },
   "gift_men_laptop": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Lenovo_Ideapad_100-15IBY_-_cristaux_liquides_(5_dioptries).jpg",
-    "license": "CC BY-SA 4.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Laptop_on_a_desk.jpg",
+    "license": "CC0",
+    "representative": true,
     "path": "images/gifts/men/gift_men_laptop.webp"
   },
   "tech_gaming": {
@@ -320,9 +323,9 @@
   },
   "amenity_pool": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Intex_pool,_Interboot_2020,_Friedrichshafen_(IB200178).jpg",
-    "license": "CC BY-SA 4.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Pool_in_the_back_yard_-_Mid-City_New_Orleans_2010.jpg",
+    "license": "CC BY 2.0",
+    "representative": true,
     "path": "images/amenities/amenity_pool.webp"
   },
   "amenity_spa": {
@@ -397,8 +400,8 @@
   },
   "home_apartment": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Empty_apartment_living_room.jpg",
-    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_living_room_with_stylish_furniture_and_a_view_of_the_outdoors_in_a_cozy_apartment_setting.jpg",
+    "license": "CC BY 2.0",
     "representative": true,
     "path": "images/houses/home_apartment.webp"
   },
@@ -439,9 +442,9 @@
   },
   "amenity_garden": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Gardena_Schlauchtrommel.jpg",
-    "license": "CC BY-SA 4.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Garden_area_with_flowers_and_greenery.jpg",
+    "license": "CC BY 2.0",
+    "representative": true,
     "path": "images/amenities/amenity_garden.webp"
   },
   "amenity_gym": {
@@ -516,8 +519,8 @@
   },
   "gift_men_bike": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Man_riding_a_bicycle_in_a_snowstorm_in_Quebec_city,_Quebec,_Canada.jpg",
-    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+    "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/gifts/men/gift_men_bike.webp"
   },
@@ -537,9 +540,9 @@
   },
   "gift_men_shoes": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Geox_used_shoes_0001.JPG",
-    "license": "CC BY-SA 3.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Geox_Sneakers_black_2025.jpg",
+    "license": "FAL",
+    "representative": true,
     "path": "images/gifts/men/gift_men_shoes.webp"
   },
   "gift_men_backpack": {
@@ -592,8 +595,11 @@
     "path": "images/gifts/women/gift_women_ring.webp"
   },
   "gift_women_jewel": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Swarovski_crystal_snowflake_pendant_02.jpg",
+    "license": "CC0",
+    "representative": true,
+    "path": "images/gifts/women/gift_women_jewel.webp"
   },
   "gift_women_bracelet": {
     "status": "saved",
@@ -674,7 +680,7 @@
   },
   "gift_general_plane": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Help_airplane_passengers.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:An_airplane_takes_off_in_the_sunset.jpg",
     "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/gifts/general/gift_general_plane.webp"
@@ -723,16 +729,16 @@
   },
   "gift_men_tie": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Necktie_(drawing).jpg",
-    "license": "CC0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
+    "license": "CC BY 2.0",
+    "representative": true,
     "path": "images/gifts/men/gift_men_tie.webp"
   },
   "gift_men_suit": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:French_mens_suit_1765_LACMA.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Grey_and_navy_suit_on_mannequin.jpg",
     "license": "CC BY-SA 2.0",
-    "representative": false,
+    "representative": true,
     "path": "images/gifts/men/gift_men_suit.webp"
   },
   "gift_women_rose": {
@@ -771,8 +777,11 @@
     "path": "images/gifts/women/gift_women_scarf.webp"
   },
   "gift_women_spa": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:YHI_Spa_treatment_room_at_Paradisus_by_Meli%C3%A1_Bali.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true,
+    "path": "images/gifts/women/gift_women_spa.webp"
   },
   "gift_women_orchid": {
     "status": "saved",
@@ -790,9 +799,9 @@
   },
   "gift_general_cake": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:My_birthday_cake!_Oops_there%27s_only_half_left!.jpg",
-    "license": "CC BY-SA 4.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Birthday_Cake_(decorated).jpg",
+    "license": "CC BY 3.0",
+    "representative": true,
     "path": "images/gifts/general/gift_general_cake.webp"
   },
   "gift_general_book": {
@@ -846,9 +855,9 @@
   },
   "gift_general_movie": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Film_reel._Kodachrome_movie_film_roll_cameras_only_Daylight_type._Baugnez_44_Historical_Center_WW2_museum_2012.jpg",
-    "license": "CC BY 2.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Auditorium_at_Maxim_in_May_2024.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true,
     "path": "images/gifts/general/gift_general_movie.webp"
   },
   "gift_general_flowers": {
@@ -880,8 +889,11 @@
     "path": "images/gifts/general/gift_general_diamond.webp"
   },
   "gift_coffee": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Latte_art,_espresso_with_cup_and_saucer_on_wood_table.jpg",
+    "license": "CC BY 2.0",
+    "representative": true,
+    "path": "images/gifts/general/gift_coffee.webp"
   },
   "gift_chocolate": {
     "status": "saved",
@@ -913,8 +925,8 @@
   },
   "gift_women_heels": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:High_Heels_(1921)_-_1.jpg",
-    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:A_pair_of_high-heeled_shoes.jpg",
+    "license": "CC BY 2.0",
     "representative": true,
     "path": "images/gifts/women/gift_women_heels.webp"
   },
