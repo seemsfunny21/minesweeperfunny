@@ -191,5 +191,51 @@
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Lenovo_Ideapad_100-15IBY_-_cristaux_liquides_(5_dioptries).jpg",
     "license": "CC BY-SA 4.0"
+  },
+  "gift_men_laptop": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Lenovo_Ideapad_100-15IBY_-_cristaux_liquides_(5_dioptries).jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "tech_gaming": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "tech_premium": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "amenity_cinema": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "amenity_bbq": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Weber_spirit_grill_covers.jpg",
+    "license": "CC0"
+  },
+  "gift_men_grill": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Weber_Grill_Restaurant_-_Schaumburg.jpg",
+    "license": "CC BY-SA 3.0"
+  },
+  "amenity_pool": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Intex_pool,_Interboot_2020,_Friedrichshafen_(IB200178).jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "amenity_spa": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Whirlpool_bestway_lay-z-spa_Miami.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "luxury_jetski": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Sea-Doo_Spark.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "vehicle_boat": {
+    "status": "not_saved",
+    "attempts": []
   }
 }
