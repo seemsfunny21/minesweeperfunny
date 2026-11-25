@@ -1,4 +1,4 @@
-import base64,html,io,json,re,time,unicodedata,urllib.parse,urllib.request
+import base64,html,io,json,re,time,unicodedata,urllib.parse,urllib.request,os
 from pathlib import Path
 from PIL import Image, ImageOps
 CANDIDATES = {
@@ -9,6 +9,8 @@ CANDIDATES = {
     "Toyota Yaris Hybrid (XP210) 1X7A0178.jpg"
   ],
   "car_sedan": [
+    "Toyota Corolla (E210) sedan IMG 4189.jpg",
+    "18 Toyota Corolla (E210).jpg",
     "Toyota Corolla (E210) sedan IMG 4190.jpg"
   ],
   "vehicle_suv": [
@@ -24,6 +26,7 @@ CANDIDATES = {
     "Lamborghini Huracán LP610-4.jpg"
   ],
   "vehicle_scooter": [
+    "Honda PCX125 2011 Front.JPG",
     "2021 Honda PCX 125.jpg",
     "2014 Honda PCX125.jpg",
     "2019 Honda PCX 125.jpg"
@@ -78,6 +81,7 @@ CANDIDATES = {
     "Yamaha F310.jpg"
   ],
   "motor_moped": [
+    "Honda Super Cub C125 (parked) in Kopi 7 - Palembang, SS (1 Jan 2023).jpg",
     "Honda Super Cub C125 (2BJ-JA48) front.jpg",
     "2026 Honda C125 ABS.jpg"
   ],
@@ -93,8 +97,8 @@ CANDIDATES = {
     "Redmi Note 14 - 2024-09-27 02.jpg"
   ],
   "phone_advanced": [
-    "Samsung Galaxy A56 5G 2025 (2).jpg",
-    "Samsung Galaxy A56 5G 2025.jpg"
+    "Samsung Galaxy A56 5G 2025.jpg",
+    "Samsung Galaxy A56 5G 2025 (2).jpg"
   ],
   "watch_smart": [
     "Garmin Venu 3 (a).JPG",
@@ -366,13 +370,14 @@ def save():
     tmp=path.with_suffix('.tmp')
     tmp.write_text('const PRODUCT_PHOTOS='+json.dumps({**old,**photos},ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
     tmp.replace(path)
-for code in dict.fromkeys(['vehicle_citycar','watch_casual','amenity_console','gift_men_console',*CANDIDATES,*SEARCH_TARGETS]):
+priority=['car_sedan','vehicle_scooter','vehicle_motorbike','phone_basic','gift_general_phone','phone_advanced','motor_moped']
+for code in dict.fromkeys([*priority,*CANDIDATES,*SEARCH_TARGETS]):
     names=list(CANDIDATES.get(code,[]))
     if code in old:
         print("KEEP",code,flush=True)
         continue
     if code in SEARCH_TARGETS:
-        try: names=list(dict.fromkeys(discover(SEARCH_TARGETS[code])+names))
+        try: names=list(dict.fromkeys(names+discover(SEARCH_TARGETS[code])))
         except Exception as e: print("SEARCH SKIP",code,str(e),flush=True)
     for name in names:
         try:
