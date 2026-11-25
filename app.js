@@ -11,7 +11,54 @@ function setToken(t){revision++;token=t||"";if(token)localStorage.setItem(KEY,to
 async function api(action,extra={}){const response=await fetch(API,{method:"POST",headers:{"Content-Type":"application/json",...(token?{"x-predictions-session":token}:{})},body:JSON.stringify({action,...extra}),cache:"no-store",signal:AbortSignal.timeout(20000)});const data=await response.json();if(!response.ok){const e=new Error(data.error||"Αποτυχία σύνδεσης.");e.status=response.status;throw e;}return data;}
 function toggleGame(yes){$("gameScreen").hidden=!yes;$("tabs").hidden=!yes;$("profileButton").hidden=!yes;auth.hidden=yes;if(!yes){screen.replaceChildren();$("profileButton").replaceChildren();}}
 function feedback(t){const f=$("feedback");if(f)f.textContent=t;}
-function authForm(error=""){toggleGame(false);auth.replaceChildren();const c=el("section",undefined,"card auth-card"),title=el("h2",authMode==="login"?"Σύνδεση":"Νέα εγγραφή");const name=el("input");name.id="nickname";name.maxLength=40;name.autocomplete="username";name.placeholder="Το όνομά σου";const p=pinField("pin","4–8 ψηφία");const form=el("form");function label(id,t){const l=el("label",t);l.htmlFor=id;return l;}form.append(label("nickname","Όνομα"),name,label("pin","PIN"),p);const submit=el("button",authMode==="login"?"Σύνδεση":"Αίτημα εγγραφής","primary");submit.type="submit";form.append(submit);const f=el("p",error,"feedback");f.id="feedback";form.append(f);form.onsubmit=async e=>{e.preventDefault();if(busy)return;if(name.value.trim().length<2||!validPin(p.value)){feedback("Συμπλήρωσε όνομα και PIN 4–8 ψηφίων.");return;}busy=true;submit.disabled=true;try{const data=await api(authMode,{nickname:name.value.trim(),pin:p.value});p.value="";setToken(data.token);await refresh(true);}catch(err){feedback(err.message);}finally{busy=false;submit.disabled=false;}};c.append(title,form,button(authMode==="login"?"Δεν έχω λογαριασμό":"Έχω λογαριασμό",()=>{authMode=authMode==="login"?"register":"login";authForm();},"secondary"),el("p","Ιδιωτικό παιχνίδι. Η εγγραφή ενεργοποιείται μόνο μετά από έγκριση.","safe-note"));auth.append(c);}
+let authPinTimer=null;
+function cancelAuthPin(){if(authPinTimer!==null){clearTimeout(authPinTimer);authPinTimer=null;}}
+function loginAvatar(p){if(typeof p.avatar==="string"&&/^data:image\/jpeg;base64,/.test(p.avatar)){const img=el("img",undefined,"login-avatar");img.src=p.avatar;img.alt="";return img;}return el("span",String(p.nickname||"?").slice(0,1).toUpperCase(),"login-avatar login-initial");}
+function authForm(error=""){
+ cancelAuthPin();toggleGame(false);auth.replaceChildren();
+ const c=el("section",undefined,"card auth-card"),f=el("p",error,"feedback");f.id="feedback";
+ auth.append(c);
+ if(authMode==="register"){
+  const name=el("input");name.id="nickname";name.maxLength=40;name.autocomplete="username";name.placeholder="Το όνομά σου";
+  const pin=pinField("pin","PIN 4–8 ψηφίων"),form=el("form"),submit=el("button","Αίτημα εγγραφής","primary");
+  submit.type="submit";form.append(el("label","Όνομα"),name,el("label","PIN"),pin,submit,f);
+  form.onsubmit=async e=>{e.preventDefault();if(busy)return;if(name.value.trim().length<2||!validPin(pin.value)){f.textContent="Συμπλήρωσε όνομα και PIN 4–8 ψηφίων.";return;}busy=true;submit.disabled=true;try{const data=await api("register",{nickname:name.value.trim(),pin:pin.value});pin.value="";authMode="login";setToken(data.token);await refresh(true);}catch(err){f.textContent=err.message;}finally{busy=false;submit.disabled=false;}};
+  c.append(el("h2","Νέα εγγραφή"),form,button("Επιστροφή στη σύνδεση",()=>{if(!busy){authMode="login";authForm();}},"secondary"),el("small","Η εγγραφή ενεργοποιείται μετά από έγκριση Admin.","safe-note"));return;
+ }
+ c.append(button("＋ Νέα εγγραφή",()=>{if(!busy){authMode="register";authForm();}},"primary"),el("h2","Επίλεξε προφίλ"));
+ const grid=el("div",undefined,"login-profiles"),loading=el("p","Φόρτωση προφίλ…","muted"),panel=el("div",undefined,"login-pin-panel");grid.append(loading);
+ c.append(grid,panel,f);
+ let selected=null,manual=false;
+ function renderPin(p){
+  cancelAuthPin();selected=p;manual=!p;panel.replaceChildren();f.textContent="";
+  for(const b of grid.children)b.setAttribute("aria-pressed",String(!!p&&b.dataset?.profile===p.nickname));
+  const form=el("form"),pin=pinField("loginPin","PIN"),submit=el("button","Σύνδεση","secondary");
+  submit.type="submit";pin.setAttribute("aria-label","PIN");pin.autocomplete="current-password";
+  let name=null;if(manual){name=el("input");name.placeholder="Το όνομά σου";name.maxLength=40;name.autocomplete="username";name.setAttribute("aria-label","Όνομα");form.append(name);}else form.append(el("h3",p.nickname));
+  form.append(pin,submit);panel.append(form);
+  async function login(){
+   cancelAuthPin();if(busy||!form.isConnected||!validPin(pin.value))return;
+   const nickname=manual?name.value.trim():p.nickname;if(nickname.length<2){f.textContent="Συμπλήρωσε το όνομά σου.";return;}
+   busy=true;pin.disabled=true;submit.disabled=true;if(name)name.disabled=true;f.textContent="Σύνδεση…";
+   try{const data=await api("login",{nickname,pin:pin.value});pin.value="";setToken(data.token);await refresh(true);}
+   catch(err){pin.value="";f.textContent=err.message;}
+   finally{busy=false;pin.disabled=false;submit.disabled=false;if(name)name.disabled=false;if(form.isConnected&&!token)pin.focus();}
+  }
+  form.onsubmit=e=>{e.preventDefault();if(!validPin(pin.value)){f.textContent="PIN 4–8 ψηφίων.";return;}login();};
+  pin.oninput=()=>{cancelAuthPin();pin.value=pin.value.replace(/[^0-9]/g,"").slice(0,8);f.textContent="";if(validPin(pin.value)&&(!manual||name.value.trim().length>=2)){if(pin.value.length===8)login();else authPinTimer=setTimeout(login,1500);}};
+  if(manual)name.oninput=()=>cancelAuthPin();
+  if(manual)name.focus();else pin.focus();
+ }
+ c.append(button("Σύνδεση με όνομα / αναμονή έγκρισης",()=>{if(!busy)renderPin(null);},"secondary"));
+ async function load(){
+  try{const result=await api("login_profiles");if(!grid.isConnected)return;grid.replaceChildren();
+   const list=Array.isArray(result.profiles)?result.profiles:[];
+   for(const p of list){if(typeof p.nickname!=="string")continue;const b=button("",()=>{if(!busy)renderPin(p);},"login-profile");b.dataset.profile=p.nickname;b.setAttribute("aria-pressed","false");b.append(loginAvatar(p),el("span",p.nickname));grid.append(b);}
+   if(!grid.children.length)grid.append(el("p","Δεν υπάρχουν ακόμη εγκεκριμένα προφίλ.","muted"));
+  }catch(err){if(!grid.isConnected)return;grid.replaceChildren(el("p","Δεν φορτώθηκαν τα προφίλ.","muted"),button("Επανάληψη",load,"secondary"));}
+ }
+ if(!token)load();else loading.textContent="Έλεγχος σύνδεσης…";
+}
 async function logout(){if(busy)return;busy=true;revision++;try{try{if(token)await disablePush();}catch{}try{if(token)await api("logout");}catch{}setToken("");state=null;picks.clear();profileTarget=null;giftTarget=null;shopTab="trophy";tab="Γεγονότα";authForm();}finally{busy=false;}}
 function pending(){toggleGame(false);auth.replaceChildren();const c=el("section",undefined,"card auth-card");c.append(el("div","⏳","pending-icon"),el("h2","Αναμονή έγκρισης"),el("p","Γεια σου, "+state.player.nickname+". Ο Admin πρέπει να εγκρίνει την εγγραφή σου."),button("Έλεγχος έγκρισης",()=>refresh(true),"primary"),button("Έξοδος",logout),el("p","","feedback"));c.lastChild.id="feedback";auth.append(c);notifications(c);}
 function section(title,sub){const h=el("div",undefined,"section-head");h.append(el("h2",title));if(sub)h.append(el("span",sub,"count"));screen.append(h);}
