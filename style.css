@@ -64,3 +64,5 @@ select{display:block;width:100%;min-height:44px;margin:8px 0;padding:10px;border
 
 /* Separate appearance from lifestyle, with a free profile preview. */
 .shop-group{padding:12px}.shop-group>h3{font-size:16px;margin-bottom:9px}.shop-group>.secondary{width:100%;margin-bottom:3px}.shop-group .shop-menu{margin:6px 0 0}.shop-group .shop-menu button{min-height:75px}.appearance-preview{display:flex;flex-direction:column;align-items:center;gap:7px;padding:18px 10px;margin:10px 0}.appearance-preview .profile-title{margin:0}.appearance-preview .initial{margin:0}.appearance-preview .avatar-img{display:block}.appearance-preview>small{font-size:11px}.appearance-tabs .appearance-active{border-color:#8dc9ff;background:#244d74}.appearance-tabs button small{font-size:10px}.appearance-choices .shop-item{display:flex;flex-direction:column;justify-content:space-between;align-items:center}.appearance-choices .shop-item h3{text-align:center}.member-choice.member-showcase{min-height:70px;gap:0}.shop-dialog .appearance-preview{width:100%;box-sizing:border-box}
+
+.profile-title,.member-custom-title{max-width:100%;overflow-wrap:anywhere;white-space:normal}
