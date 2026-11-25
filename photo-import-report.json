@@ -398,8 +398,10 @@
     "license": "CC BY-SA 3.0"
   },
   "gift_men_wallet": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Leather_bi-fold_wallet_by_Eugene_Pik_(2021)_04.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_men_shoes": {
     "status": "saved",
@@ -412,8 +414,10 @@
     "license": "CC BY-SA 4.0"
   },
   "gift_men_toolkit": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:JOBOX_tool_box,_Huntington_Station.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_men_gaming": {
     "status": "saved",
@@ -421,16 +425,22 @@
     "license": "Public domain"
   },
   "gift_men_sneakers": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Nike_Air_Max_Plus_(604133-050).jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": false
   },
   "gift_women_bag": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Handbag_at_Nordstrom_Rack_-_Santa_Rosa_-_December_2022_-_Sarah_Stierch.jpg",
+    "license": "CC BY 4.0",
+    "representative": true
   },
   "gift_women_perfume": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Bottle_of_L%27Aimant_perfume_-_Coty_-1927-1.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_women_ring": {
     "status": "saved",
@@ -447,20 +457,28 @@
     "license": "CC BY-SA 4.0"
   },
   "gift_women_cosmetics": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Cosmetics-1078712_1280.jpg",
+    "license": "CC0",
+    "representative": true
   },
   "gift_women_earrings": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Earrings_in_a_fair_in_India_02.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_women_necklace": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Necklace_made_of_rough_diamonds.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_women_makeup": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Eye_Makeup_Palette_and_Brush_Kit.jpg",
+    "license": "CC BY 2.0",
+    "representative": true
   },
   "gift_women_sunglasses": {
     "status": "saved",
