@@ -48,3 +48,5 @@ select{display:block;width:100%;min-height:44px;margin:8px 0;padding:10px;border
 .shop-dialog .life-picture{width:100%;max-width:260px}
 .gift-row .life-picture{width:64px;flex:0 0 64px;aspect-ratio:1/1}
 .shop-item{min-width:0}.shop-item h3{overflow-wrap:anywhere}
+
+.admin-stat-panel{max-height:90dvh;overflow:auto}.admin-stat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:8px 0}.admin-stat-grid select{width:100%;min-width:0}.admin-stat-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #35465b;font-size:13px}.admin-stat-row strong{text-align:right;overflow-wrap:anywhere}
