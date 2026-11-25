@@ -425,5 +425,52 @@
   "gift_women_necklace": {
     "status": "not_saved",
     "attempts": []
+  },
+  "gift_women_makeup": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_women_sunglasses": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Ray-Ban_Clubround_Sunglasses.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_women_watch": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Michael_Kors_Slim_Runway_Thin_Bracelet_Stainless_Watch_MK3211.JPG",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_women_luxurybag": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_general_tea": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Lipton-mug-tea.jpg",
+    "license": "Public domain"
+  },
+  "gift_general_puzzle": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Ravensburger_Stoffpuzzle_Schaf_2.jpg",
+    "license": "CC BY-SA 3.0 de"
+  },
+  "gift_general_donut": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Doughnut_(economic_model).jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_general_plane": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Help_airplane_passengers.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_general_music": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Gift_of_Music.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_general_icecream": {
+    "status": "not_saved",
+    "attempts": []
   }
 }
