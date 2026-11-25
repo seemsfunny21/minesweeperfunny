@@ -26,7 +26,7 @@ def download(file):
     md=info["extmetadata"]
     def val(key): return clean(md.get(key,{}).get("value",""))
     license=val("LicenseShortName")
-    if not re.fullmatch(r"CC (?:BY(?:-SA)? [1-4]\\.[05]|0(?: 1\\.0)?)|Public domain",license,re.I):
+    if not re.fullmatch(r"CC\s*BY(?:-SA)? [1-4][.][05]|CC\s*0(?: 1[.]0)?|Public domain|FAL",license,re.I):
         raise ValueError("Unapproved license: "+license)
     author=val("Artist")
     if not author: raise ValueError("Missing author")
