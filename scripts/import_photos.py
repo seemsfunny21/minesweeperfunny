@@ -1,4 +1,4 @@
-import base64,html,io,json,re,time,urllib.parse,urllib.request
+import base64,html,io,json,re,time,unicodedata,urllib.parse,urllib.request
 from pathlib import Path
 from PIL import Image, ImageOps
 CANDIDATES = {
@@ -34,6 +34,8 @@ CANDIDATES = {
     "BMW S 1000 RR, right view.jpg"
   ],
   "watch_casual": [
+    "A design classic - the Casio F-91W watch.jpg",
+    "Casio F-91W watch.jpg",
     "CASIO F-91W.JPG",
     "Casio F-91W.jpg",
     "Casio F-91W watch (2023) (front view - full length).jpg",
@@ -43,10 +45,12 @@ CANDIDATES = {
     "Rolex Submariner.JPG"
   ],
   "amenity_console": [
+    "Playstation 5 base edition with controller (original).jpg",
     "PlayStation 5 and DualSense.jpg",
     "PlayStation 5.jpg"
   ],
   "gift_men_console": [
+    "Playstation 5 base edition with controller (original).jpg",
     "PlayStation 5 and DualSense.jpg",
     "PlayStation 5.jpg"
   ],
@@ -104,6 +108,8 @@ CANDIDATES = {
     "Omega Seamaster Diving watch.jpg"
   ],
   "pet_fish": [
+    "Exotic goldfish diversity.jpg",
+    "Goldfish 3.jpg",
     "Goldfish aquarium.jpg",
     "Goldfish in Fish Tank.jpg"
   ],
@@ -122,6 +128,8 @@ CANDIDATES = {
     "African-Grey-Parrot.jpg"
   ],
   "travel_islands": [
+    "Santorini Oia Skyline.jpg",
+    "Santorini Oia View.jpg",
     "View of Oia, Santorini.jpg",
     "Oia.Santorini.jpg"
   ],
@@ -132,7 +140,96 @@ CANDIDATES = {
   "travel_maldives": [
     "Aerial shot of a small island on a coral reef in the Maldives.jpg",
     "Ariel View of Amilla Fushi Island Maldives.jpg"
+  ],
+  "phone_fold": [
+    "Samsung Galaxy Z Fold6.png"
+  ],
+  "phone_flagship": [
+    "IPhone 16 (54251926561).jpg",
+    "Back of iPhone 16 Blue model.jpg"
+  ],
+  "art_piano": [
+    "Yamaha U1.jpg"
+  ],
+  "gift_general_game": [
+    "Monopoly board game.jpg",
+    "Monopoly-board.jpg"
   ]
+}
+SEARCH_TARGETS = {
+  "vehicle_bike": "Ideal Cityrun",
+  "bike_mountain": "Cube Aim",
+  "bike_gravel": "Cube Nuroad",
+  "vehicle_roadbike": "Cube Attain",
+  "bike_carbon": "Cube Agree C62",
+  "bike_pro": "Specialized Tarmac SL8",
+  "watch_sport": "Casio GA2100",
+  "tech_tablet": "Samsung Galaxy Tab A9",
+  "gift_general_tablet": "Samsung Galaxy Tab A9",
+  "tech_laptop": "Lenovo IdeaPad",
+  "gift_men_laptop": "Lenovo IdeaPad",
+  "tech_gaming": "ASUS ROG gaming PC",
+  "tech_premium": "Alienware gaming setup",
+  "amenity_cinema": "Sony home cinema",
+  "amenity_bbq": "Weber Spirit grill",
+  "gift_men_grill": "Weber grill",
+  "amenity_pool": "Intex pool",
+  "amenity_spa": "Bestway Lay Z Spa",
+  "luxury_jetski": "Sea Doo Spark",
+  "vehicle_boat": "Olympic 490 boat",
+  "luxury_sail": "Beneteau Oceanis",
+  "vehicle_yacht": "Azimut yacht",
+  "vehicle_jet": "Cessna Citation",
+  "pet_horse": "domestic horse",
+  "travel_rome": "Colosseum Rome",
+  "travel_newyork": "New York skyline",
+  "home_studio": "studio apartment interior",
+  "home_apartment": "apartment interior",
+  "home_house": "detached house",
+  "home_maisonette": "maisonette",
+  "home_villa": "luxury villa",
+  "home_mansion": "mansion",
+  "home_island": "private island",
+  "amenity_garden": "garden Gardena",
+  "amenity_gym": "Technogym gym",
+  "amenity_sports": "private sports center",
+  "art_painting": "oil painting",
+  "art_sculpture": "marble sculpture",
+  "art_collection": "art collection gallery",
+  "gift_men_watch": "Casio G Shock",
+  "gift_men_glasses": "Ray Ban Aviator",
+  "gift_men_headphones": "JBL Tune headphones",
+  "gift_men_ball": "Adidas football",
+  "gift_men_football": "Nike football",
+  "gift_men_bike": "Ideal bicycle",
+  "gift_men_guitar": "Yamaha guitar",
+  "gift_men_wallet": "Tommy Hilfiger wallet",
+  "gift_men_shoes": "Geox shoes",
+  "gift_men_backpack": "Eastpak backpack",
+  "gift_men_toolkit": "Bosch tools",
+  "gift_men_gaming": "Xbox controller",
+  "gift_men_sneakers": "Nike Air Max",
+  "gift_women_bag": "Guess handbag",
+  "gift_women_perfume": "Chanel Coco Mademoiselle",
+  "gift_women_ring": "Pandora ring",
+  "gift_women_jewel": "Swarovski jewelry",
+  "gift_women_bracelet": "Pandora bracelet",
+  "gift_women_cosmetics": "Korres cosmetics",
+  "gift_women_earrings": "Swarovski earrings",
+  "gift_women_necklace": "Pandora necklace",
+  "gift_women_makeup": "Maybelline makeup",
+  "gift_women_sunglasses": "Ray Ban sunglasses",
+  "gift_women_watch": "Michael Kors watch",
+  "gift_women_luxurybag": "Michael Kors handbag",
+  "gift_general_coffee": "Loumidis coffee",
+  "gift_general_tea": "Lipton tea",
+  "gift_general_puzzle": "Ravensburger puzzle",
+  "gift_general_donut": "doughnut",
+  "gift_general_plane": "passenger airplane",
+  "gift_general_music": "music gift",
+  "gift_general_icecream": "Kri Kri ice cream",
+  "gift_general_pizza": "Pizza Fan",
+  "gift_general_chocolate": "Lacta Greece chocolate"
 }
 ROOT = Path(__file__).resolve().parent.parent
 UA = "PredictionsCatalog/1.0 (Wikimedia Commons attribution; https://github.com/seemsfunny21/predictions)"
@@ -175,15 +272,32 @@ def read_photo(name):
         im.thumbnail((480,360),Image.Resampling.LANCZOS)
         out=io.BytesIO(); im.save(out,format="WEBP",quality=78,method=6)
     return {"src":"data:image/webp;base64,"+base64.b64encode(out.getvalue()).decode(),"author":credit or "Wikimedia Commons","license":license,"licenseUrl":license_url,"source":info["descriptionurl"],"modified":"Resized and converted to WebP"}
+def normalized(s):
+    return re.sub(r"[^a-z0-9]","",unicodedata.normalize("NFKD",s).lower())
+def discover(terms):
+    # Require every model/subject token in the actual filename, not just search relevance.
+    query=urllib.parse.urlencode({"action":"query","list":"search","srnamespace":6,"srlimit":12,"srsearch":terms+" filetype:bitmap","format":"json","formatversion":"2"})
+    data=json.loads(get("https://commons.wikimedia.org/w/api.php?"+query))
+    required=[normalized(t) for t in terms.split() if len(t)>1]
+    found=[]
+    for hit in data.get("query",{}).get("search",[]):
+        title=hit["title"].removeprefix("File:")
+        if all(t in normalized(title) for t in required) and re.search(r"\\.(jpe?g|png|webp)$",title,re.I):
+            found.append(title)
+    return found[:3]
 path=ROOT/"photo-catalog.js"
 old={}
 if path.exists():
     old=json.loads(path.read_text().removeprefix("const PRODUCT_PHOTOS=").strip().removesuffix(";"))
 photos={}; cache={}
-for code,names in CANDIDATES.items():
+for code in dict.fromkeys([*CANDIDATES,*SEARCH_TARGETS]):
+    names=list(CANDIDATES.get(code,[]))
     if code in old:
         print("KEEP",code,flush=True)
         continue
+    if code in SEARCH_TARGETS:
+        try: names=list(dict.fromkeys(names+discover(SEARCH_TARGETS[code])))
+        except Exception as e: print("SEARCH SKIP",code,str(e),flush=True)
     for name in names:
         try:
             if name not in cache:
