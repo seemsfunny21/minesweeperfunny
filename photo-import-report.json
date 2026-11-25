@@ -287,5 +287,54 @@
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:A_very_patriotic_maisonette,_St_Giles_View,_Pontefract_(27th_January_2024).jpg",
     "license": "CC BY-SA 4.0"
+  },
+  "home_villa": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Luxury_Villa_Zakynthos.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "home_mansion": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Mount_Vernon_Estate_Mansion_2.JPG",
+    "license": "CC BY-SA 3.0"
+  },
+  "home_island": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Condos_on_Isleta_Marina,_a_private_island_of_Fajardo,_Puerto_Rico.jpg",
+    "license": "CC BY-SA 2.5"
+  },
+  "amenity_garden": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Gardena_Schlauchtrommel.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "amenity_gym": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Technogym_Logo.png",
+    "license": "Public domain"
+  },
+  "amenity_sports": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "art_painting": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Oval_portrait_miniature_of_girl_oil_painting_by_Valentine_Manchon_Duchesne_-_with_scale.jpg",
+    "license": "Public domain"
+  },
+  "art_sculpture": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Marble_sculpture_Gulbenkian_March_2014-1.jpg",
+    "license": "CC BY-SA 3.0"
+  },
+  "art_collection": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Drawing_from_the_Collection_A_National_Gallery_of_Art_0888_02.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_men_watch": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:CASIO_G-Shock_GW-M5610U.jpg",
+    "license": "CC BY-SA 4.0"
   }
 }
