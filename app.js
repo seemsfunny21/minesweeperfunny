@@ -169,7 +169,36 @@ function members(){
  section("Μέλη",people.length+" μέλη");
  const search=el("input");search.type="search";search.placeholder="Αναζήτηση ονόματος";search.setAttribute("aria-label","Αναζήτηση μέλους");
  const list=el("div",undefined,"members-list");screen.append(search,list);
- const draw=()=>{list.replaceChildren();const term=search.value.trim().toLocaleLowerCase("el");for(const p of people.filter(p=>p.nickname.toLocaleLowerCase("el").includes(term))){const b=button("",()=>openMember(p),"member-choice"),info=el("div");info.append(el("strong",p.nickname),el("small",p.id===state.player.id?"Το προφίλ μου":"Προβολή προφίλ · δώρα"));b.append(avatar(p),info,el("span","›","member-chevron"));list.append(b);}if(!list.children.length)list.append(el("p","Δεν βρέθηκαν μέλη.","muted"));};
+ const draw=()=>{
+  list.replaceChildren();const term=search.value.trim().toLocaleLowerCase("el");
+  for(const p of people.filter(p=>p.nickname.toLocaleLowerCase("el").includes(term))){
+   const cp=cosmetics(p.id),ap=cp.appearance||{},trophy=item(cp.trophy),title=item(ap.title),name=el("strong",p.nickname+(trophy?.category==="trophy"?" "+trophy.icon:"")),b=button("",()=>openMember(p),"member-choice member-showcase"),head=el("div",undefined,"member-showcase-head"),info=el("div",undefined,"member-showcase-info");
+   b.setAttribute("aria-label","Προβολή προφίλ "+p.nickname);
+   for(const key of ["background","effect"])if(item(ap[key])?.category===key)b.classList.add(ap[key]);
+   if(item(ap.color)?.category==="color")name.classList.add(ap.color);
+   info.append(name);
+   if(title?.category==="title")info.append(el("span",title.icon+" "+title.name,"member-custom-title"));
+   info.append(el("small","Επίπεδο "+levelOf(cp)+" · "+titleOf(cp)+(p.id===state.player.id?" · Εγώ":"")));
+   head.append(avatar(p),info,el("span","›","member-chevron"));b.append(head);
+   const collection=publicOwned(p).slice().sort((a,b)=>Number(b.price||0)-Number(a.price||0)||a.name.localeCompare(b.name,"el"));
+   if(collection.length){
+    const label=el("div",undefined,"member-assets-label");label.append(el("span","Αποκτήματα"),el("strong",String(collection.length)));b.append(label);
+    const grid=el("div",undefined,"member-assets-grid");
+    for(const i of collection){
+     const tile=el("div",undefined,"member-asset-tile");
+     tile.title=i.name;
+     tile.append((i.level||productPhoto(i.code))?lifePicture(i):el("span",i.icon||"✦","member-asset-icon"),el("small",i.name));
+     grid.append(tile);
+    }
+    b.append(grid);
+   }else b.append(el("small","Δεν έχει αποκτήματα ακόμη.","member-assets-empty"));
+   const badges=el("div",undefined,"member-achievements");
+   for(const a of cp.achievements||[]){const x=achievementNames[a.code];if(x){const badge=el("span",x[0]);badge.title=x[1];badge.setAttribute("aria-label",x[1]);badges.append(badge);}}
+   if(badges.children.length)b.append(badges);
+   list.append(b);
+  }
+  if(!list.children.length)list.append(el("p","Δεν βρέθηκαν μέλη.","muted"));
+ };
  search.addEventListener("input",draw);draw();
 }
 function memberManage(p,operation){
