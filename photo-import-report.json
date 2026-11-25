@@ -491,8 +491,10 @@
     "license": "CC BY-SA 4.0"
   },
   "gift_women_luxurybag": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg",
+    "license": "CC BY 4.0",
+    "representative": true
   },
   "gift_general_tea": {
     "status": "saved",
@@ -506,22 +508,27 @@
   },
   "gift_general_donut": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Doughnut_(economic_model).jpg",
-    "license": "CC BY-SA 4.0"
+    "source": "https://commons.wikimedia.org/wiki/File:Doughnut_2.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_general_plane": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Help_airplane_passengers.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_general_music": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Gift_of_Music.jpg",
-    "license": "CC BY-SA 4.0"
+    "source": "https://commons.wikimedia.org/wiki/File:Musical_instruments_of_Karbi_Tribe.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_general_icecream": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Apple_cake_with_vanilla_ice_cream_2.jpg",
+    "license": "CC0",
+    "representative": true
   },
   "gift_general_pizza": {
     "status": "saved",
@@ -529,16 +536,22 @@
     "license": "CC BY 2.0"
   },
   "travel_world": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Seattle_(WA,_USA),_P-I_Globe_--_2022_--_1708.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_men_car": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Oldtimer-2013_model_car_20130309_150849.JPG",
+    "license": "CC BY 4.0",
+    "representative": true
   },
   "gift_men_motorbike": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Indian_Brave_Model_R_250cc_motorcycle.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_men_tie": {
     "status": "saved",
@@ -557,8 +570,9 @@
   },
   "gift_women_bouquet": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Elevators_vestibule_with_flower_bouquets_at_InterContinental_Hotel_Singapore.jpg",
-    "license": "CC BY-SA 4.0"
+    "source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_women_teddy": {
     "status": "saved",
