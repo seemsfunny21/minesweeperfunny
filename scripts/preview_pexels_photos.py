@@ -40,6 +40,6 @@ for offset in range(0,len(items),6):
             i=candidate['index']-1;x=i*350;draw.text((x+10,y+23),str(i+1)+' '+candidate['status'],fill='white')
             if candidate['status']=='preview_ready':
                 with Image.open(OUT/candidate['preview']) as im:
-                    im.thumbnail((320,145));sheet.paste(im,(x+(350-im.width)//2,y+40),im)
+                    im=im.convert('RGBA');im.thumbnail((320,145));sheet.paste(im,(x+(350-im.width)//2,y+40),im.getchannel('A'))
     sheet.save(OUT/f'sheet-{offset//6+1:02}.jpg',quality=92)
 print('Preview images:',sum(c['status']=='preview_ready' for rows in results.values() for c in rows))
