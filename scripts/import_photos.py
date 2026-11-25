@@ -305,6 +305,55 @@ SEARCH_TARGETS = {
   "gift_crown": "royal crown",
   "gift_women_heels": "Migato high heels"
 }
+REPRESENTATIVE = {
+  "vehicle_bike": "city bicycle",
+  "bike_mountain": "mountain bicycle",
+  "bike_gravel": "gravel bicycle",
+  "vehicle_roadbike": "road bicycle",
+  "bike_carbon": "carbon road bicycle",
+  "bike_pro": "racing bicycle",
+  "watch_sport": "Casio G Shock watch",
+  "tech_gaming": "gaming computer",
+  "tech_premium": "gaming setup",
+  "amenity_cinema": "home theater",
+  "vehicle_boat": "motorboat",
+  "amenity_sports": "sports complex",
+  "gift_men_headphones": "headphones",
+  "gift_men_bike": "city bicycle",
+  "gift_men_wallet": "leather wallet",
+  "gift_men_toolkit": "tool box",
+  "gift_men_sneakers": "Nike Air Max",
+  "gift_women_bag": "handbag",
+  "gift_women_perfume": "perfume bottle",
+  "gift_women_jewel": "crystal jewelry",
+  "gift_women_cosmetics": "cosmetics",
+  "gift_women_earrings": "earrings",
+  "gift_women_necklace": "necklace",
+  "gift_women_makeup": "makeup palette",
+  "gift_women_luxurybag": "leather handbag",
+  "gift_general_icecream": "ice cream",
+  "travel_world": "globe",
+  "gift_men_car": "model car",
+  "gift_men_motorbike": "model motorcycle",
+  "gift_women_spa": "massage stones",
+  "gift_general_heart": "heart ornament",
+  "gift_coffee": "Greek coffee",
+  "gift_chocolate": "chocolate bar",
+  "gift_women_heels": "high heels",
+  "amenity_bbq": "barbecue grill",
+  "gift_men_grill": "barbecue grill",
+  "amenity_gym": "gym equipment",
+  "art_collection": "art gallery interior",
+  "gift_general_donut": "doughnut",
+  "gift_general_plane": "passenger airplane",
+  "gift_general_music": "musical instruments",
+  "gift_women_bouquet": "flower bouquet",
+  "gift_flower": "flower bouquet",
+  "gift_general_flowers": "flower bouquet",
+  "home_apartment": "apartment living room",
+  "home_house": "detached house"
+}
+REPLACE = ["amenity_bbq","gift_men_grill","amenity_gym","art_collection","gift_general_donut","gift_general_plane","gift_general_music","gift_women_bouquet","gift_flower","gift_general_flowers","home_apartment","home_house"]
 ROOT = Path(__file__).resolve().parent.parent
 UA = "PredictionsCatalog/1.0 (Wikimedia Commons attribution; https://github.com/seemsfunny21/predictions)"
 def get(url):
@@ -349,7 +398,7 @@ def read_photo(name):
     return {"src":"data:image/webp;base64,"+base64.b64encode(out.getvalue()).decode(),"author":credit or "Wikimedia Commons","license":license,"licenseUrl":license_url,"source":info["descriptionurl"],"modified":"Resized and converted to WebP"}
 def normalized(s):
     return re.sub(r"[^a-z0-9]","",unicodedata.normalize("NFKD",s).lower())
-def discover(terms):
+def discover(terms, representative=False):
     # Require every model/subject token in the actual filename, not just search relevance.
     query=urllib.parse.urlencode({"action":"query","list":"search","srnamespace":6,"srlimit":25,"srsearch":terms+" filetype:bitmap","format":"json","formatversion":"2"})
     data=json.loads(get("https://commons.wikimedia.org/w/api.php?"+query))
@@ -358,9 +407,10 @@ def discover(terms):
     found=[]
     for hit in data.get("query",{}).get("search",[]):
         title=hit["title"].removeprefix("File:")
+        if re.search(r"logo|restaurant|economic.model|diagram|symbol|icon|hotel|poster|advertisement|cover(s)?\\b|manual|drawing|painting",title,re.I) and terms not in ("oil painting","marble sculpture"): continue
         if (required in normalized(title) or all(t in normalized(title) for t in tokens)) and re.search(r"\.(jpe?g|png|webp)$",title,re.I):
             found.append(title)
-    return found[:4]
+    return found[:6] if representative else found[:4]
 # Use an immutable plan of missing item codes for this workflow run.
 import argparse
 parser=argparse.ArgumentParser()
@@ -377,7 +427,7 @@ priority=['car_sedan','vehicle_scooter','vehicle_motorbike','phone_basic','gift_
 all_codes=list(dict.fromkeys([*priority,*CANDIDATES,*SEARCH_TARGETS]))
 plan_path=Path(args.plan_file)
 if args.plan:
-    missing=[code for code in all_codes if code not in old]
+    missing=[code for code in all_codes if code not in old or code in REPLACE]
     plan_path.write_text(json.dumps(missing),encoding="utf-8")
     print("Missing entries:",len(missing),flush=True)
     raise SystemExit(0)
@@ -395,7 +445,7 @@ def save():
     tmp_report=report_path.with_suffix(".tmp")
     tmp_report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     tmp_report.replace(report_path)
-def try_name(code,name):
+def try_name(code,name,representative=False):
     if name in failures: raise ValueError(failures[name])
     if name not in cache:
         try:
@@ -404,35 +454,42 @@ def try_name(code,name):
         except Exception as e:
             failures[name]=str(e)
             raise
-    photos[code]=cache[name]
-    report[code]={"status":"saved","source":photos[code]["source"],"license":photos[code]["license"]}
+    photos[code]={**cache[name],"representative":representative}
+    report[code]={"status":"saved","source":photos[code]["source"],"license":photos[code]["license"],"representative":representative}
     save()
     print("OK",code,name,flush=True)
 print("BATCH",args.batch+1,"ITEMS",batch,flush=True)
 for code in batch:
-    if code in old:
+    if code in old and code not in REPLACE:
         continue
     errors=[]
     found=False
     attempted=set()
-    def try_candidates(names):
+    def try_candidates(names,representative=False):
         for name in names:
             if name in attempted: continue
             attempted.add(name)
             try:
-                try_name(code,name)
+                try_name(code,name,representative)
                 return True
             except Exception as e:
                 errors.append({"file":name,"error":str(e)[:300]})
                 print("SKIP",code,name,str(e),flush=True)
         return False
-    found=try_candidates(CANDIDATES.get(code,[])[:4])
-    if not found and code in SEARCH_TARGETS:
+    found=False if code in REPLACE else try_candidates(CANDIDATES.get(code,[])[:4])
+    if not found and code in SEARCH_TARGETS and code not in REPLACE:
         try:
             found=try_candidates(discover(SEARCH_TARGETS[code]))
         except Exception as e:
             errors.append({"search":SEARCH_TARGETS[code],"error":str(e)[:300]})
+    if not found and code in REPRESENTATIVE:
+        try:
+            found=try_candidates(discover(REPRESENTATIVE[code],True),True)
+        except Exception as e:
+            errors.append({"search":REPRESENTATIVE[code],"error":str(e)[:300]})
     if not found:
+        if code in REPLACE:
+            old.pop(code,None)
         report[code]={"status":"not_saved","attempts":errors}
         save()
 save()
