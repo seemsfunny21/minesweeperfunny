@@ -124,8 +124,8 @@
     "previous": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg"
   },
   "gift_men_car": {
-    "file": "Kyosho BMW 760Li (E66) - open front.jpg",
-    "previous": "https://commons.wikimedia.org/wiki/File:Oldtimer-2013_model_car_20130309_150849.JPG"
+    "file": "KYOSHO BMW M3.JPG",
+    "previous": "https://commons.wikimedia.org/wiki/File:Kyosho_BMW_760Li_(E66)_-_open_front.jpg"
   },
   "gift_men_motorbike": {
     "file": "2016 Yamaha XV1600 Wild Star.jpg",
@@ -134,5 +134,57 @@
   "gift_men_gaming": {
     "file": "Xbox Wireless Controller Carbon Black.jpg",
     "previous": "https://commons.wikimedia.org/wiki/File:Xbox-360-Pro-wController.jpg"
+  },
+  "pet_parrot": {
+    "file": "Psittacus erithacus -pet parrot-8a.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:African_grey_parrot.jpg"
+  },
+  "motor_moped": {
+    "file": "Osaka Auto Messe 2019 (93) - Honda Super Cub C125 (2BJ-JA48).jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Honda_Super_Cub_C125_(parked)_in_Kopi_7_-_Palembang,_SS_(1_Jan_2023).jpg"
+  },
+  "car_super": {
+    "file": "2017 Lamborghini Huracan LP610-4 2.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_LP610-4.jpg"
+  },
+  "pet_dog": {
+    "file": "Golden retriever exploring a sunny backyard with green grass and a flower arrangement nearby.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dog.jpg"
+  },
+  "travel_paris": {
+    "file": "La tour eiffel depuis le trocadéro - panoramio.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_seen_from_the_Palais_de_Chaillot.jpg"
+  },
+  "home_studio": {
+    "file": "Studio apartment in Finland.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:John_Brooke_Fieldhouse_interior_in_West_London_maximising_use_of_flexible_space_in_a_studio_apartment.jpg"
+  },
+  "home_house": {
+    "file": "26 East Avenue, Blairstown, NJ.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Namibia_-_Semi-Detached_House_01.jpg"
+  },
+  "art_painting": {
+    "file": "Frederick Waters.Wattsdedham Watermill.Oil Painting Constable Country.Circa 1850.Framed.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Oval_portrait_miniature_of_girl_oil_painting_by_Valentine_Manchon_Duchesne_-_with_scale.jpg"
+  },
+  "art_sculpture": {
+    "file": "Predjamski grad - doprsje grofa Janeza Karla Filipa Kobencla (A. Ollivier).jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Marble_sculpture_Gulbenkian_March_2014-1.jpg"
+  },
+  "gift_general_music": {
+    "file": "Enjoying a cozy afternoon with coffee and vinyl records at home.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Musical_instruments_of_Karbi_Tribe.jpg"
+  },
+  "gift_women_teddy": {
+    "file": "Teddy bear on the window sill 02.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Little_girl_hugs_teddy_bear_toy.jpg"
+  },
+  "gift_general_plant": {
+    "file": "Aeonium tabuliforme (4694028465).jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Among_the_branches_of_a_potted_jade_plant.jpg"
+  },
+  "gift_general_heart": {
+    "file": "Plush stuffed heart bears with candy and red boxes (16806018870).jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Ornament_in_The_Heart_of_Europe.jpg"
   }
 }

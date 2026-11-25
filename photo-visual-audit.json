@@ -16,7 +16,13 @@
     "pet_parrot": {
       "source": "https://commons.wikimedia.org/wiki/File:African_grey_parrot.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Face obscured by feathers"
+      "note": "Face obscured by feathers",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 3,
+      "candidate_file": "Psittacus erithacus -pet parrot-8a.jpg",
+      "candidate_note": "Single recognizable parrot, unobstructed head",
+      "publication": "pending"
     },
     "amenity_console": {
       "source": "https://commons.wikimedia.org/wiki/File:Playstation_5_base_edition_with_controller_(original).jpg",
@@ -61,12 +67,16 @@
     "vehicle_motorbike": {
       "source": "https://commons.wikimedia.org/wiki/File:Honda_CB500_Hornet_2026.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Busy show"
+      "note": "Busy show",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "phone_basic": {
       "source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Retail demo screen"
+      "note": "Retail demo screen",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_general_phone": {
       "source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
@@ -76,12 +86,20 @@
     "phone_advanced": {
       "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Retail demo"
+      "note": "Retail demo",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "motor_moped": {
       "source": "https://commons.wikimedia.org/wiki/File:Honda_Super_Cub_C125_(parked)_in_Kopi_7_-_Palembang,_SS_(1_Jan_2023).jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Busy street"
+      "note": "Busy street",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 3,
+      "candidate_file": "Osaka Auto Messe 2019 (93) - Honda Super Cub C125 (2BJ-JA48).jpg",
+      "candidate_note": "Clearly displayed exact model, relatively uncluttered",
+      "publication": "pending"
     },
     "vehicle_suv": {
       "source": "https://commons.wikimedia.org/wiki/File:BMW_X3(1).jpg",
@@ -101,12 +119,20 @@
     "car_super": {
       "source": "https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_LP610-4.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Busy racing scene"
+      "note": "Busy racing scene",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 3,
+      "candidate_file": "2017 Lamborghini Huracan LP610-4 2.jpg",
+      "candidate_note": "Recognizable front three-quarter view of exact car",
+      "publication": "pending"
     },
     "motor_adventure": {
       "source": "https://commons.wikimedia.org/wiki/File:Honda_Africa_Twin_2025.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Busy exhibition"
+      "note": "Busy exhibition",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "motor_super": {
       "source": "https://commons.wikimedia.org/wiki/File:BMW_S_1000_RR,_right_view.jpg",
@@ -116,12 +142,16 @@
     "art_watch": {
       "source": "https://commons.wikimedia.org/wiki/File:Rolex_Submariner.JPG",
       "thumbnail_review": "needs_replacement",
-      "note": "Multiple watches, not clearly single model"
+      "note": "Multiple watches, not clearly single model",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "phone_ultra": {
       "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_(54252176424).jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Hand and display"
+      "note": "Hand and display",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "art_guitar": {
       "source": "https://commons.wikimedia.org/wiki/File:Yamaha_F310.jpg",
@@ -136,7 +166,9 @@
     "phone_mid": {
       "source": "https://commons.wikimedia.org/wiki/File:Redmi_Note_14_-_2024-09-27_01.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Retail display"
+      "note": "Retail display",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "watch_smart": {
       "source": "https://commons.wikimedia.org/wiki/File:Garmin_Venu_3_(a).JPG",
@@ -151,7 +183,9 @@
     "watch_luxury": {
       "source": "https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Co-Axial.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Display case"
+      "note": "Display case",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "pet_rabbit": {
       "source": "https://commons.wikimedia.org/wiki/File:Pet_rabbit_at_home.jpg",
@@ -166,7 +200,13 @@
     "pet_dog": {
       "source": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dog.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Dim photo"
+      "note": "Dim photo",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 3,
+      "candidate_file": "Golden retriever exploring a sunny backyard with green grass and a flower arrangement nearby.jpg",
+      "candidate_note": "Friendly bright portrait of a golden retriever",
+      "publication": "pending"
     },
     "travel_islands": {
       "source": "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Skyline.jpg",
@@ -176,7 +216,13 @@
     "travel_paris": {
       "source": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_seen_from_the_Palais_de_Chaillot.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Very wide panorama"
+      "note": "Very wide panorama",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 2,
+      "candidate_file": "La tour eiffel depuis le trocadéro - panoramio.jpg",
+      "candidate_note": "Recognizable Eiffel Tower illuminated at dusk",
+      "publication": "pending"
     },
     "travel_maldives": {
       "source": "https://commons.wikimedia.org/wiki/File:Aerial_shot_of_a_small_island_on_a_coral_reef_in_the_Maldives.jpg",
@@ -191,7 +237,9 @@
     "phone_flagship": {
       "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_(54251926561).jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Close-up of camera"
+      "note": "Close-up of camera",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "art_piano": {
       "source": "https://commons.wikimedia.org/wiki/File:Yamaha_U1.jpg",
@@ -201,12 +249,16 @@
     "tech_tablet": {
       "source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Back only"
+      "note": "Back only",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_general_tablet": {
       "source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Back only"
+      "note": "Back only",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "tech_laptop": {
       "source": "https://commons.wikimedia.org/wiki/File:Laptop_on_a_desk.jpg",
@@ -221,22 +273,30 @@
     "amenity_bbq": {
       "source": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Odd public grill, not product"
+      "note": "Odd public grill, not product",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_men_grill": {
       "source": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Odd public grill"
+      "note": "Odd public grill",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "amenity_pool": {
       "source": "https://commons.wikimedia.org/wiki/File:Pool_in_the_back_yard_-_Mid-City_New_Orleans_2010.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Messy yard and accessories"
+      "note": "Messy yard and accessories",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "amenity_spa": {
       "source": "https://commons.wikimedia.org/wiki/File:Whirlpool_bestway_lay-z-spa_Miami.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Covered spa, not usable scene"
+      "note": "Covered spa, not usable scene",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "luxury_jetski": {
       "source": "https://commons.wikimedia.org/wiki/File:Sea-Doo_Spark.jpg",
@@ -251,7 +311,9 @@
     "vehicle_yacht": {
       "source": "https://commons.wikimedia.org/wiki/File:2018_SPb_Azimut_70_Yacht_01.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Small in frame"
+      "note": "Small in frame",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "vehicle_jet": {
       "source": "https://commons.wikimedia.org/wiki/File:Cessna_Citation_V_N563TM_FDK_MD2.jpg",
@@ -276,7 +338,13 @@
     "home_studio": {
       "source": "https://commons.wikimedia.org/wiki/File:John_Brooke_Fieldhouse_interior_in_West_London_maximising_use_of_flexible_space_in_a_studio_apartment.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Unfurnished-looking room"
+      "note": "Unfurnished-looking room",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 1,
+      "candidate_file": "Studio apartment in Finland.jpg",
+      "candidate_note": "Furnished domestic studio with natural light",
+      "publication": "pending"
     },
     "home_apartment": {
       "source": "https://commons.wikimedia.org/wiki/File:Modern_living_room_with_stylish_furniture_and_a_view_of_the_outdoors_in_a_cozy_apartment_setting.jpg",
@@ -286,22 +354,34 @@
     "home_house": {
       "source": "https://commons.wikimedia.org/wiki/File:Namibia_-_Semi-Detached_House_01.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Unappealing row houses"
+      "note": "Unappealing row houses",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 1,
+      "candidate_file": "26 East Avenue, Blairstown, NJ.jpg",
+      "candidate_note": "Recognizable attractive detached home",
+      "publication": "pending"
     },
     "home_maisonette": {
       "source": "https://commons.wikimedia.org/wiki/File:A_very_patriotic_maisonette,_St_Giles_View,_Pontefract_(27th_January_2024).jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Basic brick terrace"
+      "note": "Basic brick terrace",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "home_villa": {
       "source": "https://commons.wikimedia.org/wiki/File:Luxury_Villa_Zakynthos.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Building detail, no luxury setting"
+      "note": "Building detail, no luxury setting",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "home_mansion": {
       "source": "https://commons.wikimedia.org/wiki/File:Mansion_exterior.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Historic mansion, not contemporary luxury"
+      "note": "Historic mansion, not contemporary luxury",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "home_island": {
       "source": "https://commons.wikimedia.org/wiki/File:Anantara_Kihavah_-_Aerial_Hero_Shot_2024.jpg",
@@ -316,22 +396,38 @@
     "amenity_gym": {
       "source": "https://commons.wikimedia.org/wiki/File:Colorful_gym_equipment.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Small miscellaneous equipment, not gym"
+      "note": "Small miscellaneous equipment, not gym",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "art_painting": {
       "source": "https://commons.wikimedia.org/wiki/File:Oval_portrait_miniature_of_girl_oil_painting_by_Valentine_Manchon_Duchesne_-_with_scale.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Tiny antique portrait"
+      "note": "Tiny antique portrait",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 2,
+      "candidate_file": "Frederick Waters.Wattsdedham Watermill.Oil Painting Constable Country.Circa 1850.Framed.jpg",
+      "candidate_note": "Clearly visible framed landscape painting",
+      "publication": "pending"
     },
     "art_sculpture": {
       "source": "https://commons.wikimedia.org/wiki/File:Marble_sculpture_Gulbenkian_March_2014-1.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Abstract geometric ceiling-like detail"
+      "note": "Abstract geometric ceiling-like detail",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 1,
+      "candidate_file": "Predjamski grad - doprsje grofa Janeza Karla Filipa Kobencla (A. Ollivier).jpg",
+      "candidate_note": "Single recognizable marble bust on pedestal",
+      "publication": "pending"
     },
     "art_collection": {
       "source": "https://commons.wikimedia.org/wiki/File:Interior_of_Christchurch_Art_Gallery,_New_Zealand_02.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Empty gallery"
+      "note": "Empty gallery",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_men_watch": {
       "source": "https://commons.wikimedia.org/wiki/File:CASIO_G-Shock_GW-M5610U.jpg",
@@ -371,12 +467,16 @@
     "gift_men_gaming": {
       "source": "https://commons.wikimedia.org/wiki/File:Xbox-360-Pro-wController.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Old console, not controller"
+      "note": "Old console, not controller",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_women_ring": {
       "source": "https://commons.wikimedia.org/wiki/File:Pandora,_Atlas,_Rings_-_Rev_232_(24579092143).png",
       "thumbnail_review": "needs_replacement",
-      "note": "Ring not visible"
+      "note": "Ring not visible",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_women_bracelet": {
       "source": "https://commons.wikimedia.org/wiki/File:Pandora_bracelet.jpg",
@@ -401,7 +501,9 @@
     "gift_general_puzzle": {
       "source": "https://commons.wikimedia.org/wiki/File:Ravensburger_Stoffpuzzle_Schaf_2.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Children's fabric puzzle"
+      "note": "Children's fabric puzzle",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_general_donut": {
       "source": "https://commons.wikimedia.org/wiki/File:Doughnut_2.jpg",
@@ -411,22 +513,34 @@
     "gift_general_plane": {
       "source": "https://commons.wikimedia.org/wiki/File:An_airplane_takes_off_in_the_sunset.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Aircraft barely visible"
+      "note": "Aircraft barely visible",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_general_music": {
       "source": "https://commons.wikimedia.org/wiki/File:Musical_instruments_of_Karbi_Tribe.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Unclear instruments"
+      "note": "Unclear instruments",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 2,
+      "candidate_file": "Enjoying a cozy afternoon with coffee and vinyl records at home.jpg",
+      "candidate_note": "Inviting listening scene with record player",
+      "publication": "pending"
     },
     "gift_general_pizza": {
       "source": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita.JPG",
       "thumbnail_review": "needs_replacement",
-      "note": "Several boxes, not inviting pizza"
+      "note": "Several boxes, not inviting pizza",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_men_tie": {
       "source": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Crowded rack"
+      "note": "Crowded rack",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_men_suit": {
       "source": "https://commons.wikimedia.org/wiki/File:Grey_and_navy_suit_on_mannequin.jpg",
@@ -446,17 +560,27 @@
     "gift_women_teddy": {
       "source": "https://commons.wikimedia.org/wiki/File:Little_girl_hugs_teddy_bear_toy.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Person dominates"
+      "note": "Person dominates",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 3,
+      "candidate_file": "Teddy bear on the window sill 02.jpg",
+      "candidate_note": "Toy clearly visible in full",
+      "publication": "pending"
     },
     "gift_women_dress": {
       "source": "https://commons.wikimedia.org/wiki/File:Strapless_evening_dresses_with_hoop_skirt_-_rear_view_with_lacing_in_the_back.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Historical costume appearance"
+      "note": "Historical costume appearance",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_women_scarf": {
       "source": "https://commons.wikimedia.org/wiki/File:Colored_silk_scarf_from_India_04.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Fabric detail only"
+      "note": "Fabric detail only",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_women_orchid": {
       "source": "https://commons.wikimedia.org/wiki/File:Ban_Ki-Moon_Orchid_Flower_Singapore_Feb23_D72_25479.jpg",
@@ -476,12 +600,16 @@
     "gift_general_book": {
       "source": "https://commons.wikimedia.org/wiki/File:Princess_Marys_Gift_Book-0009.png",
       "thumbnail_review": "needs_replacement",
-      "note": "Title page rather than book"
+      "note": "Title page rather than book",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_general_ticket": {
       "source": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Old torn ticket"
+      "note": "Old torn ticket",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_general_trip": {
       "source": "https://commons.wikimedia.org/wiki/File:Tropical_Beach_with_Palm_Trees.jpg",
@@ -491,7 +619,13 @@
     "gift_general_plant": {
       "source": "https://commons.wikimedia.org/wiki/File:Among_the_branches_of_a_potted_jade_plant.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Close-up of branches"
+      "note": "Close-up of branches",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 1,
+      "candidate_file": "Aeonium tabuliforme (4694028465).jpg",
+      "candidate_note": "Whole recognizable potted plant",
+      "publication": "pending"
     },
     "gift_general_balloon": {
       "source": "https://commons.wikimedia.org/wiki/File:Party_balloons_(Unsplash).jpg",
@@ -546,27 +680,37 @@
     "vehicle_bike": {
       "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Not exact brand"
+      "note": "Not exact brand",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "bike_mountain": {
       "source": "https://commons.wikimedia.org/wiki/File:Mountain_bicycle.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Not confirmed exact Cube"
+      "note": "Not confirmed exact Cube",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "bike_gravel": {
       "source": "https://commons.wikimedia.org/wiki/File:Titanium-frame-gravel-bicycle.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Not confirmed exact Cube"
+      "note": "Not confirmed exact Cube",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "vehicle_roadbike": {
       "source": "https://commons.wikimedia.org/wiki/File:Giant_Road_Bike.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Old bike, not Cube Attain"
+      "note": "Old bike, not Cube Attain",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "bike_pro": {
       "source": "https://commons.wikimedia.org/wiki/File:Transport_bicycle_racing,_Velo_24,_Berlin_(VB243663).jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Race scene, not bike"
+      "note": "Race scene, not bike",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "watch_sport": {
       "source": "https://commons.wikimedia.org/wiki/File:Casio_G-Shock_GA-100,_digital_and_analog_watch_(from_2010,_photographed_in_2023).jpg",
@@ -576,12 +720,16 @@
     "tech_gaming": {
       "source": "https://commons.wikimedia.org/wiki/File:Gaming_computers_(1).jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Crowded exhibition"
+      "note": "Crowded exhibition",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "tech_premium": {
       "source": "https://commons.wikimedia.org/wiki/File:Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Dated desk setup"
+      "note": "Dated desk setup",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "amenity_cinema": {
       "source": "https://commons.wikimedia.org/wiki/File:Dedicated_home_theater.jpg",
@@ -596,17 +744,23 @@
     "amenity_sports": {
       "source": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Distant complex"
+      "note": "Distant complex",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_men_headphones": {
       "source": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Different brand"
+      "note": "Different brand",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_men_bike": {
       "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Not exact brand"
+      "note": "Not exact brand",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_men_wallet": {
       "source": "https://commons.wikimedia.org/wiki/File:Leather_bi-fold_wallet_by_Eugene_Pik_(2021)_04.jpg",
@@ -626,7 +780,9 @@
     "gift_women_bag": {
       "source": "https://commons.wikimedia.org/wiki/File:Handbag_at_Nordstrom_Rack_-_Santa_Rosa_-_December_2022_-_Sarah_Stierch.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Cluttered bag display"
+      "note": "Cluttered bag display",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_women_perfume": {
       "source": "https://commons.wikimedia.org/wiki/File:Coco_mademoiselle.jpg",
@@ -636,12 +792,16 @@
     "gift_women_cosmetics": {
       "source": "https://commons.wikimedia.org/wiki/File:Cosmetics-1078712_1280.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Crowded shop display"
+      "note": "Crowded shop display",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_women_earrings": {
       "source": "https://commons.wikimedia.org/wiki/File:Earrings_in_a_fair_in_India_02.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Crowded earring display"
+      "note": "Crowded earring display",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_women_necklace": {
       "source": "https://commons.wikimedia.org/wiki/File:Necklace_made_of_rough_diamonds.jpg",
@@ -656,7 +816,9 @@
     "gift_women_luxurybag": {
       "source": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Not confirmed premium model"
+      "note": "Not confirmed premium model",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_general_icecream": {
       "source": "https://commons.wikimedia.org/wiki/File:Bowl_~_Ice_cream.jpg",
@@ -666,22 +828,38 @@
     "travel_world": {
       "source": "https://commons.wikimedia.org/wiki/File:Travel._Trip._Vacation._Top_view_airplane_with_touristic_map_(52136224054).jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Toy plane and map"
+      "note": "Toy plane and map",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_men_car": {
       "source": "https://commons.wikimedia.org/wiki/File:Oldtimer-2013_model_car_20130309_150849.JPG",
       "thumbnail_review": "needs_replacement",
-      "note": "Bus, not BMW model car"
+      "note": "Bus, not BMW model car",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 1,
+      "candidate_file": "KYOSHO BMW M3.JPG",
+      "candidate_note": "Full BMW scale model visible",
+      "publication": "pending"
     },
     "gift_men_motorbike": {
       "source": "https://commons.wikimedia.org/wiki/File:Indian_Brave_Model_R_250cc_motorcycle.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Real motorcycle, not miniature"
+      "note": "Real motorcycle, not miniature",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     },
     "gift_general_heart": {
       "source": "https://commons.wikimedia.org/wiki/File:Ornament_in_The_Heart_of_Europe.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Line drawing"
+      "note": "Line drawing",
+      "candidate_review": "selected",
+      "candidate_artifact": 15059167117,
+      "candidate_index": 2,
+      "candidate_file": "Plush stuffed heart bears with candy and red boxes (16806018870).jpg",
+      "candidate_note": "Clearly presented heart-themed gift",
+      "publication": "pending"
     },
     "gift_chocolate": {
       "source": "https://commons.wikimedia.org/wiki/File:Green_and_Black%27s_dark_chocolate_bar_2.jpg",
@@ -711,7 +889,9 @@
     "bike_carbon": {
       "source": "https://commons.wikimedia.org/wiki/File:Rennrad_Racing_Bicycle_noBG.jpg",
       "thumbnail_review": "needs_replacement",
-      "note": "Not confirmed exact Cube"
+      "note": "Not confirmed exact Cube",
+      "candidate_review": "no_suitable_improvement_selected",
+      "candidate_artifact": 15059167117
     }
   }
 }
