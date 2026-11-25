@@ -1,0 +1,25 @@
+name: Find replacement photo candidates
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/photo-search-plan.json'
+      - 'scripts/find_photo_candidates.py'
+      - '.github/workflows/photo-candidates.yml'
+permissions:
+  contents: read
+jobs:
+  candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow==11.3.0
+      - run: python scripts/find_photo_candidates.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: photo-candidates
+          path: /tmp/photo-candidates/

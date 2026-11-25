@@ -1,0 +1,498 @@
+{
+  "pet_parrot": {
+    "queries": [
+      "African grey parrot portrait perched",
+      "African grey parrot pet"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:African_grey_parrot.jpg",
+    "note": "Face obscured by feathers"
+  },
+  "vehicle_motorbike": {
+    "queries": [
+      "Honda CB500 Hornet motorcycle side view",
+      "Honda CB500 Hornet"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Honda_CB500_Hornet_2026.jpg",
+    "note": "Busy show"
+  },
+  "phone_basic": {
+    "queries": [
+      "Samsung Galaxy A16 front back smartphone",
+      "Samsung Galaxy A16"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+    "note": "Retail demo screen"
+  },
+  "phone_advanced": {
+    "queries": [
+      "Samsung Galaxy A56 smartphone front back",
+      "Samsung Galaxy A56"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025.jpg",
+    "note": "Retail demo"
+  },
+  "motor_moped": {
+    "queries": [
+      "Honda Super Cub C125 side view",
+      "Honda Super Cub C125"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Honda_Super_Cub_C125_(parked)_in_Kopi_7_-_Palembang,_SS_(1_Jan_2023).jpg",
+    "note": "Busy street"
+  },
+  "car_super": {
+    "queries": [
+      "Lamborghini Huracan LP610-4 parked side view",
+      "Lamborghini Huracan LP610-4"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_LP610-4.jpg",
+    "note": "Busy racing scene"
+  },
+  "motor_adventure": {
+    "queries": [
+      "Honda Africa Twin CRF1100L side view",
+      "Honda Africa Twin"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Honda_Africa_Twin_2025.jpg",
+    "note": "Busy exhibition"
+  },
+  "art_watch": {
+    "queries": [
+      "Rolex Submariner wristwatch dial",
+      "Rolex Submariner watch"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Rolex_Submariner.JPG",
+    "note": "Multiple watches, not clearly single model"
+  },
+  "phone_ultra": {
+    "queries": [
+      "iPhone 16 Pro Max front back",
+      "iPhone 16 Pro Max"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_(54252176424).jpg",
+    "note": "Hand and display"
+  },
+  "phone_mid": {
+    "queries": [
+      "Redmi Note 14 front back",
+      "Redmi Note 14"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Redmi_Note_14_-_2024-09-27_01.jpg",
+    "note": "Retail display"
+  },
+  "watch_luxury": {
+    "queries": [
+      "Omega Seamaster watch dial",
+      "Omega Seamaster wristwatch"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Co-Axial.jpg",
+    "note": "Display case"
+  },
+  "pet_dog": {
+    "queries": [
+      "Golden retriever dog portrait outdoors",
+      "Golden retriever dog grass"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dog.jpg",
+    "note": "Dim photo"
+  },
+  "travel_paris": {
+    "queries": [
+      "Eiffel Tower Paris Trocadero sunset",
+      "Eiffel Tower Paris garden"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_seen_from_the_Palais_de_Chaillot.jpg",
+    "note": "Very wide panorama"
+  },
+  "phone_flagship": {
+    "queries": [
+      "Apple iPhone 16 front back",
+      "iPhone 16"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:IPhone_16_(54251926561).jpg",
+    "note": "Close-up of camera"
+  },
+  "tech_tablet": {
+    "queries": [
+      "Samsung Galaxy Tab A9 front screen",
+      "Samsung Galaxy Tab A9"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+    "note": "Back only"
+  },
+  "gift_general_tablet": {
+    "queries": [
+      "Samsung Galaxy Tab A9 front screen",
+      "Samsung Galaxy Tab A9"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+    "note": "Back only"
+  },
+  "amenity_bbq": {
+    "queries": [
+      "Weber Spirit gas grill patio",
+      "Weber gas barbecue grill"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Gasgrill_Weber_Q100.jpg",
+    "note": "Odd public grill, not product"
+  },
+  "gift_men_grill": {
+    "queries": [
+      "Weber gas barbecue grill",
+      "Weber barbecue grill"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Gasgrill_Weber_Q100.jpg",
+    "note": "Odd public grill"
+  },
+  "amenity_pool": {
+    "queries": [
+      "Intex above ground swimming pool garden",
+      "Above ground swimming pool backyard"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Pool_in_the_back_yard_-_Mid-City_New_Orleans_2010.jpg",
+    "note": "Messy yard and accessories"
+  },
+  "amenity_spa": {
+    "queries": [
+      "Bestway Lay Z Spa inflatable hot tub uncovered",
+      "Inflatable hot tub garden"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Whirlpool_bestway_lay-z-spa_Miami.jpg",
+    "note": "Covered spa, not usable scene"
+  },
+  "vehicle_yacht": {
+    "queries": [
+      "Azimut 70 luxury motor yacht sea",
+      "Azimut yacht underway"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:2018_SPb_Azimut_70_Yacht_01.jpg",
+    "note": "Small in frame"
+  },
+  "home_studio": {
+    "queries": [
+      "Furnished cozy studio apartment interior",
+      "Studio apartment interior furniture"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:John_Brooke_Fieldhouse_interior_in_West_London_maximising_use_of_flexible_space_in_a_studio_apartment.jpg",
+    "note": "Unfurnished-looking room"
+  },
+  "home_house": {
+    "queries": [
+      "Modern detached family house garden",
+      "Small detached house garden"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Namibia_-_Semi-Detached_House_01.jpg",
+    "note": "Unappealing row houses"
+  },
+  "home_maisonette": {
+    "queries": [
+      "Modern maisonette townhouse garden",
+      "Modern two storey townhouse"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:A_very_patriotic_maisonette,_St_Giles_View,_Pontefract_(27th_January_2024).jpg",
+    "note": "Basic brick terrace"
+  },
+  "home_villa": {
+    "queries": [
+      "Modern luxury villa private swimming pool Greece",
+      "Luxury villa swimming pool"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Luxury_Villa_Zakynthos.jpg",
+    "note": "Building detail, no luxury setting"
+  },
+  "home_mansion": {
+    "queries": [
+      "Contemporary luxury mansion infinity pool architecture",
+      "Modern luxury mansion exterior"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Mansion_exterior.jpg",
+    "note": "Historic mansion, not contemporary luxury"
+  },
+  "amenity_gym": {
+    "queries": [
+      "Technogym home gym interior equipment",
+      "Modern private home gym interior"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Colorful_gym_equipment.jpg",
+    "note": "Small miscellaneous equipment, not gym"
+  },
+  "art_painting": {
+    "queries": [
+      "Framed oil painting landscape wall",
+      "Oil painting framed landscape"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Oval_portrait_miniature_of_girl_oil_painting_by_Valentine_Manchon_Duchesne_-_with_scale.jpg",
+    "note": "Tiny antique portrait"
+  },
+  "art_sculpture": {
+    "queries": [
+      "Marble sculpture bust pedestal interior",
+      "Marble sculpture statue"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Marble_sculpture_Gulbenkian_March_2014-1.jpg",
+    "note": "Abstract geometric ceiling-like detail"
+  },
+  "art_collection": {
+    "queries": [
+      "Private art collection paintings gallery interior",
+      "Gallery wall paintings interior"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Interior_of_Christchurch_Art_Gallery,_New_Zealand_02.jpg",
+    "note": "Empty gallery"
+  },
+  "gift_men_gaming": {
+    "queries": [
+      "Xbox Wireless Controller Carbon Black",
+      "Xbox Series X controller black"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Xbox_Wireless_Controller_Carbon_Black.jpg",
+    "note": "Old console, not controller"
+  },
+  "gift_women_ring": {
+    "queries": [
+      "Pandora silver ring jewelry",
+      "Silver ring solitaire jewelry"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Pandora,_Atlas,_Rings_-_Rev_232_(24579092143).png",
+    "note": "Ring not visible"
+  },
+  "gift_general_puzzle": {
+    "queries": [
+      "Ravensburger jigsaw puzzle box landscape",
+      "Jigsaw puzzle box landscape"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Ravensburger_Stoffpuzzle_Schaf_2.jpg",
+    "note": "Children's fabric puzzle"
+  },
+  "gift_general_plane": {
+    "queries": [
+      "Passenger airliner above clouds",
+      "Commercial airplane flying blue sky"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:An_airplane_takes_off_in_the_sunset.jpg",
+    "note": "Aircraft barely visible"
+  },
+  "gift_general_music": {
+    "queries": [
+      "Acoustic guitar headphones music gift",
+      "Headphones music vinyl records"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Musical_instruments_of_Karbi_Tribe.jpg",
+    "note": "Unclear instruments"
+  },
+  "gift_general_pizza": {
+    "queries": [
+      "Margherita pizza on plate basil",
+      "Fresh Italian pizza close up"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita.JPG",
+    "note": "Several boxes, not inviting pizza"
+  },
+  "gift_men_tie": {
+    "queries": [
+      "Silk necktie rolled gift",
+      "Single silk necktie"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
+    "note": "Crowded rack"
+  },
+  "gift_women_teddy": {
+    "queries": [
+      "Plush teddy bear toy seated",
+      "Teddy bear toy"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Little_girl_hugs_teddy_bear_toy.jpg",
+    "note": "Person dominates"
+  },
+  "gift_women_dress": {
+    "queries": [
+      "Modern elegant evening dress mannequin",
+      "Evening gown dress"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Strapless_evening_dresses_with_hoop_skirt_-_rear_view_with_lacing_in_the_back.jpg",
+    "note": "Historical costume appearance"
+  },
+  "gift_women_scarf": {
+    "queries": [
+      "Silk scarf folded fashion",
+      "Silk scarf"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Colored_silk_scarf_from_India_04.jpg",
+    "note": "Fabric detail only"
+  },
+  "gift_general_book": {
+    "queries": [
+      "Book hardcover on table",
+      "Closed hardcover book"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Princess_Marys_Gift_Book-0009.png",
+    "note": "Title page rather than book"
+  },
+  "gift_general_ticket": {
+    "queries": [
+      "Cinema tickets popcorn",
+      "Modern cinema ticket"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
+    "note": "Old torn ticket"
+  },
+  "gift_general_plant": {
+    "queries": [
+      "Potted houseplant pot indoors",
+      "Indoor potted plant"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Among_the_branches_of_a_potted_jade_plant.jpg",
+    "note": "Close-up of branches"
+  },
+  "vehicle_bike": {
+    "queries": [
+      "Ideal Cityrun bicycle",
+      "Ideal city bicycle"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+    "note": "Not exact brand"
+  },
+  "bike_mountain": {
+    "queries": [
+      "Cube Aim mountain bicycle",
+      "Cube mountain bike hardtail"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Mountain_bicycle.jpg",
+    "note": "Not confirmed exact Cube"
+  },
+  "bike_gravel": {
+    "queries": [
+      "Cube Nuroad gravel bicycle",
+      "Cube Nuroad"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Titanium-frame-gravel-bicycle.jpg",
+    "note": "Not confirmed exact Cube"
+  },
+  "vehicle_roadbike": {
+    "queries": [
+      "Cube Attain road bicycle",
+      "Cube road bike Attain"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Giant_Road_Bike.jpg",
+    "note": "Old bike, not Cube Attain"
+  },
+  "bike_pro": {
+    "queries": [
+      "Specialized S-Works Tarmac SL8 bicycle",
+      "Specialized Tarmac SL8"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Transport_bicycle_racing,_Velo_24,_Berlin_(VB243663).jpg",
+    "note": "Race scene, not bike"
+  },
+  "tech_gaming": {
+    "queries": [
+      "ASUS ROG gaming computer desktop setup",
+      "Gaming PC RGB desk setup"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Gaming_computers_(1).jpg",
+    "note": "Crowded exhibition"
+  },
+  "tech_premium": {
+    "queries": [
+      "Alienware gaming desktop setup",
+      "Alienware Aurora gaming PC"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg",
+    "note": "Dated desk setup"
+  },
+  "amenity_sports": {
+    "queries": [
+      "Private tennis court basketball court sports facility",
+      "Modern sports court outdoor"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
+    "note": "Distant complex"
+  },
+  "gift_men_headphones": {
+    "queries": [
+      "JBL Tune wireless headphones",
+      "JBL Tune headphones"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg",
+    "note": "Different brand"
+  },
+  "gift_men_bike": {
+    "queries": [
+      "Ideal Cityrun bicycle",
+      "Ideal city bicycle"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+    "note": "Not exact brand"
+  },
+  "gift_women_bag": {
+    "queries": [
+      "Guess handbag product",
+      "Guess handbag"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Handbag_at_Nordstrom_Rack_-_Santa_Rosa_-_December_2022_-_Sarah_Stierch.jpg",
+    "note": "Cluttered bag display"
+  },
+  "gift_women_cosmetics": {
+    "queries": [
+      "Korres cosmetics products skincare",
+      "Korres skincare products"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Cosmetics-1078712_1280.jpg",
+    "note": "Crowded shop display"
+  },
+  "gift_women_earrings": {
+    "queries": [
+      "Swarovski crystal earrings pair",
+      "Crystal stud earrings jewelry"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Earrings_in_a_fair_in_India_02.jpg",
+    "note": "Crowded earring display"
+  },
+  "gift_women_luxurybag": {
+    "queries": [
+      "Michael Kors luxury handbag",
+      "Michael Kors handbag"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg",
+    "note": "Not confirmed premium model"
+  },
+  "travel_world": {
+    "queries": [
+      "World travel landmarks mountain ocean landscape",
+      "Travel destination scenic landscape"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Travel._Trip._Vacation._Top_view_airplane_with_touristic_map_(52136224054).jpg",
+    "note": "Toy plane and map"
+  },
+  "gift_men_car": {
+    "queries": [
+      "BMW scale model diecast miniature",
+      "Kyosho BMW model car"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Kyosho_BMW_760Li_(E66)_-_open_front.jpg",
+    "note": "Bus, not BMW model car"
+  },
+  "gift_men_motorbike": {
+    "queries": [
+      "Yamaha miniature diecast motorcycle scale model",
+      "Yamaha scale model motorcycle toy"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:2016_Yamaha_XV1600_Wild_Star.jpg",
+    "note": "Real motorcycle, not miniature"
+  },
+  "gift_general_heart": {
+    "queries": [
+      "Red heart shaped gift box",
+      "Red heart plush"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Ornament_in_The_Heart_of_Europe.jpg",
+    "note": "Line drawing"
+  },
+  "bike_carbon": {
+    "queries": [
+      "Cube Agree C62 Pro Bali prism bicycle",
+      "Cube Agree C62 road bike"
+    ],
+    "previous": "https://commons.wikimedia.org/wiki/File:Rennrad_Racing_Bicycle_noBG.jpg",
+    "note": "Not confirmed exact Cube"
+  }
+}
