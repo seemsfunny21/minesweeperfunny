@@ -229,13 +229,15 @@
   },
   "amenity_bbq": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Weber_spirit_grill_covers.jpg",
-    "license": "CC0"
+    "source": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_men_grill": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Weber_Grill_Restaurant_-_Schaumburg.jpg",
-    "license": "CC BY-SA 3.0"
+    "source": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "amenity_pool": {
     "status": "saved",
@@ -253,8 +255,10 @@
     "license": "CC BY-SA 4.0"
   },
   "vehicle_boat": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Motorboat_Ryds_435DL_and_cloud_reflections_in_S%C3%A4mstad_harbor_3.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "luxury_sail": {
     "status": "saved",
@@ -293,13 +297,15 @@
   },
   "home_apartment": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Anonieme_kunstenaar_-_Apartment_Interior_-_1922-F_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
-    "license": "Public domain"
+    "source": "https://commons.wikimedia.org/wiki/File:Empty_apartment_living_room.jpg",
+    "license": "CC BY-SA 3.0",
+    "representative": true
   },
   "home_house": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Namibia_-_Semi-Detached_House_01.jpg",
-    "license": "CC BY 4.0"
+    "license": "CC BY 4.0",
+    "representative": true
   },
   "home_maisonette": {
     "status": "saved",
@@ -328,12 +334,15 @@
   },
   "amenity_gym": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Technogym_Logo.png",
-    "license": "Public domain"
+    "source": "https://commons.wikimedia.org/wiki/File:Colorful_gym_equipment.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "amenity_sports": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "art_painting": {
     "status": "saved",
@@ -347,8 +356,9 @@
   },
   "art_collection": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Drawing_from_the_Collection_A_National_Gallery_of_Art_0888_02.jpg",
-    "license": "CC BY-SA 4.0"
+    "source": "https://commons.wikimedia.org/wiki/File:Interior_of_Christchurch_Art_Gallery,_New_Zealand_02.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "gift_men_watch": {
     "status": "saved",
@@ -361,8 +371,10 @@
     "license": "CC BY 2.5"
   },
   "gift_men_headphones": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg",
+    "license": "CC BY-SA 3.0",
+    "representative": true
   },
   "gift_men_ball": {
     "status": "saved",
@@ -375,8 +387,10 @@
     "license": "CC BY 4.0"
   },
   "gift_men_bike": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Man_riding_a_bicycle_in_a_snowstorm_in_Quebec_city,_Quebec,_Canada.jpg",
+    "license": "CC0",
+    "representative": true
   },
   "gift_men_guitar": {
     "status": "saved",
