@@ -22,7 +22,9 @@
       "candidate_index": 3,
       "candidate_file": "Psittacus erithacus -pet parrot-8a.jpg",
       "candidate_note": "Single recognizable parrot, unobstructed head",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Psittacus_erithacus_-pet_parrot-8a.jpg",
+      "final_visual_review": "pending"
     },
     "amenity_console": {
       "source": "https://commons.wikimedia.org/wiki/File:Playstation_5_base_edition_with_controller_(original).jpg",
@@ -99,7 +101,9 @@
       "candidate_index": 3,
       "candidate_file": "Osaka Auto Messe 2019 (93) - Honda Super Cub C125 (2BJ-JA48).jpg",
       "candidate_note": "Clearly displayed exact model, relatively uncluttered",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Osaka_Auto_Messe_2019_(93)_-_Honda_Super_Cub_C125_(2BJ-JA48).jpg",
+      "final_visual_review": "pending"
     },
     "vehicle_suv": {
       "source": "https://commons.wikimedia.org/wiki/File:BMW_X3(1).jpg",
@@ -125,7 +129,9 @@
       "candidate_index": 3,
       "candidate_file": "2017 Lamborghini Huracan LP610-4 2.jpg",
       "candidate_note": "Recognizable front three-quarter view of exact car",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:2017_Lamborghini_Huracan_LP610-4_2.jpg",
+      "final_visual_review": "pending"
     },
     "motor_adventure": {
       "source": "https://commons.wikimedia.org/wiki/File:Honda_Africa_Twin_2025.jpg",
@@ -206,7 +212,9 @@
       "candidate_index": 3,
       "candidate_file": "Golden retriever exploring a sunny backyard with green grass and a flower arrangement nearby.jpg",
       "candidate_note": "Friendly bright portrait of a golden retriever",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Golden_retriever_exploring_a_sunny_backyard_with_green_grass_and_a_flower_arrangement_nearby.jpg",
+      "final_visual_review": "pending"
     },
     "travel_islands": {
       "source": "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Skyline.jpg",
@@ -222,7 +230,9 @@
       "candidate_index": 2,
       "candidate_file": "La tour eiffel depuis le trocadéro - panoramio.jpg",
       "candidate_note": "Recognizable Eiffel Tower illuminated at dusk",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:La_tour_eiffel_depuis_le_trocad%C3%A9ro_-_panoramio.jpg",
+      "final_visual_review": "pending"
     },
     "travel_maldives": {
       "source": "https://commons.wikimedia.org/wiki/File:Aerial_shot_of_a_small_island_on_a_coral_reef_in_the_Maldives.jpg",
@@ -344,7 +354,9 @@
       "candidate_index": 1,
       "candidate_file": "Studio apartment in Finland.jpg",
       "candidate_note": "Furnished domestic studio with natural light",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Studio_apartment_in_Finland.jpg",
+      "final_visual_review": "pending"
     },
     "home_apartment": {
       "source": "https://commons.wikimedia.org/wiki/File:Modern_living_room_with_stylish_furniture_and_a_view_of_the_outdoors_in_a_cozy_apartment_setting.jpg",
@@ -360,7 +372,9 @@
       "candidate_index": 1,
       "candidate_file": "26 East Avenue, Blairstown, NJ.jpg",
       "candidate_note": "Recognizable attractive detached home",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:26_East_Avenue,_Blairstown,_NJ.jpg",
+      "final_visual_review": "pending"
     },
     "home_maisonette": {
       "source": "https://commons.wikimedia.org/wiki/File:A_very_patriotic_maisonette,_St_Giles_View,_Pontefract_(27th_January_2024).jpg",
@@ -409,7 +423,9 @@
       "candidate_index": 2,
       "candidate_file": "Frederick Waters.Wattsdedham Watermill.Oil Painting Constable Country.Circa 1850.Framed.jpg",
       "candidate_note": "Clearly visible framed landscape painting",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Frederick_Waters.Wattsdedham_Watermill.Oil_Painting_Constable_Country.Circa_1850.Framed.jpg",
+      "final_visual_review": "pending"
     },
     "art_sculpture": {
       "source": "https://commons.wikimedia.org/wiki/File:Marble_sculpture_Gulbenkian_March_2014-1.jpg",
@@ -420,7 +436,9 @@
       "candidate_index": 1,
       "candidate_file": "Predjamski grad - doprsje grofa Janeza Karla Filipa Kobencla (A. Ollivier).jpg",
       "candidate_note": "Single recognizable marble bust on pedestal",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Predjamski_grad_-_doprsje_grofa_Janeza_Karla_Filipa_Kobencla_(A._Ollivier).jpg",
+      "final_visual_review": "pending"
     },
     "art_collection": {
       "source": "https://commons.wikimedia.org/wiki/File:Interior_of_Christchurch_Art_Gallery,_New_Zealand_02.jpg",
@@ -526,7 +544,9 @@
       "candidate_index": 2,
       "candidate_file": "Enjoying a cozy afternoon with coffee and vinyl records at home.jpg",
       "candidate_note": "Inviting listening scene with record player",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Enjoying_a_cozy_afternoon_with_coffee_and_vinyl_records_at_home.jpg",
+      "final_visual_review": "pending"
     },
     "gift_general_pizza": {
       "source": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita.JPG",
@@ -566,7 +586,9 @@
       "candidate_index": 3,
       "candidate_file": "Teddy bear on the window sill 02.jpg",
       "candidate_note": "Toy clearly visible in full",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Teddy_bear_on_the_window_sill_02.jpg",
+      "final_visual_review": "pending"
     },
     "gift_women_dress": {
       "source": "https://commons.wikimedia.org/wiki/File:Strapless_evening_dresses_with_hoop_skirt_-_rear_view_with_lacing_in_the_back.jpg",
@@ -625,7 +647,9 @@
       "candidate_index": 1,
       "candidate_file": "Aeonium tabuliforme (4694028465).jpg",
       "candidate_note": "Whole recognizable potted plant",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Aeonium_tabuliforme_(4694028465).jpg",
+      "final_visual_review": "pending"
     },
     "gift_general_balloon": {
       "source": "https://commons.wikimedia.org/wiki/File:Party_balloons_(Unsplash).jpg",
@@ -841,7 +865,9 @@
       "candidate_index": 1,
       "candidate_file": "KYOSHO BMW M3.JPG",
       "candidate_note": "Full BMW scale model visible",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:KYOSHO_BMW_M3.JPG",
+      "final_visual_review": "pending"
     },
     "gift_men_motorbike": {
       "source": "https://commons.wikimedia.org/wiki/File:Indian_Brave_Model_R_250cc_motorcycle.jpg",
@@ -859,7 +885,9 @@
       "candidate_index": 2,
       "candidate_file": "Plush stuffed heart bears with candy and red boxes (16806018870).jpg",
       "candidate_note": "Clearly presented heart-themed gift",
-      "publication": "pending"
+      "publication": "verified_catalog_and_import_report",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Plush_stuffed_heart_bears_with_candy_and_red_boxes_(16806018870).jpg",
+      "final_visual_review": "pending"
     },
     "gift_chocolate": {
       "source": "https://commons.wikimedia.org/wiki/File:Green_and_Black%27s_dark_chocolate_bar_2.jpg",

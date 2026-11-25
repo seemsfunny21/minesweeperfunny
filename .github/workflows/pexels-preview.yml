@@ -1,0 +1,25 @@
+name: Preview alternative licensed photos
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/pexels-photo-plan.json'
+      - 'scripts/preview_pexels_photos.py'
+      - '.github/workflows/pexels-preview.yml'
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow==11.3.0
+      - run: python scripts/preview_pexels_photos.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pexels-photo-previews
+          path: /tmp/pexels-previews/

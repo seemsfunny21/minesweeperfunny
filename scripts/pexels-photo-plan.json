@@ -1,0 +1,183 @@
+{
+  "home_villa": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Luxury_Villa_Zakynthos.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/modern-luxury-villa-with-infinity-pool-31817156/",
+      "https://www.pexels.com/photo/luxury-villa-with-pool-in-tropical-setting-28915352/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "home_mansion": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Mansion_exterior.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/elegant-mansion-with-reflective-pool-in-verdant-setting-34943921/",
+      "https://www.pexels.com/photo/pool-in-a-mansion-in-the-evening-26859062/",
+      "https://www.pexels.com/photo/modern-luxury-villa-with-pool-exterior-at-twilight-30781823/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "home_maisonette": {
+    "previous": "https://commons.wikimedia.org/wiki/File:A_very_patriotic_maisonette,_St_Giles_View,_Pontefract_(27th_January_2024).jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/house-in-town-16849899/",
+      "https://www.pexels.com/photo/facade-of-a-house-10486074/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "amenity_gym": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Colorful_gym_equipment.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/modern-home-gym-interior-with-fitness-equipment-36777945/",
+      "https://www.pexels.com/photo/modern-home-gym-with-weights-and-equipment-37184170/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_general_pizza": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita.JPG",
+    "source_pages": [
+      "https://www.pexels.com/photo/delicious-margherita-pizza-on-plate-34322095/",
+      "https://www.pexels.com/photo/pizza-on-white-plate-7912401/",
+      "https://www.pexels.com/photo/classic-margherita-pizza-on-marble-surface-35068608/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_women_ring": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Pandora,_Atlas,_Rings_-_Rev_232_(24579092143).png",
+    "source_pages": [
+      "https://www.pexels.com/photo/silver-colored-ring-2899839/",
+      "https://www.pexels.com/photo/a-silver-ring-on-the-box-14479298/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_women_earrings": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Earrings_in_a_fair_in_India_02.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/silver-earrings-in-jewelry-box-16242338/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "tech_gaming": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Gaming_computers_(1).jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/modern-gaming-setup-with-rgb-lighting-30469969/",
+      "https://www.pexels.com/photo/modern-gaming-desk-setup-with-ambient-lighting-33441506/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "tech_premium": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/rgb-gaming-setup-with-dual-monitors-and-pc-33888375/",
+      "https://www.pexels.com/photo/high-end-gaming-pc-with-rgb-lighting-33796979/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_general_book": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Princess_Marys_Gift_Book-0009.png",
+    "source_pages": [
+      "https://www.pexels.com/photo/book-with-empty-cover-on-table-6373308/",
+      "https://www.pexels.com/photo/top-view-of-a-book-lying-on-the-table-12189613/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_general_plane": {
+    "previous": "https://commons.wikimedia.org/wiki/File:An_airplane_takes_off_in_the_sunset.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/airplane-in-flight-against-blue-sky-with-clouds-37589299/",
+      "https://www.pexels.com/photo/commercial-airplane-flying-through-blue-sky-with-clouds-36771847/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "vehicle_yacht": {
+    "previous": "https://commons.wikimedia.org/wiki/File:2018_SPb_Azimut_70_Yacht_01.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/white-motor-yacht-sailing-in-a-blue-sea-17630892/",
+      "https://www.pexels.com/photo/a-yacht-sailing-on-sea-7873391/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "amenity_sports": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/tennis-court-near-the-building-11312140/",
+      "https://www.pexels.com/photo/outdoor-tennis-court-with-seating-and-lights-35564300/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_women_dress": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Strapless_evening_dresses_with_hoop_skirt_-_rear_view_with_lacing_in_the_back.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/glamour-dress-on-mannequin-15768243/",
+      "https://www.pexels.com/photo/elegant-sequined-evening-gown-on-display-36409025/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_women_scarf": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Colored_silk_scarf_from_India_04.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/elegant-smooth-blue-headscarf-composed-with-wildflowers-on-timber-table-6070106/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_women_cosmetics": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Cosmetics-1078712_1280.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/minimalist-beauty-product-arrangement-28752006/",
+      "https://www.pexels.com/photo/cosmetic-products-placed-on-white-table-6738804/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_women_bag": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Handbag_at_Nordstrom_Rack_-_Santa_Rosa_-_December_2022_-_Sarah_Stierch.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/grey-handbag-on-wooden-table-12850508/",
+      "https://www.pexels.com/photo/leather-bag-on-table-23223854/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_women_luxurybag": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/elegant-brown-leather-purse-on-display-35324419/",
+      "https://www.pexels.com/photo/black-and-white-shot-of-a-leather-bag-on-a-table-26903899/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "art_collection": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Interior_of_Christchurch_Art_Gallery,_New_Zealand_02.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/paintings-inside-building-3004909/",
+      "https://www.pexels.com/photo/art-paintings-on-the-wall-15388022/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_general_puzzle": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Ravensburger_Stoffpuzzle_Schaf_2.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/jigsaw-puzzle-pieces-in-a-box-23158264/",
+      "https://www.pexels.com/photo/jigsaw-puzzle-pieces-4000309/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_general_ticket": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/a-person-at-a-counter-with-a-cup-of-beverage-holding-cinema-ticket-8261816/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "amenity_bbq": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Gasgrill_Weber_Q100.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/griller-in-the-backyard-8522752/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  },
+  "gift_men_grill": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Gasgrill_Weber_Q100.jpg",
+    "source_pages": [
+      "https://www.pexels.com/photo/griller-in-the-backyard-8522752/"
+    ],
+    "review_note": "Representative candidate only; do not publish without visual approval and license review."
+  }
+}
