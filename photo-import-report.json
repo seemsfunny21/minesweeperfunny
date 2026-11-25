@@ -1,0 +1,52 @@
+{
+  "car_sedan": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Toyota_Corolla_(E210)_sedan_IMG_4189.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "vehicle_scooter": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Honda_PCX125_2011_Front.JPG",
+    "license": "CC BY-SA 3.0"
+  },
+  "vehicle_motorbike": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Honda_CB500_Hornet_2026.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "phone_basic": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_general_phone": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "phone_advanced": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "motor_moped": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Honda_Super_Cub_C125_(parked)_in_Kopi_7_-_Palembang,_SS_(1_Jan_2023).jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "vehicle_suv": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:BMW_X3(1).jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "car_cabrio": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Mazda_MX-5_(ND)_1X7A7471.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "vehicle_sport": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Porsche_911_992.jpg",
+    "license": "CC BY-SA 4.0"
+  }
+}
