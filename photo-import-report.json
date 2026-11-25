@@ -615,5 +615,19 @@
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Gold_star_christmas_ornament.jpg",
     "license": "CC BY 2.0"
+  },
+  "gift_box": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Brown_gift_box_with_red_ribbon_and_bow.jpg",
+    "license": "CC BY 2.0"
+  },
+  "gift_crown": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Spanish_Royal_Crown_1crop.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_women_heels": {
+    "status": "not_saved",
+    "attempts": []
   }
 }
