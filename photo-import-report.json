@@ -98,5 +98,55 @@
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Tissot_PRX_35mm.jpg",
     "license": "CC BY-SA 4.0"
+  },
+  "watch_luxury": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Co-Axial.jpg",
+    "license": "CC BY 4.0"
+  },
+  "pet_rabbit": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Pet_rabbit_at_home.jpg",
+    "license": "CC BY 2.0"
+  },
+  "pet_cat": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Domestic_cat.jpg",
+    "license": "CC BY-SA 2.5"
+  },
+  "pet_dog": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dog.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "travel_islands": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Skyline.jpg",
+    "license": "CC BY-SA 2.0"
+  },
+  "travel_paris": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_seen_from_the_Palais_de_Chaillot.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "travel_maldives": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Aerial_shot_of_a_small_island_on_a_coral_reef_in_the_Maldives.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "phone_fold": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Z_Fold6.png",
+    "license": "CC BY-SA 4.0"
+  },
+  "phone_flagship": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_(54251926561).jpg",
+    "license": "CC BY-SA 2.0"
+  },
+  "art_piano": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Yamaha_U1.jpg",
+    "license": "CC BY 3.0"
   }
 }
