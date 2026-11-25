@@ -48,5 +48,55 @@
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Porsche_911_992.jpg",
     "license": "CC BY-SA 4.0"
+  },
+  "car_super": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_LP610-4.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "motor_adventure": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Honda_Africa_Twin_2025.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "motor_super": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:BMW_S_1000_RR,_right_view.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "art_watch": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Rolex_Submariner.JPG",
+    "license": "CC BY-SA 3.0"
+  },
+  "phone_ultra": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_(54252176424).jpg",
+    "license": "CC BY-SA 2.0"
+  },
+  "art_guitar": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Yamaha_F310.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "motor_sport": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YZF-R7_(55048319395).jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "phone_mid": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Redmi_Note_14_-_2024-09-27_01.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "watch_smart": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Garmin_Venu_3_(a).JPG",
+    "license": "CC BY-SA 4.0"
+  },
+  "watch_premium": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Tissot_PRX_35mm.jpg",
+    "license": "CC BY-SA 4.0"
   }
 }
