@@ -1,0 +1,64 @@
+{
+  "purpose": "User-supplied additional stock sources; candidate URLs only, not approval.",
+  "sources": [
+    "https://cupcake.nilssonlee.se/",
+    "https://www.designerspics.com/",
+    "https://freeimages.red/",
+    "https://www.freeimages.com/",
+    "https://kaboompics.com/",
+    "https://www.lifeofpix.com/",
+    "https://magdeleine.co/license/cc0/",
+    "https://minimography.com/",
+    "https://www.pexels.com/",
+    "https://pixabay.com/",
+    "https://picjumbo.com/",
+    "https://skitterphoto.com/",
+    "https://streetwill.co/",
+    "https://stocksnap.io/",
+    "https://unsplash.com/"
+  ],
+  "pending": [
+    "vehicle_motorbike",
+    "tech_tablet",
+    "gift_general_tablet",
+    "amenity_pool",
+    "amenity_spa",
+    "vehicle_yacht",
+    "gift_women_ring",
+    "vehicle_bike",
+    "bike_mountain",
+    "bike_gravel",
+    "vehicle_roadbike",
+    "bike_pro",
+    "tech_gaming",
+    "tech_premium",
+    "gift_men_headphones",
+    "gift_men_bike",
+    "gift_women_bag",
+    "gift_women_cosmetics",
+    "travel_world",
+    "bike_carbon"
+  ],
+  "additional_review_pages": {
+    "tech_gaming": [
+      "https://unsplash.com/photos/gamers-setup-with-multiple-monitors-and-rgb-lighting-cxSBgaJOEuU",
+      "https://unsplash.com/photos/a-computer-case-sitting-on-top-of-a-desk-VBVtNgkA3ak"
+    ],
+    "tech_premium": [
+      "https://unsplash.com/photos/custom-pc-build-with-rgb-lighting-MKSOFj9PsKA",
+      "https://unsplash.com/photos/a-computer-tower-sitting-on-top-of-a-desk-4gbbKX63V5I"
+    ],
+    "gift_men_headphones": [
+      "https://unsplash.com/photos/a-close-up-of-a-pair-of-headphones-Kv7It-09g6U",
+      "https://unsplash.com/photos/white-jbl-headphones-rest-on-wood-QOzIQAHQi0g",
+      "https://unsplash.com/photos/black-jbl-cordless-headphones-on-white-surface---z13hWoxio"
+    ],
+    "gift_women_cosmetics": [
+      "https://kaboompics.com/photo/33131/spa-beauty-products",
+      "https://kaboompics.com/photo/35256/close-up-flash-photo-of-perfume-and-skincare-bottles-by-sink",
+      "https://kaboompics.com/photo/33132/natural-spa-products-with-soap-bars-sea-sponge-and-frosted-dropper-bottle",
+      "https://kaboompics.com/photo/34740/luxury-beauty-and-skincare-products-arrangement-on-marble-background-ugc-inspired-free-stock-photo"
+    ]
+  },
+  "policy": "Use original photo pages, not search result thumbnails. Exact model must be confirmed before replacing branded catalog photos. Do not treat free download as a blanket redistribution license. Do not import paid, editorial-only, unverified, or incompatible stock."
+}

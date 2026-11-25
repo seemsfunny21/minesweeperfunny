@@ -33,7 +33,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=dict(p
 (OUT/'candidates.json').write_text(json.dumps(results,indent=2))
 items=list(results.items())
 for offset in range(0,len(items),6):
-    sheet=Image.new('RGB',(1050,6*190),'#182334');draw=ImageDraw.Draw(sheet)
+    sheet=Image.new('RGB',(max(1050,max(len(rows) for _,rows in items[offset:offset+6])*350),6*190),'#182334');draw=ImageDraw.Draw(sheet)
     for row,(code,rows) in enumerate(items[offset:offset+6]):
         y=row*190;draw.text((8,y+7),code,fill='white')
         for candidate in rows:
