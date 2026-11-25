@@ -22,10 +22,10 @@
   },
   "gift_men_tie": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Necktie_(drawing).jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
-    "visual_review": "needs_improvement",
-    "review_artifact": 15060301760
+    "previous": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Silk_ties_-_4046.jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "c29be38493f489865fe994faf8ead8846d680d9c359e67e91ccaec3a20fcc6b2"
   },
   "gift_men_suit": {
     "status": "replaced",
@@ -377,5 +377,61 @@
     "visual_review": "acceptable_at_thumbnail_size",
     "sha256": "078155e9c433aab532820a88195ca553e80387c7676ae535ba1fdd9cc76b8c2b",
     "review_artifact": 15060301760
+  },
+  "phone_basic": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A16_5G_(1).jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "c45bf8dee1ffef1e098509fa28e353e9deefb58cb38197c979282aae5c5ec72b"
+  },
+  "gift_general_phone": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A16_5G_(1).jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "c45bf8dee1ffef1e098509fa28e353e9deefb58cb38197c979282aae5c5ec72b"
+  },
+  "phone_advanced": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025_(cropped).jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "620412c0141480baae4d406a996dc07e24ff5198f1a848062dece24c5c11b044"
+  },
+  "motor_adventure": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Honda_Africa_Twin_2025.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:2020_Honda_CRF1100L_Africa_Twin_MT.jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "c77b8d766ae02e9ace0bea2e2b886df57d25f542129dc336f681bdce94591d9d"
+  },
+  "art_watch": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Rolex_Submariner.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Rolex-Submariner.jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "91bfb8197b460bd3c73338857a3348f697e85690e9ac4c20dcdf783181f7c7f1"
+  },
+  "phone_ultra": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_(54252176424).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_Desert_Titanium_Rear.png",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "c5924e13df3c6126ab01c254d3a9e8337cb0853d328018968319693bc46cedeb"
+  },
+  "amenity_sports": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Private_tennis_court,_Velwell_Road,_Exeter_-_geograph.org.uk_-_5882168.jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "de184c3308822ddc5ed8b5428c291ea6046b66fd69dda3ac30abddea57e76ed9"
+  },
+  "gift_women_earrings": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Earrings_in_a_fair_in_India_02.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Swarovski_MATRIX_Ohrringe.jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "d1629f86603c60444e839870757b29b0bd9216b4a68a0a45e8d7c44d9b29a1e3"
   }
 }

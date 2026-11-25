@@ -22,23 +22,23 @@
   },
   "phone_basic": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A16_5G_(1).jpg",
     "license": "CC BY-SA 4.0",
-    "representative": false,
+    "representative": true,
     "path": "images/phones/phone_basic.webp"
   },
   "gift_general_phone": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A16_5G_(1).jpg",
     "license": "CC BY-SA 4.0",
-    "representative": false,
+    "representative": true,
     "path": "images/gifts/general/gift_general_phone.webp"
   },
   "phone_advanced": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025_(cropped).jpg",
     "license": "CC BY-SA 4.0",
-    "representative": false,
+    "representative": true,
     "path": "images/phones/phone_advanced.webp"
   },
   "motor_moped": {
@@ -78,9 +78,9 @@
   },
   "motor_adventure": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Honda_Africa_Twin_2025.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:2020_Honda_CRF1100L_Africa_Twin_MT.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": false,
+    "representative": true,
     "path": "images/motorcycles/motor_adventure.webp"
   },
   "motor_super": {
@@ -92,16 +92,16 @@
   },
   "art_watch": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Rolex_Submariner.JPG",
-    "license": "CC BY-SA 3.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Rolex-Submariner.jpg",
+    "license": "Public domain",
+    "representative": true,
     "path": "images/watches/art_watch.webp"
   },
   "phone_ultra": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_(54252176424).jpg",
-    "license": "CC BY-SA 2.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_Desert_Titanium_Rear.png",
+    "license": "CC BY 4.0",
+    "representative": true,
     "path": "images/phones/phone_ultra.webp"
   },
   "art_guitar": {
@@ -456,8 +456,8 @@
   },
   "amenity_sports": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
-    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Private_tennis_court,_Velwell_Road,_Exeter_-_geograph.org.uk_-_5882168.jpg",
+    "license": "CC BY-SA 2.0",
     "representative": true,
     "path": "images/amenities/amenity_sports.webp"
   },
@@ -617,7 +617,7 @@
   },
   "gift_women_earrings": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Earrings_in_a_fair_in_India_02.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Swarovski_MATRIX_Ohrringe.jpg",
     "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/gifts/women/gift_women_earrings.webp"
@@ -729,8 +729,8 @@
   },
   "gift_men_tie": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
-    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Silk_ties_-_4046.jpg",
+    "license": "CC BY-SA 3.0",
     "representative": true,
     "path": "images/gifts/men/gift_men_tie.webp"
   },
