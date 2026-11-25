@@ -102,6 +102,36 @@ CANDIDATES = {
   "watch_luxury": [
     "Omega Seamaster Co-Axial.jpg",
     "Omega Seamaster Diving watch.jpg"
+  ],
+  "pet_fish": [
+    "Goldfish aquarium.jpg",
+    "Goldfish in Fish Tank.jpg"
+  ],
+  "pet_rabbit": [
+    "Pet rabbit at home.jpg",
+    "Rabbit pet.jpg"
+  ],
+  "pet_cat": [
+    "Domestic cat.jpg"
+  ],
+  "pet_dog": [
+    "Golden Retriever Dog.jpg"
+  ],
+  "pet_parrot": [
+    "African grey parrot.jpg",
+    "African-Grey-Parrot.jpg"
+  ],
+  "travel_islands": [
+    "View of Oia, Santorini.jpg",
+    "Oia.Santorini.jpg"
+  ],
+  "travel_paris": [
+    "Eiffel Tower seen from the Palais de Chaillot.jpg",
+    "View of the Eiffel Tower in Paris, France.jpg"
+  ],
+  "travel_maldives": [
+    "Aerial shot of a small island on a coral reef in the Maldives.jpg",
+    "Ariel View of Amilla Fushi Island Maldives.jpg"
   ]
 }
 ROOT = Path(__file__).resolve().parent.parent
