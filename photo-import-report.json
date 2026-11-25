@@ -237,5 +237,55 @@
   "vehicle_boat": {
     "status": "not_saved",
     "attempts": []
+  },
+  "luxury_sail": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Beneteau_Oceanis_281_sailboat_Attitude_I_1729.jpg",
+    "license": "CC0"
+  },
+  "vehicle_yacht": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:2018_SPb_Azimut_70_Yacht_01.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "vehicle_jet": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Cessna_Citation_V_N563TM_FDK_MD2.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "pet_horse": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Domestic_horse_at_Suryachaur_and_the_mountains_in_the_back1.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "travel_rome": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
+    "license": "CC BY-SA 2.5"
+  },
+  "travel_newyork": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:New_York_Midtown_Skyline_at_night_-_Jan_2006_edit1.jpg",
+    "license": "CC BY-SA 3.0"
+  },
+  "home_studio": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:John_Brooke_Fieldhouse_interior_in_West_London_maximising_use_of_flexible_space_in_a_studio_apartment.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "home_apartment": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Anonieme_kunstenaar_-_Apartment_Interior_-_1922-F_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+    "license": "Public domain"
+  },
+  "home_house": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Namibia_-_Semi-Detached_House_01.jpg",
+    "license": "CC BY 4.0"
+  },
+  "home_maisonette": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:A_very_patriotic_maisonette,_St_Giles_View,_Pontefract_(27th_January_2024).jpg",
+    "license": "CC BY-SA 4.0"
   }
 }
