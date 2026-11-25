@@ -1,17 +1,29 @@
 {
   "review_basis": "Six contact sheets from workflow 45689765660; thumbnail visual inspection, not full-resolution approval",
   "total": 142,
-  "needs_replacement": 62,
+  "needs_replacement": 38,
   "entries": {
     "art_camera": {
       "source": "https://commons.wikimedia.org/wiki/File:Canon_EOS_R50,_Vorderansicht_30.12.2025.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Canon_EOS_R50,_Vorderansicht_30.12.2025.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_camera": {
       "source": "https://commons.wikimedia.org/wiki/File:Canon_EOS_R50,_Vorderansicht_30.12.2025.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Canon_EOS_R50,_Vorderansicht_30.12.2025.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "pet_parrot": {
       "source": "https://commons.wikimedia.org/wiki/File:African_grey_parrot.jpg",
@@ -22,75 +34,150 @@
       "candidate_index": 3,
       "candidate_file": "Psittacus erithacus -pet parrot-8a.jpg",
       "candidate_note": "Single recognizable parrot, unobstructed head",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:Psittacus_erithacus_-pet_parrot-8a.jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "amenity_console": {
       "source": "https://commons.wikimedia.org/wiki/File:Playstation_5_base_edition_with_controller_(original).jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Playstation_5_base_edition_with_controller_(original).jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_console": {
       "source": "https://commons.wikimedia.org/wiki/File:Playstation_5_base_edition_with_controller_(original).jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Playstation_5_base_edition_with_controller_(original).jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "pet_fish": {
       "source": "https://commons.wikimedia.org/wiki/File:Exotic_goldfish_diversity.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Exotic_goldfish_diversity.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_game": {
       "source": "https://commons.wikimedia.org/wiki/File:Monopoly-board.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Monopoly-board.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "vehicle_citycar": {
       "source": "https://commons.wikimedia.org/wiki/File:Toyota_Yaris_Hybrid_%28XP210%29_1X7A0366.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Toyota_Yaris_Hybrid_%28XP210%29_1X7A0366.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "watch_casual": {
       "source": "https://commons.wikimedia.org/wiki/File:Casio_F-91W.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Casio_F-91W.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "car_sedan": {
       "source": "https://commons.wikimedia.org/wiki/File:Toyota_Corolla_(E210)_sedan_IMG_4189.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Toyota_Corolla_(E210)_sedan_IMG_4189.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "vehicle_scooter": {
       "source": "https://commons.wikimedia.org/wiki/File:Honda_PCX125_2011_Front.JPG",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Honda_PCX125_2011_Front.JPG",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "vehicle_motorbike": {
       "source": "https://commons.wikimedia.org/wiki/File:Honda_CB500_Hornet_2026.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Busy show",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Honda_CB500_Hornet_2026.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Busy show"
     },
     "phone_basic": {
       "source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Retail demo screen",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Retail demo screen"
     },
     "gift_general_phone": {
       "source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Same retail demo image as phone_basic; phone is visible but setup screen is distracting."
     },
     "phone_advanced": {
       "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Retail demo",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Retail demo"
     },
     "motor_moped": {
       "source": "https://commons.wikimedia.org/wiki/File:Honda_Super_Cub_C125_(parked)_in_Kopi_7_-_Palembang,_SS_(1_Jan_2023).jpg",
@@ -101,24 +188,45 @@
       "candidate_index": 3,
       "candidate_file": "Osaka Auto Messe 2019 (93) - Honda Super Cub C125 (2BJ-JA48).jpg",
       "candidate_note": "Clearly displayed exact model, relatively uncluttered",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:Osaka_Auto_Messe_2019_(93)_-_Honda_Super_Cub_C125_(2BJ-JA48).jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "vehicle_suv": {
       "source": "https://commons.wikimedia.org/wiki/File:BMW_X3(1).jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:BMW_X3(1).jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "car_cabrio": {
       "source": "https://commons.wikimedia.org/wiki/File:Mazda_MX-5_(ND)_1X7A7471.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Mazda_MX-5_(ND)_1X7A7471.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "vehicle_sport": {
       "source": "https://commons.wikimedia.org/wiki/File:Porsche_911_992.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Porsche_911_992.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "car_super": {
       "source": "https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_LP610-4.jpg",
@@ -129,79 +237,154 @@
       "candidate_index": 3,
       "candidate_file": "2017 Lamborghini Huracan LP610-4 2.jpg",
       "candidate_note": "Recognizable front three-quarter view of exact car",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:2017_Lamborghini_Huracan_LP610-4_2.jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "motor_adventure": {
       "source": "https://commons.wikimedia.org/wiki/File:Honda_Africa_Twin_2025.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Busy exhibition",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Honda_Africa_Twin_2025.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Busy exhibition"
     },
     "motor_super": {
       "source": "https://commons.wikimedia.org/wiki/File:BMW_S_1000_RR,_right_view.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:BMW_S_1000_RR,_right_view.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "art_watch": {
       "source": "https://commons.wikimedia.org/wiki/File:Rolex_Submariner.JPG",
       "thumbnail_review": "needs_replacement",
       "note": "Multiple watches, not clearly single model",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Rolex_Submariner.JPG",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Multiple watches, not clearly single model"
     },
     "phone_ultra": {
       "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_(54252176424).jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Hand and display",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_(54252176424).jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Hand and display"
     },
     "art_guitar": {
       "source": "https://commons.wikimedia.org/wiki/File:Yamaha_F310.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Yamaha_F310.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "motor_sport": {
       "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YZF-R7_(55048319395).jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Yamaha_YZF-R7_(55048319395).jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "phone_mid": {
       "source": "https://commons.wikimedia.org/wiki/File:Redmi_Note_14_-_2024-09-27_01.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Retail display",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Redmi_Note_14_-_2024-09-27_01.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Retail display"
     },
     "watch_smart": {
       "source": "https://commons.wikimedia.org/wiki/File:Garmin_Venu_3_(a).JPG",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Garmin_Venu_3_(a).JPG",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "watch_premium": {
       "source": "https://commons.wikimedia.org/wiki/File:Tissot_PRX_35mm.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Tissot_PRX_35mm.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "watch_luxury": {
       "source": "https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Co-Axial.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Display case",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Co-Axial.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Display case"
     },
     "pet_rabbit": {
       "source": "https://commons.wikimedia.org/wiki/File:Pet_rabbit_at_home.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Pet_rabbit_at_home.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "pet_cat": {
       "source": "https://commons.wikimedia.org/wiki/File:Domestic_cat.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Domestic_cat.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "pet_dog": {
       "source": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dog.jpg",
@@ -212,14 +395,23 @@
       "candidate_index": 3,
       "candidate_file": "Golden retriever exploring a sunny backyard with green grass and a flower arrangement nearby.jpg",
       "candidate_note": "Friendly bright portrait of a golden retriever",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:Golden_retriever_exploring_a_sunny_backyard_with_green_grass_and_a_flower_arrangement_nearby.jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "travel_islands": {
       "source": "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Skyline.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Skyline.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "travel_paris": {
       "source": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_seen_from_the_Palais_de_Chaillot.jpg",
@@ -230,120 +422,237 @@
       "candidate_index": 2,
       "candidate_file": "La tour eiffel depuis le trocadéro - panoramio.jpg",
       "candidate_note": "Recognizable Eiffel Tower illuminated at dusk",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:La_tour_eiffel_depuis_le_trocad%C3%A9ro_-_panoramio.jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "travel_maldives": {
       "source": "https://commons.wikimedia.org/wiki/File:Aerial_shot_of_a_small_island_on_a_coral_reef_in_the_Maldives.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Aerial_shot_of_a_small_island_on_a_coral_reef_in_the_Maldives.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "phone_fold": {
       "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Z_Fold6.png",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Z_Fold6.png",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "phone_flagship": {
       "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_(54251926561).jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Close-up of camera",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:IPhone_16_(54251926561).jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Close-up of camera"
     },
     "art_piano": {
       "source": "https://commons.wikimedia.org/wiki/File:Yamaha_U1.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Yamaha_U1.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "tech_tablet": {
       "source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Back only",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Back only"
     },
     "gift_general_tablet": {
       "source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Back only",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Back only"
     },
     "tech_laptop": {
       "source": "https://commons.wikimedia.org/wiki/File:Laptop_on_a_desk.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Laptop_on_a_desk.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_laptop": {
       "source": "https://commons.wikimedia.org/wiki/File:Laptop_on_a_desk.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Laptop_on_a_desk.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "amenity_bbq": {
       "source": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Odd public grill, not product",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Gasgrill_Weber_Q100.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Recognizable Weber-style gas grill photographed open in a garden; acceptable representative image."
     },
     "gift_men_grill": {
       "source": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Odd public grill",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Gasgrill_Weber_Q100.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Recognizable gas grill; old public grill no longer displayed."
     },
     "amenity_pool": {
       "source": "https://commons.wikimedia.org/wiki/File:Pool_in_the_back_yard_-_Mid-City_New_Orleans_2010.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Messy yard and accessories",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Pool_in_the_back_yard_-_Mid-City_New_Orleans_2010.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Messy yard and accessories"
     },
     "amenity_spa": {
       "source": "https://commons.wikimedia.org/wiki/File:Whirlpool_bestway_lay-z-spa_Miami.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Covered spa, not usable scene",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Whirlpool_bestway_lay-z-spa_Miami.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Covered spa, not usable scene"
     },
     "luxury_jetski": {
       "source": "https://commons.wikimedia.org/wiki/File:Sea-Doo_Spark.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Sea-Doo_Spark.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "luxury_sail": {
       "source": "https://commons.wikimedia.org/wiki/File:Beneteau_Oceanis_281_sailboat_Attitude_I_1729.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Beneteau_Oceanis_281_sailboat_Attitude_I_1729.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "vehicle_yacht": {
       "source": "https://commons.wikimedia.org/wiki/File:2018_SPb_Azimut_70_Yacht_01.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Small in frame",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:2018_SPb_Azimut_70_Yacht_01.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Small in frame"
     },
     "vehicle_jet": {
       "source": "https://commons.wikimedia.org/wiki/File:Cessna_Citation_V_N563TM_FDK_MD2.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Cessna_Citation_V_N563TM_FDK_MD2.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "pet_horse": {
       "source": "https://commons.wikimedia.org/wiki/File:Domestic_horse_at_Suryachaur_and_the_mountains_in_the_back1.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Domestic_horse_at_Suryachaur_and_the_mountains_in_the_back1.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "travel_rome": {
       "source": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "travel_newyork": {
       "source": "https://commons.wikimedia.org/wiki/File:New_York_Midtown_Skyline_at_night_-_Jan_2006_edit1.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:New_York_Midtown_Skyline_at_night_-_Jan_2006_edit1.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "home_studio": {
       "source": "https://commons.wikimedia.org/wiki/File:John_Brooke_Fieldhouse_interior_in_West_London_maximising_use_of_flexible_space_in_a_studio_apartment.jpg",
@@ -354,14 +663,23 @@
       "candidate_index": 1,
       "candidate_file": "Studio apartment in Finland.jpg",
       "candidate_note": "Furnished domestic studio with natural light",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:Studio_apartment_in_Finland.jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "home_apartment": {
       "source": "https://commons.wikimedia.org/wiki/File:Modern_living_room_with_stylish_furniture_and_a_view_of_the_outdoors_in_a_cozy_apartment_setting.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Modern_living_room_with_stylish_furniture_and_a_view_of_the_outdoors_in_a_cozy_apartment_setting.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "home_house": {
       "source": "https://commons.wikimedia.org/wiki/File:Namibia_-_Semi-Detached_House_01.jpg",
@@ -372,9 +690,12 @@
       "candidate_index": 1,
       "candidate_file": "26 East Avenue, Blairstown, NJ.jpg",
       "candidate_note": "Recognizable attractive detached home",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:26_East_Avenue,_Blairstown,_NJ.jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "home_maisonette": {
       "source": "https://commons.wikimedia.org/wiki/File:A_very_patriotic_maisonette,_St_Giles_View,_Pontefract_(27th_January_2024).jpg",
@@ -383,8 +704,11 @@
       "candidate_review": "selected",
       "candidate_artifact": 15060515371,
       "current_source": "https://www.pexels.com/photo/house-in-town-16849899/",
-      "publication": "verified_local_bytes",
-      "final_visual_review": "pending_published_catalog_review"
+      "publication": "verified_repository_and_pages_deployment",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "home_villa": {
       "source": "https://commons.wikimedia.org/wiki/File:Luxury_Villa_Zakynthos.jpg",
@@ -393,8 +717,11 @@
       "candidate_review": "selected",
       "candidate_artifact": 15060515371,
       "current_source": "https://www.pexels.com/photo/modern-luxury-villa-with-infinity-pool-31817156/",
-      "publication": "verified_local_bytes",
-      "final_visual_review": "pending_published_catalog_review"
+      "publication": "verified_repository_and_pages_deployment",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "home_mansion": {
       "source": "https://commons.wikimedia.org/wiki/File:Mansion_exterior.jpg",
@@ -403,18 +730,33 @@
       "candidate_review": "selected",
       "candidate_artifact": 15060515371,
       "current_source": "https://www.pexels.com/photo/pool-in-a-mansion-in-the-evening-26859062/",
-      "publication": "verified_local_bytes",
-      "final_visual_review": "pending_published_catalog_review"
+      "publication": "verified_repository_and_pages_deployment",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "home_island": {
       "source": "https://commons.wikimedia.org/wiki/File:Anantara_Kihavah_-_Aerial_Hero_Shot_2024.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Anantara_Kihavah_-_Aerial_Hero_Shot_2024.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "amenity_garden": {
       "source": "https://commons.wikimedia.org/wiki/File:Garden_area_with_flowers_and_greenery.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Garden_area_with_flowers_and_greenery.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "amenity_gym": {
       "source": "https://commons.wikimedia.org/wiki/File:Colorful_gym_equipment.jpg",
@@ -423,8 +765,11 @@
       "candidate_review": "selected",
       "candidate_artifact": 15060515371,
       "current_source": "https://www.pexels.com/photo/modern-home-gym-interior-with-fitness-equipment-36777945/",
-      "publication": "verified_local_bytes",
-      "final_visual_review": "pending_published_catalog_review"
+      "publication": "verified_repository_and_pages_deployment",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "art_painting": {
       "source": "https://commons.wikimedia.org/wiki/File:Oval_portrait_miniature_of_girl_oil_painting_by_Valentine_Manchon_Duchesne_-_with_scale.jpg",
@@ -435,9 +780,12 @@
       "candidate_index": 2,
       "candidate_file": "Frederick Waters.Wattsdedham Watermill.Oil Painting Constable Country.Circa 1850.Framed.jpg",
       "candidate_note": "Clearly visible framed landscape painting",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:Frederick_Waters.Wattsdedham_Watermill.Oil_Painting_Constable_Country.Circa_1850.Framed.jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "art_sculpture": {
       "source": "https://commons.wikimedia.org/wiki/File:Marble_sculpture_Gulbenkian_March_2014-1.jpg",
@@ -448,9 +796,12 @@
       "candidate_index": 1,
       "candidate_file": "Predjamski grad - doprsje grofa Janeza Karla Filipa Kobencla (A. Ollivier).jpg",
       "candidate_note": "Single recognizable marble bust on pedestal",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:Predjamski_grad_-_doprsje_grofa_Janeza_Karla_Filipa_Kobencla_(A._Ollivier).jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "art_collection": {
       "source": "https://commons.wikimedia.org/wiki/File:Interior_of_Christchurch_Art_Gallery,_New_Zealand_02.jpg",
@@ -459,77 +810,158 @@
       "candidate_review": "selected",
       "candidate_artifact": 15060515371,
       "current_source": "https://www.pexels.com/photo/paintings-inside-building-3004909/",
-      "publication": "verified_local_bytes",
-      "final_visual_review": "pending_published_catalog_review"
+      "publication": "verified_repository_and_pages_deployment",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_watch": {
       "source": "https://commons.wikimedia.org/wiki/File:CASIO_G-Shock_GW-M5610U.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:CASIO_G-Shock_GW-M5610U.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_glasses": {
       "source": "https://commons.wikimedia.org/wiki/File:RayBanAviator.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:RayBanAviator.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_ball": {
       "source": "https://commons.wikimedia.org/wiki/File:Football_Adidas_Finale_17_Capitano.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Football_Adidas_Finale_17_Capitano.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_football": {
       "source": "https://commons.wikimedia.org/wiki/File:DZL_grip_Sock_%26_Nike_Football_Image.png",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:DZL_grip_Sock_%26_Nike_Football_Image.png",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_guitar": {
       "source": "https://commons.wikimedia.org/wiki/File:Yamaha_FG110_Acoustic_Guitar.JPG",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Yamaha_FG110_Acoustic_Guitar.JPG",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_shoes": {
       "source": "https://commons.wikimedia.org/wiki/File:Geox_Sneakers_black_2025.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Geox_Sneakers_black_2025.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_backpack": {
       "source": "https://commons.wikimedia.org/wiki/File:Eastpak_Sugarbush_backpack_black.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Eastpak_Sugarbush_backpack_black.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_gaming": {
       "source": "https://commons.wikimedia.org/wiki/File:Xbox-360-Pro-wController.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Old console, not controller",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Xbox_Wireless_Controller_Carbon_Black.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Single Xbox wireless controller clearly shown."
     },
     "gift_women_ring": {
       "source": "https://commons.wikimedia.org/wiki/File:Pandora,_Atlas,_Rings_-_Rev_232_(24579092143).png",
       "thumbnail_review": "needs_replacement",
       "note": "Ring not visible",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Pandora,_Atlas,_Rings_-_Rev_232_(24579092143).png",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Ring not visible"
     },
     "gift_women_bracelet": {
       "source": "https://commons.wikimedia.org/wiki/File:Pandora_bracelet.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Pandora_bracelet.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_sunglasses": {
       "source": "https://commons.wikimedia.org/wiki/File:Ray-Ban_Clubround_Sunglasses.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Ray-Ban_Clubround_Sunglasses.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_watch": {
       "source": "https://commons.wikimedia.org/wiki/File:Michael_Kors_Slim_Runway_Thin_Bracelet_Stainless_Watch_MK3211.JPG",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Michael_Kors_Slim_Runway_Thin_Bracelet_Stainless_Watch_MK3211.JPG",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_tea": {
       "source": "https://commons.wikimedia.org/wiki/File:Lipton-mug-tea.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Lipton-mug-tea.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_puzzle": {
       "source": "https://commons.wikimedia.org/wiki/File:Ravensburger_Stoffpuzzle_Schaf_2.jpg",
@@ -538,20 +970,35 @@
       "candidate_review": "selected",
       "candidate_artifact": 15060515371,
       "current_source": "https://www.pexels.com/photo/jigsaw-puzzle-pieces-4000309/",
-      "publication": "verified_local_bytes",
-      "final_visual_review": "pending_published_catalog_review"
+      "publication": "verified_repository_and_pages_deployment",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_donut": {
       "source": "https://commons.wikimedia.org/wiki/File:Doughnut_2.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Doughnut_2.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_plane": {
       "source": "https://commons.wikimedia.org/wiki/File:An_airplane_takes_off_in_the_sunset.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Aircraft barely visible",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:An_airplane_takes_off_in_the_sunset.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Aircraft barely visible"
     },
     "gift_general_music": {
       "source": "https://commons.wikimedia.org/wiki/File:Musical_instruments_of_Karbi_Tribe.jpg",
@@ -562,9 +1009,12 @@
       "candidate_index": 2,
       "candidate_file": "Enjoying a cozy afternoon with coffee and vinyl records at home.jpg",
       "candidate_note": "Inviting listening scene with record player",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:Enjoying_a_cozy_afternoon_with_coffee_and_vinyl_records_at_home.jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_pizza": {
       "source": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita.JPG",
@@ -573,30 +1023,57 @@
       "candidate_review": "selected",
       "candidate_artifact": 15060515371,
       "current_source": "https://www.pexels.com/photo/delicious-margherita-pizza-on-plate-34322095/",
-      "publication": "verified_local_bytes",
-      "final_visual_review": "pending_published_catalog_review"
+      "publication": "verified_repository_and_pages_deployment",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_tie": {
       "source": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Crowded rack",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Crowded rack"
     },
     "gift_men_suit": {
       "source": "https://commons.wikimedia.org/wiki/File:Grey_and_navy_suit_on_mannequin.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Grey_and_navy_suit_on_mannequin.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_rose": {
       "source": "https://commons.wikimedia.org/wiki/File:Red_Rose_Flower_IITMandi_Himachal_Aug19_D72_11473.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Red_Rose_Flower_IITMandi_Himachal_Aug19_D72_11473.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_bouquet": {
       "source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_teddy": {
       "source": "https://commons.wikimedia.org/wiki/File:Little_girl_hugs_teddy_bear_toy.jpg",
@@ -607,38 +1084,71 @@
       "candidate_index": 3,
       "candidate_file": "Teddy bear on the window sill 02.jpg",
       "candidate_note": "Toy clearly visible in full",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:Teddy_bear_on_the_window_sill_02.jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_dress": {
       "source": "https://commons.wikimedia.org/wiki/File:Strapless_evening_dresses_with_hoop_skirt_-_rear_view_with_lacing_in_the_back.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Historical costume appearance",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Strapless_evening_dresses_with_hoop_skirt_-_rear_view_with_lacing_in_the_back.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Historical costume appearance"
     },
     "gift_women_scarf": {
       "source": "https://commons.wikimedia.org/wiki/File:Colored_silk_scarf_from_India_04.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Fabric detail only",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Colored_silk_scarf_from_India_04.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Fabric detail only"
     },
     "gift_women_orchid": {
       "source": "https://commons.wikimedia.org/wiki/File:Ban_Ki-Moon_Orchid_Flower_Singapore_Feb23_D72_25479.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Ban_Ki-Moon_Orchid_Flower_Singapore_Feb23_D72_25479.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_flower": {
       "source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_cake": {
       "source": "https://commons.wikimedia.org/wiki/File:Birthday_Cake_(decorated).jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Birthday_Cake_(decorated).jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_book": {
       "source": "https://commons.wikimedia.org/wiki/File:Princess_Marys_Gift_Book-0009.png",
@@ -647,20 +1157,35 @@
       "candidate_review": "selected",
       "candidate_artifact": 15060515371,
       "current_source": "https://www.pexels.com/photo/top-view-of-a-book-lying-on-the-table-12189613/",
-      "publication": "verified_local_bytes",
-      "final_visual_review": "pending_published_catalog_review"
+      "publication": "verified_repository_and_pages_deployment",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_ticket": {
       "source": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Old torn ticket",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Old torn ticket"
     },
     "gift_general_trip": {
       "source": "https://commons.wikimedia.org/wiki/File:Tropical_Beach_with_Palm_Trees.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Tropical_Beach_with_Palm_Trees.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_plant": {
       "source": "https://commons.wikimedia.org/wiki/File:Among_the_branches_of_a_potted_jade_plant.jpg",
@@ -671,214 +1196,427 @@
       "candidate_index": 1,
       "candidate_file": "Aeonium tabuliforme (4694028465).jpg",
       "candidate_note": "Whole recognizable potted plant",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:Aeonium_tabuliforme_(4694028465).jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_balloon": {
       "source": "https://commons.wikimedia.org/wiki/File:Party_balloons_(Unsplash).jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Party_balloons_(Unsplash).jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_meal": {
       "source": "https://commons.wikimedia.org/wiki/File:Appetizers_for_a_Greek_meal_(5178298876).jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Appetizers_for_a_Greek_meal_(5178298876).jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_movie": {
       "source": "https://commons.wikimedia.org/wiki/File:Auditorium_at_Maxim_in_May_2024.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Auditorium_at_Maxim_in_May_2024.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_flowers": {
       "source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_holiday": {
       "source": "https://commons.wikimedia.org/wiki/File:Scenic_view_of_a_resort_pool_area_overlooking_a_beach_and_mountains.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Scenic_view_of_a_resort_pool_area_overlooking_a_beach_and_mountains.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_celebration": {
       "source": "https://commons.wikimedia.org/wiki/File:Party_decoration_ideas.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Party_decoration_ideas.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_general_diamond": {
       "source": "https://commons.wikimedia.org/wiki/File:Asscher_cut_diamond_7.png",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Asscher_cut_diamond_7.png",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_star": {
       "source": "https://commons.wikimedia.org/wiki/File:Gold_star_christmas_ornament.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Gold_star_christmas_ornament.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_box": {
       "source": "https://commons.wikimedia.org/wiki/File:Brown_gift_box_with_red_ribbon_and_bow.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Brown_gift_box_with_red_ribbon_and_bow.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_crown": {
       "source": "https://commons.wikimedia.org/wiki/File:Spanish_Royal_Crown_1crop.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Spanish_Royal_Crown_1crop.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "vehicle_bike": {
       "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Not exact brand",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Not exact brand"
     },
     "bike_mountain": {
       "source": "https://commons.wikimedia.org/wiki/File:Mountain_bicycle.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Not confirmed exact Cube",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Mountain_bicycle.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Not confirmed exact Cube"
     },
     "bike_gravel": {
       "source": "https://commons.wikimedia.org/wiki/File:Titanium-frame-gravel-bicycle.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Not confirmed exact Cube",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Titanium-frame-gravel-bicycle.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Not confirmed exact Cube"
     },
     "vehicle_roadbike": {
       "source": "https://commons.wikimedia.org/wiki/File:Giant_Road_Bike.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Old bike, not Cube Attain",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Giant_Road_Bike.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Old bike, not Cube Attain"
     },
     "bike_pro": {
       "source": "https://commons.wikimedia.org/wiki/File:Transport_bicycle_racing,_Velo_24,_Berlin_(VB243663).jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Race scene, not bike",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Transport_bicycle_racing,_Velo_24,_Berlin_(VB243663).jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Race scene, not bike"
     },
     "watch_sport": {
       "source": "https://commons.wikimedia.org/wiki/File:Casio_G-Shock_GA-100,_digital_and_analog_watch_(from_2010,_photographed_in_2023).jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Casio_G-Shock_GA-100,_digital_and_analog_watch_(from_2010,_photographed_in_2023).jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "tech_gaming": {
       "source": "https://commons.wikimedia.org/wiki/File:Gaming_computers_(1).jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Crowded exhibition",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Gaming_computers_(1).jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Crowded exhibition"
     },
     "tech_premium": {
       "source": "https://commons.wikimedia.org/wiki/File:Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Dated desk setup",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Dated desk setup"
     },
     "amenity_cinema": {
       "source": "https://commons.wikimedia.org/wiki/File:Dedicated_home_theater.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Dedicated_home_theater.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "vehicle_boat": {
       "source": "https://commons.wikimedia.org/wiki/File:Motorboat_Ryds_435DL_and_cloud_reflections_in_S%C3%A4mstad_harbor_3.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Motorboat_Ryds_435DL_and_cloud_reflections_in_S%C3%A4mstad_harbor_3.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "amenity_sports": {
       "source": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Distant complex",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Distant complex"
     },
     "gift_men_headphones": {
       "source": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Different brand",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Different brand"
     },
     "gift_men_bike": {
       "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Not exact brand",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Not exact brand"
     },
     "gift_men_wallet": {
       "source": "https://commons.wikimedia.org/wiki/File:Leather_bi-fold_wallet_by_Eugene_Pik_(2021)_04.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Leather_bi-fold_wallet_by_Eugene_Pik_(2021)_04.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_toolkit": {
       "source": "https://commons.wikimedia.org/wiki/File:Set_of_metal_tools_in_a_blue_box_arranged_neatly.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Set_of_metal_tools_in_a_blue_box_arranged_neatly.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_sneakers": {
       "source": "https://commons.wikimedia.org/wiki/File:Nike_Air_Max_Plus_(604133-050).jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Nike_Air_Max_Plus_(604133-050).jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_bag": {
       "source": "https://commons.wikimedia.org/wiki/File:Handbag_at_Nordstrom_Rack_-_Santa_Rosa_-_December_2022_-_Sarah_Stierch.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Cluttered bag display",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Handbag_at_Nordstrom_Rack_-_Santa_Rosa_-_December_2022_-_Sarah_Stierch.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Cluttered bag display"
     },
     "gift_women_perfume": {
       "source": "https://commons.wikimedia.org/wiki/File:Coco_mademoiselle.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Coco_mademoiselle.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_cosmetics": {
       "source": "https://commons.wikimedia.org/wiki/File:Cosmetics-1078712_1280.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Crowded shop display",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Cosmetics-1078712_1280.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Crowded shop display"
     },
     "gift_women_earrings": {
       "source": "https://commons.wikimedia.org/wiki/File:Earrings_in_a_fair_in_India_02.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Crowded earring display",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Earrings_in_a_fair_in_India_02.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Crowded earring display"
     },
     "gift_women_necklace": {
       "source": "https://commons.wikimedia.org/wiki/File:Necklace_made_of_rough_diamonds.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Necklace_made_of_rough_diamonds.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_makeup": {
       "source": "https://commons.wikimedia.org/wiki/File:Eye_Makeup_Palette_and_Brush_Kit.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Eye_Makeup_Palette_and_Brush_Kit.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_luxurybag": {
       "source": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Not confirmed premium model",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Not confirmed premium model"
     },
     "gift_general_icecream": {
       "source": "https://commons.wikimedia.org/wiki/File:Bowl_~_Ice_cream.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Bowl_~_Ice_cream.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "travel_world": {
       "source": "https://commons.wikimedia.org/wiki/File:Travel._Trip._Vacation._Top_view_airplane_with_touristic_map_(52136224054).jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Toy plane and map",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Travel._Trip._Vacation._Top_view_airplane_with_touristic_map_(52136224054).jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Toy plane and map"
     },
     "gift_men_car": {
       "source": "https://commons.wikimedia.org/wiki/File:Oldtimer-2013_model_car_20130309_150849.JPG",
@@ -889,16 +1627,25 @@
       "candidate_index": 1,
       "candidate_file": "KYOSHO BMW M3.JPG",
       "candidate_note": "Full BMW scale model visible",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:KYOSHO_BMW_M3.JPG",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_men_motorbike": {
       "source": "https://commons.wikimedia.org/wiki/File:Indian_Brave_Model_R_250cc_motorcycle.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Real motorcycle, not miniature",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:2016_Yamaha_XV1600_Wild_Star.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Real motorcycle, not miniature"
     },
     "gift_general_heart": {
       "source": "https://commons.wikimedia.org/wiki/File:Ornament_in_The_Heart_of_Europe.jpg",
@@ -909,41 +1656,99 @@
       "candidate_index": 2,
       "candidate_file": "Plush stuffed heart bears with candy and red boxes (16806018870).jpg",
       "candidate_note": "Clearly presented heart-themed gift",
-      "publication": "verified_catalog_and_import_report",
+      "publication": "verified_repository_and_pages_deployment",
       "current_source": "https://commons.wikimedia.org/wiki/File:Plush_stuffed_heart_bears_with_candy_and_red_boxes_(16806018870).jpg",
-      "final_visual_review": "pending"
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_chocolate": {
       "source": "https://commons.wikimedia.org/wiki/File:Green_and_Black%27s_dark_chocolate_bar_2.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Green_and_Black%27s_dark_chocolate_bar_2.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_heels": {
       "source": "https://commons.wikimedia.org/wiki/File:A_pair_of_high-heeled_shoes.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:A_pair_of_high-heeled_shoes.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_coffee": {
       "source": "https://commons.wikimedia.org/wiki/File:Latte_art,_espresso_with_cup_and_saucer_on_wood_table.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Latte_art,_espresso_with_cup_and_saucer_on_wood_table.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_jewel": {
       "source": "https://commons.wikimedia.org/wiki/File:Swarovski_crystal_snowflake_pendant_02.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:Swarovski_crystal_snowflake_pendant_02.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "gift_women_spa": {
       "source": "https://commons.wikimedia.org/wiki/File:YHI_Spa_treatment_room_at_Paradisus_by_Meli%C3%A1_Bali.jpg",
       "thumbnail_review": "acceptable_at_thumbnail_size",
-      "note": "Subject recognizable; no major issue identified at thumbnail size"
+      "note": "Subject recognizable; no major issue identified at thumbnail size",
+      "current_source": "https://commons.wikimedia.org/wiki/File:YHI_Spa_treatment_room_at_Paradisus_by_Meli%C3%A1_Bali.jpg",
+      "final_visual_review": "acceptable_at_thumbnail_size",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Subject recognizable and acceptable at contact-sheet scale; exact product identity not independently certified."
     },
     "bike_carbon": {
       "source": "https://commons.wikimedia.org/wiki/File:Rennrad_Racing_Bicycle_noBG.jpg",
       "thumbnail_review": "needs_replacement",
       "note": "Not confirmed exact Cube",
       "candidate_review": "no_suitable_improvement_selected",
-      "candidate_artifact": 15059167117
+      "candidate_artifact": 15059167117,
+      "current_source": "https://commons.wikimedia.org/wiki/File:Rennrad_Racing_Bicycle_noBG.jpg",
+      "final_visual_review": "needs_improvement",
+      "final_review_artifact": 15060301760,
+      "final_review_commit": "d61ef8ee575e39fb111bc30f69fc8164f073383a",
+      "publication": "verified_repository_and_pages_deployment",
+      "final_review_note": "Not confirmed exact Cube"
     }
+  },
+  "previous_needs_replacement": 62,
+  "latest_review": {
+    "basis": "Visually inspected all six catalog contact sheets, generated by import workflow 45694547651 and matching successfully deployed commit d61ef8ee575e39fb111bc30f69fc8164f073383a. This is thumbnail-level visual assessment, not full-resolution or independent brand/rights verification.",
+    "artifact": 15060301760,
+    "publication_run": 45694595357,
+    "verified_local_files": 142,
+    "reviewed": 142,
+    "acceptable": 104,
+    "needs_improvement": 38,
+    "selected_imports_confirmed": 22,
+    "additional_acceptable": [
+      "amenity_bbq",
+      "gift_men_grill",
+      "gift_men_gaming"
+    ],
+    "newly_flagged": [
+      "gift_general_phone"
+    ]
   }
 }
