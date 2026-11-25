@@ -2,176 +2,240 @@
   "car_sedan": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Toyota_Corolla_(E210)_sedan_IMG_4189.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/cars/car_sedan.webp"
   },
   "vehicle_scooter": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Honda_PCX125_2011_Front.JPG",
-    "license": "CC BY-SA 3.0"
+    "license": "CC BY-SA 3.0",
+    "representative": false,
+    "path": "images/motorcycles/vehicle_scooter.webp"
   },
   "vehicle_motorbike": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Honda_CB500_Hornet_2026.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/motorcycles/vehicle_motorbike.webp"
   },
   "phone_basic": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/phones/phone_basic.webp"
   },
   "gift_general_phone": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_phone.webp"
   },
   "phone_advanced": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/phones/phone_advanced.webp"
   },
   "motor_moped": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Honda_Super_Cub_C125_(parked)_in_Kopi_7_-_Palembang,_SS_(1_Jan_2023).jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/motorcycles/motor_moped.webp"
   },
   "vehicle_suv": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:BMW_X3(1).jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/cars/vehicle_suv.webp"
   },
   "car_cabrio": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Mazda_MX-5_(ND)_1X7A7471.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/cars/car_cabrio.webp"
   },
   "vehicle_sport": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Porsche_911_992.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/cars/vehicle_sport.webp"
   },
   "car_super": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_LP610-4.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/cars/car_super.webp"
   },
   "motor_adventure": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Honda_Africa_Twin_2025.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/motorcycles/motor_adventure.webp"
   },
   "motor_super": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:BMW_S_1000_RR,_right_view.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/motorcycles/motor_super.webp"
   },
   "art_watch": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Rolex_Submariner.JPG",
-    "license": "CC BY-SA 3.0"
+    "license": "CC BY-SA 3.0",
+    "representative": false,
+    "path": "images/watches/art_watch.webp"
   },
   "phone_ultra": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_(54252176424).jpg",
-    "license": "CC BY-SA 2.0"
+    "license": "CC BY-SA 2.0",
+    "representative": false,
+    "path": "images/phones/phone_ultra.webp"
   },
   "art_guitar": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Yamaha_F310.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/art/art_guitar.webp"
   },
   "motor_sport": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YZF-R7_(55048319395).jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/motorcycles/motor_sport.webp"
   },
   "phone_mid": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Redmi_Note_14_-_2024-09-27_01.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/phones/phone_mid.webp"
   },
   "watch_smart": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Garmin_Venu_3_(a).JPG",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/watches/watch_smart.webp"
   },
   "watch_premium": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Tissot_PRX_35mm.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/watches/watch_premium.webp"
   },
   "watch_luxury": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Co-Axial.jpg",
-    "license": "CC BY 4.0"
+    "license": "CC BY 4.0",
+    "representative": false,
+    "path": "images/watches/watch_luxury.webp"
   },
   "pet_rabbit": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Pet_rabbit_at_home.jpg",
-    "license": "CC BY 2.0"
+    "license": "CC BY 2.0",
+    "representative": false,
+    "path": "images/pets/pet_rabbit.webp"
   },
   "pet_cat": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Domestic_cat.jpg",
-    "license": "CC BY-SA 2.5"
+    "license": "CC BY-SA 2.5",
+    "representative": false,
+    "path": "images/pets/pet_cat.webp"
   },
   "pet_dog": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dog.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/pets/pet_dog.webp"
   },
   "travel_islands": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Skyline.jpg",
-    "license": "CC BY-SA 2.0"
+    "license": "CC BY-SA 2.0",
+    "representative": false,
+    "path": "images/travel/travel_islands.webp"
   },
   "travel_paris": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_seen_from_the_Palais_de_Chaillot.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/travel/travel_paris.webp"
   },
   "travel_maldives": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Aerial_shot_of_a_small_island_on_a_coral_reef_in_the_Maldives.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/travel/travel_maldives.webp"
   },
   "phone_fold": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Z_Fold6.png",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/phones/phone_fold.webp"
   },
   "phone_flagship": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_(54251926561).jpg",
-    "license": "CC BY-SA 2.0"
+    "license": "CC BY-SA 2.0",
+    "representative": false,
+    "path": "images/phones/phone_flagship.webp"
   },
   "art_piano": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Yamaha_U1.jpg",
-    "license": "CC BY 3.0"
+    "license": "CC BY 3.0",
+    "representative": false,
+    "path": "images/art/art_piano.webp"
   },
   "vehicle_bike": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Man_riding_a_bicycle_in_a_snowstorm_in_Quebec_city,_Quebec,_Canada.jpg",
     "license": "CC0",
-    "representative": true
+    "representative": true,
+    "path": "images/bicycles/vehicle_bike.webp"
   },
   "bike_mountain": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Mountain_bicycle.jpg",
     "license": "CC BY-SA 3.0",
-    "representative": true
+    "representative": true,
+    "path": "images/bicycles/bike_mountain.webp"
   },
   "bike_gravel": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Titanium-frame-gravel-bicycle.jpg",
     "license": "CC BY 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/bicycles/bike_gravel.webp"
   },
   "vehicle_roadbike": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Britannica_Bicycle_Road-Racer.jpg",
     "license": "Public domain",
-    "representative": true
+    "representative": true,
+    "path": "images/bicycles/vehicle_roadbike.webp"
   },
   "bike_carbon": {
     "status": "not_saved",
@@ -181,271 +245,351 @@
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Transport_bicycle_racing,_Velo_24,_Berlin_(VB243663).jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/bicycles/bike_pro.webp"
   },
   "watch_sport": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Casio_G-Shock_GA-100,_digital_and_analog_watch_(from_2010,_photographed_in_2023).jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/watches/watch_sport.webp"
   },
   "tech_tablet": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
-    "license": "CC0"
+    "license": "CC0",
+    "representative": false,
+    "path": "images/technology/tech_tablet.webp"
   },
   "gift_general_tablet": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
-    "license": "CC0"
+    "license": "CC0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_tablet.webp"
   },
   "tech_laptop": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Lenovo_Ideapad_100-15IBY_-_cristaux_liquides_(5_dioptries).jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/technology/tech_laptop.webp"
   },
   "gift_men_laptop": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Lenovo_Ideapad_100-15IBY_-_cristaux_liquides_(5_dioptries).jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/men/gift_men_laptop.webp"
   },
   "tech_gaming": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Gaming_computers_(1).jpg",
     "license": "CC BY 2.0",
-    "representative": true
+    "representative": true,
+    "path": "images/technology/tech_gaming.webp"
   },
   "tech_premium": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg",
     "license": "CC BY-SA 2.0",
-    "representative": true
+    "representative": true,
+    "path": "images/technology/tech_premium.webp"
   },
   "amenity_cinema": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Dedicated_home_theater.jpg",
     "license": "CC BY 2.0",
-    "representative": true
+    "representative": true,
+    "path": "images/technology/amenity_cinema.webp"
   },
   "amenity_bbq": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/amenities/amenity_bbq.webp"
   },
   "gift_men_grill": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/men/gift_men_grill.webp"
   },
   "amenity_pool": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Intex_pool,_Interboot_2020,_Friedrichshafen_(IB200178).jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/amenities/amenity_pool.webp"
   },
   "amenity_spa": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Whirlpool_bestway_lay-z-spa_Miami.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/amenities/amenity_spa.webp"
   },
   "luxury_jetski": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Sea-Doo_Spark.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/luxury/luxury_jetski.webp"
   },
   "vehicle_boat": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Motorboat_Ryds_435DL_and_cloud_reflections_in_S%C3%A4mstad_harbor_3.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/luxury/vehicle_boat.webp"
   },
   "luxury_sail": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Beneteau_Oceanis_281_sailboat_Attitude_I_1729.jpg",
-    "license": "CC0"
+    "license": "CC0",
+    "representative": false,
+    "path": "images/luxury/luxury_sail.webp"
   },
   "vehicle_yacht": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:2018_SPb_Azimut_70_Yacht_01.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/luxury/vehicle_yacht.webp"
   },
   "vehicle_jet": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Cessna_Citation_V_N563TM_FDK_MD2.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/luxury/vehicle_jet.webp"
   },
   "pet_horse": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Domestic_horse_at_Suryachaur_and_the_mountains_in_the_back1.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/pets/pet_horse.webp"
   },
   "travel_rome": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
-    "license": "CC BY-SA 2.5"
+    "license": "CC BY-SA 2.5",
+    "representative": false,
+    "path": "images/travel/travel_rome.webp"
   },
   "travel_newyork": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:New_York_Midtown_Skyline_at_night_-_Jan_2006_edit1.jpg",
-    "license": "CC BY-SA 3.0"
+    "license": "CC BY-SA 3.0",
+    "representative": false,
+    "path": "images/travel/travel_newyork.webp"
   },
   "home_studio": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:John_Brooke_Fieldhouse_interior_in_West_London_maximising_use_of_flexible_space_in_a_studio_apartment.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/houses/home_studio.webp"
   },
   "home_apartment": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Empty_apartment_living_room.jpg",
     "license": "CC BY-SA 3.0",
-    "representative": true
+    "representative": true,
+    "path": "images/houses/home_apartment.webp"
   },
   "home_house": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Namibia_-_Semi-Detached_House_01.jpg",
     "license": "CC BY 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/houses/home_house.webp"
   },
   "home_maisonette": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:A_very_patriotic_maisonette,_St_Giles_View,_Pontefract_(27th_January_2024).jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/houses/home_maisonette.webp"
   },
   "home_villa": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Luxury_Villa_Zakynthos.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/houses/home_villa.webp"
   },
   "home_mansion": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Mount_Vernon_Estate_Mansion_2.JPG",
-    "license": "CC BY-SA 3.0"
+    "license": "CC BY-SA 3.0",
+    "representative": false,
+    "path": "images/houses/home_mansion.webp"
   },
   "home_island": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Condos_on_Isleta_Marina,_a_private_island_of_Fajardo,_Puerto_Rico.jpg",
-    "license": "CC BY-SA 2.5"
+    "license": "CC BY-SA 2.5",
+    "representative": false,
+    "path": "images/luxury/home_island.webp"
   },
   "amenity_garden": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Gardena_Schlauchtrommel.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/amenities/amenity_garden.webp"
   },
   "amenity_gym": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Colorful_gym_equipment.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/amenities/amenity_gym.webp"
   },
   "amenity_sports": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/amenities/amenity_sports.webp"
   },
   "art_painting": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Oval_portrait_miniature_of_girl_oil_painting_by_Valentine_Manchon_Duchesne_-_with_scale.jpg",
-    "license": "Public domain"
+    "license": "Public domain",
+    "representative": false,
+    "path": "images/art/art_painting.webp"
   },
   "art_sculpture": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Marble_sculpture_Gulbenkian_March_2014-1.jpg",
-    "license": "CC BY-SA 3.0"
+    "license": "CC BY-SA 3.0",
+    "representative": false,
+    "path": "images/art/art_sculpture.webp"
   },
   "art_collection": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Interior_of_Christchurch_Art_Gallery,_New_Zealand_02.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/art/art_collection.webp"
   },
   "gift_men_watch": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:CASIO_G-Shock_GW-M5610U.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/men/gift_men_watch.webp"
   },
   "gift_men_glasses": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:RayBanAviator.jpg",
-    "license": "CC BY 2.5"
+    "license": "CC BY 2.5",
+    "representative": false,
+    "path": "images/gifts/men/gift_men_glasses.webp"
   },
   "gift_men_headphones": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg",
     "license": "CC BY-SA 3.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/men/gift_men_headphones.webp"
   },
   "gift_men_ball": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Football_Adidas_Finale_17_Capitano.jpg",
-    "license": "CC0"
+    "license": "CC0",
+    "representative": false,
+    "path": "images/gifts/men/gift_men_ball.webp"
   },
   "gift_men_football": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:DZL_grip_Sock_%26_Nike_Football_Image.png",
-    "license": "CC BY 4.0"
+    "license": "CC BY 4.0",
+    "representative": false,
+    "path": "images/gifts/men/gift_men_football.webp"
   },
   "gift_men_bike": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Man_riding_a_bicycle_in_a_snowstorm_in_Quebec_city,_Quebec,_Canada.jpg",
     "license": "CC0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/men/gift_men_bike.webp"
   },
   "gift_men_guitar": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Bass_guitar_headstock_-_Yamaha.jpg",
-    "license": "CC BY-SA 3.0"
+    "license": "CC BY-SA 3.0",
+    "representative": false,
+    "path": "images/gifts/men/gift_men_guitar.webp"
   },
   "gift_men_wallet": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Leather_bi-fold_wallet_by_Eugene_Pik_(2021)_04.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/men/gift_men_wallet.webp"
   },
   "gift_men_shoes": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Geox_used_shoes_0001.JPG",
-    "license": "CC BY-SA 3.0"
+    "license": "CC BY-SA 3.0",
+    "representative": false,
+    "path": "images/gifts/men/gift_men_shoes.webp"
   },
   "gift_men_backpack": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Eastpak_Sugarbush_backpack_black.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/men/gift_men_backpack.webp"
   },
   "gift_men_toolkit": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:JOBOX_tool_box,_Huntington_Station.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/men/gift_men_toolkit.webp"
   },
   "gift_men_gaming": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Xbox-360-Pro-wController.jpg",
-    "license": "Public domain"
+    "license": "Public domain",
+    "representative": false,
+    "path": "images/gifts/men/gift_men_gaming.webp"
   },
   "gift_men_sneakers": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Nike_Air_Max_Plus_(604133-050).jpg",
     "license": "CC BY-SA 4.0",
-    "representative": false
+    "representative": false,
+    "path": "images/gifts/men/gift_men_sneakers.webp"
   },
   "gift_women_bag": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Handbag_at_Nordstrom_Rack_-_Santa_Rosa_-_December_2022_-_Sarah_Stierch.jpg",
     "license": "CC BY 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/women/gift_women_bag.webp"
   },
   "gift_women_perfume": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Bottle_of_L%27Aimant_perfume_-_Coty_-1927-1.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/women/gift_women_perfume.webp"
   },
   "gift_women_ring": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Pandora,_Atlas,_Rings_-_Rev_232_(24579092143).png",
-    "license": "Public domain"
+    "license": "Public domain",
+    "representative": false,
+    "path": "images/gifts/women/gift_women_ring.webp"
   },
   "gift_women_jewel": {
     "status": "not_saved",
@@ -454,140 +598,177 @@
   "gift_women_bracelet": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Pandora_bracelet.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/women/gift_women_bracelet.webp"
   },
   "gift_women_cosmetics": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Cosmetics-1078712_1280.jpg",
     "license": "CC0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/women/gift_women_cosmetics.webp"
   },
   "gift_women_earrings": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Earrings_in_a_fair_in_India_02.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/women/gift_women_earrings.webp"
   },
   "gift_women_necklace": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Necklace_made_of_rough_diamonds.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/women/gift_women_necklace.webp"
   },
   "gift_women_makeup": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Eye_Makeup_Palette_and_Brush_Kit.jpg",
     "license": "CC BY 2.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/women/gift_women_makeup.webp"
   },
   "gift_women_sunglasses": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Ray-Ban_Clubround_Sunglasses.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/women/gift_women_sunglasses.webp"
   },
   "gift_women_watch": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Michael_Kors_Slim_Runway_Thin_Bracelet_Stainless_Watch_MK3211.JPG",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/women/gift_women_watch.webp"
   },
   "gift_women_luxurybag": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg",
     "license": "CC BY 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/women/gift_women_luxurybag.webp"
   },
   "gift_general_tea": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Lipton-mug-tea.jpg",
-    "license": "Public domain"
+    "license": "Public domain",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_tea.webp"
   },
   "gift_general_puzzle": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Ravensburger_Stoffpuzzle_Schaf_2.jpg",
-    "license": "CC BY-SA 3.0 de"
+    "license": "CC BY-SA 3.0 de",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_puzzle.webp"
   },
   "gift_general_donut": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Doughnut_2.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/general/gift_general_donut.webp"
   },
   "gift_general_plane": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Help_airplane_passengers.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/general/gift_general_plane.webp"
   },
   "gift_general_music": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Musical_instruments_of_Karbi_Tribe.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/general/gift_general_music.webp"
   },
   "gift_general_icecream": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Apple_cake_with_vanilla_ice_cream_2.jpg",
     "license": "CC0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/general/gift_general_icecream.webp"
   },
   "gift_general_pizza": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Pizza_box_at_a_fan_convention.jpg",
-    "license": "CC BY 2.0"
+    "license": "CC BY 2.0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_pizza.webp"
   },
   "travel_world": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Seattle_(WA,_USA),_P-I_Globe_--_2022_--_1708.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/travel/travel_world.webp"
   },
   "gift_men_car": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Oldtimer-2013_model_car_20130309_150849.JPG",
     "license": "CC BY 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/men/gift_men_car.webp"
   },
   "gift_men_motorbike": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Indian_Brave_Model_R_250cc_motorcycle.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/men/gift_men_motorbike.webp"
   },
   "gift_men_tie": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Necktie_(drawing).jpg",
-    "license": "CC0"
+    "license": "CC0",
+    "representative": false,
+    "path": "images/gifts/men/gift_men_tie.webp"
   },
   "gift_men_suit": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:French_mens_suit_1765_LACMA.jpg",
-    "license": "CC BY-SA 2.0"
+    "license": "CC BY-SA 2.0",
+    "representative": false,
+    "path": "images/gifts/men/gift_men_suit.webp"
   },
   "gift_women_rose": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Red_Rose_Flower_IITMandi_Himachal_Aug19_D72_11473.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/women/gift_women_rose.webp"
   },
   "gift_women_bouquet": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/women/gift_women_bouquet.webp"
   },
   "gift_women_teddy": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Little_girl_hugs_teddy_bear_toy.jpg",
-    "license": "CC BY 2.0"
+    "license": "CC BY 2.0",
+    "representative": false,
+    "path": "images/gifts/women/gift_women_teddy.webp"
   },
   "gift_women_dress": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Strapless_evening_dresses_with_hoop_skirt_-_rear_view_with_lacing_in_the_back.jpg",
-    "license": "CC BY-SA 3.0"
+    "license": "CC BY-SA 3.0",
+    "representative": false,
+    "path": "images/gifts/women/gift_women_dress.webp"
   },
   "gift_women_scarf": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Colored_silk_scarf_from_India_04.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/women/gift_women_scarf.webp"
   },
   "gift_women_spa": {
     "status": "not_saved",
@@ -596,80 +777,107 @@
   "gift_women_orchid": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Ban_Ki-Moon_Orchid_Flower_Singapore_Feb23_D72_25479.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/women/gift_women_orchid.webp"
   },
   "gift_flower": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/general/gift_flower.webp"
   },
   "gift_general_cake": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:My_birthday_cake!_Oops_there%27s_only_half_left!.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_cake.webp"
   },
   "gift_general_book": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Princess_Marys_Gift_Book-0009.png",
-    "license": "Public domain"
+    "license": "Public domain",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_book.webp"
   },
   "gift_general_ticket": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
-    "license": "CC BY 2.0"
+    "license": "CC BY 2.0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_ticket.webp"
   },
   "gift_general_trip": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Travel_Suitcase_Display,_Bic_Camera,_Akihabara_(40507976702).jpg",
-    "license": "CC0"
+    "license": "CC0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_trip.webp"
   },
   "gift_general_plant": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Among_the_branches_of_a_potted_jade_plant.jpg",
-    "license": "CC0"
+    "license": "CC0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_plant.webp"
   },
   "gift_general_heart": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Ornament_in_The_Heart_of_Europe.jpg",
     "license": "Public domain",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/general/gift_general_heart.webp"
   },
   "gift_general_balloon": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Party_balloons_(Unsplash).jpg",
-    "license": "CC0"
+    "license": "CC0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_balloon.webp"
   },
   "gift_general_meal": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Appetizers_for_a_Greek_meal_(5178298876).jpg",
-    "license": "CC BY 2.0"
+    "license": "CC BY 2.0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_meal.webp"
   },
   "gift_general_movie": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Film_reel._Kodachrome_movie_film_roll_cameras_only_Daylight_type._Baugnez_44_Historical_Center_WW2_museum_2012.jpg",
-    "license": "CC BY 2.0"
+    "license": "CC BY 2.0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_movie.webp"
   },
   "gift_general_flowers": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
     "license": "CC BY-SA 4.0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/general/gift_general_flowers.webp"
   },
   "gift_general_holiday": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Miami_Beach_-_Holiday_Inn.jpg",
-    "license": "Public domain"
+    "license": "Public domain",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_holiday.webp"
   },
   "gift_general_celebration": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Party_decoration_ideas.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_celebration.webp"
   },
   "gift_general_diamond": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Asscher_cut_diamond_7.png",
-    "license": "CC0"
+    "license": "CC0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_diamond.webp"
   },
   "gift_coffee": {
     "status": "not_saved",
@@ -679,27 +887,98 @@
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Green_and_Black%27s_dark_chocolate_bar_2.jpg",
     "license": "CC0",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/general/gift_chocolate.webp"
   },
   "gift_star": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Gold_star_christmas_ornament.jpg",
-    "license": "CC BY 2.0"
+    "license": "CC BY 2.0",
+    "representative": false,
+    "path": "images/gifts/general/gift_star.webp"
   },
   "gift_box": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Brown_gift_box_with_red_ribbon_and_bow.jpg",
-    "license": "CC BY 2.0"
+    "license": "CC BY 2.0",
+    "representative": false,
+    "path": "images/gifts/general/gift_box.webp"
   },
   "gift_crown": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Spanish_Royal_Crown_1crop.jpg",
-    "license": "CC BY-SA 4.0"
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/gifts/general/gift_crown.webp"
   },
   "gift_women_heels": {
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:High_Heels_(1921)_-_1.jpg",
     "license": "Public domain",
-    "representative": true
+    "representative": true,
+    "path": "images/gifts/women/gift_women_heels.webp"
+  },
+  "art_camera": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Canon_EOS_R50,_Vorderansicht_30.12.2025.jpg",
+    "license": "CC0",
+    "representative": false,
+    "path": "images/art/art_camera.webp"
+  },
+  "gift_general_camera": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Canon_EOS_R50,_Vorderansicht_30.12.2025.jpg",
+    "license": "CC0",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_camera.webp"
+  },
+  "pet_parrot": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:African_grey_parrot.jpg",
+    "license": "CC0",
+    "representative": false,
+    "path": "images/pets/pet_parrot.webp"
+  },
+  "amenity_console": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Playstation_5_base_edition_with_controller_(original).jpg",
+    "license": "CC0",
+    "representative": false,
+    "path": "images/technology/amenity_console.webp"
+  },
+  "gift_men_console": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Playstation_5_base_edition_with_controller_(original).jpg",
+    "license": "CC0",
+    "representative": false,
+    "path": "images/gifts/men/gift_men_console.webp"
+  },
+  "pet_fish": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Exotic_goldfish_diversity.jpg",
+    "license": "CC0",
+    "representative": false,
+    "path": "images/pets/pet_fish.webp"
+  },
+  "gift_general_game": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Monopoly-board.jpg",
+    "license": "Public domain",
+    "representative": false,
+    "path": "images/gifts/general/gift_general_game.webp"
+  },
+  "vehicle_citycar": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Toyota_Yaris_Hybrid_%28XP210%29_1X7A0366.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": false,
+    "path": "images/cars/vehicle_citycar.webp"
+  },
+  "watch_casual": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Casio_F-91W.jpg",
+    "license": "CC BY-SA 3.0",
+    "representative": false,
+    "path": "images/watches/watch_casual.webp"
   }
 }
