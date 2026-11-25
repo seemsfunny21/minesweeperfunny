@@ -308,12 +308,12 @@ SEARCH_TARGETS = {
 ROOT = Path(__file__).resolve().parent.parent
 UA = "PredictionsCatalog/1.0 (Wikimedia Commons attribution; https://github.com/seemsfunny21/predictions)"
 def get(url):
-    for attempt in range(2):
+    for attempt in range(1):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":UA}),timeout=15) as r:
+            with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":UA}),timeout=10) as r:
                 return r.read(25000001)
         except Exception:
-            if attempt == 1: raise
+            if attempt == 0: raise
             time.sleep(3*(attempt+1))
 def clean(s):
     return " ".join(html.unescape(re.sub(r"<[^>]+>"," ",s)).split())
@@ -361,32 +361,79 @@ def discover(terms):
         if (required in normalized(title) or all(t in normalized(title) for t in tokens)) and re.search(r"\.(jpe?g|png|webp)$",title,re.I):
             found.append(title)
     return found[:4]
+# Use an immutable plan of missing item codes for this workflow run.
+import argparse
+parser=argparse.ArgumentParser()
+parser.add_argument("--plan",action="store_true")
+parser.add_argument("--batch",type=int,default=0)
+parser.add_argument("--plan-file",default="/tmp/predictions-photo-plan.json")
+args=parser.parse_args()
 path=ROOT/"photo-catalog.js"
+report_path=ROOT/"photo-import-report.json"
 old={}
 if path.exists():
     old=json.loads(path.read_text().removeprefix("const PRODUCT_PHOTOS=").strip().removesuffix(";"))
-photos={}; cache={}
+priority=['car_sedan','vehicle_scooter','vehicle_motorbike','phone_basic','gift_general_phone','phone_advanced','motor_moped','vehicle_suv','car_cabrio','vehicle_sport']
+all_codes=list(dict.fromkeys([*priority,*CANDIDATES,*SEARCH_TARGETS]))
+plan_path=Path(args.plan_file)
+if args.plan:
+    missing=[code for code in all_codes if code not in old]
+    plan_path.write_text(json.dumps(missing),encoding="utf-8")
+    print("Missing entries:",len(missing),flush=True)
+    raise SystemExit(0)
+plan=json.loads(plan_path.read_text())
+batch=plan[args.batch*10:(args.batch+1)*10]
+if not batch: raise SystemExit(0)
+report={}
+if report_path.exists():
+    report=json.loads(report_path.read_text())
+photos={}; cache={}; failures={}
 def save():
-    tmp=path.with_suffix('.tmp')
-    tmp.write_text('const PRODUCT_PHOTOS='+json.dumps({**old,**photos},ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
+    tmp=path.with_suffix(".tmp")
+    tmp.write_text("const PRODUCT_PHOTOS="+json.dumps({**old,**photos},ensure_ascii=False,separators=(",",":"))+";\n",encoding="utf-8")
     tmp.replace(path)
-priority=['car_sedan','vehicle_scooter','vehicle_motorbike','phone_basic','gift_general_phone','phone_advanced','motor_moped']
-for code in dict.fromkeys([*priority,*CANDIDATES,*SEARCH_TARGETS]):
-    names=list(CANDIDATES.get(code,[]))
-    if code in old:
-        print("KEEP",code,flush=True)
-        continue
-    if code in SEARCH_TARGETS:
-        try: names=list(dict.fromkeys(names+discover(SEARCH_TARGETS[code])))
-        except Exception as e: print("SEARCH SKIP",code,str(e),flush=True)
-    for name in names:
+    tmp_report=report_path.with_suffix(".tmp")
+    tmp_report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    tmp_report.replace(report_path)
+def try_name(code,name):
+    if name in failures: raise ValueError(failures[name])
+    if name not in cache:
         try:
-            if name not in cache:
-                cache[name]=read_photo(name)
-                time.sleep(1)
-            photos[code]=cache[name]; save(); print("OK",code,name,flush=True)
-            break
-        except Exception as e: print("SKIP",code,name,str(e),flush=True)
-old.update(photos)
-path.write_text("const PRODUCT_PHOTOS="+json.dumps(old,ensure_ascii=False,separators=(",",":"))+";\n",encoding="utf-8")
-print("Imported",len(photos),"catalog entries; total",len(old),flush=True)
+            cache[name]=read_photo(name)
+            time.sleep(0.7)
+        except Exception as e:
+            failures[name]=str(e)
+            raise
+    photos[code]=cache[name]
+    report[code]={"status":"saved","source":photos[code]["source"],"license":photos[code]["license"]}
+    save()
+    print("OK",code,name,flush=True)
+print("BATCH",args.batch+1,"ITEMS",batch,flush=True)
+for code in batch:
+    if code in old:
+        continue
+    errors=[]
+    found=False
+    attempted=set()
+    def try_candidates(names):
+        for name in names:
+            if name in attempted: continue
+            attempted.add(name)
+            try:
+                try_name(code,name)
+                return True
+            except Exception as e:
+                errors.append({"file":name,"error":str(e)[:300]})
+                print("SKIP",code,name,str(e),flush=True)
+        return False
+    found=try_candidates(CANDIDATES.get(code,[])[:4])
+    if not found and code in SEARCH_TARGETS:
+        try:
+            found=try_candidates(discover(SEARCH_TARGETS[code]))
+        except Exception as e:
+            errors.append({"search":SEARCH_TARGETS[code],"error":str(e)[:300]})
+    if not found:
+        report[code]={"status":"not_saved","attempts":errors}
+        save()
+save()
+print("Batch imported",len(photos),"of",len(batch),"total",len(old)+len(photos),flush=True)
