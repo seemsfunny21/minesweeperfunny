@@ -1,0 +1,98 @@
+{
+  "home_villa": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Luxury_Villa_Zakynthos.jpg",
+    "path": "images/houses/home_villa.webp",
+    "preview": "home_villa-1.webp",
+    "source": "https://www.pexels.com/photo/modern-luxury-villa-with-infinity-pool-31817156/",
+    "author": "Ahmet ÇÖTÜR",
+    "sha256": "f550822941cb2d0882c9edc109f6355474407d6444da87bfa1e31c5397fe3cef",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "visual_review": "approved_candidate_contact_sheet",
+    "representative": true
+  },
+  "home_mansion": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Mansion_exterior.jpg",
+    "path": "images/houses/home_mansion.webp",
+    "preview": "home_mansion-2.webp",
+    "source": "https://www.pexels.com/photo/pool-in-a-mansion-in-the-evening-26859062/",
+    "author": "Ahmet ÇÖTÜR",
+    "sha256": "e917769fa4f895139d6d1221e4f9e084429aefb0f2c25baa8013b8bb924cb468",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "visual_review": "approved_candidate_contact_sheet",
+    "representative": true
+  },
+  "home_maisonette": {
+    "previous": "https://commons.wikimedia.org/wiki/File:A_very_patriotic_maisonette,_St_Giles_View,_Pontefract_(27th_January_2024).jpg",
+    "path": "images/houses/home_maisonette.webp",
+    "preview": "home_maisonette-1.webp",
+    "source": "https://www.pexels.com/photo/house-in-town-16849899/",
+    "author": "Photographer Liam Gillan",
+    "sha256": "0c81078dd731f53610b2603f9c181a6bf9a5f5af30abfe90be62d180f0e80781",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "visual_review": "approved_candidate_contact_sheet",
+    "representative": true
+  },
+  "amenity_gym": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Colorful_gym_equipment.jpg",
+    "path": "images/amenities/amenity_gym.webp",
+    "preview": "amenity_gym-1.webp",
+    "source": "https://www.pexels.com/photo/modern-home-gym-interior-with-fitness-equipment-36777945/",
+    "author": "Curtis Adams",
+    "sha256": "ea75a3c9a53bf27c61bf8b9e67717b22df84468224a0133bbb3034d295961400",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "visual_review": "approved_candidate_contact_sheet",
+    "representative": true
+  },
+  "gift_general_pizza": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita.JPG",
+    "path": "images/gifts/general/gift_general_pizza.webp",
+    "preview": "gift_general_pizza-1.webp",
+    "source": "https://www.pexels.com/photo/delicious-margherita-pizza-on-plate-34322095/",
+    "author": "Novkov Visuals",
+    "sha256": "443ffd88f935d5027ec852526557a3368a07af0c16c5f148e4c866fa1200f55e",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "visual_review": "approved_candidate_contact_sheet",
+    "representative": true
+  },
+  "art_collection": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Interior_of_Christchurch_Art_Gallery,_New_Zealand_02.jpg",
+    "path": "images/art/art_collection.webp",
+    "preview": "art_collection-1.webp",
+    "source": "https://www.pexels.com/photo/paintings-inside-building-3004909/",
+    "author": "Suzy Hazelwood",
+    "sha256": "d32b3b898e17dd3c65a857b4313dfc8fe4810dc0f48d67c60b17bc1b577b31ca",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "visual_review": "approved_candidate_contact_sheet",
+    "representative": true
+  },
+  "gift_general_book": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Princess_Marys_Gift_Book-0009.png",
+    "path": "images/gifts/general/gift_general_book.webp",
+    "preview": "gift_general_book-2.webp",
+    "source": "https://www.pexels.com/photo/top-view-of-a-book-lying-on-the-table-12189613/",
+    "author": "Ezgi Yelken",
+    "sha256": "50d53e0f690452e12238a550bfff0b7b07da8fc3db3cb11ad63c811119510e59",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "visual_review": "approved_candidate_contact_sheet",
+    "representative": true
+  },
+  "gift_general_puzzle": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Ravensburger_Stoffpuzzle_Schaf_2.jpg",
+    "path": "images/gifts/general/gift_general_puzzle.webp",
+    "preview": "gift_general_puzzle-2.webp",
+    "source": "https://www.pexels.com/photo/jigsaw-puzzle-pieces-4000309/",
+    "author": "Sharon Snider",
+    "sha256": "078155e9c433aab532820a88195ca553e80387c7676ae535ba1fdd9cc76b8c2b",
+    "license": "Pexels License",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "visual_review": "approved_candidate_contact_sheet",
+    "representative": true
+  }
+}
