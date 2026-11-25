@@ -1,19 +1,20 @@
-name: Import freely licensed catalog photos in batches of ten
+name: Organize catalog WebP files
 on:
   workflow_dispatch:
   push:
     paths:
       - '.github/workflows/import-photos.yml'
       - 'scripts/import_photos.py'
+      - 'images/**'
 permissions:
   contents: write
 concurrency:
   group: catalog-photos
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
-  import:
+  organize:
     runs-on: ubuntu-latest
-    timeout-minutes: 100
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,27 +23,15 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install Pillow==11.3.0
-      - name: Validate importer and create fixed batch plan
+      - name: Extract and verify local WebP files
+        run: python scripts/import_photos.py
+      - name: Commit only after verification
         run: |
-          python -m py_compile scripts/import_photos.py
-          python scripts/import_photos.py --plan
-      - name: Import and commit each batch independently
-        shell: bash
-        run: |
-          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          batches=$(python -c 'import json; print((len(json.load(open("/tmp/predictions-photo-plan.json")))+9)//10)')
-          for (( i=0; i<batches; i++ )); do
-            echo "::group::Photo batch $((i+1)) of $batches"
-            timeout 6m python -u scripts/import_photos.py --batch "$i" || echo "::warning::Batch stopped; preserving completed items"
-            python -c 'import json; from pathlib import Path; d=json.loads(Path("photo-catalog.js").read_text().removeprefix("const PRODUCT_PHOTOS=").strip().removesuffix(";")); print("Saved entries:",len(d)); assert all(x["src"].startswith("data:image/webp;base64,") and x["license"] and x["source"] for x in d.values())'
-            git add photo-catalog.js
-            if test -f photo-import-report.json; then git add photo-import-report.json; fi
-            if ! git diff --cached --quiet; then
-              git commit -m "Save catalog photo batch $((i+1))"
-              git pull --rebase origin main
-              git push origin HEAD:main
-            fi
-            echo "::endgroup::"
-          done
+          git add images photo-catalog.js photo-import-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Organize catalog photos into verified local WebP folders"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
