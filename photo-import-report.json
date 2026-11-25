@@ -519,5 +519,53 @@
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Strapless_evening_dresses_with_hoop_skirt_-_rear_view_with_lacing_in_the_back.jpg",
     "license": "CC BY-SA 3.0"
+  },
+  "gift_women_scarf": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Colored_silk_scarf_from_India_04.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_women_spa": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_women_orchid": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Ban_Ki-Moon_Orchid_Flower_Singapore_Feb23_D72_25479.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_flower": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Elevators_vestibule_with_flower_bouquets_at_InterContinental_Hotel_Singapore.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_general_cake": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:My_birthday_cake!_Oops_there%27s_only_half_left!.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_general_book": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Princess_Marys_Gift_Book-0009.png",
+    "license": "Public domain"
+  },
+  "gift_general_ticket": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
+    "license": "CC BY 2.0"
+  },
+  "gift_general_trip": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Travel_Suitcase_Display,_Bic_Camera,_Akihabara_(40507976702).jpg",
+    "license": "CC0"
+  },
+  "gift_general_plant": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Among_the_branches_of_a_potted_jade_plant.jpg",
+    "license": "CC0"
+  },
+  "gift_general_heart": {
+    "status": "not_saved",
+    "attempts": []
   }
 }
