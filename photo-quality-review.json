@@ -57,10 +57,10 @@
   },
   "gift_general_plane": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Help_airplane_passengers.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:An_airplane_takes_off_in_the_sunset.jpg",
-    "visual_review": "needs_improvement",
-    "review_artifact": 15060301760
+    "previous": "https://commons.wikimedia.org/wiki/File:An_airplane_takes_off_in_the_sunset.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Jetstar_Airbus_A320_in_flight(_square_cut).jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "c26dddb9d94a97a88737d4235b0bd76c8180364506f8c0b003e35f1ec2ef55a3"
   },
   "gift_coffee": {
     "status": "replaced",
@@ -227,10 +227,10 @@
   },
   "gift_men_motorbike": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Indian_Brave_Model_R_250cc_motorcycle.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:2016_Yamaha_XV1600_Wild_Star.jpg",
-    "visual_review": "needs_improvement",
-    "review_artifact": 15060301760
+    "previous": "https://commons.wikimedia.org/wiki/File:2016_Yamaha_XV1600_Wild_Star.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Yzr500_tamyia.JPG",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "9c9004d4797c993c5b2ba6cdccd5f74cfbd0d79c9b37bb158fb4d701717e88a8"
   },
   "gift_men_gaming": {
     "status": "replaced",
@@ -433,5 +433,54 @@
     "source": "https://commons.wikimedia.org/wiki/File:Swarovski_MATRIX_Ohrringe.jpg",
     "visual_review": "approved_candidate_contact_sheet",
     "sha256": "d1629f86603c60444e839870757b29b0bd9216b4a68a0a45e8d7c44d9b29a1e3"
+  },
+  "watch_luxury": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Co-Axial.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Planet_Ocean_Chronograph_2210.51.00.jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "229f09290b8ee1af47b033682846a681631a8fa0a2cb640721d85794bb90ad88"
+  },
+  "phone_flagship": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:IPhone_16_(54251926561).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_Ultramarine_Rear.png",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "430e10f0c662018e7e970f97da95e03a4a5de02dddbefd8004c3ac8e3b569a0f"
+  },
+  "gift_women_dress": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Strapless_evening_dresses_with_hoop_skirt_-_rear_view_with_lacing_in_the_back.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Mannequin_display.jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "3a11307b0d529c4bd9c1b0e4fbaf635eb160b4af073e94d75a20960ed4ad085b"
+  },
+  "gift_women_scarf": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Colored_silk_scarf_from_India_04.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Nuno_Felted_Scarf_-_Created_by_Debra_Meyer_Scott.jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "0422f8819aa505a9a07ee27e4348c63628176720615a08dc47a8bc6cfc672287"
+  },
+  "gift_general_ticket": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:2026_Poland_movie_theater_ticket_Multikino_Katowice.jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "30830a8de1cdc0f17a16728b4d865094b047c032339e6a9d36c3e57485111ed7"
+  },
+  "gift_women_luxurybag": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Michael_Kors_Hamilton_LG_NS_Tote_Shopper_30S2GHMT3L_Kalbsleder_hellbraun_-_luggage_(1)_(16352049738).jpg",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "bd124038e6f34459d4f0fd6c5a7ada4aca2ff726b0f9260e67b6d76b15959d4e"
+  },
+  "phone_mid": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Redmi_Note_14_-_2024-09-27_01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Xiaomi_Redmi_Note_14_4G_running_HyperOS_3.1.png",
+    "visual_review": "approved_candidate_contact_sheet",
+    "sha256": "264a505f38217c2e9d1ed0142448802a8c228cb380a409df83d6ae831420ab43"
   }
 }

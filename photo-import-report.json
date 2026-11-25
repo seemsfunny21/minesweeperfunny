@@ -120,9 +120,9 @@
   },
   "phone_mid": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Redmi_Note_14_-_2024-09-27_01.jpg",
-    "license": "CC BY-SA 4.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Xiaomi_Redmi_Note_14_4G_running_HyperOS_3.1.png",
+    "license": "CC0",
+    "representative": true,
     "path": "images/phones/phone_mid.webp"
   },
   "watch_smart": {
@@ -141,9 +141,9 @@
   },
   "watch_luxury": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Co-Axial.jpg",
-    "license": "CC BY 4.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Planet_Ocean_Chronograph_2210.51.00.jpg",
+    "license": "CC BY-SA 3.0",
+    "representative": true,
     "path": "images/watches/watch_luxury.webp"
   },
   "pet_rabbit": {
@@ -197,9 +197,9 @@
   },
   "phone_flagship": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_(54251926561).jpg",
-    "license": "CC BY-SA 2.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_Ultramarine_Rear.png",
+    "license": "CC BY 4.0",
+    "representative": true,
     "path": "images/phones/phone_flagship.webp"
   },
   "art_piano": {
@@ -652,8 +652,8 @@
   },
   "gift_women_luxurybag": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg",
-    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Michael_Kors_Hamilton_LG_NS_Tote_Shopper_30S2GHMT3L_Kalbsleder_hellbraun_-_luggage_(1)_(16352049738).jpg",
+    "license": "CC BY 2.0",
     "representative": true,
     "path": "images/gifts/women/gift_women_luxurybag.webp"
   },
@@ -680,8 +680,8 @@
   },
   "gift_general_plane": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:An_airplane_takes_off_in_the_sunset.jpg",
-    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jetstar_Airbus_A320_in_flight(_square_cut).jpg",
+    "license": "CC BY-SA 2.0",
     "representative": true,
     "path": "images/gifts/general/gift_general_plane.webp"
   },
@@ -722,8 +722,8 @@
   },
   "gift_men_motorbike": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:2016_Yamaha_XV1600_Wild_Star.jpg",
-    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Yzr500_tamyia.JPG",
+    "license": "CC BY-SA 3.0",
     "representative": true,
     "path": "images/gifts/men/gift_men_motorbike.webp"
   },
@@ -764,16 +764,16 @@
   },
   "gift_women_dress": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Strapless_evening_dresses_with_hoop_skirt_-_rear_view_with_lacing_in_the_back.jpg",
-    "license": "CC BY-SA 3.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Mannequin_display.jpg",
+    "license": "CC BY 4.0",
+    "representative": true,
     "path": "images/gifts/women/gift_women_dress.webp"
   },
   "gift_women_scarf": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Colored_silk_scarf_from_India_04.jpg",
-    "license": "CC BY-SA 4.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:Nuno_Felted_Scarf_-_Created_by_Debra_Meyer_Scott.jpg",
+    "license": "CC BY-SA 3.0",
+    "representative": true,
     "path": "images/gifts/women/gift_women_scarf.webp"
   },
   "gift_women_spa": {
@@ -813,9 +813,9 @@
   },
   "gift_general_ticket": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
-    "license": "CC BY 2.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:2026_Poland_movie_theater_ticket_Multikino_Katowice.jpg",
+    "license": "Public domain",
+    "representative": true,
     "path": "images/gifts/general/gift_general_ticket.webp"
   },
   "gift_general_trip": {
