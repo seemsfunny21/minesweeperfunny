@@ -222,7 +222,6 @@ SEARCH_TARGETS = {
   "gift_women_sunglasses": "Ray Ban sunglasses",
   "gift_women_watch": "Michael Kors watch",
   "gift_women_luxurybag": "Michael Kors handbag",
-  "gift_general_coffee": "Loumidis coffee",
   "gift_general_tea": "Lipton tea",
   "gift_general_puzzle": "Ravensburger puzzle",
   "gift_general_donut": "doughnut",
@@ -230,7 +229,6 @@ SEARCH_TARGETS = {
   "gift_general_music": "music gift",
   "gift_general_icecream": "Kri Kri ice cream",
   "gift_general_pizza": "Pizza Fan",
-  "gift_general_chocolate": "Lacta Greece chocolate",
   "travel_world": "world globe map",
   "gift_men_car": "BMW model car miniature",
   "gift_men_motorbike": "Yamaha model motorcycle miniature",
@@ -251,9 +249,6 @@ SEARCH_TARGETS = {
   "gift_general_plant": "potted plant",
   "gift_general_heart": "heart shaped gift",
   "gift_general_balloon": "party balloons",
-  "gift_general_star": "gold star ornament",
-  "gift_general_box": "gift box ribbon",
-  "gift_general_crown": "royal crown",
   "gift_general_meal": "Greek meal",
   "gift_general_movie": "movie film reel",
   "gift_general_flowers": "flower bouquet",
@@ -298,7 +293,13 @@ SEARCH_TARGETS = {
   "phone_fold": "Samsung Galaxy Z Fold6",
   "phone_flagship": "iPhone 16",
   "art_piano": "Yamaha U1",
-  "gift_general_game": "Monopoly board"
+  "gift_general_game": "Monopoly board",
+  "gift_coffee": "Loumidis coffee",
+  "gift_chocolate": "Lacta Greece chocolate",
+  "gift_star": "gold star ornament",
+  "gift_box": "gift box ribbon",
+  "gift_crown": "royal crown",
+  "gift_women_heels": "Migato high heels"
 }
 ROOT = Path(__file__).resolve().parent.parent
 UA = "PredictionsCatalog/1.0 (Wikimedia Commons attribution; https://github.com/seemsfunny21/predictions)"
