@@ -1,0 +1,116 @@
+{
+  "amenity_garden": {
+    "status": "failed",
+    "candidate": "Garden area with flowers and greenery.jpg",
+    "reason": "Unapproved license: CC BY 2.0",
+    "visual_review": "pending"
+  },
+  "home_apartment": {
+    "status": "failed",
+    "candidate": "Modern living room with stylish furniture and a view of the outdoors in a cozy apartment setting.jpg",
+    "reason": "Unapproved license: CC BY 2.0",
+    "visual_review": "pending"
+  },
+  "gift_general_cake": {
+    "status": "failed",
+    "candidate": "Birthday Cake (decorated).jpg",
+    "reason": "Unapproved license: CC BY 3.0",
+    "visual_review": "pending"
+  },
+  "gift_men_tie": {
+    "status": "failed",
+    "candidate": "Neckties.jpg",
+    "reason": "Unapproved license: CC BY 2.0",
+    "visual_review": "pending"
+  },
+  "gift_men_suit": {
+    "status": "failed",
+    "candidate": "Grey and navy suit on mannequin.jpg",
+    "reason": "Unapproved license: CC BY-SA 2.0",
+    "visual_review": "pending"
+  },
+  "gift_men_shoes": {
+    "status": "failed",
+    "candidate": "Geox Sneakers black 2025.jpg",
+    "reason": "Unapproved license: FAL",
+    "visual_review": "pending"
+  },
+  "gift_women_heels": {
+    "status": "failed",
+    "candidate": "A pair of high-heeled shoes.jpg",
+    "reason": "Unapproved license: CC BY 2.0",
+    "visual_review": "pending"
+  },
+  "gift_general_movie": {
+    "status": "failed",
+    "candidate": "Auditorium at Maxim in May 2024.jpg",
+    "reason": "Unapproved license: CC BY-SA 4.0",
+    "visual_review": "pending"
+  },
+  "gift_general_plane": {
+    "status": "failed",
+    "candidate": "An airplane takes off in the sunset.jpg",
+    "reason": "Unapproved license: CC BY-SA 4.0",
+    "visual_review": "pending"
+  },
+  "gift_coffee": {
+    "status": "failed",
+    "candidate": "Latte art, espresso with cup and saucer on wood table.jpg",
+    "reason": "Unapproved license: CC BY 2.0",
+    "visual_review": "pending"
+  },
+  "gift_women_jewel": {
+    "status": "failed",
+    "candidate": "Swarovski crystal snowflake pendant 02.jpg",
+    "reason": "Unapproved license: CC0",
+    "visual_review": "pending"
+  },
+  "gift_women_spa": {
+    "status": "failed",
+    "candidate": "YHI Spa treatment room at Paradisus by Meliá Bali.jpg",
+    "reason": "Unapproved license: CC BY-SA 4.0",
+    "visual_review": "pending"
+  },
+  "vehicle_bike": {
+    "status": "failed",
+    "candidate": "A city bike.jpg",
+    "reason": "Unapproved license: CC BY-SA 4.0",
+    "visual_review": "pending"
+  },
+  "gift_men_bike": {
+    "status": "failed",
+    "candidate": "A city bike.jpg",
+    "reason": "Unapproved license: CC BY-SA 4.0",
+    "visual_review": "pending"
+  },
+  "vehicle_roadbike": {
+    "status": "failed",
+    "candidate": "Giant Road Bike.jpg",
+    "reason": "Unapproved license: CC BY-SA 4.0",
+    "visual_review": "pending"
+  },
+  "bike_carbon": {
+    "status": "failed",
+    "candidate": "Rennrad Racing Bicycle noBG.jpg",
+    "reason": "Unapproved license: CC BY-SA 4.0",
+    "visual_review": "pending"
+  },
+  "tech_laptop": {
+    "status": "failed",
+    "candidate": "Laptop on a desk.jpg",
+    "reason": "Unapproved license: CC0",
+    "visual_review": "pending"
+  },
+  "gift_men_laptop": {
+    "status": "failed",
+    "candidate": "Laptop on a desk.jpg",
+    "reason": "Unapproved license: CC0",
+    "visual_review": "pending"
+  },
+  "amenity_pool": {
+    "status": "failed",
+    "candidate": "Pool in the back yard - Mid-City New Orleans 2010.jpg",
+    "reason": "Unapproved license: CC BY 2.0",
+    "visual_review": "pending"
+  }
+}
