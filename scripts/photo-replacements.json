@@ -1,0 +1,78 @@
+{
+  "amenity_garden": {
+    "file": "Garden area with flowers and greenery.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Gardena_Schlauchtrommel.jpg"
+  },
+  "home_apartment": {
+    "file": "Modern living room with stylish furniture and a view of the outdoors in a cozy apartment setting.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Empty_apartment_living_room.jpg"
+  },
+  "gift_general_cake": {
+    "file": "Birthday Cake (decorated).jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:My_birthday_cake!_Oops_there%27s_only_half_left!.jpg"
+  },
+  "gift_men_tie": {
+    "file": "Neckties.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Necktie_(drawing).jpg"
+  },
+  "gift_men_suit": {
+    "file": "Grey and navy suit on mannequin.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:French_mens_suit_1765_LACMA.jpg"
+  },
+  "gift_men_shoes": {
+    "file": "Geox Sneakers black 2025.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Geox_used_shoes_0001.JPG"
+  },
+  "gift_women_heels": {
+    "file": "A pair of high-heeled shoes.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:High_Heels_(1921)_-_1.jpg"
+  },
+  "gift_general_movie": {
+    "file": "Auditorium at Maxim in May 2024.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Film_reel._Kodachrome_movie_film_roll_cameras_only_Daylight_type._Baugnez_44_Historical_Center_WW2_museum_2012.jpg"
+  },
+  "gift_general_plane": {
+    "file": "An airplane takes off in the sunset.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Help_airplane_passengers.jpg"
+  },
+  "gift_coffee": {
+    "file": "Latte art, espresso with cup and saucer on wood table.jpg",
+    "previous": null
+  },
+  "gift_women_jewel": {
+    "file": "Swarovski crystal snowflake pendant 02.jpg",
+    "previous": null
+  },
+  "gift_women_spa": {
+    "file": "YHI Spa treatment room at Paradisus by Meliá Bali.jpg",
+    "previous": null
+  },
+  "vehicle_bike": {
+    "file": "A city bike.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Man_riding_a_bicycle_in_a_snowstorm_in_Quebec_city,_Quebec,_Canada.jpg"
+  },
+  "gift_men_bike": {
+    "file": "A city bike.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Man_riding_a_bicycle_in_a_snowstorm_in_Quebec_city,_Quebec,_Canada.jpg"
+  },
+  "vehicle_roadbike": {
+    "file": "Giant Road Bike.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Britannica_Bicycle_Road-Racer.jpg"
+  },
+  "bike_carbon": {
+    "file": "Rennrad Racing Bicycle noBG.jpg",
+    "previous": null
+  },
+  "tech_laptop": {
+    "file": "Laptop on a desk.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Lenovo_Ideapad_100-15IBY_-_cristaux_liquides_(5_dioptries).jpg"
+  },
+  "gift_men_laptop": {
+    "file": "Laptop on a desk.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Lenovo_Ideapad_100-15IBY_-_cristaux_liquides_(5_dioptries).jpg"
+  },
+  "amenity_pool": {
+    "file": "Pool in the back yard - Mid-City New Orleans 2010.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Intex_pool,_Interboot_2020,_Friedrichshafen_(IB200178).jpg"
+  }
+}
