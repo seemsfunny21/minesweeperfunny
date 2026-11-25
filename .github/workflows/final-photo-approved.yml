@@ -1,0 +1,48 @@
+name: Import final reviewed catalog photos
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/final-photo-approved.json'
+      - 'scripts/import_final_approved.py'
+      - '.github/workflows/final-photo-approved.yml'
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: catalog-photos
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow==11.3.0
+      - uses: actions/download-artifact@v4
+        with:
+          name: final-photo-candidates
+          run-id: '45695253444'
+          github-token: ${{ github.token }}
+          path: /tmp/approved-final-photos
+      - run: python scripts/import_final_approved.py
+      - run: python scripts/catalog_review.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: catalog-review-sheets
+          path: /tmp/catalog-review/*.jpg
+      - name: Commit verified application assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images photo-catalog.js photo-import-report.json photo-quality-review.json photo-visual-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish reviewed Wikimedia catalog assets"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

@@ -1,0 +1,110 @@
+{
+  "phone_basic": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+    "path": "images/phones/phone_basic.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A16_5G_(1).jpg",
+    "author": "Captainmorlypogi1959",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sha256": "c45bf8dee1ffef1e098509fa28e353e9deefb58cb38197c979282aae5c5ec72b",
+    "preview": "phone_basic-3.webp",
+    "representative": true,
+    "visual_review": "approved_candidate_contact_sheet"
+  },
+  "gift_general_phone": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+    "path": "images/gifts/general/gift_general_phone.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A16_5G_(1).jpg",
+    "author": "Captainmorlypogi1959",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sha256": "c45bf8dee1ffef1e098509fa28e353e9deefb58cb38197c979282aae5c5ec72b",
+    "preview": "gift_general_phone-3.webp",
+    "representative": true,
+    "visual_review": "approved_candidate_contact_sheet"
+  },
+  "phone_advanced": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025.jpg",
+    "path": "images/phones/phone_advanced.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025_(cropped).jpg",
+    "author": "Captainmorlypogi1959",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sha256": "620412c0141480baae4d406a996dc07e24ff5198f1a848062dece24c5c11b044",
+    "preview": "phone_advanced-3.webp",
+    "representative": true,
+    "visual_review": "approved_candidate_contact_sheet"
+  },
+  "motor_adventure": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Honda_Africa_Twin_2025.jpg",
+    "path": "images/motorcycles/motor_adventure.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:2020_Honda_CRF1100L_Africa_Twin_MT.jpg",
+    "author": "Chanokchon",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sha256": "c77b8d766ae02e9ace0bea2e2b886df57d25f542129dc336f681bdce94591d9d",
+    "preview": "motor_adventure-1.webp",
+    "representative": true,
+    "visual_review": "approved_candidate_contact_sheet"
+  },
+  "art_watch": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Rolex_Submariner.JPG",
+    "path": "images/watches/art_watch.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Rolex-Submariner.jpg",
+    "author": "FrankWilliams",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sha256": "91bfb8197b460bd3c73338857a3348f697e85690e9ac4c20dcdf783181f7c7f1",
+    "preview": "art_watch-1.webp",
+    "representative": true,
+    "visual_review": "approved_candidate_contact_sheet"
+  },
+  "phone_ultra": {
+    "previous": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_(54252176424).jpg",
+    "path": "images/phones/phone_ultra.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_Desert_Titanium_Rear.png",
+    "author": "Padgriffin",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sha256": "c5924e13df3c6126ab01c254d3a9e8337cb0853d328018968319693bc46cedeb",
+    "preview": "phone_ultra-1.webp",
+    "representative": true,
+    "visual_review": "approved_candidate_contact_sheet"
+  },
+  "gift_men_tie": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
+    "path": "images/gifts/men/gift_men_tie.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Silk_ties_-_4046.jpg",
+    "author": "Jorge Royan",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sha256": "c29be38493f489865fe994faf8ead8846d680d9c359e67e91ccaec3a20fcc6b2",
+    "preview": "gift_men_tie-3.webp",
+    "representative": true,
+    "visual_review": "approved_candidate_contact_sheet"
+  },
+  "amenity_sports": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
+    "path": "images/amenities/amenity_sports.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Private_tennis_court,_Velwell_Road,_Exeter_-_geograph.org.uk_-_5882168.jpg",
+    "author": "David Smith",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sha256": "de184c3308822ddc5ed8b5428c291ea6046b66fd69dda3ac30abddea57e76ed9",
+    "preview": "amenity_sports-1.webp",
+    "representative": true,
+    "visual_review": "approved_candidate_contact_sheet"
+  },
+  "gift_women_earrings": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Earrings_in_a_fair_in_India_02.jpg",
+    "path": "images/gifts/women/gift_women_earrings.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Swarovski_MATRIX_Ohrringe.jpg",
+    "author": "DYVER",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sha256": "d1629f86603c60444e839870757b29b0bd9216b4a68a0a45e8d7c44d9b29a1e3",
+    "preview": "gift_women_earrings-1.webp",
+    "representative": true,
+    "visual_review": "approved_candidate_contact_sheet"
+  }
+}
