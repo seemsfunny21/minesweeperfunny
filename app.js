@@ -9,7 +9,7 @@ const pinField=(id,placeholder)=>{const n=el("input");n.id=id;n.type="password";
 const validPin=x=>/^\d{4,8}$/.test(x);
 function setToken(t){revision++;token=t||"";if(token)localStorage.setItem(KEY,token);else localStorage.removeItem(KEY);}
 async function api(action,extra={}){const response=await fetch(API,{method:"POST",headers:{"Content-Type":"application/json",...(token?{"x-predictions-session":token}:{})},body:JSON.stringify({action,...extra}),cache:"no-store",signal:AbortSignal.timeout(20000)});const data=await response.json();if(!response.ok){const e=new Error(data.error||"Αποτυχία σύνδεσης.");e.status=response.status;throw e;}return data;}
-function toggleGame(yes){$("gameScreen").hidden=!yes;$("tabs").hidden=!yes;$("profileButton").hidden=!yes;auth.hidden=yes;if(!yes){screen.replaceChildren();$("profileButton").replaceChildren();}}
+function toggleGame(yes){$("gameScreen").hidden=!yes;$("tabs").hidden=!yes;$("profileButton").hidden=!yes;auth.hidden=yes;if(yes){auth.replaceChildren();cancelAuthPin();}if(!yes){screen.replaceChildren();$("profileButton").replaceChildren();}}
 function feedback(t){const f=$("feedback");if(f)f.textContent=t;}
 let authPinTimer=null;
 function cancelAuthPin(){if(authPinTimer!==null){clearTimeout(authPinTimer);authPinTimer=null;}}
@@ -220,8 +220,9 @@ async function refresh(draw=false){
  const gChanged=oldGame!==JSON.stringify(state.game),bChanged=oldBank!==JSON.stringify(state.bank),sChanged=oldShop!==JSON.stringify(state.shop),dChanged=oldDeparture!==JSON.stringify(state.departure);
  if(tab==="Διαχείριση"||(tab==="Γεγονότα"&&gChanged)||(tab==="Δελτίο"&&gChanged)||(tab==="Κατάταξη"&&(gChanged||sChanged))||(tab==="Τράπεζα"&&bChanged)||(tab==="Προφίλ"&&(gChanged||sChanged))||((tab==="Τρόπαια"||tab==="Κατάστημα")&&sChanged)||(tab==="Παραιτήσεις"&&dChanged))show(tab);
  }
- }catch(e){if(started!==revision||sessionToken!==token)return;if([401,403].includes(e.status)){setToken("");state=null;picks.clear();profileTarget=null;giftTarget=null;authForm(e.message);}else if(!state)authForm("Δεν υπάρχει σύνδεση με τον server. Δοκίμασε ξανά.");else feedback(e.message);}finally{refreshing=false;}
+ }catch(e){if(started!==revision||sessionToken!==token)return;if([401,403].includes(e.status)){setToken("");state=null;picks.clear();profileTarget=null;giftTarget=null;authForm(e.message);}else if(!state){if(token)sessionLoading("Δεν υπάρχει σύνδεση με τον server. Δοκίμασε ξανά.");else authForm("Δεν υπάρχει σύνδεση με τον server. Δοκίμασε ξανά.");}else feedback(e.message);}finally{refreshing=false;}
 }
-authForm();if(token)refresh(true);setInterval(()=>{clock();if(!busy&&!resetOpen&&document.visibilityState!=="hidden")refresh();},30000);
+function sessionLoading(message="Έλεγχος σύνδεσης…"){toggleGame(false);auth.replaceChildren();const c=el("section",undefined,"card session-loading");c.append(el("p",message,"muted"));if(message!=="Έλεγχος σύνδεσης…")c.append(button("Επανάληψη",()=>refresh(true),"primary"),button("Έξοδος",logout));auth.append(c);}
+if(token){sessionLoading();refresh(true);}else authForm();setInterval(()=>{clock();if(!busy&&!resetOpen&&document.visibilityState!=="hidden")refresh();},30000);
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&!busy&&!resetOpen)refresh();});
-if("serviceWorker" in navigator){navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).then(reg=>reg.update()).catch(()=>{});let reloading=false;navigator.serviceWorker.addEventListener("message",e=>{if(e.data?.type==="PREDICTIONS_UPDATE"&&e.data.version==="13.1"&&!reloading&&sessionStorage.getItem("predictions-reloaded-13.1")!=="yes"){reloading=true;sessionStorage.setItem("predictions-reloaded-13.1","yes");location.reload();}});}
+if("serviceWorker" in navigator)navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).catch(()=>{});
