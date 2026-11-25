@@ -1,0 +1,373 @@
+{
+  "vehicle_motorbike": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Honda_CB500_Hornet_2026.jpg",
+    "exact_model": "Honda CB500 Hornet",
+    "queries": [
+      "Honda CB500 Hornet",
+      "\"Honda CB500 Hornet\"",
+      "Honda CB500 Hornet product"
+    ],
+    "note": "Busy show"
+  },
+  "phone_basic": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+    "exact_model": "Samsung Galaxy A16",
+    "queries": [
+      "Samsung Galaxy A16",
+      "\"Samsung Galaxy A16\"",
+      "Samsung Galaxy A16 product"
+    ],
+    "note": "Retail demo screen"
+  },
+  "gift_general_phone": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+    "exact_model": "Samsung Galaxy A16",
+    "queries": [
+      "Samsung Galaxy A16",
+      "\"Samsung Galaxy A16\"",
+      "Samsung Galaxy A16 product"
+    ],
+    "note": "Same retail demo image as phone_basic; phone is visible but setup screen is distracting."
+  },
+  "phone_advanced": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025.jpg",
+    "exact_model": "Samsung Galaxy A56",
+    "queries": [
+      "Samsung Galaxy A56",
+      "\"Samsung Galaxy A56\"",
+      "Samsung Galaxy A56 product"
+    ],
+    "note": "Retail demo"
+  },
+  "motor_adventure": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Honda_Africa_Twin_2025.jpg",
+    "exact_model": "Honda Africa Twin CRF1100L",
+    "queries": [
+      "Honda Africa Twin CRF1100L",
+      "\"Honda Africa Twin CRF1100L\"",
+      "Honda Africa Twin CRF1100L product"
+    ],
+    "note": "Busy exhibition"
+  },
+  "art_watch": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Rolex_Submariner.JPG",
+    "exact_model": "Rolex Submariner",
+    "queries": [
+      "Rolex Submariner",
+      "\"Rolex Submariner\"",
+      "Rolex Submariner product"
+    ],
+    "note": "Multiple watches, not clearly single model"
+  },
+  "phone_ultra": {
+    "previous": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_(54252176424).jpg",
+    "exact_model": "iPhone 16 Pro Max",
+    "queries": [
+      "iPhone 16 Pro Max",
+      "\"iPhone 16 Pro Max\"",
+      "iPhone 16 Pro Max product"
+    ],
+    "note": "Hand and display"
+  },
+  "phone_mid": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Redmi_Note_14_-_2024-09-27_01.jpg",
+    "exact_model": "Redmi Note 14",
+    "queries": [
+      "Redmi Note 14",
+      "\"Redmi Note 14\"",
+      "Redmi Note 14 product"
+    ],
+    "note": "Retail display"
+  },
+  "watch_luxury": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Co-Axial.jpg",
+    "exact_model": "Omega Seamaster",
+    "queries": [
+      "Omega Seamaster",
+      "\"Omega Seamaster\"",
+      "Omega Seamaster product"
+    ],
+    "note": "Display case"
+  },
+  "phone_flagship": {
+    "previous": "https://commons.wikimedia.org/wiki/File:IPhone_16_(54251926561).jpg",
+    "exact_model": "iPhone 16",
+    "queries": [
+      "iPhone 16",
+      "\"iPhone 16\"",
+      "iPhone 16 product"
+    ],
+    "note": "Close-up of camera"
+  },
+  "tech_tablet": {
+    "previous": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+    "exact_model": "Samsung Galaxy Tab A9",
+    "queries": [
+      "Samsung Galaxy Tab A9",
+      "\"Samsung Galaxy Tab A9\"",
+      "Samsung Galaxy Tab A9 product"
+    ],
+    "note": "Back only"
+  },
+  "gift_general_tablet": {
+    "previous": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+    "exact_model": "Samsung Galaxy Tab A9",
+    "queries": [
+      "Samsung Galaxy Tab A9",
+      "\"Samsung Galaxy Tab A9\"",
+      "Samsung Galaxy Tab A9 product"
+    ],
+    "note": "Back only"
+  },
+  "amenity_pool": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Pool_in_the_back_yard_-_Mid-City_New_Orleans_2010.jpg",
+    "exact_model": null,
+    "queries": [
+      "above ground pool garden",
+      "Intex swimming pool garden"
+    ],
+    "note": "Messy yard and accessories"
+  },
+  "amenity_spa": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Whirlpool_bestway_lay-z-spa_Miami.jpg",
+    "exact_model": null,
+    "queries": [
+      "inflatable hot tub outdoor",
+      "Lay-Z-Spa hot tub"
+    ],
+    "note": "Covered spa, not usable scene"
+  },
+  "vehicle_yacht": {
+    "previous": "https://commons.wikimedia.org/wiki/File:2018_SPb_Azimut_70_Yacht_01.jpg",
+    "exact_model": "Azimut 70",
+    "queries": [
+      "Azimut 70",
+      "\"Azimut 70\"",
+      "Azimut 70 product"
+    ],
+    "note": "Small in frame"
+  },
+  "gift_women_ring": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Pandora,_Atlas,_Rings_-_Rev_232_(24579092143).png",
+    "exact_model": "Pandora ring",
+    "queries": [
+      "Pandora ring",
+      "\"Pandora ring\"",
+      "Pandora ring product"
+    ],
+    "note": "Ring not visible"
+  },
+  "gift_general_plane": {
+    "previous": "https://commons.wikimedia.org/wiki/File:An_airplane_takes_off_in_the_sunset.jpg",
+    "exact_model": null,
+    "queries": [
+      "airliner in flight",
+      "passenger airplane wing sky"
+    ],
+    "note": "Aircraft barely visible"
+  },
+  "gift_men_tie": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
+    "exact_model": null,
+    "queries": [
+      "rolled silk necktie",
+      "necktie on table"
+    ],
+    "note": "Crowded rack"
+  },
+  "gift_women_dress": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Strapless_evening_dresses_with_hoop_skirt_-_rear_view_with_lacing_in_the_back.jpg",
+    "exact_model": null,
+    "queries": [
+      "modern evening gown",
+      "evening dress mannequin"
+    ],
+    "note": "Historical costume appearance"
+  },
+  "gift_women_scarf": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Colored_silk_scarf_from_India_04.jpg",
+    "exact_model": null,
+    "queries": [
+      "folded silk scarf",
+      "fashion scarf on table"
+    ],
+    "note": "Fabric detail only"
+  },
+  "gift_general_ticket": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
+    "exact_model": null,
+    "queries": [
+      "cinema ticket popcorn",
+      "movie ticket"
+    ],
+    "note": "Old torn ticket"
+  },
+  "vehicle_bike": {
+    "previous": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+    "exact_model": "Ideal Cityrun",
+    "queries": [
+      "Ideal Cityrun",
+      "\"Ideal Cityrun\"",
+      "Ideal Cityrun product"
+    ],
+    "note": "Not exact brand"
+  },
+  "bike_mountain": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Mountain_bicycle.jpg",
+    "exact_model": "Cube Aim",
+    "queries": [
+      "Cube Aim",
+      "\"Cube Aim\"",
+      "Cube Aim product"
+    ],
+    "note": "Not confirmed exact Cube"
+  },
+  "bike_gravel": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Titanium-frame-gravel-bicycle.jpg",
+    "exact_model": "Cube Nuroad",
+    "queries": [
+      "Cube Nuroad",
+      "\"Cube Nuroad\"",
+      "Cube Nuroad product"
+    ],
+    "note": "Not confirmed exact Cube"
+  },
+  "vehicle_roadbike": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Giant_Road_Bike.jpg",
+    "exact_model": "Cube Attain",
+    "queries": [
+      "Cube Attain",
+      "\"Cube Attain\"",
+      "Cube Attain product"
+    ],
+    "note": "Old bike, not Cube Attain"
+  },
+  "bike_pro": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Transport_bicycle_racing,_Velo_24,_Berlin_(VB243663).jpg",
+    "exact_model": "Specialized Tarmac SL8",
+    "queries": [
+      "Specialized Tarmac SL8",
+      "\"Specialized Tarmac SL8\"",
+      "Specialized Tarmac SL8 product"
+    ],
+    "note": "Race scene, not bike"
+  },
+  "tech_gaming": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Gaming_computers_(1).jpg",
+    "exact_model": "ASUS ROG gaming PC",
+    "queries": [
+      "ASUS ROG gaming PC",
+      "\"ASUS ROG gaming PC\"",
+      "ASUS ROG gaming PC product"
+    ],
+    "note": "Crowded exhibition"
+  },
+  "tech_premium": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg",
+    "exact_model": "Alienware Aurora",
+    "queries": [
+      "Alienware Aurora",
+      "\"Alienware Aurora\"",
+      "Alienware Aurora product"
+    ],
+    "note": "Dated desk setup"
+  },
+  "amenity_sports": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
+    "exact_model": null,
+    "queries": [
+      "private tennis court",
+      "outdoor basketball court"
+    ],
+    "note": "Distant complex"
+  },
+  "gift_men_headphones": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg",
+    "exact_model": "JBL Tune",
+    "queries": [
+      "JBL Tune",
+      "\"JBL Tune\"",
+      "JBL Tune product"
+    ],
+    "note": "Different brand"
+  },
+  "gift_men_bike": {
+    "previous": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+    "exact_model": "Ideal Cityrun",
+    "queries": [
+      "Ideal Cityrun",
+      "\"Ideal Cityrun\"",
+      "Ideal Cityrun product"
+    ],
+    "note": "Not exact brand"
+  },
+  "gift_women_bag": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Handbag_at_Nordstrom_Rack_-_Santa_Rosa_-_December_2022_-_Sarah_Stierch.jpg",
+    "exact_model": "Guess handbag",
+    "queries": [
+      "Guess handbag",
+      "\"Guess handbag\"",
+      "Guess handbag product"
+    ],
+    "note": "Cluttered bag display"
+  },
+  "gift_women_cosmetics": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Cosmetics-1078712_1280.jpg",
+    "exact_model": "Korres cosmetics",
+    "queries": [
+      "Korres cosmetics",
+      "\"Korres cosmetics\"",
+      "Korres cosmetics product"
+    ],
+    "note": "Crowded shop display"
+  },
+  "gift_women_earrings": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Earrings_in_a_fair_in_India_02.jpg",
+    "exact_model": "Swarovski earrings",
+    "queries": [
+      "Swarovski earrings",
+      "\"Swarovski earrings\"",
+      "Swarovski earrings product"
+    ],
+    "note": "Crowded earring display"
+  },
+  "gift_women_luxurybag": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg",
+    "exact_model": "Michael Kors handbag",
+    "queries": [
+      "Michael Kors handbag",
+      "\"Michael Kors handbag\"",
+      "Michael Kors handbag product"
+    ],
+    "note": "Not confirmed premium model"
+  },
+  "travel_world": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Travel._Trip._Vacation._Top_view_airplane_with_touristic_map_(52136224054).jpg",
+    "exact_model": null,
+    "queries": [
+      "world travel collage destinations",
+      "travel landmarks globe"
+    ],
+    "note": "Toy plane and map"
+  },
+  "gift_men_motorbike": {
+    "previous": "https://commons.wikimedia.org/wiki/File:2016_Yamaha_XV1600_Wild_Star.jpg",
+    "exact_model": "Yamaha diecast motorcycle",
+    "queries": [
+      "Yamaha diecast motorcycle",
+      "\"Yamaha diecast motorcycle\"",
+      "Yamaha diecast motorcycle product"
+    ],
+    "note": "Real motorcycle, not miniature"
+  },
+  "bike_carbon": {
+    "previous": "https://commons.wikimedia.org/wiki/File:Rennrad_Racing_Bicycle_noBG.jpg",
+    "exact_model": "Cube Agree C:62",
+    "queries": [
+      "Cube Agree C:62",
+      "\"Cube Agree C:62\"",
+      "Cube Agree C:62 product"
+    ],
+    "note": "Not confirmed exact Cube"
+  }
+}

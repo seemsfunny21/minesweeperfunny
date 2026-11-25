@@ -1,0 +1,26 @@
+name: Final catalog candidate search
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/final-photo-search.json'
+      - 'scripts/search_final_photos.py'
+      - '.github/workflows/final-photo-search.yml'
+permissions:
+  contents: read
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow==11.3.0
+      - run: python scripts/search_final_photos.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: final-photo-candidates
+          path: /tmp/final-photo-candidates/
