@@ -74,5 +74,45 @@
   "amenity_pool": {
     "file": "Pool in the back yard - Mid-City New Orleans 2010.jpg",
     "previous": "https://commons.wikimedia.org/wiki/File:Intex_pool,_Interboot_2020,_Friedrichshafen_(IB200178).jpg"
+  },
+  "home_mansion": {
+    "file": "Mansion exterior.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Mount_Vernon_Estate_Mansion_2.JPG"
+  },
+  "home_island": {
+    "file": "Anantara Kihavah - Aerial Hero Shot 2024.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Condos_on_Isleta_Marina,_a_private_island_of_Fajardo,_Puerto_Rico.jpg"
+  },
+  "gift_women_perfume": {
+    "file": "Coco mademoiselle.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Bottle_of_L%27Aimant_perfume_-_Coty_-1927-1.jpg"
+  },
+  "gift_general_icecream": {
+    "file": "Bowl ~ Ice cream.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Apple_cake_with_vanilla_ice_cream_2.jpg"
+  },
+  "gift_general_pizza": {
+    "file": "Pizza Margherita.JPG",
+    "previous": "https://commons.wikimedia.org/wiki/File:Pizza_box_at_a_fan_convention.jpg"
+  },
+  "gift_men_toolkit": {
+    "file": "Set of metal tools in a blue box arranged neatly.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:JOBOX_tool_box,_Huntington_Station.jpg"
+  },
+  "gift_men_guitar": {
+    "file": "Yamaha FG110 Acoustic Guitar.JPG",
+    "previous": "https://commons.wikimedia.org/wiki/File:Bass_guitar_headstock_-_Yamaha.jpg"
+  },
+  "travel_world": {
+    "file": "Travel. Trip. Vacation. Top view airplane with touristic map (52136224054).jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Seattle_(WA,_USA),_P-I_Globe_--_2022_--_1708.jpg"
+  },
+  "gift_general_holiday": {
+    "file": "Scenic view of a resort pool area overlooking a beach and mountains.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Miami_Beach_-_Holiday_Inn.jpg"
+  },
+  "gift_general_trip": {
+    "file": "Tropical Beach with Palm Trees.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Travel_Suitcase_Display,_Bic_Camera,_Akihabara_(40507976702).jpg"
   }
 }

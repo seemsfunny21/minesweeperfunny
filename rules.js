@@ -20,5 +20,7 @@ function interest(principal){if(!Number.isSafeInteger(principal)||principal<0||p
 function weeklyCredit(principal){return 1000-principal-interest(principal);}
 function net(tickets,bonus=0,receivedInterest=0,paidInterest=0){return tickets.filter(t=>t.settled).reduce((sum,t)=>sum+t.paid-t.stake,0)+bonus+receivedInterest-paidInterest;}
 function selectWorkers(workers,target,random=Math.random){return workers.filter(w=>w.active&&!w.onLeave&&!w.departed).map(w=>({...w,tie:random()})).sort((a,b)=>(a.recentCount||0)-(b.recentCount||0)||a.tie-b.tie).slice(0,5);}
-const api={add,workday,nextWorkday,phase,reserve,spendable,odds,payout,interest,weeklyCredit,net,selectWorkers};if(typeof module!=="undefined")module.exports=api;else root.PredictionRules=api;
+function wealth(chips,items){const seen=new Set();let assets=0;for(const i of items||[]){if(!i||i.category==="gift"||seen.has(i.code))continue;seen.add(i.code);assets+=Math.max(0,Number(i.price)||0);}return {chips,assets,total:chips+assets};}
+function photoVersion(source){let h=2166136261;for(const ch of String(source||""))h=Math.imul(h^ch.charCodeAt(0),16777619);return (h>>>0).toString(36);}
+const api={wealth,photoVersion,add,workday,nextWorkday,phase,reserve,spendable,odds,payout,interest,weeklyCredit,net,selectWorkers};if(typeof module!=="undefined")module.exports=api;else root.PredictionRules=api;
 })(typeof globalThis!=="undefined"?globalThis:this);

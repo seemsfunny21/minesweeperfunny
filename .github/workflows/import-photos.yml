@@ -29,6 +29,13 @@ jobs:
         run: python scripts/replace_photos.py
       - name: Extract and verify local WebP files
         run: python scripts/import_photos.py
+      - name: Generate catalog review sheets
+        run: python scripts/catalog_review.py
+      - name: Upload review sheets
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-review-sheets
+          path: /tmp/catalog-review/*.jpg
       - name: Commit only after verification
         run: |
           git config user.name "github-actions[bot]"

@@ -21,3 +21,9 @@ assert.equal(r.net([{settled:true,paid:250,stake:100},{settled:true,paid:0,stake
 assert.equal(r.net([]),0);
 assert.equal(r.selectWorkers(Array.from({length:8},(_,id)=>({id,active:true,onLeave:id===1,departed:id===2,recentCount:id})), "2026-11-26",()=>0.5).length,5);
 console.log("All rule assertions passed");
+
+assert.deepEqual(r.wealth(100,[{code:"a",price:50},{code:"a",price:50},{code:"b",category:"gift",price:1000}]),{chips:100,assets:50,total:150});
+assert.notEqual(r.photoVersion("old"),r.photoVersion("new"));
+assert.equal(r.photoVersion("old"),r.photoVersion("old"));
+for(let n=1;n<=6;n++)for(let stake=10;stake<=1000;stake+=10){assert.equal(r.payout(stake,Array(n).fill(p("yes","no"))),0);assert.equal(r.payout(stake,Array(n).fill(p("yes",null))),stake);assert.ok(r.payout(stake,Array(n).fill(p("yes","yes",500)))<=10000);}
+console.log("Extended wealth, version and 1800 payout assertions passed");
