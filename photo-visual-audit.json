@@ -1,0 +1,717 @@
+{
+  "review_basis": "Six contact sheets from workflow 45689765660; thumbnail visual inspection, not full-resolution approval",
+  "total": 142,
+  "needs_replacement": 62,
+  "entries": {
+    "art_camera": {
+      "source": "https://commons.wikimedia.org/wiki/File:Canon_EOS_R50,_Vorderansicht_30.12.2025.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_camera": {
+      "source": "https://commons.wikimedia.org/wiki/File:Canon_EOS_R50,_Vorderansicht_30.12.2025.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "pet_parrot": {
+      "source": "https://commons.wikimedia.org/wiki/File:African_grey_parrot.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Face obscured by feathers"
+    },
+    "amenity_console": {
+      "source": "https://commons.wikimedia.org/wiki/File:Playstation_5_base_edition_with_controller_(original).jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_men_console": {
+      "source": "https://commons.wikimedia.org/wiki/File:Playstation_5_base_edition_with_controller_(original).jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "pet_fish": {
+      "source": "https://commons.wikimedia.org/wiki/File:Exotic_goldfish_diversity.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_game": {
+      "source": "https://commons.wikimedia.org/wiki/File:Monopoly-board.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "vehicle_citycar": {
+      "source": "https://commons.wikimedia.org/wiki/File:Toyota_Yaris_Hybrid_%28XP210%29_1X7A0366.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "watch_casual": {
+      "source": "https://commons.wikimedia.org/wiki/File:Casio_F-91W.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "car_sedan": {
+      "source": "https://commons.wikimedia.org/wiki/File:Toyota_Corolla_(E210)_sedan_IMG_4189.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "vehicle_scooter": {
+      "source": "https://commons.wikimedia.org/wiki/File:Honda_PCX125_2011_Front.JPG",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "vehicle_motorbike": {
+      "source": "https://commons.wikimedia.org/wiki/File:Honda_CB500_Hornet_2026.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Busy show"
+    },
+    "phone_basic": {
+      "source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Retail demo screen"
+    },
+    "gift_general_phone": {
+      "source": "https://commons.wikimedia.org/wiki/File:Galaxy_A16_front.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "phone_advanced": {
+      "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_A56_5G_2025.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Retail demo"
+    },
+    "motor_moped": {
+      "source": "https://commons.wikimedia.org/wiki/File:Honda_Super_Cub_C125_(parked)_in_Kopi_7_-_Palembang,_SS_(1_Jan_2023).jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Busy street"
+    },
+    "vehicle_suv": {
+      "source": "https://commons.wikimedia.org/wiki/File:BMW_X3(1).jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "car_cabrio": {
+      "source": "https://commons.wikimedia.org/wiki/File:Mazda_MX-5_(ND)_1X7A7471.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "vehicle_sport": {
+      "source": "https://commons.wikimedia.org/wiki/File:Porsche_911_992.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "car_super": {
+      "source": "https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_LP610-4.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Busy racing scene"
+    },
+    "motor_adventure": {
+      "source": "https://commons.wikimedia.org/wiki/File:Honda_Africa_Twin_2025.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Busy exhibition"
+    },
+    "motor_super": {
+      "source": "https://commons.wikimedia.org/wiki/File:BMW_S_1000_RR,_right_view.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "art_watch": {
+      "source": "https://commons.wikimedia.org/wiki/File:Rolex_Submariner.JPG",
+      "thumbnail_review": "needs_replacement",
+      "note": "Multiple watches, not clearly single model"
+    },
+    "phone_ultra": {
+      "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_Pro_Max_(54252176424).jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Hand and display"
+    },
+    "art_guitar": {
+      "source": "https://commons.wikimedia.org/wiki/File:Yamaha_F310.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "motor_sport": {
+      "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YZF-R7_(55048319395).jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "phone_mid": {
+      "source": "https://commons.wikimedia.org/wiki/File:Redmi_Note_14_-_2024-09-27_01.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Retail display"
+    },
+    "watch_smart": {
+      "source": "https://commons.wikimedia.org/wiki/File:Garmin_Venu_3_(a).JPG",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "watch_premium": {
+      "source": "https://commons.wikimedia.org/wiki/File:Tissot_PRX_35mm.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "watch_luxury": {
+      "source": "https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Co-Axial.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Display case"
+    },
+    "pet_rabbit": {
+      "source": "https://commons.wikimedia.org/wiki/File:Pet_rabbit_at_home.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "pet_cat": {
+      "source": "https://commons.wikimedia.org/wiki/File:Domestic_cat.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "pet_dog": {
+      "source": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dog.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Dim photo"
+    },
+    "travel_islands": {
+      "source": "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Skyline.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "travel_paris": {
+      "source": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_seen_from_the_Palais_de_Chaillot.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Very wide panorama"
+    },
+    "travel_maldives": {
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_shot_of_a_small_island_on_a_coral_reef_in_the_Maldives.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "phone_fold": {
+      "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Z_Fold6.png",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "phone_flagship": {
+      "source": "https://commons.wikimedia.org/wiki/File:IPhone_16_(54251926561).jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Close-up of camera"
+    },
+    "art_piano": {
+      "source": "https://commons.wikimedia.org/wiki/File:Yamaha_U1.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "tech_tablet": {
+      "source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Back only"
+    },
+    "gift_general_tablet": {
+      "source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Back only"
+    },
+    "tech_laptop": {
+      "source": "https://commons.wikimedia.org/wiki/File:Laptop_on_a_desk.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_men_laptop": {
+      "source": "https://commons.wikimedia.org/wiki/File:Laptop_on_a_desk.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "amenity_bbq": {
+      "source": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Odd public grill, not product"
+    },
+    "gift_men_grill": {
+      "source": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Odd public grill"
+    },
+    "amenity_pool": {
+      "source": "https://commons.wikimedia.org/wiki/File:Pool_in_the_back_yard_-_Mid-City_New_Orleans_2010.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Messy yard and accessories"
+    },
+    "amenity_spa": {
+      "source": "https://commons.wikimedia.org/wiki/File:Whirlpool_bestway_lay-z-spa_Miami.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Covered spa, not usable scene"
+    },
+    "luxury_jetski": {
+      "source": "https://commons.wikimedia.org/wiki/File:Sea-Doo_Spark.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "luxury_sail": {
+      "source": "https://commons.wikimedia.org/wiki/File:Beneteau_Oceanis_281_sailboat_Attitude_I_1729.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "vehicle_yacht": {
+      "source": "https://commons.wikimedia.org/wiki/File:2018_SPb_Azimut_70_Yacht_01.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Small in frame"
+    },
+    "vehicle_jet": {
+      "source": "https://commons.wikimedia.org/wiki/File:Cessna_Citation_V_N563TM_FDK_MD2.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "pet_horse": {
+      "source": "https://commons.wikimedia.org/wiki/File:Domestic_horse_at_Suryachaur_and_the_mountains_in_the_back1.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "travel_rome": {
+      "source": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "travel_newyork": {
+      "source": "https://commons.wikimedia.org/wiki/File:New_York_Midtown_Skyline_at_night_-_Jan_2006_edit1.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "home_studio": {
+      "source": "https://commons.wikimedia.org/wiki/File:John_Brooke_Fieldhouse_interior_in_West_London_maximising_use_of_flexible_space_in_a_studio_apartment.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Unfurnished-looking room"
+    },
+    "home_apartment": {
+      "source": "https://commons.wikimedia.org/wiki/File:Modern_living_room_with_stylish_furniture_and_a_view_of_the_outdoors_in_a_cozy_apartment_setting.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "home_house": {
+      "source": "https://commons.wikimedia.org/wiki/File:Namibia_-_Semi-Detached_House_01.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Unappealing row houses"
+    },
+    "home_maisonette": {
+      "source": "https://commons.wikimedia.org/wiki/File:A_very_patriotic_maisonette,_St_Giles_View,_Pontefract_(27th_January_2024).jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Basic brick terrace"
+    },
+    "home_villa": {
+      "source": "https://commons.wikimedia.org/wiki/File:Luxury_Villa_Zakynthos.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Building detail, no luxury setting"
+    },
+    "home_mansion": {
+      "source": "https://commons.wikimedia.org/wiki/File:Mansion_exterior.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Historic mansion, not contemporary luxury"
+    },
+    "home_island": {
+      "source": "https://commons.wikimedia.org/wiki/File:Anantara_Kihavah_-_Aerial_Hero_Shot_2024.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "amenity_garden": {
+      "source": "https://commons.wikimedia.org/wiki/File:Garden_area_with_flowers_and_greenery.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "amenity_gym": {
+      "source": "https://commons.wikimedia.org/wiki/File:Colorful_gym_equipment.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Small miscellaneous equipment, not gym"
+    },
+    "art_painting": {
+      "source": "https://commons.wikimedia.org/wiki/File:Oval_portrait_miniature_of_girl_oil_painting_by_Valentine_Manchon_Duchesne_-_with_scale.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Tiny antique portrait"
+    },
+    "art_sculpture": {
+      "source": "https://commons.wikimedia.org/wiki/File:Marble_sculpture_Gulbenkian_March_2014-1.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Abstract geometric ceiling-like detail"
+    },
+    "art_collection": {
+      "source": "https://commons.wikimedia.org/wiki/File:Interior_of_Christchurch_Art_Gallery,_New_Zealand_02.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Empty gallery"
+    },
+    "gift_men_watch": {
+      "source": "https://commons.wikimedia.org/wiki/File:CASIO_G-Shock_GW-M5610U.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_men_glasses": {
+      "source": "https://commons.wikimedia.org/wiki/File:RayBanAviator.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_men_ball": {
+      "source": "https://commons.wikimedia.org/wiki/File:Football_Adidas_Finale_17_Capitano.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_men_football": {
+      "source": "https://commons.wikimedia.org/wiki/File:DZL_grip_Sock_%26_Nike_Football_Image.png",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_men_guitar": {
+      "source": "https://commons.wikimedia.org/wiki/File:Yamaha_FG110_Acoustic_Guitar.JPG",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_men_shoes": {
+      "source": "https://commons.wikimedia.org/wiki/File:Geox_Sneakers_black_2025.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_men_backpack": {
+      "source": "https://commons.wikimedia.org/wiki/File:Eastpak_Sugarbush_backpack_black.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_men_gaming": {
+      "source": "https://commons.wikimedia.org/wiki/File:Xbox-360-Pro-wController.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Old console, not controller"
+    },
+    "gift_women_ring": {
+      "source": "https://commons.wikimedia.org/wiki/File:Pandora,_Atlas,_Rings_-_Rev_232_(24579092143).png",
+      "thumbnail_review": "needs_replacement",
+      "note": "Ring not visible"
+    },
+    "gift_women_bracelet": {
+      "source": "https://commons.wikimedia.org/wiki/File:Pandora_bracelet.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_women_sunglasses": {
+      "source": "https://commons.wikimedia.org/wiki/File:Ray-Ban_Clubround_Sunglasses.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_women_watch": {
+      "source": "https://commons.wikimedia.org/wiki/File:Michael_Kors_Slim_Runway_Thin_Bracelet_Stainless_Watch_MK3211.JPG",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_tea": {
+      "source": "https://commons.wikimedia.org/wiki/File:Lipton-mug-tea.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_puzzle": {
+      "source": "https://commons.wikimedia.org/wiki/File:Ravensburger_Stoffpuzzle_Schaf_2.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Children's fabric puzzle"
+    },
+    "gift_general_donut": {
+      "source": "https://commons.wikimedia.org/wiki/File:Doughnut_2.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_plane": {
+      "source": "https://commons.wikimedia.org/wiki/File:An_airplane_takes_off_in_the_sunset.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Aircraft barely visible"
+    },
+    "gift_general_music": {
+      "source": "https://commons.wikimedia.org/wiki/File:Musical_instruments_of_Karbi_Tribe.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Unclear instruments"
+    },
+    "gift_general_pizza": {
+      "source": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita.JPG",
+      "thumbnail_review": "needs_replacement",
+      "note": "Several boxes, not inviting pizza"
+    },
+    "gift_men_tie": {
+      "source": "https://commons.wikimedia.org/wiki/File:Neckties.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Crowded rack"
+    },
+    "gift_men_suit": {
+      "source": "https://commons.wikimedia.org/wiki/File:Grey_and_navy_suit_on_mannequin.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_women_rose": {
+      "source": "https://commons.wikimedia.org/wiki/File:Red_Rose_Flower_IITMandi_Himachal_Aug19_D72_11473.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_women_bouquet": {
+      "source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_women_teddy": {
+      "source": "https://commons.wikimedia.org/wiki/File:Little_girl_hugs_teddy_bear_toy.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Person dominates"
+    },
+    "gift_women_dress": {
+      "source": "https://commons.wikimedia.org/wiki/File:Strapless_evening_dresses_with_hoop_skirt_-_rear_view_with_lacing_in_the_back.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Historical costume appearance"
+    },
+    "gift_women_scarf": {
+      "source": "https://commons.wikimedia.org/wiki/File:Colored_silk_scarf_from_India_04.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Fabric detail only"
+    },
+    "gift_women_orchid": {
+      "source": "https://commons.wikimedia.org/wiki/File:Ban_Ki-Moon_Orchid_Flower_Singapore_Feb23_D72_25479.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_flower": {
+      "source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_cake": {
+      "source": "https://commons.wikimedia.org/wiki/File:Birthday_Cake_(decorated).jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_book": {
+      "source": "https://commons.wikimedia.org/wiki/File:Princess_Marys_Gift_Book-0009.png",
+      "thumbnail_review": "needs_replacement",
+      "note": "Title page rather than book"
+    },
+    "gift_general_ticket": {
+      "source": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Old torn ticket"
+    },
+    "gift_general_trip": {
+      "source": "https://commons.wikimedia.org/wiki/File:Tropical_Beach_with_Palm_Trees.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_plant": {
+      "source": "https://commons.wikimedia.org/wiki/File:Among_the_branches_of_a_potted_jade_plant.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Close-up of branches"
+    },
+    "gift_general_balloon": {
+      "source": "https://commons.wikimedia.org/wiki/File:Party_balloons_(Unsplash).jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_meal": {
+      "source": "https://commons.wikimedia.org/wiki/File:Appetizers_for_a_Greek_meal_(5178298876).jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_movie": {
+      "source": "https://commons.wikimedia.org/wiki/File:Auditorium_at_Maxim_in_May_2024.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_flowers": {
+      "source": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_holiday": {
+      "source": "https://commons.wikimedia.org/wiki/File:Scenic_view_of_a_resort_pool_area_overlooking_a_beach_and_mountains.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_celebration": {
+      "source": "https://commons.wikimedia.org/wiki/File:Party_decoration_ideas.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_general_diamond": {
+      "source": "https://commons.wikimedia.org/wiki/File:Asscher_cut_diamond_7.png",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_star": {
+      "source": "https://commons.wikimedia.org/wiki/File:Gold_star_christmas_ornament.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_box": {
+      "source": "https://commons.wikimedia.org/wiki/File:Brown_gift_box_with_red_ribbon_and_bow.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_crown": {
+      "source": "https://commons.wikimedia.org/wiki/File:Spanish_Royal_Crown_1crop.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "vehicle_bike": {
+      "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Not exact brand"
+    },
+    "bike_mountain": {
+      "source": "https://commons.wikimedia.org/wiki/File:Mountain_bicycle.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Not confirmed exact Cube"
+    },
+    "bike_gravel": {
+      "source": "https://commons.wikimedia.org/wiki/File:Titanium-frame-gravel-bicycle.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Not confirmed exact Cube"
+    },
+    "vehicle_roadbike": {
+      "source": "https://commons.wikimedia.org/wiki/File:Giant_Road_Bike.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Old bike, not Cube Attain"
+    },
+    "bike_pro": {
+      "source": "https://commons.wikimedia.org/wiki/File:Transport_bicycle_racing,_Velo_24,_Berlin_(VB243663).jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Race scene, not bike"
+    },
+    "watch_sport": {
+      "source": "https://commons.wikimedia.org/wiki/File:Casio_G-Shock_GA-100,_digital_and_analog_watch_(from_2010,_photographed_in_2023).jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "tech_gaming": {
+      "source": "https://commons.wikimedia.org/wiki/File:Gaming_computers_(1).jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Crowded exhibition"
+    },
+    "tech_premium": {
+      "source": "https://commons.wikimedia.org/wiki/File:Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Dated desk setup"
+    },
+    "amenity_cinema": {
+      "source": "https://commons.wikimedia.org/wiki/File:Dedicated_home_theater.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "vehicle_boat": {
+      "source": "https://commons.wikimedia.org/wiki/File:Motorboat_Ryds_435DL_and_cloud_reflections_in_S%C3%A4mstad_harbor_3.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "amenity_sports": {
+      "source": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Distant complex"
+    },
+    "gift_men_headphones": {
+      "source": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Different brand"
+    },
+    "gift_men_bike": {
+      "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Not exact brand"
+    },
+    "gift_men_wallet": {
+      "source": "https://commons.wikimedia.org/wiki/File:Leather_bi-fold_wallet_by_Eugene_Pik_(2021)_04.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_men_toolkit": {
+      "source": "https://commons.wikimedia.org/wiki/File:Set_of_metal_tools_in_a_blue_box_arranged_neatly.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_men_sneakers": {
+      "source": "https://commons.wikimedia.org/wiki/File:Nike_Air_Max_Plus_(604133-050).jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_women_bag": {
+      "source": "https://commons.wikimedia.org/wiki/File:Handbag_at_Nordstrom_Rack_-_Santa_Rosa_-_December_2022_-_Sarah_Stierch.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Cluttered bag display"
+    },
+    "gift_women_perfume": {
+      "source": "https://commons.wikimedia.org/wiki/File:Coco_mademoiselle.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_women_cosmetics": {
+      "source": "https://commons.wikimedia.org/wiki/File:Cosmetics-1078712_1280.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Crowded shop display"
+    },
+    "gift_women_earrings": {
+      "source": "https://commons.wikimedia.org/wiki/File:Earrings_in_a_fair_in_India_02.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Crowded earring display"
+    },
+    "gift_women_necklace": {
+      "source": "https://commons.wikimedia.org/wiki/File:Necklace_made_of_rough_diamonds.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_women_makeup": {
+      "source": "https://commons.wikimedia.org/wiki/File:Eye_Makeup_Palette_and_Brush_Kit.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_women_luxurybag": {
+      "source": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Not confirmed premium model"
+    },
+    "gift_general_icecream": {
+      "source": "https://commons.wikimedia.org/wiki/File:Bowl_~_Ice_cream.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "travel_world": {
+      "source": "https://commons.wikimedia.org/wiki/File:Travel._Trip._Vacation._Top_view_airplane_with_touristic_map_(52136224054).jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Toy plane and map"
+    },
+    "gift_men_car": {
+      "source": "https://commons.wikimedia.org/wiki/File:Oldtimer-2013_model_car_20130309_150849.JPG",
+      "thumbnail_review": "needs_replacement",
+      "note": "Bus, not BMW model car"
+    },
+    "gift_men_motorbike": {
+      "source": "https://commons.wikimedia.org/wiki/File:Indian_Brave_Model_R_250cc_motorcycle.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Real motorcycle, not miniature"
+    },
+    "gift_general_heart": {
+      "source": "https://commons.wikimedia.org/wiki/File:Ornament_in_The_Heart_of_Europe.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Line drawing"
+    },
+    "gift_chocolate": {
+      "source": "https://commons.wikimedia.org/wiki/File:Green_and_Black%27s_dark_chocolate_bar_2.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_women_heels": {
+      "source": "https://commons.wikimedia.org/wiki/File:A_pair_of_high-heeled_shoes.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_coffee": {
+      "source": "https://commons.wikimedia.org/wiki/File:Latte_art,_espresso_with_cup_and_saucer_on_wood_table.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_women_jewel": {
+      "source": "https://commons.wikimedia.org/wiki/File:Swarovski_crystal_snowflake_pendant_02.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "gift_women_spa": {
+      "source": "https://commons.wikimedia.org/wiki/File:YHI_Spa_treatment_room_at_Paradisus_by_Meli%C3%A1_Bali.jpg",
+      "thumbnail_review": "acceptable_at_thumbnail_size",
+      "note": "Subject recognizable; no major issue identified at thumbnail size"
+    },
+    "bike_carbon": {
+      "source": "https://commons.wikimedia.org/wiki/File:Rennrad_Racing_Bicycle_noBG.jpg",
+      "thumbnail_review": "needs_replacement",
+      "note": "Not confirmed exact Cube"
+    }
+  }
+}

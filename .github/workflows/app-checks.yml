@@ -10,4 +10,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --check app.js && node --check sw.js && node --check rules.js && node rules.test.cjs
+      - run: node --check app.js && node --check sw.js && node --check rules.js && node rules.test.cjs && node economy-simulation.cjs
+
+      - run: npm install --no-save --package-lock=false playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node browser-checks.cjs

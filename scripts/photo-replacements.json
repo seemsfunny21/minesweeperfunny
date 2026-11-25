@@ -114,5 +114,25 @@
   "gift_general_trip": {
     "file": "Tropical Beach with Palm Trees.jpg",
     "previous": "https://commons.wikimedia.org/wiki/File:Travel_Suitcase_Display,_Bic_Camera,_Akihabara_(40507976702).jpg"
+  },
+  "amenity_bbq": {
+    "file": "Gasgrill Weber Q100.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg"
+  },
+  "gift_men_grill": {
+    "file": "Gasgrill Weber Q100.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:University_of_North_Texas_September_2015_57_(barbecue_grill).jpg"
+  },
+  "gift_men_car": {
+    "file": "Kyosho BMW 760Li (E66) - open front.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Oldtimer-2013_model_car_20130309_150849.JPG"
+  },
+  "gift_men_motorbike": {
+    "file": "2016 Yamaha XV1600 Wild Star.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Indian_Brave_Model_R_250cc_motorcycle.jpg"
+  },
+  "gift_men_gaming": {
+    "file": "Xbox Wireless Controller Carbon Black.jpg",
+    "previous": "https://commons.wikimedia.org/wiki/File:Xbox-360-Pro-wController.jpg"
   }
 }
