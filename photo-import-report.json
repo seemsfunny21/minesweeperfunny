@@ -150,32 +150,44 @@
     "license": "CC BY 3.0"
   },
   "vehicle_bike": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Man_riding_a_bicycle_in_a_snowstorm_in_Quebec_city,_Quebec,_Canada.jpg",
+    "license": "CC0",
+    "representative": true
   },
   "bike_mountain": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Mountain_bicycle.jpg",
+    "license": "CC BY-SA 3.0",
+    "representative": true
   },
   "bike_gravel": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Titanium-frame-gravel-bicycle.jpg",
+    "license": "CC BY 4.0",
+    "representative": true
   },
   "vehicle_roadbike": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Britannica_Bicycle_Road-Racer.jpg",
+    "license": "Public domain",
+    "representative": true
   },
   "bike_carbon": {
     "status": "not_saved",
     "attempts": []
   },
   "bike_pro": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Transport_bicycle_racing,_Velo_24,_Berlin_(VB243663).jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "watch_sport": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Casio_G-Shock_GA-100,_digital_and_analog_watch_(from_2010,_photographed_in_2023).jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true
   },
   "tech_tablet": {
     "status": "saved",
@@ -198,16 +210,22 @@
     "license": "CC BY-SA 4.0"
   },
   "tech_gaming": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Gaming_computers_(1).jpg",
+    "license": "CC BY 2.0",
+    "representative": true
   },
   "tech_premium": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg",
+    "license": "CC BY-SA 2.0",
+    "representative": true
   },
   "amenity_cinema": {
-    "status": "not_saved",
-    "attempts": []
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Dedicated_home_theater.jpg",
+    "license": "CC BY 2.0",
+    "representative": true
   },
   "amenity_bbq": {
     "status": "saved",
