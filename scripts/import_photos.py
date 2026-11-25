@@ -1,8 +1,9 @@
-import base64,html,io,json,re,time,unicodedata,urllib.parse,urllib.request
+import base64,hashlib,html,io,json,re,time,unicodedata,urllib.parse,urllib.request
 from pathlib import Path
 from PIL import Image, ImageOps
 CANDIDATES = {
   "vehicle_citycar": [
+    "Toyota Yaris Hybrid (XP210) 1X7A0366.jpg",
     "Toyota Yaris Hybrid (XP210) 1X7A0354.jpg",
     "Toyota Yaris XP210.jpg",
     "Toyota Yaris Hybrid (XP210) 1X7A0178.jpg"
@@ -34,10 +35,10 @@ CANDIDATES = {
     "BMW S 1000 RR, right view.jpg"
   ],
   "watch_casual": [
+    "Casio F-91W.jpg",
     "A design classic - the Casio F-91W watch.jpg",
     "Casio F-91W watch.jpg",
     "CASIO F-91W.JPG",
-    "Casio F-91W.jpg",
     "Casio F-91W watch (2023) (front view - full length).jpg",
     "Casio F-91W-5142.jpg"
   ],
@@ -45,13 +46,13 @@ CANDIDATES = {
     "Rolex Submariner.JPG"
   ],
   "amenity_console": [
-    "Playstation 5 base edition with controller (original).jpg",
     "PlayStation 5 and DualSense.jpg",
+    "Playstation 5 base edition with controller (original).jpg",
     "PlayStation 5.jpg"
   ],
   "gift_men_console": [
-    "Playstation 5 base edition with controller (original).jpg",
     "PlayStation 5 and DualSense.jpg",
+    "Playstation 5 base edition with controller (original).jpg",
     "PlayStation 5.jpg"
   ],
   "phone_basic": [
@@ -229,21 +230,81 @@ SEARCH_TARGETS = {
   "gift_general_music": "music gift",
   "gift_general_icecream": "Kri Kri ice cream",
   "gift_general_pizza": "Pizza Fan",
-  "gift_general_chocolate": "Lacta Greece chocolate"
+  "gift_general_chocolate": "Lacta Greece chocolate",
+  "travel_world": "world globe map",
+  "gift_men_car": "BMW model car miniature",
+  "gift_men_motorbike": "Yamaha model motorcycle miniature",
+  "gift_men_tie": "necktie",
+  "gift_men_suit": "men suit",
+  "gift_women_rose": "red rose flower",
+  "gift_women_bouquet": "flower bouquet",
+  "gift_women_teddy": "teddy bear toy",
+  "gift_women_dress": "evening dress",
+  "gift_women_scarf": "silk scarf",
+  "gift_women_spa": "spa massage stones",
+  "gift_women_orchid": "orchid flower",
+  "gift_flower": "flower bouquet",
+  "gift_general_cake": "birthday cake",
+  "gift_general_book": "book gift",
+  "gift_general_ticket": "cinema ticket",
+  "gift_general_trip": "travel suitcase",
+  "gift_general_plant": "potted plant",
+  "gift_general_heart": "heart shaped gift",
+  "gift_general_balloon": "party balloons",
+  "gift_general_star": "gold star ornament",
+  "gift_general_box": "gift box ribbon",
+  "gift_general_crown": "royal crown",
+  "gift_general_meal": "Greek meal",
+  "gift_general_movie": "movie film reel",
+  "gift_general_flowers": "flower bouquet",
+  "gift_general_holiday": "beach holiday",
+  "gift_general_celebration": "party decoration",
+  "gift_general_diamond": "cut diamond"
+}
+VERIFIED = {
+  "Casio F-91W.jpg": [
+    "NotFromUtrecht",
+    "CC BY-SA 3.0",
+    "https://creativecommons.org/licenses/by-sa/3.0/"
+  ],
+  "PlayStation 5 and DualSense.jpg": [
+    "Osh33m",
+    "CC BY-SA 4.0",
+    "https://creativecommons.org/licenses/by-sa/4.0/"
+  ],
+  "Toyota Yaris Hybrid (XP210) 1X7A0366.jpg": [
+    "Alexander Migl",
+    "CC BY-SA 4.0",
+    "https://creativecommons.org/licenses/by-sa/4.0/"
+  ]
 }
 ROOT = Path(__file__).resolve().parent.parent
 UA = "PredictionsCatalog/1.0 (Wikimedia Commons attribution; https://github.com/seemsfunny21/predictions)"
 def get(url):
-    for attempt in range(3):
+    for attempt in range(2):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":UA}),timeout=30) as r:
+            with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":UA}),timeout=15) as r:
                 return r.read(25000001)
         except Exception:
-            if attempt == 2: raise
+            if attempt == 1: raise
             time.sleep(3*(attempt+1))
 def clean(s):
     return " ".join(html.unescape(re.sub(r"<[^>]+>"," ",s)).split())
+def direct_verified(name):
+    author,license,license_url=VERIFIED[name]
+    filename=name.replace(" ","_")
+    digest=hashlib.md5(filename.encode("utf-8")).hexdigest()
+    url="https://upload.wikimedia.org/wikipedia/commons/"+digest[0]+"/"+digest[:2]+"/"+urllib.parse.quote(filename)
+    raw=get(url)
+    if len(raw)>25000000: raise ValueError("too large")
+    with Image.open(io.BytesIO(raw)) as im:
+        im=ImageOps.exif_transpose(im).convert("RGB")
+        im.thumbnail((480,360),Image.Resampling.LANCZOS)
+        out=io.BytesIO(); im.save(out,format="WEBP",quality=78,method=6)
+    return {"src":"data:image/webp;base64,"+base64.b64encode(out.getvalue()).decode(),"author":author,"license":license,"licenseUrl":license_url,"source":"https://commons.wikimedia.org/wiki/File:"+urllib.parse.quote(filename),"modified":"Resized and converted to WebP"}
 def read_photo(name):
+    if name in VERIFIED: return direct_verified(name)
+
     query=urllib.parse.urlencode({"action":"query","titles":"File:"+name,"prop":"imageinfo","iiprop":"url|extmetadata","iiurlwidth":"480","format":"json","formatversion":"2"})
     page=json.loads(get("https://commons.wikimedia.org/w/api.php?"+query))["query"]["pages"][0]
     info=page["imageinfo"][0]; meta=info["extmetadata"]
@@ -290,7 +351,11 @@ old={}
 if path.exists():
     old=json.loads(path.read_text().removeprefix("const PRODUCT_PHOTOS=").strip().removesuffix(";"))
 photos={}; cache={}
-for code in dict.fromkeys([*CANDIDATES,*SEARCH_TARGETS]):
+def save():
+    tmp=path.with_suffix('.tmp')
+    tmp.write_text('const PRODUCT_PHOTOS='+json.dumps({**old,**photos},ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
+    tmp.replace(path)
+for code in dict.fromkeys(['vehicle_citycar','watch_casual','amenity_console','gift_men_console',*CANDIDATES,*SEARCH_TARGETS]):
     names=list(CANDIDATES.get(code,[]))
     if code in old:
         print("KEEP",code,flush=True)
@@ -303,7 +368,7 @@ for code in dict.fromkeys([*CANDIDATES,*SEARCH_TARGETS]):
             if name not in cache:
                 cache[name]=read_photo(name)
                 time.sleep(1)
-            photos[code]=cache[name]; print("OK",code,name,flush=True)
+            photos[code]=cache[name]; save(); print("OK",code,name,flush=True)
             break
         except Exception as e: print("SKIP",code,name,str(e),flush=True)
 old.update(photos)
