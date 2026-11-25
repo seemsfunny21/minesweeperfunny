@@ -567,5 +567,53 @@
   "gift_general_heart": {
     "status": "not_saved",
     "attempts": []
+  },
+  "gift_general_balloon": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Party_balloons_(Unsplash).jpg",
+    "license": "CC0"
+  },
+  "gift_general_meal": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Appetizers_for_a_Greek_meal_(5178298876).jpg",
+    "license": "CC BY 2.0"
+  },
+  "gift_general_movie": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Film_reel._Kodachrome_movie_film_roll_cameras_only_Daylight_type._Baugnez_44_Historical_Center_WW2_museum_2012.jpg",
+    "license": "CC BY 2.0"
+  },
+  "gift_general_flowers": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Elevators_vestibule_with_flower_bouquets_at_InterContinental_Hotel_Singapore.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_general_holiday": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Miami_Beach_-_Holiday_Inn.jpg",
+    "license": "Public domain"
+  },
+  "gift_general_celebration": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Party_decoration_ideas.jpg",
+    "license": "CC BY-SA 4.0"
+  },
+  "gift_general_diamond": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Asscher_cut_diamond_7.png",
+    "license": "CC0"
+  },
+  "gift_coffee": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_chocolate": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "gift_star": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Gold_star_christmas_ornament.jpg",
+    "license": "CC BY 2.0"
   }
 }
