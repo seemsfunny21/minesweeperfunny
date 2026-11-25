@@ -148,5 +148,48 @@
     "status": "saved",
     "source": "https://commons.wikimedia.org/wiki/File:Yamaha_U1.jpg",
     "license": "CC BY 3.0"
+  },
+  "vehicle_bike": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "bike_mountain": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "bike_gravel": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "vehicle_roadbike": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "bike_carbon": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "bike_pro": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "watch_sport": {
+    "status": "not_saved",
+    "attempts": []
+  },
+  "tech_tablet": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+    "license": "CC0"
+  },
+  "gift_general_tablet": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+    "license": "CC0"
+  },
+  "tech_laptop": {
+    "status": "saved",
+    "source": "https://commons.wikimedia.org/wiki/File:Lenovo_Ideapad_100-15IBY_-_cristaux_liquides_(5_dioptries).jpg",
+    "license": "CC BY-SA 4.0"
   }
 }
