@@ -7,3 +7,8 @@ select{display:block;width:100%;min-height:44px;margin:8px 0;padding:10px;border
 
 /* Compact profile login */
 .login-profiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}.login-profiles>p{grid-column:1/-1;text-align:center}.login-profile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-width:0;padding:12px 4px!important;border:1px solid #2e4b68;border-radius:14px;background:#172b42;color:#e7efff}.login-profile[aria-pressed=true]{border-color:#60a5fa;background:#1b3d63;box-shadow:0 0 12px #60a5fa44}.login-profile span:last-child{font-size:12px;overflow-wrap:anywhere;text-align:center;line-height:1.2}.login-avatar{width:52px;height:52px;flex:0 0 52px;object-fit:cover;border-radius:50%;border:2px solid #60a5fa;display:grid;place-items:center}.login-initial{font-size:23px;font-weight:700;background:#24476b;color:#e7efff}.login-pin-panel:empty{display:none}.login-pin-panel{margin-top:10px}.login-pin-panel h3{margin:0 0 6px;text-align:center}.login-pin-panel input[type=password]{text-align:center;font-size:24px;letter-spacing:.4em}.login-pin-panel .secondary{margin-top:5px}.auth-card>.secondary{margin-top:8px}
+
+/* Separate the profile heading from registration without enlarging the avatar grid. */
+.auth-card>button.primary+h2{margin-top:14px;margin-bottom:4px}
+.auth-card .login-profiles>.login-profile{margin-top:0}
+.auth-card>.feedback:empty{display:none}
