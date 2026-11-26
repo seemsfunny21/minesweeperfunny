@@ -170,12 +170,12 @@ function ticket(){const g=game();prune();section("Το δελτίο μου",pick
   const inputGrid=el("div");inputGrid.style.display="grid";inputGrid.style.gap="10px";
   for(let i=0;i<draft.count;i++){
    const box=el("div");if(draft.count>1){box.style.border="1px solid var(--line)";box.style.borderRadius="12px";box.style.padding="10px";box.append(el("h3","Δελτίο "+(i+1)));}
-   const input=el("input");input.type="number";input.inputMode="numeric";input.min=10;input.max=Math.min(1000,available);input.step=1;input.value=draft.count===1?stake:draft.stakes[i];input.setAttribute("aria-label","Μάρκες για δελτίο "+(i+1));input.oninput=update;inputs.push(input);
+   const input=el("input");input.type="number";input.inputMode="numeric";input.min=10;input.max=Math.min(1000,available);input.step=1;input.value=draft.count===1?stake:(draft.stakes[i]??10);input.setAttribute("aria-label","Μάρκες για δελτίο "+(i+1));input.oninput=update;inputs.push(input);
    const detail=el("p","","amount");details.push(detail);box.append(el("label","Ποντάρισμα"),input,el("small","Πιθανή συνολική επιστροφή · μέγ. 10.000"),detail);inputGrid.append(box);
   }
   c.append(inputGrid);if(draft.count>1)c.append(totalText,status);c.append(submit);
   function calc(){
-   if(draft.count===1)stake=Number(inputs[0].value);else draft.stakes=inputs.map(i=>Number(i.value));
+   if(draft.count===1)stake=Number(inputs[0].value);else inputs.forEach((input,i)=>{draft.stakes[i]=Number(input.value);});
    const plan=ticketPlan(chosen,draft,available,stake);
    for(let i=0;i<details.length;i++){const group=plan.groups[i],amount=plan.tickets[i]?.stake;details[i].textContent=group?.length&&Number.isSafeInteger(amount)&&amount>=10&&amount<=1000&&amount<=available?fmt(marketReturn(amount,group))+" 🪙":"—";}
    totalText.textContent="Συνολικό ποντάρισμα: "+(Number.isFinite(plan.total)?fmt(plan.total):"—")+" 🪙";
