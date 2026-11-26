@@ -360,7 +360,7 @@ function memberManage(p,operation){
 const firstHelpSeen=new Set();
 const firstHelpTopics={
  "Γεγονότα":["Πώς επιλέγω απαντήσεις;",["Διάλεξε απάντηση μόνο στις ερωτήσεις που θέλεις. Αρκεί μία επιλογή.","Μπορείς να αλλάξεις ή να αφαιρέσεις επιλογές πριν την καταχώριση. Από την κάτω μπάρα ανοίγεις το δελτίο σου."]],
- "Δελτίο":["Πώς λειτουργεί το δελτίο;",["Μία επιλογή δημιουργεί μονό δελτίο. Περισσότερες διαφορετικές ερωτήσεις δημιουργούν συνδυαστικό δελτίο.","Έλεγξε τις επιλογές, τις διαθέσιμες εικονικές μάρκες και την εμφανιζόμενη επιστροφή. Κάθε υποβολή καταχωρίζει ένα δελτίο."]],
+ "Δελτίο":["Πώς λειτουργεί το δελτίο;",["Μία επιλογή δημιουργεί μονό δελτίο. Από 2 έως 6 διαφορετικές ερωτήσεις δημιουργούν συνδυαστικό δελτίο στην τρέχουσα έκδοση.","Έλεγξε τις επιλογές, τις διαθέσιμες εικονικές μάρκες και την εμφανιζόμενη επιστροφή. Κάθε υποβολή καταχωρίζει ένα δελτίο."]],
  "Σημερινά αποτελέσματα":["Πώς επιβεβαιώνω αποτελέσματα;",["Απάντησε μόνο όταν γνωρίζεις τι έγινε πραγματικά. Η ψήφος καταχωρίζεται μία φορά.","Παρακολούθησε την κατάσταση των αποτελεσμάτων και των δελτίων από τις αντίστοιχες καρτέλες."]],
  "Προφίλ":["Το προφίλ μου",["Εδώ βλέπεις την εμφάνιση, τα αποκτήματα, την περιουσία και τα επιτεύγματά σου.","Τα ιδιωτικά δώρα είναι ορατά μόνο σε εσένα."]],
  "Η εμφάνισή μου":["Προσαρμογή εμφάνισης",["Προεπισκόπησε τα διαθέσιμα χρώματα, πλαίσια, τίτλους, φόντα και εφέ πριν τα εφαρμόσεις."]],
@@ -375,10 +375,10 @@ const firstHelpTopics={
 };
 function firstHelpKey(k){return "predictions-help-v1:"+String(state.player.id)+":"+k;}
 function firstHelpSuppressed(key){try{return localStorage.getItem(key)==="1";}catch{return false;}}
-function openFirstHelp(k,trigger){
+function openFirstHelp(k,trigger,automatic=false){
  const topic=firstHelpTopics[k];if(!topic||resetOpen||!state?.player?.id)return;
  const key=firstHelpKey(k),d=el("dialog"),c=el("div",undefined,"card");
- if(typeof d.showModal!=="function"){menuGo("Οδηγός παιχνιδιού");return;}
+ if(typeof d.showModal!=="function"){if(!automatic)menuGo("Οδηγός παιχνιδιού");return;}
  d.setAttribute("aria-label",topic[0]);
  Object.assign(d.style,{width:"min(92vw,440px)",maxHeight:"85dvh",overflow:"auto",padding:"0",border:"1px solid var(--line)",borderRadius:"16px",background:"var(--card)",color:"var(--text)"});
  c.style.margin="0";
@@ -386,10 +386,11 @@ function openFirstHelp(k,trigger){
  const label=el("label",undefined,"departure-consent");label.append(check,el("span","Να μην εμφανιστεί ξανά"));
  const msg=el("p","","feedback");
  c.append(el("h2",topic[0]));for(const p of topic[1])c.append(el("p",p));c.append(label,msg);
- function close(save){if(save){try{if(check.checked)localStorage.setItem(key,"1");else localStorage.removeItem(key);}catch{if(check.checked){msg.textContent="Δεν ήταν δυνατή η αποθήκευση. Μπορείς να κλείσεις χωρίς αποθήκευση.";check.checked=false;return;}}}d.close();}
- c.append(button("Κατάλαβα",()=>close(true),"primary"),button("Αναλυτικός οδηγός",()=>{close(true);if(!d.open){resetOpen=false;menuGo("Οδηγός παιχνιδιού");}}),button("Κλείσιμο",()=>close(false),"secondary"));
+ let goGuide=false;
+ function close(save,next=false){if(!d.open)return;if(save){try{if(check.checked)localStorage.setItem(key,"1");else localStorage.removeItem(key);}catch{msg.textContent="Δεν ήταν δυνατή η αποθήκευση. Μπορείς να κλείσεις χωρίς αποθήκευση.";return;}}goGuide=next;d.close();}
+ c.append(button("Κατάλαβα",()=>close(true),"primary"),button("Αναλυτικός οδηγός",()=>close(true,true)),button("Κλείσιμο",()=>close(false),"secondary"));
  d.append(c);document.body.append(d);
- d.addEventListener("close",()=>{resetOpen=false;d.remove();if(trigger?.isConnected)trigger.focus({preventScroll:true});},{once:true});
+ d.addEventListener("close",()=>{d.remove();resetOpen=false;if(goGuide){menuGo("Οδηγός παιχνιδιού");return;}if(trigger?.isConnected)trigger.focus({preventScroll:true});},{once:true});
  try{d.showModal();resetOpen=true;firstHelpSeen.add(key);}catch{d.remove();}
 }
 function attachFirstHelp(k){
@@ -397,7 +398,7 @@ function attachFirstHelp(k){
  const key=firstHelpKey(k),b=button("? Βοήθεια",()=>openFirstHelp(k,b),"secondary");
  b.style.fontSize="12px";b.style.minHeight="32px";b.style.width="auto";
  const heading=screen.querySelector(".section-head");if(heading)heading.append(b);else screen.prepend(b);
- if(!firstHelpSeen.has(key)&&!firstHelpSuppressed(key))openFirstHelp(k,b);
+ if(!firstHelpSeen.has(key)&&!firstHelpSuppressed(key))openFirstHelp(k,b,true);
 }
 
 function helpGuide(){section("Οδηγός παιχνιδιού");screen.append(button("‹ Πίσω",moreBack,"secondary"));const intro=card();intro.classList.add("guide-intro");intro.append(el("h3","Πώς λειτουργούν οι Προβλέψεις"),el("p","Ιδιωτικό παιχνίδι με δωρεάν εικονικές μάρκες. Δεν αγοράζονται, δεν εξαργυρώνονται και δεν έχουν χρηματική αξία.","muted"));const groups=[
