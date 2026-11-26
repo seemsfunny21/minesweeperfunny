@@ -398,7 +398,7 @@ function attachFirstHelp(k){
  const key=firstHelpKey(k),b=button("? Βοήθεια",()=>openFirstHelp(k,b),"secondary");
  b.style.fontSize="12px";b.style.minHeight="32px";b.style.width="auto";
  const heading=screen.querySelector(".section-head");if(heading)heading.append(b);else screen.prepend(b);
- if(!firstHelpSeen.has(key)&&!firstHelpSuppressed(key))openFirstHelp(k,b,true);
+ if(k==="Δελτίο"&&!firstHelpSeen.has(key)&&!firstHelpSuppressed(key))openFirstHelp(k,b,true);
 }
 
 function helpGuide(){section("Οδηγός παιχνιδιού");screen.append(button("‹ Πίσω",moreBack,"secondary"));const intro=card();intro.classList.add("guide-intro");intro.append(el("h3","Πώς λειτουργούν οι Προβλέψεις"),el("p","Ιδιωτικό παιχνίδι με δωρεάν εικονικές μάρκες. Δεν αγοράζονται, δεν εξαργυρώνονται και δεν έχουν χρηματική αξία.","muted"));const groups=[
