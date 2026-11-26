@@ -59,7 +59,7 @@ function authForm(error=""){
  }
  if(!token)load();else loading.textContent="Έλεγχος σύνδεσης…";
 }
-async function logout(){if(busy)return;busy=true;revision++;try{try{if(token)await disablePush();}catch{}try{if(token)await api("logout");}catch{}setToken("");state=null;picks.clear();menuHistory.length=0;profileTarget=null;giftTarget=null;shopTab="menu";giftGroup="general";tab="Γεγονότα";authForm();}finally{busy=false;}}
+async function logout(){if(busy)return;busy=true;revision++;try{try{if(token)await disablePush();}catch{}try{if(token)await api("logout");}catch{}setToken("");state=null;picks.clear();ticketBatchDraft=null;menuHistory.length=0;profileTarget=null;giftTarget=null;shopTab="menu";giftGroup="general";tab="Γεγονότα";authForm();}finally{busy=false;}}
 function pending(){toggleGame(false);auth.replaceChildren();const c=el("section",undefined,"card auth-card");c.append(el("div","⏳","pending-icon"),el("h2","Αναμονή έγκρισης"),el("p","Γεια σου, "+state.player.nickname+". Ο Admin πρέπει να εγκρίνει την εγγραφή σου."),button("Έλεγχος έγκρισης",()=>refresh(true),"primary"),button("Έξοδος",logout),el("p","","feedback"));c.lastChild.id="feedback";auth.append(c);notifications(c);}
 function section(title,sub){const h=el("div",undefined,"section-head");h.append(el("h2",title));if(sub)h.append(el("span",sub,"count"));screen.append(h);}
 function card(){const c=el("article",undefined,"card");screen.append(c);return c;}
@@ -75,7 +75,7 @@ function marketOptions(e){return Array.isArray(e.options)&&e.options.length?e.op
 function marketOption(e,key){return marketOptions(e).find(o=>o.key===key);}
 function eligibleEvents(){return (game().events||[]).filter(e=>e.open_date===day()&&!e.settled&&!e.already_bet&&(e.can_bet??(game().phase==="open")));}
 function prune(){const valid=new Map(eligibleEvents().map(e=>[e.id,e]));for(const [id,key] of picks)if(!valid.has(id)||!marketOption(valid.get(id),key))picks.delete(id);}
-async function transact(action,data,next,success){if(busy)return;busy=true;revision++;try{state=await api(action,data);if(action==="place")picks.clear();prune();clock();show(next);if(success)notice(success);}catch(e){notice(e.message);}finally{busy=false;}}
+async function transact(action,data,next,success){if(busy)return;busy=true;revision++;try{state=await api(action,data);if(action==="place"||action==="place_batch"){picks.clear();ticketBatchDraft=null;}prune();clock();show(next);if(success)notice(success);}catch(e){notice(e.message);}finally{busy=false;}}
 function choose(e,side){if(busy||!marketOption(e,side))return;if(picks.get(e.id)===side)picks.delete(e.id);else{if(!picks.has(e.id)&&picks.size>=6){notice("Μέχρι 6 επιλογές ανά δελτίο.");return;}picks.set(e.id,side);}show("Γεγονότα");}
 function optionGrid(e,vote=false){const opts=marketOptions(e),a=el("div",undefined,"odds");if(opts.length>2){a.style.gridTemplateColumns="repeat(3,minmax(0,1fr))";a.style.gap="6px";}for(const o of opts){const b=button("",()=>vote?transact("vote",{event_id:e.id,side:o.key},"Σημερινά αποτελέσματα","Η ψήφος καταχωρίστηκε."):choose(e,o.key),"pick "+(o.key==="no"?"no":"yes")+(!vote&&picks.get(e.id)===o.key?" selected":""));b.style.minWidth="0";b.style.padding="9px 4px";if(opts.length>2)b.style.fontSize="12px";if(!vote)b.setAttribute("aria-pressed",String(picks.get(e.id)===o.key));b.append(el("span",o.label));if(!vote)b.append(el("b",odds(o.odds)));a.append(b);}return a;}
 function eventName(name){return String(name||"").replace("Νωπές πατάτες στην ώρα τους","Θα είναι οι νωπές πατάτες έτοιμες στην ώρα τους για τα δρομολόγια;").replace("Ώρα αποχώρησης","Ώρα λήξης εργασίας");}
@@ -128,7 +128,62 @@ function events(){const g=game();prune();const open=state.economy_enabled&&g.syn
 }
 function todayResults(){const g=game(),prior=(g.events||[]).filter(e=>e.date===day()&&e.open_date!==day()),done=prior.filter(e=>e.voted||e.settled).length;section("Τι έγινε σήμερα;",done+"/"+prior.length+" απαντημένες");if(!state.economy_enabled){notice("Η οικονομία δεν έχει ενεργοποιηθεί.");return;}notice("12:00–17:30 · Πληρωμές 17:30 · Απάντησε μόνο όταν γνωρίζεις το αποτέλεσμα.");if(!prior.length){notice("Δεν υπάρχουν σημερινές ερωτήσεις.");return;}const questions={potatoes:"🥔 Ήρθαν οι νωπές πατάτες στην ώρα τους;",customers:"🛒 Πόσοι πελάτες ήρθαν στο διάλειμμα (12:00–13:00);",statements:"📋 Πότε βγήκε η τελευταία κατάσταση;",supervisor_shout:"📢 Φώναξε κάποιος προϊστάμενος μέχρι τη λήξη του ωραρίου;",departure_time:"🏠 Ποια ώρα τελείωσε η εργασία;"};const ordered=prior.slice().sort((a,b)=>Number(a.voted||a.settled)-Number(b.voted||b.settled));for(const e of ordered){const c=card();c.style.padding="12px";c.append(el("h3",e.kind==="attendance"?"👤 Ήρθε ο/η "+e.name+";":questions[e.kind]||e.name));if(e.settled)c.append(el("p",e.result===null?"Ακυρώθηκε":(e.kind==="attendance"?(e.result==="yes"?"Ήρθε":e.result==="no"?"Δεν ήρθε":e.result):(marketOption(e,e.result)?.label||e.result)),"muted"));else if(e.voted)c.append(el("small","✓ Απαντήθηκε","profit"));else if(g.sync_ok&&e.can_vote){const grid=el("div",undefined,"odds");grid.style.gridTemplateColumns="repeat(2,minmax(0,1fr))";grid.style.gap="8px";for(const o of marketOptions(e)){const label=e.kind==="attendance"?(o.key==="yes"?"Ήρθε":o.key==="no"?"Δεν ήρθε":o.label):o.label;const btn=button(label,async()=>{if(busy)return;for(const x of grid.querySelectorAll("button"))x.disabled=true;btn.textContent="Καταχώριση…";try{await transact("vote",{event_id:e.id,side:o.key},"Σημερινά αποτελέσματα","Η ψήφος καταχωρίστηκε.");}finally{if(grid.isConnected){btn.textContent=label;for(const x of grid.querySelectorAll("button"))x.disabled=false;}}},"pick "+(o.key==="no"?"no":"yes"));btn.style.minHeight="48px";btn.style.padding="10px 6px";btn.style.whiteSpace="normal";btn.style.overflowWrap="anywhere";btn.style.fontSize="14px";grid.append(btn);}c.append(grid);}else c.append(el("small",!g.sync_ok?"Ο συγχρονισμός εκκρεμεί.":"Ψηφοφορία 12:00–17:30."));}if(done===prior.length)notice("✓ Όλες οι ερωτήσεις ολοκληρώθηκαν.");}
 function marketReturn(amount,chosen){let num=BigInt(amount),den=1n;for(const e of chosen){const o=marketOption(e,picks.get(e.id));if(!o)return 0;num*=BigInt(Math.round(Number(o.odds)*100));den*=100n;}return Math.min(10000,Number(num/den));}
-function ticket(){const g=game();prune();section("Το δελτίο μου",picks.size+" επιλογές");const chosen=eligibleEvents().filter(e=>picks.has(e.id));if(chosen.length){const c=card();c.append(button("← Επιστροφή στις επιλογές",()=>{show("Γεγονότα");window.scrollTo(0,0);},"prediction-more"));let mult=1;for(const e of chosen){const o=marketOption(e,picks.get(e.id));mult*=Number(o.odds);const r=el("div",undefined,"ticket-line"),info=el("div");info.append(el("h3",eventName(e.kind==="customers"?"Πόσοι πελάτες θα έρθουν στο διάλειμμα (12:00–13:00);":e.kind==="statements"?"Πότε θα βγει η τελευταία κατάσταση;":e.kind==="supervisor_shout"?"Θα φωνάξει κάποιος προϊστάμενος μέχρι τη λήξη του ωραρίου;":e.name)),el("small",o.label+" · "+odds(o.odds)));r.append(info,button("×",()=>{picks.delete(e.id);show("Δελτίο");}));c.append(r);}const input=el("input");input.type="number";input.inputMode="numeric";input.min=10;input.max=Math.min(1000,available);input.value=stake;const detail=el("p","","amount");const submit=button("Οριστικό ποντάρισμα",()=>{const n=Number(input.value);if(!Number.isSafeInteger(n)||n<10||n>Math.min(1000,available))return;transact("place",{ids:chosen.map(e=>e.id),sides:chosen.map(e=>picks.get(e.id)),stake:n},"Δελτίο","Το δελτίο καταχωρίστηκε οριστικά.");},"primary");function calc(){stake=Number(input.value);const valid=Number.isSafeInteger(stake)&&stake>=10&&stake<=Math.min(1000,available);detail.textContent=valid?fmt(marketReturn(stake,chosen))+" 🪙":"—";submit.disabled=!valid||!g.sync_ok||g.phase!=="open";}input.oninput=calc;c.append(el("small","Συνολική απόδοση "+odds(mult)),el("label","Ποντάρισμα"),input,el("small","Πιθανή συνολική επιστροφή · μέγ. 10.000"),detail,submit);calc();}else notice("Επίλεξε τουλάχιστον μία απάντηση για το νέο δελτίο σου.");
+let ticketBatchDraft=null;
+function ticketDraftFor(chosen){
+ const key=String(state.player.id)+":"+day()+":"+chosen.map(e=>e.id).sort().join("|");
+ if(!ticketBatchDraft||ticketBatchDraft.key!==key)ticketBatchDraft={key,count:1,groupOf:new Map(),stakes:[10,10,10]};
+ return ticketBatchDraft;
+}
+function ticketPlan(chosen,draft,limit,singleStake){
+ const count=draft.count,groups=Array.from({length:count},()=>[]);
+ for(const e of chosen){const index=count===1?0:draft.groupOf.get(e.id);if(!Number.isInteger(index)||index<0||index>=count)return {valid:false,groups,tickets:[],total:0};groups[index].push(e);}
+ const tickets=groups.map((group,i)=>({ids:group.map(e=>e.id),sides:group.map(e=>picks.get(e.id)),stake:count===1?Number(singleStake):Number(draft.stakes[i])}));
+ const total=tickets.reduce((sum,t)=>sum+t.stake,0),ids=tickets.flatMap(t=>t.ids);
+ const valid=count>=1&&count<=3&&ids.length===new Set(ids).size&&tickets.every(t=>t.ids.length>=1&&t.ids.length<=6&&t.sides.every(v=>typeof v==="string")&&Number.isSafeInteger(t.stake)&&t.stake>=10&&t.stake<=1000)&&Number.isSafeInteger(total)&&total<=limit;
+ return {valid,groups,tickets,total};
+}
+function ticket(){const g=game();prune();section("Το δελτίο μου",picks.size+" επιλογές");const chosen=eligibleEvents().filter(e=>picks.has(e.id));
+ if(chosen.length){
+  const draft=ticketDraftFor(chosen),c=card();
+  c.append(button("← Επιστροφή στις επιλογές",()=>{show("Γεγονότα");window.scrollTo(0,0);},"prediction-more"));
+  if(chosen.length>=2){
+   const choices=el("div",undefined,"actions");choices.setAttribute("role","group");choices.setAttribute("aria-label","Αριθμός δελτίων");
+   for(let n=1;n<=Math.min(3,chosen.length);n++){const b=button(n===1?"1 δελτίο":n+" δελτία",()=>{if(busy||draft.count===n)return;draft.count=n;draft.groupOf=new Map(chosen.map((e,i)=>[e.id,i%n]));show("Δελτίο");},draft.count===n?"primary":"secondary");b.setAttribute("aria-pressed",String(draft.count===n));choices.append(b);}
+   c.append(choices);if(draft.count>1)c.append(el("small","Μοίρασε τις επιλογές σου σε διαφορετικά δελτία. Κάθε ερώτηση χρησιμοποιείται μία φορά."));
+  }
+  let mult=1;const update=()=>calc();
+  for(const e of chosen){
+   const o=marketOption(e,picks.get(e.id));mult*=Number(o.odds);
+   const r=el("div",undefined,"ticket-line"),info=el("div");info.style.minWidth="0";
+   const name=eventName(e.kind==="customers"?"Πόσοι πελάτες θα έρθουν στο διάλειμμα (12:00–13:00);":e.kind==="statements"?"Πότε θα βγει η τελευταία κατάσταση;":e.kind==="supervisor_shout"?"Θα φωνάξει κάποιος προϊστάμενος μέχρι τη λήξη του ωραρίου;":e.name);
+   info.append(el("h3",name),el("small",o.label+" · "+odds(o.odds)));
+   if(draft.count>1){const sel=el("select");sel.setAttribute("aria-label","Δελτίο για "+name);sel.style.marginTop="6px";sel.style.maxWidth="100%";for(let i=0;i<draft.count;i++){const opt=el("option","Δελτίο "+(i+1));opt.value=String(i);sel.append(opt);}sel.value=String(draft.groupOf.get(e.id));sel.onchange=()=>{draft.groupOf.set(e.id,Number(sel.value));update();};info.append(sel);}
+   const remove=button("×",()=>{if(busy)return;picks.delete(e.id);show("Δελτίο");});remove.setAttribute("aria-label","Αφαίρεση "+name);r.append(info,remove);c.append(r);
+  }
+  const inputs=[],details=[],status=el("small","","feedback"),totalText=el("p","","amount");
+  const submit=button(draft.count===1?"Οριστικό ποντάρισμα":"Καταχώριση "+draft.count+" δελτίων",()=>{
+   if(busy)return;const plan=calc();if(!plan.valid||!g.sync_ok||g.phase!=="open")return;
+   if(draft.count===1)transact("place",plan.tickets[0],"Δελτίο","Το δελτίο καταχωρίστηκε οριστικά.");
+   else transact("place_batch",{tickets:plan.tickets},"Δελτίο","Τα "+draft.count+" δελτία καταχωρίστηκαν οριστικά.");
+  },"primary");
+  if(draft.count===1)c.append(el("small","Συνολική απόδοση "+odds(mult)));
+  const inputGrid=el("div");inputGrid.style.display="grid";inputGrid.style.gap="10px";
+  for(let i=0;i<draft.count;i++){
+   const box=el("div");if(draft.count>1){box.style.border="1px solid var(--line)";box.style.borderRadius="12px";box.style.padding="10px";box.append(el("h3","Δελτίο "+(i+1)));}
+   const input=el("input");input.type="number";input.inputMode="numeric";input.min=10;input.max=Math.min(1000,available);input.step=1;input.value=draft.count===1?stake:draft.stakes[i];input.setAttribute("aria-label","Μάρκες για δελτίο "+(i+1));input.oninput=update;inputs.push(input);
+   const detail=el("p","","amount");details.push(detail);box.append(el("label","Ποντάρισμα"),input,el("small","Πιθανή συνολική επιστροφή · μέγ. 10.000"),detail);inputGrid.append(box);
+  }
+  c.append(inputGrid);if(draft.count>1)c.append(totalText,status);c.append(submit);
+  function calc(){
+   if(draft.count===1)stake=Number(inputs[0].value);else draft.stakes=inputs.map(i=>Number(i.value));
+   const plan=ticketPlan(chosen,draft,available,stake);
+   for(let i=0;i<details.length;i++){const group=plan.groups[i],amount=plan.tickets[i]?.stake;details[i].textContent=group?.length&&Number.isSafeInteger(amount)&&amount>=10&&amount<=1000&&amount<=available?fmt(marketReturn(amount,group))+" 🪙":"—";}
+   totalText.textContent="Συνολικό ποντάρισμα: "+(Number.isFinite(plan.total)?fmt(plan.total):"—")+" 🪙";
+   status.textContent=plan.groups.some(group=>!group.length)?"Κάθε δελτίο χρειάζεται τουλάχιστον μία επιλογή.":plan.total>available?"Δεν επαρκούν οι διαθέσιμες μάρκες.":!plan.valid?"Έλεγξε τα πονταρίσματα (10–1.000 ανά δελτίο).":"";
+   submit.disabled=!plan.valid||!g.sync_ok||g.phase!=="open";return plan;
+  }
+  calc();
+ }else{ticketBatchDraft=null;notice("Επίλεξε τουλάχιστον μία απάντηση για το νέο δελτίο σου.");}
  section("Ιστορικό δελτίων");const history=g.tickets||[];for(let idx=0;idx<history.length;idx++){const t=history[idx],c=card(),profit=Number(t.paid)-Number(t.stake),status=t.settled_at?(profit>0?"Κερδισμένο":profit<0?"Χαμένο":"Επιστροφή"):"Εκκρεμεί",ps=t.picks||[];c.classList.add("history-ticket");const head=el("div",undefined,"history-head");head.append(el("h3","Δελτίο #"+(history.length-idx)),el("span",status,"ticket-status "+(t.settled_at?(profit>0?"profit":profit<0?"loss":"muted"):"pending-status")));c.append(head,el("small",dateFmt(t.created_at?.slice(0,10))));let product=1n,den=1n;for(const p of ps){product*=BigInt(Math.round(Number(p.odds)*100));den*=100n;const row=el("div",undefined,"history-pick"),info=el("div");info.append(el("strong",eventName(p.name)),el("small",p.label||(p.side==="yes"?"Ναι":p.side==="no"?"Όχι":p.side)));row.append(info,el("b",odds(p.odds)));c.append(row);}const summary=el("div",undefined,"history-summary");const total=Number(product)/Number(den),max=Math.min(10000,Number(BigInt(t.stake)*product/den));for(const [label,value] of [["Ποντάρισμα",fmt(t.stake)+" 🪙"],["Συνολική απόδοση",odds(total)],[t.settled_at?"Επιστροφή":"Μέγιστη επιστροφή",fmt(t.settled_at?t.paid:max)+" 🪙"]]){const row=el("div",undefined,"history-total");row.append(el("small",label),el("strong",value));summary.append(row);}c.append(summary);if(t.settled_at)c.append(el("strong",(profit>0?"+":"")+fmt(profit)+" καθαρό αποτέλεσμα",profit>0?"profit":profit<0?"loss":"muted"));}if(!history.length)notice("Δεν έχεις καταχωρίσει ακόμη δελτίο.");
 }
 function bank(){
@@ -360,7 +415,7 @@ function memberManage(p,operation){
 const firstHelpSeen=new Set();
 const firstHelpTopics={
  "Γεγονότα":["Πώς επιλέγω απαντήσεις;",["Διάλεξε απάντηση μόνο στις ερωτήσεις που θέλεις. Αρκεί μία επιλογή.","Μπορείς να αλλάξεις ή να αφαιρέσεις επιλογές πριν την καταχώριση. Από την κάτω μπάρα ανοίγεις το δελτίο σου."]],
- "Δελτίο":["Πώς λειτουργεί το δελτίο;",["Μία επιλογή δημιουργεί μονό δελτίο. Από 2 έως 6 διαφορετικές ερωτήσεις δημιουργούν συνδυαστικό δελτίο στην τρέχουσα έκδοση.","Έλεγξε τις επιλογές, τις διαθέσιμες εικονικές μάρκες και την εμφανιζόμενη επιστροφή. Κάθε υποβολή καταχωρίζει ένα δελτίο."]],
+ "Δελτίο":["Πώς λειτουργεί το δελτίο;",["Μία επιλογή δημιουργεί μονό δελτίο. Από 2 έως 6 διαφορετικές ερωτήσεις δημιουργούν συνδυαστικό δελτίο στην τρέχουσα έκδοση.","Έλεγξε τις επιλογές, τις διαθέσιμες εικονικές μάρκες και την εμφανιζόμενη επιστροφή. Μπορείς να υποβάλεις έως τρία ξεχωριστά δελτία μαζί, μοιράζοντας τις επιλεγμένες ερωτήσεις. Η ίδια ερώτηση μπαίνει μόνο σε ένα δελτίο."]],
  "Σημερινά αποτελέσματα":["Πώς επιβεβαιώνω αποτελέσματα;",["Απάντησε μόνο όταν γνωρίζεις τι έγινε πραγματικά. Η ψήφος καταχωρίζεται μία φορά.","Παρακολούθησε την κατάσταση των αποτελεσμάτων και των δελτίων από τις αντίστοιχες καρτέλες."]],
  "Προφίλ":["Το προφίλ μου",["Εδώ βλέπεις την εμφάνιση, τα αποκτήματα, την περιουσία και τα επιτεύγματά σου.","Τα ιδιωτικά δώρα είναι ορατά μόνο σε εσένα."]],
  "Η εμφάνισή μου":["Προσαρμογή εμφάνισης",["Προεπισκόπησε τα διαθέσιμα χρώματα, πλαίσια, τίτλους, φόντα και εφέ πριν τα εφαρμόσεις."]],
@@ -403,7 +458,7 @@ function attachFirstHelp(k){
 
 function helpGuide(){section("Οδηγός παιχνιδιού");screen.append(button("‹ Πίσω",moreBack,"secondary"));const intro=card();intro.classList.add("guide-intro");intro.append(el("h3","Πώς λειτουργούν οι Προβλέψεις"),el("p","Ιδιωτικό παιχνίδι με δωρεάν εικονικές μάρκες. Δεν αγοράζονται, δεν εξαργυρώνονται και δεν έχουν χρηματική αξία.","muted"));const groups=[
 ["🎯","Γεγονότα και ψηφοφορία",["Επίλεξε αποτέλεσμα σε διαθέσιμο γεγονός. Οι ώρες ανοίγματος και επιβεβαίωσης εμφανίζονται στην εφαρμογή και εξαρτώνται από το είδος γεγονότος.","Όταν ανοίξει η επιβεβαίωση, δήλωσε το πραγματικό αποτέλεσμα. Η ψήφος καταχωρίζεται μία φορά."]],
-["🎟️","Δελτίο και αποδόσεις",["Οι επιλογές συγκεντρώνονται στο Δελτίο. Μία απάντηση αποτελεί μονό δελτίο· περισσότερες διαφορετικές ερωτήσεις αποτελούν συνδυαστικό δελτίο. Μπορείς να αφαιρέσεις επιλογές πριν από την οριστική καταχώριση. Κάθε υποβολή καταχωρίζει ένα δελτίο. Μια λανθασμένη επιλογή μηδενίζει την επιστροφή του συνδυαστικού δελτίου· οι ακυρωμένες επιλογές αντιμετωπίζονται σύμφωνα με τους κανόνες πληρωμής.","Ποντάρισμα 10–1.000 διαθέσιμες μάρκες. Η πιθανή συνολική επιστροφή εμφανίζεται πριν την καταχώριση, με ανώτατο όριο 10.000. Το ιστορικό δείχνει εκκρεμή και ολοκληρωμένα δελτία."]],
+["🎟️","Δελτίο και αποδόσεις",["Οι επιλογές συγκεντρώνονται στο Δελτίο. Μία απάντηση αποτελεί μονό δελτίο· περισσότερες διαφορετικές ερωτήσεις αποτελούν συνδυαστικό δελτίο. Μπορείς να αφαιρέσεις επιλογές πριν από την οριστική καταχώριση. Μπορείς να υποβάλεις έως τρία ξεχωριστά δελτία μαζί, μοιράζοντας τις επιλεγμένες ερωτήσεις. Η ίδια ερώτηση μπαίνει μόνο σε ένα δελτίο. Μια λανθασμένη επιλογή μηδενίζει την επιστροφή του συνδυαστικού δελτίου· οι ακυρωμένες επιλογές αντιμετωπίζονται σύμφωνα με τους κανόνες πληρωμής.","Ποντάρισμα 10–1.000 διαθέσιμες μάρκες. Η πιθανή συνολική επιστροφή εμφανίζεται πριν την καταχώριση, με ανώτατο όριο 10.000. Το ιστορικό δείχνει εκκρεμή και ολοκληρωμένα δελτία."]],
 ["👤","Προφίλ και συλλογή",["Το προφίλ παρουσιάζει την ταυτότητα, την περιουσία, την εμφάνιση και τα αποκτημένα αντικείμενα. Τα αντικείμενα είναι εικονικά.","Η εμπειρία εμφανίζεται ως XP (10 ανά καταγεγραμμένη ημέρα δραστηριότητας). Από την εμφάνισή μου μπορείς να προεπισκοπήσεις και να εφαρμόσεις διαθέσιμα χρώματα, τίτλους, πλαίσια, φόντα, εφέ και τρόπαια.","Οι κατηγορίες περιουσίας δείχνουν τα αντικείμενα που απέκτησες. Τα ιδιωτικά δώρα δεν εμφανίζονται δημόσια."]],
 ["🛍️","Κατάστημα και δώρα",["Δες τις κατηγορίες, την τιμή και την περιγραφή κάθε αντικειμένου. Οι αγορές χρησιμοποιούν μόνο διαθέσιμες μάρκες που επιτρέπονται για αγορές, όχι δεσμευμένες ή δανεικές.","Τα ιδιωτικά δώρα εμφανίζονται μόνο στον παραλήπτη μαζί με τον αποστολέα. Τα επιτεύγματα δείχνουν τι έχει ήδη ξεκλειδωθεί."]],
 ["🏆","Κατάταξη και μέλη",["Η κατάταξη έχει προβολές περιουσίας, κερδών, εβδομάδας και μήνα. Μπορείς να ανοίξεις το δημόσιο προφίλ άλλου μέλους από τη λίστα Μελών.","Η περιουσία και τα διαθέσιμα δεν είναι απαραίτητα το ίδιο ποσό."]],
