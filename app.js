@@ -356,9 +356,53 @@ function memberManage(p,operation){
  const submit=button(rename?"Αποθήκευση":"Αφαίρεση μέλους",async()=>{if(busy)return;const nickname=name.value.normalize("NFKC").trim();if(!validPin(pin.value)||(rename&&(nickname.length<2||nickname.length>40))){err.textContent="Έλεγξε το όνομα και το PIN Admin.";return;}busy=true;revision++;submit.disabled=true;try{state=await api("member_manage",{target:p.id,operation,nickname:rename?nickname:null,admin_pin:pin.value});close();clock();show("Διαχείριση");notice(rename?"Το όνομα διορθώθηκε.":"Το μέλος αφαιρέθηκε.");}catch(e){err.textContent=e.message;pin.value="";}finally{busy=false;submit.disabled=false;}},rename?"primary":"danger");
  c.append(pin,err,submit,button("Ακύρωση",()=>{if(!busy)close();}));
 }
+
+const firstHelpSeen=new Set();
+const firstHelpTopics={
+ "Γεγονότα":["Πώς επιλέγω απαντήσεις;",["Διάλεξε απάντηση μόνο στις ερωτήσεις που θέλεις. Αρκεί μία επιλογή.","Μπορείς να αλλάξεις ή να αφαιρέσεις επιλογές πριν την καταχώριση. Από την κάτω μπάρα ανοίγεις το δελτίο σου."]],
+ "Δελτίο":["Πώς λειτουργεί το δελτίο;",["Μία επιλογή δημιουργεί μονό δελτίο. Περισσότερες διαφορετικές ερωτήσεις δημιουργούν συνδυαστικό δελτίο.","Έλεγξε τις επιλογές, τις διαθέσιμες εικονικές μάρκες και την εμφανιζόμενη επιστροφή. Κάθε υποβολή καταχωρίζει ένα δελτίο."]],
+ "Σημερινά αποτελέσματα":["Πώς επιβεβαιώνω αποτελέσματα;",["Απάντησε μόνο όταν γνωρίζεις τι έγινε πραγματικά. Η ψήφος καταχωρίζεται μία φορά.","Παρακολούθησε την κατάσταση των αποτελεσμάτων και των δελτίων από τις αντίστοιχες καρτέλες."]],
+ "Προφίλ":["Το προφίλ μου",["Εδώ βλέπεις την εμφάνιση, τα αποκτήματα, την περιουσία και τα επιτεύγματά σου.","Τα ιδιωτικά δώρα είναι ορατά μόνο σε εσένα."]],
+ "Η εμφάνισή μου":["Προσαρμογή εμφάνισης",["Προεπισκόπησε τα διαθέσιμα χρώματα, πλαίσια, τίτλους, φόντα και εφέ πριν τα εφαρμόσεις."]],
+ "Κατάστημα":["Το κατάστημα",["Άνοιξε μια κατηγορία για να δεις τα αντικείμενα και την τιμή τους.","Όλα τα αντικείμενα είναι εικονικά και οι αγορές χρησιμοποιούν μόνο τις επιτρεπόμενες διαθέσιμες μάρκες."]],
+ "Τράπεζα":["Η τράπεζα",["Δες το διαθέσιμο και δεσμευμένο υπόλοιπο, τα δάνεια και την επόμενη πίστωση.","Έλεγξε τους όρους και τυχόν τόκους πριν επιβεβαιώσεις οποιαδήποτε ενέργεια."]],
+ "Κατάταξη":["Η κατάταξη",["Εναλλάσσεις προβολές περιουσίας, κερδών, εβδομάδας και μήνα. Η περιουσία δεν είναι το ίδιο με το διαθέσιμο υπόλοιπο."]],
+ "Μέλη":["Τα μέλη",["Επίλεξε ένα μέλος για να δεις το δημόσιο προφίλ του. Τα ιδιωτικά στοιχεία και δώρα δεν εμφανίζονται δημόσια."]],
+ "Καζίνο":["Πληροφορίες και όρια",["Blackjack και Φρουτάκια χρησιμοποιούν αποκλειστικά δωρεάν εικονικές μάρκες χωρίς χρηματική αξία.","Τα ημερήσια όρια και οι κανόνες εμφανίζονται στην ενότητα. Δεν χρειάζεται να χρησιμοποιήσεις κανένα από τα διαθέσιμα όρια."]],
+ "Παραιτήσεις":["Μακροχρόνιες προβλέψεις",["Εμφανίζονται μόνο οι επιλέξιμοι εργαζόμενοι με συγκατάθεση. Διάβασε την περίοδο και τους όρους επιβεβαίωσης."]],
+ "Ρυθμίσεις":["Ειδοποιήσεις συσκευής",["Μπορείς να ενεργοποιήσεις, να απενεργοποιήσεις ή να δοκιμάσεις τις ειδοποιήσεις στη συσκευή σου."]],
+ "Περισσότερα":["Οι υπόλοιπες λειτουργίες",["Εδώ θα βρεις τις πρόσθετες ενότητες και τον Οδηγό παιχνιδιού, με αναλυτικές πληροφορίες που μπορείς να διαβάσεις οποιαδήποτε στιγμή."]]
+};
+function firstHelpKey(k){return "predictions-help-v1:"+String(state.player.id)+":"+k;}
+function firstHelpSuppressed(key){try{return localStorage.getItem(key)==="1";}catch{return false;}}
+function openFirstHelp(k,trigger){
+ const topic=firstHelpTopics[k];if(!topic||resetOpen||!state?.player?.id)return;
+ const key=firstHelpKey(k),d=el("dialog"),c=el("div",undefined,"card");
+ if(typeof d.showModal!=="function"){menuGo("Οδηγός παιχνιδιού");return;}
+ d.setAttribute("aria-label",topic[0]);
+ Object.assign(d.style,{width:"min(92vw,440px)",maxHeight:"85dvh",overflow:"auto",padding:"0",border:"1px solid var(--line)",borderRadius:"16px",background:"var(--card)",color:"var(--text)"});
+ c.style.margin="0";
+ const check=el("input");check.type="checkbox";check.checked=firstHelpSuppressed(key);check.style.width="auto";check.style.minHeight="0";
+ const label=el("label",undefined,"departure-consent");label.append(check,el("span","Να μην εμφανιστεί ξανά"));
+ const msg=el("p","","feedback");
+ c.append(el("h2",topic[0]));for(const p of topic[1])c.append(el("p",p));c.append(label,msg);
+ function close(save){if(save){try{if(check.checked)localStorage.setItem(key,"1");else localStorage.removeItem(key);}catch{if(check.checked){msg.textContent="Δεν ήταν δυνατή η αποθήκευση. Μπορείς να κλείσεις χωρίς αποθήκευση.";check.checked=false;return;}}}d.close();}
+ c.append(button("Κατάλαβα",()=>close(true),"primary"),button("Αναλυτικός οδηγός",()=>{close(true);if(!d.open){resetOpen=false;menuGo("Οδηγός παιχνιδιού");}}),button("Κλείσιμο",()=>close(false),"secondary"));
+ d.append(c);document.body.append(d);
+ d.addEventListener("close",()=>{resetOpen=false;d.remove();if(trigger?.isConnected)trigger.focus({preventScroll:true});},{once:true});
+ try{d.showModal();resetOpen=true;firstHelpSeen.add(key);}catch{d.remove();}
+}
+function attachFirstHelp(k){
+ if(!Object.prototype.hasOwnProperty.call(firstHelpTopics,k)||!state?.player?.id)return;
+ const key=firstHelpKey(k),b=button("? Βοήθεια",()=>openFirstHelp(k,b),"secondary");
+ b.style.fontSize="12px";b.style.minHeight="32px";b.style.width="auto";
+ const heading=screen.querySelector(".section-head");if(heading)heading.append(b);else screen.prepend(b);
+ if(!firstHelpSeen.has(key)&&!firstHelpSuppressed(key))openFirstHelp(k,b);
+}
+
 function helpGuide(){section("Οδηγός παιχνιδιού");screen.append(button("‹ Πίσω",moreBack,"secondary"));const intro=card();intro.classList.add("guide-intro");intro.append(el("h3","Πώς λειτουργούν οι Προβλέψεις"),el("p","Ιδιωτικό παιχνίδι με δωρεάν εικονικές μάρκες. Δεν αγοράζονται, δεν εξαργυρώνονται και δεν έχουν χρηματική αξία.","muted"));const groups=[
 ["🎯","Γεγονότα και ψηφοφορία",["Επίλεξε αποτέλεσμα σε διαθέσιμο γεγονός. Οι ώρες ανοίγματος και επιβεβαίωσης εμφανίζονται στην εφαρμογή και εξαρτώνται από το είδος γεγονότος.","Όταν ανοίξει η επιβεβαίωση, δήλωσε το πραγματικό αποτέλεσμα. Η ψήφος καταχωρίζεται μία φορά."]],
-["🎟️","Δελτίο και αποδόσεις",["Οι επιλογές συγκεντρώνονται στο Δελτίο. Μπορείς να αφαιρέσεις επιλογές πριν από την οριστική καταχώριση.","Ποντάρισμα 10–1.000 διαθέσιμες μάρκες. Η πιθανή συνολική επιστροφή εμφανίζεται πριν την καταχώριση, με ανώτατο όριο 10.000. Το ιστορικό δείχνει εκκρεμή και ολοκληρωμένα δελτία."]],
+["🎟️","Δελτίο και αποδόσεις",["Οι επιλογές συγκεντρώνονται στο Δελτίο. Μία απάντηση αποτελεί μονό δελτίο· περισσότερες διαφορετικές ερωτήσεις αποτελούν συνδυαστικό δελτίο. Μπορείς να αφαιρέσεις επιλογές πριν από την οριστική καταχώριση. Κάθε υποβολή καταχωρίζει ένα δελτίο. Μια λανθασμένη επιλογή μηδενίζει την επιστροφή του συνδυαστικού δελτίου· οι ακυρωμένες επιλογές αντιμετωπίζονται σύμφωνα με τους κανόνες πληρωμής.","Ποντάρισμα 10–1.000 διαθέσιμες μάρκες. Η πιθανή συνολική επιστροφή εμφανίζεται πριν την καταχώριση, με ανώτατο όριο 10.000. Το ιστορικό δείχνει εκκρεμή και ολοκληρωμένα δελτία."]],
 ["👤","Προφίλ και συλλογή",["Το προφίλ παρουσιάζει την ταυτότητα, την περιουσία, την εμφάνιση και τα αποκτημένα αντικείμενα. Τα αντικείμενα είναι εικονικά.","Η εμπειρία εμφανίζεται ως XP (10 ανά καταγεγραμμένη ημέρα δραστηριότητας). Από την εμφάνισή μου μπορείς να προεπισκοπήσεις και να εφαρμόσεις διαθέσιμα χρώματα, τίτλους, πλαίσια, φόντα, εφέ και τρόπαια.","Οι κατηγορίες περιουσίας δείχνουν τα αντικείμενα που απέκτησες. Τα ιδιωτικά δώρα δεν εμφανίζονται δημόσια."]],
 ["🛍️","Κατάστημα και δώρα",["Δες τις κατηγορίες, την τιμή και την περιγραφή κάθε αντικειμένου. Οι αγορές χρησιμοποιούν μόνο διαθέσιμες μάρκες που επιτρέπονται για αγορές, όχι δεσμευμένες ή δανεικές.","Τα ιδιωτικά δώρα εμφανίζονται μόνο στον παραλήπτη μαζί με τον αποστολέα. Τα επιτεύγματα δείχνουν τι έχει ήδη ξεκλειδωθεί."]],
 ["🏆","Κατάταξη και μέλη",["Η κατάταξη έχει προβολές περιουσίας, κερδών, εβδομάδας και μήνα. Μπορείς να ανοίξεις το δημόσιο προφίλ άλλου μέλους από τη λίστα Μελών.","Η περιουσία και τα διαθέσιμα δεν είναι απαραίτητα το ίδιο ποσό."]],
@@ -429,7 +473,7 @@ function notifications(parent=screen){
 function extra(k){section(k);if(k==="Ειδοποιήσεις"||k==="Ρυθμίσεις"){notifications();return;}notice("Η λειτουργία δεν έχει ακόμη ενεργοποιηθεί.");}
 const pages={"Σημερινά αποτελέσματα":todayResults,"Οδηγός παιχνιδιού":helpGuide,"Καζίνο":casino,"Η εμφάνισή μου":appearancePage,"Μέλη":members,"Γεγονότα":events,"Δελτίο":ticket,"Τράπεζα":bank,"Κατάταξη":ranking,"Περισσότερα":more,"Προφίλ":()=>profile((state.players||[]).find(p=>p.id===profileTarget)||state.player),"Τρόπαια":trophies,"Κατάστημα":trophies,"Διαχείριση":admin,"Παραιτήσεις":departures};
 const nav=[["🎯","Γεγονότα"],["🎫","Δελτίο"],["🎰","Καζίνο"],["🏅","Κατάταξη"],["👤","Προφίλ"],["☰","Περισσότερα"]];
-function show(k){if(!state||state.player.status!=="approved"||resetOpen)return;if(k!=="Η εμφάνισή μου"&&!(k==="Κατάστημα"&&appearanceKeys.includes(shopTab)))liveDraft=null;tab=k;clock();screen.replaceChildren();for(const b of $("tabs").children)b.setAttribute("aria-selected",String(b.dataset.tab===k||b.dataset.tab==="Περισσότερα"&&!nav.some(n=>n[1]===k)));(pages[k]||(()=>extra(k)))();}
+function show(k){if(!state||state.player.status!=="approved"||resetOpen)return;if(k!=="Η εμφάνισή μου"&&!(k==="Κατάστημα"&&appearanceKeys.includes(shopTab)))liveDraft=null;tab=k;clock();screen.replaceChildren();for(const b of $("tabs").children)b.setAttribute("aria-selected",String(b.dataset.tab===k||b.dataset.tab==="Περισσότερα"&&!nav.some(n=>n[1]===k)));(pages[k]||(()=>extra(k)))();attachFirstHelp(k);}
 const menuHistory=[];
 function menuSnapshot(){return {tab,shopTab,giftTarget,giftGroup,profileTarget,appearanceTab,y:window.scrollY,search:tab==="Μέλη"?(screen.querySelector('input[type="search"]')?.value||""):""};}
 function menuGo(k,change){if(resetOpen)return;menuHistory.push(menuSnapshot());if(menuHistory.length>40)menuHistory.shift();if(change)change();show(k);window.scrollTo(0,0);}
