@@ -49,7 +49,18 @@ function toggleGame(yes){$("gameScreen").hidden=!yes;$("tabs").hidden=!yes;$("pr
 function feedback(t){const f=$("feedback");if(f)f.textContent=t;}
 let authPinTimer=null;
 function cancelAuthPin(){if(authPinTimer!==null){clearTimeout(authPinTimer);authPinTimer=null;}}
-function loginAvatar(p){if(typeof p.avatar==="string"&&/^data:image\/jpeg;base64,/.test(p.avatar)){const img=el("img",undefined,"login-avatar");img.src=p.avatar;img.alt="";return img;}return el("span",String(p.nickname||"?").slice(0,1).toUpperCase(),"login-avatar login-initial");}
+const LOGIN_PHOTO_INDEX="predictions-login-photo-index-v1";
+function rememberLoginProfiles(snapshot){
+ if(snapshot?.player?.status!=="approved")return;
+ try{const map=Object.create(null);for(const p of (snapshot.players||[]).slice(0,100))if(typeof p.nickname==="string"&&isAvatarPart("avatar:"+p.id)&&typeof p.avatar==="string")map[p.nickname]=p.id;
+ localStorage.setItem(LOGIN_PHOTO_INDEX,JSON.stringify(map));}catch{}
+}
+function loginAvatar(p){
+ const holder=el("span",String(p.nickname||"?").slice(0,1).toUpperCase(),"login-avatar login-initial");
+ try{const map=JSON.parse(localStorage.getItem(LOGIN_PHOTO_INDEX)||"{}"),key="avatar:"+map[p.nickname];
+ if(isAvatarPart(key)&&"caches" in globalThis)void (async()=>{try{const cache=await caches.open(AVATAR_CACHE),response=await cache.match(avatarUrl(key));if(!response)return;const data=await response.json();if(!validCachedAvatar(key,data.hash,data.data)||!holder.isConnected)return;const img=el("img",undefined,"login-avatar");img.src=data.data;img.alt="";holder.replaceWith(img);}catch{}})();
+ }catch{}return holder;
+}
 function authForm(error=""){
  cancelAuthPin();toggleGame(false);auth.replaceChildren();
  const c=el("section",undefined,"card auth-card"),f=el("p",error,"feedback");f.id="feedback";
@@ -693,10 +704,30 @@ function adminActionDialog(action,label,description,payload,withBody=false){
  },"primary");
  c.append(el("h2",label),el("p",description));if(withBody)c.append(body);c.append(pin,err,submit,cancel);
 }
+function importStaffPhotos(){
+ if(resetOpen||busy||!state?.player?.is_admin)return;
+ resetOpen=true;const m=el("div",undefined,"modal"),c=el("div",undefined,"card"),file=el("input"),pin=pinField("staffPhotoAdminPin","PIN Admin"),err=el("p","","feedback"),info=el("p","Επίλεξε το αρχείο JSON με τα κοινά avatar.","muted");
+ m.append(c);document.body.append(m);file.type="file";file.accept=".json,application/json";let list=null,inFlight=false;
+ function close(){if(inFlight)return;pin.value="";list=null;resetOpen=false;m.remove();}
+ const cancel=button("Κλείσιμο",close),submit=button("Εισαγωγή φωτογραφιών",async()=>{
+  if(inFlight||busy||!list||!validPin(pin.value)){err.textContent="Επίλεξε έγκυρο αρχείο και πληκτρολόγησε το PIN Admin.";return;}
+  inFlight=true;busy=true;submit.disabled=cancel.disabled=file.disabled=pin.disabled=true;err.textContent="";
+  try{const result=await api("import_staff_photos",{staff:list,admin_pin:pin.value});
+   inFlight=false;close();await refresh(true);notice("Αποθηκεύτηκαν "+result.saved+" φωτογραφίες · "+result.linked+" υπάρχοντες λογαριασμοί ενημερώθηκαν.");
+  }catch(e){err.textContent=e.message;}finally{inFlight=false;busy=false;pin.value="";submit.disabled=cancel.disabled=file.disabled=pin.disabled=false;}
+ },"primary");
+ submit.disabled=true;
+ file.onchange=async()=>{list=null;submit.disabled=true;err.textContent="";try{const f=file.files?.[0];if(!f||f.size>125000)throw Error("Άκυρο αρχείο.");
+  const x=JSON.parse(await f.text());if(x.version!==1||!Array.isArray(x.staff)||x.staff.length<1||x.staff.length>31||new Set(x.staff.map(p=>p.staff_name)).size!==x.staff.length||!x.staff.every(p=>typeof p.staff_name==="string"&&typeof p.avatar==="string"&&/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(p.avatar)))throw Error("Μη έγκυρο αρχείο φωτογραφιών.");
+  list=x.staff;info.textContent=list.length+" φωτογραφίες: "+list.map(p=>p.staff_name).join(", ");submit.disabled=false;
+ }catch(e){err.textContent=e.message;}};
+ c.append(el("h2","Κοινές φωτογραφίες προσωπικού"),el("small","Μόνο με έγκριση των εργαζομένων. Ενημερώνονται οι ήδη συνδεδεμένοι λογαριασμοί χωρίς αλλαγή PIN ή υπολοίπου."),file,info,pin,err,submit,cancel);
+}
 function adminToolsPage(){
  if(!state?.player?.is_admin)return show("Γεγονότα");
  section("Εργαλεία Admin");screen.append(button("‹ Πίσω",moreBack,"secondary"));
  const c=card(),viewer=state.player.id,sessionToken=token;let seq=0;
+ c.append(button("🖼️ Εισαγωγή κοινών avatar",importStaffPhotos,"secondary"));
  c.append(button("📢 Νέα ανακοίνωση",()=>adminActionDialog("admin_announcement","Νέα ανακοίνωση","Εμφανίζεται στα Γεγονότα και στο κοινό Chat όλων των εγκεκριμένων μελών.",{},true),"primary"));
  const output=el("div"),refreshButton=button("Ανανέωση",load,"secondary");c.append(refreshButton,output);
  function alive(){return c.isConnected&&token===sessionToken&&state?.player?.id===viewer&&tab==="Εργαλεία Admin";}
@@ -867,7 +898,7 @@ async function refresh(draw=false){
  try{
  const oldStatus=state?.player?.status,oldCasino=JSON.stringify(state?.casino),oldGame=JSON.stringify(state?.game),oldBank=JSON.stringify(state?.bank),oldShop=JSON.stringify(state?.shop),oldPlayers=JSON.stringify(state?.players),oldDeparture=JSON.stringify(state?.departure),oldAnnouncement=JSON.stringify(state?.announcement);
  const next=await api("state");if(started!==revision||sessionToken!==token||resetOpen||(!draw&&busy))return;
- state=next;
+ state=next;rememberLoginProfiles(state);
  if(state.player.status==="pending"){if(draw||oldStatus!=="pending")pending();return;}
  toggleGame(true);$("profileButton").replaceChildren(avatar(state.player));clock();updateInboxBadges();if(chatView?.alive())chatView.updateInbox?.();
  if(draw||oldStatus!=="approved"){const key=new URLSearchParams(location.search).get("open"),routes={events:"Γεγονότα",tickets:"Δελτίο",bank:"Τράπεζα",profile:"Προφίλ",admin:"Διαχείριση",chat:"Chat"};if(key&&routes[key]){const u=new URL(location.href);u.searchParams.delete("open");history.replaceState(null,"",u);if(key==="profile")profileTarget=null;show(key==="admin"&&!state.player.is_admin?"Γεγονότα":routes[key]);}else show(tab);}
