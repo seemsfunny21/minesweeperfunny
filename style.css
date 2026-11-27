@@ -119,3 +119,24 @@ select{display:block;width:100%;min-height:44px;margin:8px 0;padding:10px;border
 
 /* Mobile visual review: keep paired controls aligned without changing layout */
 .rank-card .rank-empty{margin:4px 0 8px;line-height:1.45}.rank-card>small{display:block}.section-head{flex-wrap:wrap;gap:6px 8px}.section-head h2{flex:1 1 auto;min-width:0}.section-head button{flex:0 0 auto;margin:0}.odds{align-items:stretch}.odds>button{margin:0;min-height:44px}.guide-body{overflow-wrap:anywhere}.guide-body figure{margin:12px auto;max-width:460px}.guide-body figure img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line)}.guide-body figcaption{font-size:12px;color:var(--muted);text-align:center;margin-top:6px}
+
+/* Illustrated guide: numbered interactive overlays on authentic screenshots. */
+.guide-annotated{padding:9px;background:#0b1525;border:1px solid var(--line);border-radius:14px}
+.guide-stage{position:relative;isolation:isolate;border-radius:10px;overflow:hidden}
+.guide-body .guide-stage img{width:100%;height:auto;display:block;margin:0;border:0;border-radius:0}
+.guide-stage .guide-pin{position:absolute;z-index:2;display:grid;place-items:center;transform:translate(-50%,-50%);width:29px;height:29px;min-width:29px;min-height:29px;padding:0;margin:0;border-radius:50%;border:2px solid #fff4bc;background:#ffcf55;color:#102031;font-weight:850;font-size:15px;line-height:1;box-shadow:0 2px 6px #000b;visibility:hidden}
+.guide-stage.guide-loaded .guide-pin{visibility:visible}
+.guide-stage .guide-pin[aria-pressed=true]{background:#ffed9c;outline:3px solid #ad720b;z-index:3}
+.guide-callout{position:absolute;z-index:4;bottom:6px;left:6px;right:6px;display:flex;align-items:flex-start;gap:8px;padding:9px;border-radius:11px;background:#101b2af5;border:2px solid #ffcf55;box-shadow:0 4px 14px #0008;color:#fff;pointer-events:none}
+.guide-callout[hidden]{display:none}
+.guide-callout-top{bottom:auto;top:6px}
+.guide-callout>strong,.guide-key-number{flex:none;display:grid;place-items:center;width:25px;height:25px;border-radius:50%;background:#ffcf55;color:#102031;font-size:13px;font-weight:850}
+.guide-callout div{min-width:0}
+.guide-callout div>strong{display:block;color:#ffdd85;font-size:13px;line-height:1.35}
+.guide-callout small{display:block;color:#f2f6ff;font-size:12px;line-height:1.4;margin-top:3px}
+.guide-legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin-top:9px}
+.guide-legend .guide-key{display:flex;align-items:center;text-align:left;gap:6px;min-width:0;width:100%;margin:0;padding:6px;border-radius:8px;min-height:42px;font-size:11px;font-weight:600;line-height:1.2;background:var(--card);border:1px solid var(--line);overflow-wrap:anywhere}
+.guide-legend .guide-key[aria-pressed=true]{border-color:#ffcf55;color:#ffdd85}
+.guide-key-number{width:21px;height:21px;font-size:11px}
+.guide-pin:focus-visible,.guide-key:focus-visible{outline:2px solid white;outline-offset:2px}
+@media(max-width:350px){.guide-stage .guide-pin{width:25px;height:25px;min-width:25px;min-height:25px;font-size:13px}.guide-legend{grid-template-columns:1fr}}
