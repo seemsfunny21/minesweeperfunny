@@ -116,3 +116,6 @@ select{display:block;width:100%;min-height:44px;margin:8px 0;padding:10px;border
 .prediction-selection-actions .primary{margin:0}
 .prediction-more{background:transparent;color:var(--text);border-color:var(--line)}
 #screen:has(.prediction-selection-bar){padding-bottom:86px}
+
+/* Mobile visual review: keep paired controls aligned without changing layout */
+.rank-card .rank-empty{margin:4px 0 8px;line-height:1.45}.rank-card>small{display:block}.section-head{flex-wrap:wrap;gap:6px 8px}.section-head h2{flex:1 1 auto;min-width:0}.section-head button{flex:0 0 auto;margin:0}.odds{align-items:stretch}.odds>button{margin:0;min-height:44px}.guide-body{overflow-wrap:anywhere}.guide-body figure{margin:12px auto;max-width:460px}.guide-body figure img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line)}.guide-body figcaption{font-size:12px;color:var(--muted);text-align:center;margin-top:6px}
