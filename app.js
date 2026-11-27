@@ -95,7 +95,7 @@ function authForm(error=""){
  }
  if(!token)load();else loading.textContent="Έλεγχος σύνδεσης…";
 }
-async function logout(){if(busy)return;busy=true;revision++;try{try{if(token)await disablePush();}catch{}try{if(token)await api("logout");}catch{}setToken("");state=null;chatView=null;picks.clear();ticketBatchDraft=null;menuHistory.length=0;predictionsNavReady=false;predictionsNavDepth=0;profileTarget=null;giftTarget=null;shopTab="menu";giftGroup="general";tab="Γεγονότα";authForm();}finally{busy=false;}}
+async function logout(){if(busy)return;busy=true;revision++;try{try{if(token)await disablePush();}catch{}try{if(token)await api("logout");}catch{}setToken("");state=null;chatView=null;picks.clear();ticketBatchDraft=null;menuHistory.length=0;predictionsNavReady=false;predictionsNavDepth=0;predictionsOverlay=null;predictionsClosingEntry=false;profileTarget=null;giftTarget=null;shopTab="menu";giftGroup="general";tab="Γεγονότα";authForm();}finally{busy=false;}}
 function pending(){toggleGame(false);auth.replaceChildren();const c=el("section",undefined,"card auth-card");c.append(el("div","⏳","pending-icon"),el("h2","Αναμονή έγκρισης"),el("p","Γεια σου, "+state.player.nickname+". Ο Admin πρέπει να εγκρίνει την εγγραφή σου."),button("Έλεγχος έγκρισης",()=>refresh(true),"primary"),button("Έξοδος",logout),el("p","","feedback"));c.lastChild.id="feedback";auth.append(c);notifications(c);}
 function section(title,sub){const h=el("div",undefined,"section-head");h.append(el("h2",title));if(sub)h.append(el("span",sub,"count"));screen.append(h);}
 function card(){const c=el("article",undefined,"card");screen.append(c);return c;}
@@ -804,31 +804,61 @@ const nav=[["🎯","Γεγονότα"],["🎫","Δελτίο"],["🎰","Καζί
 function show(k){if(!state||state.player.status!=="approved"||resetOpen)return;if(k!=="Chat")chatView=null;if(k!=="Η εμφάνισή μου"&&!(k==="Κατάστημα"&&appearanceKeys.includes(shopTab)))liveDraft=null;tab=k;clock();screen.replaceChildren();for(const b of $("tabs").children)b.setAttribute("aria-selected",String(b.dataset.tab===k||b.dataset.tab==="Περισσότερα"&&!nav.some(n=>n[1]===k)));(pages[k]||(()=>extra(k)))();updateInboxBadges();attachFirstHelp(k);}
 // Each user-initiated screen transition is a real browser history entry.
 // Rendering or background synchronization does not add entries.
+// Each user-initiated screen transition is a real browser history entry.
+// Rendering and background synchronization do not add entries.
 const menuHistory=[];
 const predictionsNavInstance=crypto.randomUUID();
-let predictionsNavDepth=0,predictionsNavReady=false;
+let predictionsNavDepth=0,predictionsNavReady=false,predictionsOverlay=null,predictionsPopClosing=false,predictionsClosingEntry=false;
 function menuSnapshot(){return {tab,shopTab,giftTarget,giftGroup,profileTarget,appearanceTab,casinoMode,rankingPeriod,y:window.scrollY,search:tab==="Μέλη"?(screen.querySelector('input[type="search"]')?.value||""):""};}
-function predictionsNavWrite(method,f,depth){history[method]({...history.state,predictionsNav:{instance:predictionsNavInstance,owner:state.player.id,depth,screen:f}},"");}
+function predictionsNavWrite(method,f,depth,overlay=false){history[method]({...history.state,predictionsNav:{instance:predictionsNavInstance,owner:state.player.id,depth,screen:f,overlay}},"");}
 function predictionsNavInit(){if(predictionsNavReady)return;predictionsNavDepth=0;predictionsNavWrite("replaceState",menuSnapshot(),0);predictionsNavReady=true;}
 function predictionsNavKey(f){return JSON.stringify([f.tab,f.shopTab,f.giftTarget,f.giftGroup,f.profileTarget,f.appearanceTab,f.casinoMode,f.rankingPeriod]);}
+function predictionsModal(){return document.querySelector("dialog[open],.modal");}
 function menuGo(k,change){
- if(resetOpen||busy||!state||state.player.status!=="approved")return;
- predictionsNavInit();const before=menuSnapshot();
- predictionsNavWrite("replaceState",before,predictionsNavDepth);
+ if(resetOpen||busy||!state||state.player.status!=="approved"||predictionsClosingEntry)return;
+ predictionsNavInit();const before=menuSnapshot(),replacingOverlay=!!predictionsOverlay&&!predictionsModal();
+ if(!replacingOverlay)predictionsNavWrite("replaceState",before,predictionsNavDepth);
  if(change)change();show(k);const after=menuSnapshot();
  if(predictionsNavKey(before)!==predictionsNavKey(after)){
-  window.scrollTo(0,0);after.y=0;predictionsNavWrite("pushState",after,++predictionsNavDepth);
+  window.scrollTo(0,0);after.y=0;
+  if(replacingOverlay){predictionsOverlay=null;predictionsNavWrite("replaceState",after,predictionsNavDepth);}
+  else predictionsNavWrite("pushState",after,++predictionsNavDepth);
  }
 }
 function menuRestore(f){shopTab=f.shopTab;giftTarget=f.giftTarget;giftGroup=f.giftGroup;profileTarget=f.profileTarget;appearanceTab=f.appearanceTab;casinoMode=f.casinoMode||"menu";rankingPeriod=f.rankingPeriod||"wealth";show(f.tab);if(f.tab==="Μέλη"&&f.search){const search=screen.querySelector('input[type="search"]');if(search){search.value=f.search;search.dispatchEvent(new Event("input"));}}window.scrollTo(0,f.y||0);requestAnimationFrame(()=>{if(tab===f.tab)window.scrollTo(0,f.y||0);});}
+function predictionsTrackOverlay(){
+ if(!state||state.player.status!=="approved"||predictionsPopClosing||predictionsClosingEntry)return;
+ const modal=predictionsModal();
+ if(modal&&!predictionsOverlay){predictionsNavInit();const f=menuSnapshot();predictionsNavWrite("replaceState",f,predictionsNavDepth);predictionsOverlay=modal;predictionsNavWrite("pushState",f,++predictionsNavDepth,true);return;}
+ if(!modal&&predictionsOverlay){
+  predictionsOverlay=null;
+  const entry=history.state?.predictionsNav;
+  if(!entry?.overlay||entry.instance!==predictionsNavInstance)return;
+  const f=menuSnapshot();
+  if(predictionsNavKey(f)!==predictionsNavKey(entry.screen)){predictionsNavWrite("replaceState",f,predictionsNavDepth);return;}
+  predictionsClosingEntry=true;history.back();
+ }
+}
 window.addEventListener("popstate",e=>{
  const v=e.state?.predictionsNav;
  if(!state||state.player.status!=="approved"||v?.instance!==predictionsNavInstance||v.owner!==state.player.id)return;
- if(resetOpen){const modal=document.querySelector("dialog[open],.modal");const cancel=modal&&Array.from(modal.querySelectorAll("button")).reverse().find(b=>!b.disabled&&/^(Ακύρωση|Κλείσιμο)$/.test(b.textContent.trim()));if(cancel&&!busy)cancel.click();}
- if(resetOpen||busy){history.go(predictionsNavDepth-v.depth);return;}
- predictionsNavDepth=v.depth;menuRestore(v.screen);
+ const modal=predictionsModal(),oldDepth=predictionsNavDepth;
+ if(modal){
+  predictionsPopClosing=true;
+  const cancel=Array.from(modal.querySelectorAll("button")).reverse().find(b=>!b.disabled&&/^(Ακύρωση|Κλείσιμο)$/.test(b.textContent.trim()));
+  if(cancel&&!busy)cancel.click();
+  predictionsPopClosing=false;
+  if(predictionsModal()){if(oldDepth!==v.depth)history.go(oldDepth-v.depth);return;}
+  predictionsOverlay=null;
+ }
+ predictionsClosingEntry=false;predictionsNavDepth=v.depth;
+ if(predictionsNavKey(menuSnapshot())!==predictionsNavKey(v.screen))menuRestore(v.screen);
+ else window.scrollTo(0,v.screen.y||0);
+ // A forward navigation to an already dismissed modal restores its screen, not an expired action.
+ if(v.overlay)predictionsNavWrite("replaceState",v.screen,v.depth);
 });
-function moreBack(){if(resetOpen||busy)return;if(predictionsNavDepth>0){history.back();return;}if((tab==="Κατάστημα"||tab==="Τρόπαια")&&shopTab!=="menu"){shopTab="menu";show("Κατάστημα");}else if(tab!=="Περισσότερα")show("Περισσότερα");window.scrollTo(0,0);}
+new MutationObserver(predictionsTrackOverlay).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:["open"]});
+function moreBack(){if(resetOpen||busy||predictionsClosingEntry)return;if(predictionsNavDepth>0){history.back();return;}if((tab==="Κατάστημα"||tab==="Τρόπαια")&&shopTab!=="menu"){shopTab="menu";show("Κατάστημα");}else if(tab!=="Περισσότερα")show("Περισσότερα");window.scrollTo(0,0);}
 for(const [icon,k] of nav){const b=button("",()=>{if(k==="Περισσότερα"&&tab==="Περισσότερα")return;menuGo(k,()=>{if(k==="Προφίλ")profileTarget=null;});});b.dataset.tab=k;b.append(el("i",icon),el("span",k));$("tabs").append(b);}
 $("profileButton").onclick=()=>menuGo("Προφίλ",()=>{profileTarget=null;});
 function clock(){if(!state||state.player.status!=="approved")return;const parts=new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Athens",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date()),p=t=>parts.find(x=>x.type===t).value;date=p("year")+"-"+p("month")+"-"+p("day");const time=p("hour")+":"+p("minute"),balance=Number(state.player.chips);available=Math.max(0,balance-Number(game().reserve??R.reserve(date)));$("balance").textContent=fmt(balance);$("clock").textContent=time;$("phase").dataset.phase=game().phase||"closed";$("phase").textContent=({open:"● Ανοιχτά",vote:"Επιβεβαίωση",locked:"🔒 Κλειδωμένα",closed:"Κλειστά"})[game().phase]||"Κλειστά";$("target").textContent=dateFmt(tab==="Σημερινά αποτελέσματα"?date:game().target_date||R.nextWorkday(date));$("target").previousElementSibling.textContent=tab==="Σημερινά αποτελέσματα"?"Ημερομηνία αποτελεσμάτων":"Ημερομηνία προβλέψεων";$("available").textContent=fmt(available);$("reserve").textContent=fmt(balance-available);$("fundFill").style.width=(balance?available/balance*100:0)+"%";}
