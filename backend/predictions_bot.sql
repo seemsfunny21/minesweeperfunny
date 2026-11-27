@@ -124,7 +124,7 @@ end $bot$;
 revoke all on function public.predictions_bot_tick() from public,anon,authenticated;
 grant execute on function public.predictions_bot_tick() to service_role;
 do $init$ declare a uuid; begin
- insert into public.predictions_accounts(nickname,pin_salt,pin_hash,status,is_bot,chips,approved_at,last_weekly_credit) values('🤖 Μαντείο με Σαγιονάρες',encode(extensions.gen_random_bytes(16),'hex'),encode(extensions.gen_random_bytes(32),'hex'),'approved',true,1000,now(),date_trunc('week',now() at time zone 'Europe/Athens')::date) returning id into a;
+ insert into public.predictions_accounts(nickname,pin_salt,pin_hash,status,is_bot,chips,approved_at,last_weekly_credit) values('🤖 Κουβάς',encode(extensions.gen_random_bytes(16),'hex'),encode(extensions.gen_random_bytes(32),'hex'),'approved',true,1000,now(),date_trunc('week',now() at time zone 'Europe/Athens')::date) returning id into a;
  insert into public.predictions_ledger(account_id,amount,reason,reference) values(a,1000,'welcome','first');
 end $init$;
 
