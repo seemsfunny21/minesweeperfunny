@@ -525,7 +525,7 @@ function mergeChatDelta(previous,data,limit){if(!data?.delta)return Array.isArra
 function messageTime(t){if(!t)return "—";const date=new Date(t);return Number.isFinite(date.getTime())?date.toLocaleString("el-GR",{timeZone:"Europe/Athens",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"—";}
 function chatPage(){
  section("Μηνύματα");const viewer=state.player.id,sessionToken=token,root=card();
- const top=el("div");Object.assign(top.style,{display:"flex",alignItems:"center",justifyContent:"space-between",gap:"8px"});top.append(button("‹ Πίσω",moreBack,"secondary"),el("strong","Συνομιλίες"));root.append(top);
+ const top=el("div");Object.assign(top.style,{display:"flex",alignItems:"center",justifyContent:"space-between",gap:"8px"});
  const mode=el("div",undefined,"odds"),select=el("select"),list=el("div"),composer=el("textarea"),err=el("p","","feedback");
  list.setAttribute("role","log");list.setAttribute("aria-label","Μηνύματα");Object.assign(list.style,{maxHeight:"48dvh",minHeight:"160px",overflowY:"auto",display:"grid",alignContent:"start",gap:"8px",padding:"10px",borderRadius:"16px",border:"1px solid var(--line)",background:"var(--bg)"});
  select.setAttribute("aria-label","Επιλογή μέλους");select.hidden=true;composer.placeholder="Γράψε μήνυμα…";composer.rows=2;composer.maxLength=1000;composer.setAttribute("aria-label","Κείμενο μηνύματος");
