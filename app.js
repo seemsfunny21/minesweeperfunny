@@ -83,23 +83,27 @@ function authForm(error=""){
  const grid=el("div",undefined,"login-profiles"),loading=el("p","Φόρτωση προφίλ…","muted"),panel=el("div",undefined,"login-pin-panel");grid.append(loading);
  c.append(grid,panel,f);
  let selected=null,manual=false;
+ const sharedPinLengths="work-directory:pin-length-v1";
+ function rememberedLength(nickname){try{const m=JSON.parse(localStorage.getItem(sharedPinLengths)||"{}");const n=m[nickname];return Number.isInteger(n)&&n>=4&&n<=8?n:0}catch{return 0}}
+ function rememberLoginLength(nickname,n){try{const m=Object.assign(Object.create(null),JSON.parse(localStorage.getItem(sharedPinLengths)||"{}"));m[nickname]=n;localStorage.setItem(sharedPinLengths,JSON.stringify(m))}catch{}}
  function renderPin(p){
   cancelAuthPin();selected=p;manual=!p;panel.replaceChildren();f.textContent="";
   for(const b of grid.children)b.setAttribute("aria-pressed",String(!!p&&b.dataset?.profile===p.nickname));
   const form=el("form"),pin=pinField("loginPin","PIN"),submit=el("button","Σύνδεση","secondary");
-  submit.type="submit";pin.setAttribute("aria-label","PIN");pin.autocomplete="current-password";
+  submit.type="submit";pin.setAttribute("aria-label","PIN");pin.autocomplete="off";
   let name=null;if(manual){name=el("input");name.placeholder="Το όνομά σου";name.maxLength=40;name.autocomplete="username";name.setAttribute("aria-label","Όνομα");form.append(name);}else form.append(el("h3",p.nickname));
   form.append(pin,submit);panel.append(form);
   async function login(){
    cancelAuthPin();if(busy||!form.isConnected||!validPin(pin.value))return;
    const nickname=manual?name.value.trim():p.nickname;if(nickname.length<2){f.textContent="Συμπλήρωσε το όνομά σου.";return;}
-   busy=true;pin.disabled=true;submit.disabled=true;if(name)name.disabled=true;f.textContent="Σύνδεση…";
-   try{const data=await api("login",{nickname,pin:pin.value});pin.value="";setToken(data.token);await refresh(true);}
+   const enteredPin=pin.value;busy=true;pin.disabled=true;submit.disabled=true;if(name)name.disabled=true;f.textContent="Σύνδεση…";
+   try{const data=await api("login",{nickname,pin:enteredPin});rememberLoginLength(nickname,enteredPin.length);pin.value="";setToken(data.token);await refresh(true);}
    catch(err){pin.value="";f.textContent=err.message;}
    finally{busy=false;pin.disabled=false;submit.disabled=false;if(name)name.disabled=false;if(form.isConnected&&!token)pin.focus();}
   }
   form.onsubmit=e=>{e.preventDefault();if(!validPin(pin.value)){f.textContent="PIN 4–8 ψηφίων.";return;}login();};
-  pin.oninput=()=>{cancelAuthPin();pin.value=pin.value.replace(/[^0-9]/g,"").slice(0,8);f.textContent="";if(validPin(pin.value)&&(!manual||name.value.trim().length>=2)){if(pin.value.length===8)login();else authPinTimer=setTimeout(login,1500);}};
+  function queueLogin(e){cancelAuthPin();if(busy||e?.isComposing)return;pin.value=pin.value.replace(/[^0-9]/g,"").slice(0,8);f.textContent="";const value=pin.value,nickname=manual?name.value.trim():p.nickname;if(!validPin(value)||nickname.length<2||value.length!==8&&value.length!==rememberedLength(nickname))return;authPinTimer=setTimeout(()=>{authPinTimer=null;if(form.isConnected&&!busy&&pin.value===value&&(manual?name.value.trim():p.nickname)===nickname)void login()},700);}
+  pin.oninput=queueLogin;pin.addEventListener("compositionend",queueLogin);
   if(manual)name.oninput=()=>cancelAuthPin();
   if(manual)name.focus();else pin.focus();
  }
