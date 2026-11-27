@@ -66,11 +66,18 @@ function authForm(error=""){
  const c=el("section",undefined,"card auth-card"),f=el("p",error,"feedback");f.id="feedback";
  auth.append(c);
  if(authMode==="register"){
-  const name=el("input");name.id="nickname";name.maxLength=40;name.autocomplete="username";name.placeholder="Το όνομά σου";
-  const pin=pinField("pin","PIN 4–8 ψηφίων"),form=el("form"),submit=el("button","Αίτημα εγγραφής","primary");
-  submit.type="submit";form.append(el("label","Όνομα"),name,el("label","PIN"),pin,submit,f);
-  form.onsubmit=async e=>{e.preventDefault();if(busy)return;if(name.value.trim().length<2||!validPin(pin.value)){f.textContent="Συμπλήρωσε όνομα και PIN 4–8 ψηφίων.";return;}busy=true;submit.disabled=true;try{const data=await api("register",{nickname:name.value.trim(),pin:pin.value});pin.value="";authMode="login";setToken(data.token);await refresh(true);}catch(err){f.textContent=err.message;}finally{busy=false;submit.disabled=false;}};
-  c.append(el("h2","Νέα εγγραφή"),form,button("Επιστροφή στη σύνδεση",()=>{if(!busy){authMode="login";authForm();}},"secondary"),el("small","Η εγγραφή ενεργοποιείται μετά από έγκριση Admin.","safe-note"));return;
+  const name=el("select");name.id="nickname";name.setAttribute("aria-label","Εργαζόμενος");name.disabled=true;
+  const placeholder=el("option","Φόρτωση προσωπικού…");placeholder.value="";name.append(placeholder);
+  const pin=pinField("pin","Προσωπικό PIN 4–8 ψηφίων"),form=el("form"),submit=el("button","Αίτημα εγγραφής","primary");
+  submit.type="submit";submit.disabled=true;
+  form.append(el("label","Επίλεξε το όνομά σου"),name,el("label","PIN"),pin,submit,f);
+  name.onchange=()=>{submit.disabled=!name.value||busy;};
+  form.onsubmit=async e=>{e.preventDefault();if(busy)return;if(!name.value||!validPin(pin.value)){f.textContent="Επίλεξε εργαζόμενο και PIN 4–8 ψηφίων.";return;}busy=true;submit.disabled=true;name.disabled=true;try{const data=await api("register",{staff_id:name.value,pin:pin.value});pin.value="";authMode="login";setToken(data.token);await refresh(true);}catch(err){f.textContent=err.message;}finally{busy=false;name.disabled=false;submit.disabled=!name.value;}};
+  c.append(el("h2","Νέα εγγραφή"),form,button("Επιστροφή στη σύνδεση",()=>{if(!busy){authMode="login";authForm();}},"secondary"),el("small","Μία εγγραφή ανά εργαζόμενο. Ο λογαριασμός ενεργοποιείται μετά από έγκριση Admin.","safe-note"));
+  void (async()=>{try{const data=await api("registration_options");if(!form.isConnected)return;name.replaceChildren();const blank=el("option","Επίλεξε το όνομά σου");blank.value="";name.append(blank);
+   for(const p of data.staff||[]){const o=el("option",p.nickname);o.value=p.staff_id;name.append(o);}
+   name.disabled=!(data.staff||[]).length;if(name.disabled)f.textContent="Δεν υπάρχουν διαθέσιμες εγγραφές. Επικοινώνησε με τον Admin.";
+  }catch(err){if(form.isConnected)f.textContent=err.message;}})();return;
  }
  c.append(button("＋ Νέα εγγραφή",()=>{if(!busy){authMode="register";authForm();}},"primary"),el("h2","Επίλεξε προφίλ"));
  const grid=el("div",undefined,"login-profiles"),loading=el("p","Φόρτωση προφίλ…","muted"),panel=el("div",undefined,"login-pin-panel");grid.append(loading);
