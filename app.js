@@ -11,7 +11,7 @@ const STATE_ACTIONS=new Set(["state","place_batch","add_event","place","vote","b
 const AVATAR_CACHE="predictions-avatars-v1",AVATAR_PREFIX="./__avatar-cache/";
 let statePartsCache=Object.create(null),stateHashes=Object.create(null),stateRequestId=0,stateAcceptedId=0,avatarCacheReady=null;
 function resetStateCache(){statePartsCache=Object.create(null);stateHashes=Object.create(null);stateAcceptedId=++stateRequestId;avatarCacheReady=null;}
-function setToken(t){revision++;resetStateCache();token=t||"";if(token)localStorage.setItem(KEY,token);else localStorage.removeItem(KEY);}
+function setToken(t){const old=token;revision++;resetStateCache();token=t||"";if(token)localStorage.setItem(KEY,token);else if(localStorage.getItem(KEY)===old)localStorage.removeItem(KEY);}
 function isAvatarPart(key){return /^avatar:[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(key);}
 function avatarUrl(key){return new URL(AVATAR_PREFIX+key.slice(7),location.href).href;}
 function validCachedAvatar(key,hash,data){return isAvatarPart(key)&&typeof hash==="string"&&/^[a-f0-9]{64}$/.test(hash)&&typeof data==="string"&&data.length<=100000&&/^data:image\/jpeg;base64,/.test(data);}
@@ -935,6 +935,6 @@ function refreshBoundary(){const now=new Intl.DateTimeFormat("sv-SE",{timeZone:"
 function backgroundTick(){clock();updateInboxBadges();if(chatView?.alive())chatView.updateInbox?.();const boundary=refreshBoundary(),changed=lastBoundary!==""&&lastBoundary!==boundary;lastBoundary=boundary;if(!pollingActive()||busy||resetOpen||!token)return;if(chatView?.alive())chatView.load();if(changed||(Date.now()-lastStateRequest>=STATE_REFRESH_MS&&stateAutoBudget(true)))refresh();}
 function activity(){const wasIdle=Date.now()-lastInteraction>=IDLE_AFTER_MS;lastInteraction=Date.now();if(wasIdle&&token&&!busy&&!resetOpen&&document.visibilityState==="visible"){if(Date.now()-lastStateRequest>=60000&&stateAutoBudget(true))refresh();if(chatView?.alive())chatView.load();}}
 for(const evt of ["pointerdown","keydown","touchstart"])document.addEventListener(evt,activity,{passive:true});
-if(token){sessionLoading();refresh(true);}else authForm();lastBoundary=refreshBoundary();setInterval(backgroundTick,1000*15);
+window.addEventListener("storage",e=>{if(e.key===KEY||e.key===null)location.reload()});if(token){sessionLoading();refresh(true);}else authForm();lastBoundary=refreshBoundary();setInterval(backgroundTick,1000*15);
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"){lastInteraction=Date.now();if(token&&!busy&&!resetOpen&&Date.now()-lastStateRequest>=60000&&stateAutoBudget(true))refresh();if(chatView?.alive())chatView.load();}});
 if("serviceWorker" in navigator)navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).catch(()=>{});
