@@ -524,10 +524,10 @@ function mergeChatDelta(previous,data,limit){if(!data?.delta)return Array.isArra
 
 function messageTime(t){if(!t)return "—";const date=new Date(t);return Number.isFinite(date.getTime())?date.toLocaleString("el-GR",{timeZone:"Europe/Athens",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"—";}
 function chatPage(){
- section("Chat");const viewer=state.player.id,sessionToken=token,root=card();
- root.append(button("‹ Πίσω",moreBack,"secondary"));
+ section("Μηνύματα");const viewer=state.player.id,sessionToken=token,root=card();
+ const top=el("div");Object.assign(top.style,{display:"flex",alignItems:"center",justifyContent:"space-between",gap:"8px"});top.append(button("‹ Πίσω",moreBack,"secondary"),el("strong","Συνομιλίες"));root.append(top);
  const mode=el("div",undefined,"odds"),select=el("select"),list=el("div"),composer=el("textarea"),err=el("p","","feedback");
- list.setAttribute("role","log");list.setAttribute("aria-label","Μηνύματα");Object.assign(list.style,{maxHeight:"38dvh",minHeight:"100px",overflowY:"auto",display:"grid",alignContent:"start",gap:"3px"});
+ list.setAttribute("role","log");list.setAttribute("aria-label","Μηνύματα");Object.assign(list.style,{maxHeight:"48dvh",minHeight:"160px",overflowY:"auto",display:"grid",alignContent:"start",gap:"8px",padding:"10px",borderRadius:"16px",border:"1px solid var(--line)",background:"var(--bg)"});
  select.setAttribute("aria-label","Επιλογή μέλους");select.hidden=true;composer.placeholder="Γράψε μήνυμα…";composer.rows=2;composer.maxLength=1000;composer.setAttribute("aria-label","Κείμενο μηνύματος");
  let peer=null,privateMode=false,seq=0,reading=false,sending=false,pending=null,lastKey=null,lastRendered=null,conversations=[],messagesCache=[],lastChatRequest=0;
  const alive=()=>root.isConnected&&token===sessionToken&&state?.player?.id===viewer&&tab==="Chat";
@@ -543,7 +543,7 @@ function chatPage(){
  },"primary");
  const common=button("💬 Shoutbox",()=>switchMode(false),"primary"),priv=button("🔒 Προσωπικά",()=>switchMode(true),"secondary");
  const info=el("small","Τελευταία 20 μηνύματα · ανανέωση ανά λεπτό όσο χρησιμοποιείς το Chat.","muted"),reload=button("↻ Ανανέωση",()=>load(true),"secondary");reload.style.minHeight="32px";
- mode.append(common,priv);root.append(mode,select,info,list,composer,send,reload,err);
+ mode.append(common,priv);const status=el("div"),compose=el("div");Object.assign(status.style,{display:"flex",alignItems:"center",justifyContent:"space-between",gap:"8px",margin:"8px 0"});Object.assign(compose.style,{display:"grid",gridTemplateColumns:"minmax(0,1fr) auto",alignItems:"end",gap:"8px",marginTop:"10px"});composer.style.width="100%";composer.style.resize="vertical";send.style.width="auto";send.style.maxWidth="125px";send.style.whiteSpace="normal";status.append(info,reload);compose.append(composer,send);root.append(mode,select,status,list,compose,err);
  function lock(){common.disabled=priv.disabled=select.disabled=sending||!!pending;composer.disabled=sending||!!pending;send.disabled=sending||privateMode&&!peer;send.textContent=pending&&!sending?"Επανάληψη αποστολής":sending?"Αποστολή…":"Αποστολή";}
  function fillPeers(){
   const map=new Map((state.players||[]).filter(p=>p.id!==viewer).map(p=>[p.id,p.nickname]));
@@ -552,7 +552,7 @@ function chatPage(){
   for(const [id,name] of map){const opt=el("option",name);opt.value=id;select.append(opt);}
   select.value=peer||"";
  }
- function switchMode(next){if(sending||pending||privateMode===next)return;privateMode=next;peer=null;seq++;reading=false;lastKey=null;lastRendered=null;messagesCache=[];lastChatRequest=0;list.replaceChildren();select.hidden=!next;common.className=next?"secondary":"primary";priv.className=next?"primary":"secondary";info.textContent=next?"Ιδιωτική συνομιλία · έως 100 μηνύματα · ανανέωση ανά λεπτό.":"Τελευταία 20 μηνύματα · ανανέωση ανά λεπτό όσο χρησιμοποιείς το Chat.";Object.assign(list.style,{maxHeight:next?"45dvh":"38dvh",gap:next?"8px":"3px"});if(next){fillPeers();list.append(el("p","Επίλεξε μέλος για ιδιωτική συνομιλία.","muted"));}else load(true);lock();}
+ function switchMode(next){if(sending||pending||privateMode===next)return;privateMode=next;peer=null;seq++;reading=false;lastKey=null;lastRendered=null;messagesCache=[];lastChatRequest=0;list.replaceChildren();select.hidden=!next;common.className=next?"secondary":"primary";priv.className=next?"primary":"secondary";info.textContent=next?"Ιδιωτική συνομιλία · έως 100 μηνύματα · ανανέωση ανά λεπτό.":"Τελευταία 20 μηνύματα · ανανέωση ανά λεπτό όσο χρησιμοποιείς το Chat.";Object.assign(list.style,{maxHeight:next?"52dvh":"48dvh",gap:"8px"});if(next){fillPeers();list.append(el("p","Επίλεξε μέλος για ιδιωτική συνομιλία.","muted"));}else load(true);lock();}
  select.onchange=()=>{if(sending||pending)return;peer=select.value||null;seq++;reading=false;lastKey=null;lastRendered=null;messagesCache=[];lastChatRequest=0;list.replaceChildren();if(peer)load(true);else list.append(el("p","Επίλεξε μέλος.","muted"));lock();};
  function render(data,forceScroll=false){
   if(!alive())return;const nextConversations=Array.isArray(data.conversations)?data.conversations:[];if(JSON.stringify(nextConversations)!==JSON.stringify(conversations)){conversations=nextConversations;if(privateMode)fillPeers();}
@@ -561,7 +561,14 @@ function chatPage(){
   const bottom=forceScroll||lastKey!==key||list.scrollHeight-list.scrollTop-list.clientHeight<60;lastKey=key;lastRendered=sig;list.replaceChildren();
   if(!messages.length)list.append(el("p","Δεν υπάρχουν μηνύματα ακόμη.","muted"));
   for(const msg of messages){const item=el("div"),mine=msg.sender_id===viewer;
-   if(!privateMode){Object.assign(item.style,{padding:"5px 2px",borderBottom:"1px solid var(--line)",overflowWrap:"anywhere"});const header=el("div");header.style.display="flex";header.style.justifyContent="space-between";header.style.gap="8px";header.append(el("strong",msg.announcement?"📢 Admin":msg.nickname||"Μέλος"),el("small",messageTime(msg.created_at)));const p=el("div",msg.body);p.style.whiteSpace="pre-wrap";item.append(header,p);}else{Object.assign(item.style,{padding:"9px 11px",border:"1px solid var(--line)",borderRadius:"12px",maxWidth:"92%",justifySelf:mine?"end":"start",background:mine?"var(--surface, var(--card))":"var(--card)",overflowWrap:"anywhere"});const p=el("p",msg.body);p.style.whiteSpace="pre-wrap";p.style.margin="4px 0";item.append(el("strong",mine?"Εσύ":msg.nickname),p,el("small",messageTime(msg.created_at)));}list.append(item);
+   const name=msg.announcement?"📢 Admin":mine?"Εσύ":msg.nickname||"Μέλος";
+   const wrap=el("div"),avatar=el("span",msg.announcement?"📢":String(msg.nickname||name).slice(0,1).toUpperCase()),bubble=el("div"),header=el("div"),body=el("div",msg.body),time=el("small",messageTime(msg.created_at));
+   Object.assign(item.style,{display:"flex",justifyContent:mine&&!msg.announcement?"flex-end":"flex-start",minWidth:"0"});
+   Object.assign(wrap.style,{display:"flex",flexDirection:mine&&!msg.announcement?"row-reverse":"row",alignItems:"flex-end",gap:"6px",maxWidth:"94%",minWidth:"0"});
+   Object.assign(avatar.style,{display:"grid",placeItems:"center",width:"30px",height:"30px",flex:"0 0 30px",borderRadius:"50%",background:"var(--card)",border:"1px solid var(--line)",fontWeight:"800",color:"var(--green)"});
+   Object.assign(bubble.style,{minWidth:"0",padding:"8px 11px",border:"1px solid var(--line)",borderRadius:mine?"16px 16px 4px 16px":"16px 16px 16px 4px",background:mine?"color-mix(in srgb,var(--green) 15%,var(--card))":"var(--card)",overflowWrap:"anywhere"});
+   if(msg.announcement){bubble.style.borderColor="var(--green)";bubble.style.background="color-mix(in srgb,var(--green) 9%,var(--card))";}
+   Object.assign(header.style,{display:"flex",flexWrap:"wrap",alignItems:"baseline",gap:"4px 10px",justifyContent:"space-between",fontSize:"12px"});const author=el("strong",name);author.style.color="var(--green)";header.append(author,time);body.style.whiteSpace="pre-wrap";body.style.marginTop="4px";body.style.lineHeight="1.45";bubble.append(header,body);wrap.append(avatar,bubble);item.append(wrap);list.append(item);
   }if(bottom)list.scrollTop=list.scrollHeight;
  }
  async function load(force=false){
