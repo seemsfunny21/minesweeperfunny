@@ -181,3 +181,28 @@ select{display:block;width:100%;min-height:44px;margin:8px 0;padding:10px;border
 @keyframes casino-result-reveal{from{opacity:.6;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:480px){.casino-metrics.casino-four-limits{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(prefers-reduced-motion:reduce){.casino-fresh .casino-wheel-disc,.casino-fresh .casino-coin-face,.casino-fresh .casino-die,.casino-fresh .casino-hilo-cell:last-child .casino-playing-card{animation:none}}
+
+/* Mobile casino readability and compact rules. */
+.casino-game[data-game]{scroll-margin-bottom:80px}
+.casino-extra-choices{align-items:stretch}
+.casino-extra-choices button,.casino-controls .primary,.casino-stake input{height:48px;min-height:48px;box-sizing:border-box;margin:0}
+.casino-extra-choices button{width:100%;align-self:stretch}
+.casino-wheel-board{width:min(100%,240px,36svh)}
+.casino-chance{display:grid;gap:6px;margin-top:12px}
+.casino-chance-title{font-weight:650}
+.casino-chance-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.casino-chance-grid .casino-metric{padding:7px 3px}
+.casino-chance-grid .casino-metric small{font-size:10px;overflow-wrap:anywhere}
+.casino-chance-grid .casino-metric strong{font-size:13px}
+.casino-scratch-grid .casino-scratch-cell{position:relative;overflow:hidden;background:#edf1f6;color:#27436a;touch-action:none}
+.casino-scratch-symbol{pointer-events:none}
+.casino-scratch-foil{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.casino-scratch-pay{width:100%;display:grid;gap:3px}
+.casino-scratch-pay-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:5px 8px;border-bottom:1px solid #ffffff20}
+.casino-scratch-pay-row strong{font-size:16px;letter-spacing:2px}
+.casino-scratch-pay-row small{color:#d4dfeb;font-size:12px}
+.casino-coin-face.casino-coin-bimetal{border:6px solid #b9c3cf;background:radial-gradient(circle,#f0f3f5,#8c9aaa);box-shadow:0 4px 10px #0006,inset 0 0 0 2px #e6ecf0;display:grid;place-items:center}
+.casino-coin-inner{display:grid;place-content:center;justify-items:center;aspect-ratio:1;width:74%;border:2px solid #9a773c;border-radius:50%;background:radial-gradient(circle at 30% 25%,#f4dea0,#c6a45e);color:#4b3b20}
+.casino-coin-inner strong{font-size:clamp(20px,7vw,34px)}
+.casino-coin-inner small{font-size:10px;color:#4b3b20}
+@media(max-height:720px){.casino-game-body{gap:7px}.casino-extra-visual{padding:9px 7px;gap:6px}.casino-game-toggle{min-height:78px}.casino-game.casino-new-game .casino-game-toggle{min-height:76px}}
