@@ -950,16 +950,22 @@ function notifications(parent=screen){
  update();
  const prefs=el("div",undefined,"push-preferences");c.append(prefs);prefs.append(el("h3","Τι ειδοποιήσεις θέλεις;"),el("small","Οι επιλογές ισχύουν για τον λογαριασμό σου σε όλες τις συσκευές."));
  const categories=[
- ["Νέα στοιχήματα / γεγονότα",["round","event"]],
+ ["Νέος γύρος προβλέψεων",["round"]],
+ ["Νέο στοίχημα / γεγονός",["event"]],
  ["Κοινό chat",["chat"]],
  ["Προσωπικά μηνύματα",["private_chat"]],
  ["Μηνύματα Κουβά",["bot_chat"]],
  ["Ημερήσια κλήρωση",["draw"]],
  ["Υπενθύμιση δελτίου στις 20:00",["reminder"]],
- ["Επιβεβαίωση αποτελεσμάτων",["vote_morning","vote_noon","vote_final"]],
- ["Αποτελέσματα δελτίων",["settled","won"]],
+ ["Επιβεβαίωση προσέλευσης",["vote_morning"]],
+ ["Επιβεβαίωση μεσημεριανών αποτελεσμάτων",["vote_noon"]],
+ ["Επιβεβαίωση αποτελεσμάτων λήξης εργασίας",["vote_final"]],
+ ["Εκκαθάριση δελτίου",["settled"]],
+ ["Κερδισμένο δελτίο",["won"]],
  ["Ιδιωτικά δώρα",["gift"]],
- ["Τράπεζα / δάνεια",["loan_request","loan_accepted","loan_repaid"]],
+ ["Νέο αίτημα δανείου",["loan_request"]],
+ ["Αποδοχή δανείου",["loan_accepted"]],
+ ["Αποπληρωμή δανείου",["loan_repaid"]],
  ["Έγκριση λογαριασμού",["approved"]],
  ...(state.player.is_admin?[["Νέα αιτήματα εγγραφής",["registration"]]]:[])
  ];
