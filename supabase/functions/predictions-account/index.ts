@@ -94,6 +94,17 @@ if(["add_event","place","vote"].includes(action)){
  if(action==="vote")await rpc("predictions_vote",{p_actor:a.id,p_event:b.event_id,p_side:b.side});
  return reply(await compactState(a,b.state_known));
 }
+if(action==="admin_game_season"){
+ if(!a.is_admin)throw new E("Μόνο για Admin.",403);
+ const apply=b.apply===true;let h=null;
+ if(apply){
+  if(!validPin(b.admin_pin)||!Number.isSafeInteger(b.expected)||b.expected<1)throw new E("Απαιτείται PIN και έλεγχος σεζόν.",403);
+  await limit("game-season-admin:"+a.id,5,15);
+  const admin=(await rpc("predictions_lookup",{p_name:a.nickname}))[0];if(!admin)throw new E("Δεν επιτρέπεται.",403);
+  h=await pinHash(b.admin_pin,admin.pin_salt);if(!equal(h,admin.pin_hash))throw new E("Λάθος PIN Admin.",403);
+ }
+ return reply(await rpc("predictions_admin_game_season",{p_actor:a.id,p_apply:apply,p_expected:apply?b.expected:null,p_admin_hash:h}));
+}
 if(action==="admin_economy"){
  if(!a.is_admin)throw new E("Μόνο για Admin.",403);
  const apply=b.apply===true;
