@@ -35,7 +35,7 @@ end $function$
 ;
 create or replace function public.predictions_admin_game_season(p_actor uuid,p_apply boolean default false,p_expected integer default null,p_admin_hash text default null)
 returns jsonb language plpgsql set search_path to '' as $season$
-declare a public.predictions_accounts%rowtype; cur public.predictions_game_seasons%rowtype; cut timestamptz; standings jsonb;
+declare a public.predictions_accounts%rowtype; cur public.predictions_game_seasons%rowtype; cut timestamptz; snapshot_rows jsonb;
 begin
  perform pg_advisory_xact_lock(542602,1);
  select * into a from public.predictions_accounts where id=p_actor and status='approved' and is_admin;
@@ -46,14 +46,14 @@ begin
   if p_expected is distinct from cur.season_no then raise exception 'Η σεζόν άλλαξε. Κάνε ανανέωση.';end if;
   cut:=clock_timestamp();
   if cut-cur.started_at<interval '1 day' then raise exception 'Μία νέα σεζόν ανά ημέρα.';end if;
-  select coalesce(jsonb_agg(to_jsonb(x) order by x.net desc,x.nickname),'[]') into standings from (
+  select coalesce(jsonb_agg(to_jsonb(x) order by x.net desc,x.nickname),'[]') into snapshot_rows from (
    select a2.id,a2.nickname,coalesce(t.net,0)+coalesce(i.net,0)+coalesce(z.net,0) net,coalesce(t.wins,0) wins,coalesce(t.losses,0) losses
    from public.predictions_accounts a2
    left join lateral(select sum(paid-stake) net,count(*) filter(where paid>stake) wins,count(*) filter(where paid<stake) losses from public.predictions_tickets where account_id=a2.id and settled_at>=cur.started_at and settled_at<cut)t on true
    left join lateral(select sum(amount) net from public.predictions_ledger where account_id=a2.id and reason in ('interest_in','interest_out') and created_at>=cur.started_at and created_at<cut)i on true
    left join lateral(select sum(paid+bonus-stake) net from public.predictions_departure_picks where account_id=a2.id and settled_at>=cur.started_at and settled_at<cut)z on true
    where a2.status='approved')x;
-  update public.predictions_game_seasons set ended_at=cut,standings=predictions_admin_game_season.standings where season_no=cur.season_no;
+  update public.predictions_game_seasons set ended_at=cut,standings=snapshot_rows where season_no=cur.season_no;
   insert into public.predictions_game_seasons(season_no,started_at) values(cur.season_no+1,cut);
   insert into public.predictions_audit(actor_id,target_id,action,details) values(a.id,a.id,'game_season',jsonb_build_object('closed',cur.season_no,'opened',cur.season_no+1));
   select * into strict cur from public.predictions_game_seasons where ended_at is null;
