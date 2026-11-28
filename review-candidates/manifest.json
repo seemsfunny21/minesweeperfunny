@@ -1,0 +1,288 @@
+{
+  "vehicle_yacht": [
+    {
+      "file": "vehicle_yacht-0.webp",
+      "requested_file": "Azimut Marmolada 01.jpg",
+      "sha256": "036fae3bd92cafecd41c67cb5643737cdd80f7088cf8455068a2b36a18a2f402",
+      "author": "Simiha",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Azimut_Marmolada_01.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "vehicle_yacht-1.webp",
+      "requested_file": "Azimut Marmolada 02.jpg",
+      "sha256": "371dcbcd7e3ad822102cfeb09c12076e7b5f93c117a6cf5d6bde393489dc94bb",
+      "author": "Simiha",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Azimut_Marmolada_02.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "vehicle_yacht-2.webp",
+      "requested_file": "Luxury yacht.jpg",
+      "sha256": "2d95ba74a31f898ec0383d65b2883287489e9445564990dc14de63e404cfbc84",
+      "author": "Getsijas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Luxury_yacht.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "vehicle_yacht-3.webp",
+      "requested_file": "Azimut.jpg",
+      "sha256": "520c6b5163b325500f24af52f9396aea5c610a9e2a9b917d3a8563b4a4da2286",
+      "author": "Entheta",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Azimut.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "vehicle_yacht-4.webp",
+      "requested_file": "Westport yacht at the Sag Harbor (port side).jpg",
+      "sha256": "32a8649cdb8cf1967c50278ca12215790946d33f1f72f21208e9bd7d3706aa77",
+      "author": "Mr.choppers",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Westport_yacht_at_the_Sag_Harbor_(port_side).jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "travel_world": [
+    {
+      "file": "travel_world-0.webp",
+      "requested_file": "Travel (67916263).jpeg",
+      "sha256": "edf693f183f74a1d594767100254ba240a0bbcf76dba4898703f37b15b794dd3",
+      "author": "Ravi Kumar",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Travel_(67916263).jpeg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "travel_world-1.webp",
+      "requested_file": "Travel luggage.png",
+      "sha256": "6b0d45002ff95448c2ac4a4be74cbf20a00dc27ae53ecb4377a5cedebd1ceea6",
+      "author": "safaritravelplus",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Travel_luggage.png",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "travel_world-2.webp",
+      "requested_file": "Globe and Hat.jpg",
+      "sha256": "025b96c0849a5795ccd646e1fa0138bc62e24d766aba4496c6a458521c46c89e",
+      "author": "CaptainKirky16",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Globe_and_Hat.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "vehicle_bike": [
+    {
+      "file": "vehicle_bike-0.webp",
+      "requested_file": "California city bicycle side view.JPG",
+      "sha256": "492ef3668ac53fc67fd988645dcff657eec50aba7c9b149809859a638bad62d2",
+      "author": "User:Javier Carro",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:California_city_bicycle_side_view.JPG",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "vehicle_bike-1.webp",
+      "requested_file": "Nishiki 207 city hybrid bike.jpg",
+      "sha256": "2220d203e3354cd0619d917914b8d5bed23c2ffff4e8a5cee344bffd0684311c",
+      "author": "Vogler",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nishiki_207_city_hybrid_bike.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "vehicle_bike-2.webp",
+      "requested_file": "City bike.jpg",
+      "sha256": "299a1896a1f5df17ef07b276d857d2dbdcd0bcb2a01ad3b3332b4931788d3264",
+      "author": "Sam Shrestha",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:City_bike.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "bike_mountain": [
+    {
+      "file": "bike_mountain-0.webp",
+      "requested_file": "EnduroMountainBike.jpg",
+      "sha256": "72d1217493787d5eb38d97aa89ddd3ddbaf4e1b4466adb0fb2e15128ba14149c",
+      "author": "Rianb101",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:EnduroMountainBike.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "bike_mountain-1.webp",
+      "requested_file": "Mountain bike.JPG",
+      "sha256": "fa198a91214da23cd201591827966bad3ea74fead946710053ba8908a8772c7c",
+      "author": "Gengy",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mountain_bike.JPG",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "requested_file": "Cube-fahrrad.jpg",
+      "error": "Unapproved license: GFDL 1.2"
+    }
+  ],
+  "bike_gravel": [
+    {
+      "file": "bike_gravel-0.webp",
+      "requested_file": "Look 765 Gravel Bicycle.jpg",
+      "sha256": "35d23e72f3fcb1aad1597bd5096da959e9d16cf53d9735337fdf065092bb2488",
+      "author": "Glory Cycles",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Look_765_Gravel_Bicycle.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "bike_gravel-1.webp",
+      "requested_file": "Fyxation Carbon Adventure.jpg",
+      "sha256": "cb0993f8486f1ae26810f9b50b27e473061d44b9a987ad9696c53e33007e83a8",
+      "author": "Tim Reddington",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fyxation_Carbon_Adventure.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "bike_gravel-2.webp",
+      "requested_file": "Booda Bike Hiker.jpg",
+      "sha256": "95a19a3cf767036d624358c66066645dd5acbe11aaa95cf1301128c8146fd31d",
+      "author": "MezriczkyM",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Booda_Bike_Hiker.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "vehicle_roadbike": [
+    {
+      "file": "vehicle_roadbike-0.webp",
+      "requested_file": "Felt BS road bicycle.jpg",
+      "sha256": "68b763d7ae9c3a6ebc0a038fd74bd8afb47ee20dc9cae714ab8fd0aeb4c66e02",
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Felt_BS_road_bicycle.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "vehicle_roadbike-1.webp",
+      "requested_file": "Giant Roadbike.jpg",
+      "sha256": "e2455e68c016c920db56e0493caa26d0e294b307a107168dd1b98eb9ef26fc30",
+      "author": "The Freehub Orchestra",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Giant_Roadbike.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "bike_carbon": [
+    {
+      "file": "bike_carbon-0.webp",
+      "requested_file": "Cube Litening Aero C68X SLT, Cyclingworld Europe 2024, Meerbusch (P1170876).jpg",
+      "sha256": "1e4c983f89ec21ac3b03b41d9fca077dec106ea3775eae637f19a3243a1ab93a",
+      "author": "Matti Blume",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Cube_Litening_Aero_C68X_SLT,_Cyclingworld_Europe_2024,_Meerbusch_(P1170876).jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "bike_carbon-1.webp",
+      "requested_file": "Road bike Orbea Orca Aero 2020.jpg",
+      "sha256": "3beb5dfc35e470f8a8c1cd1be563fd3d57850685b193e2c096e85d8201485db9",
+      "author": "Pieter Werken",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Road_bike_Orbea_Orca_Aero_2020.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "gift_men_car": [
+    {
+      "file": "gift_men_car-0.webp",
+      "requested_file": "Toyota Corolla (E210) sedan IMG 4189.jpg",
+      "sha256": "41da472f26f439198f21b602720fa91bc02d7b45cba768aef5b70e7f863d548d",
+      "author": "Alexander Migl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Toyota_Corolla_(E210)_sedan_IMG_4189.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_men_car-1.webp",
+      "requested_file": "Porsche 911 992.jpg",
+      "sha256": "51d94f9c93e0c3e27c01034e6c0b44cc8953f2b10d9b35fbc56c0e79156a9426",
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Porsche_911_992.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "gift_men_motorbike": [
+    {
+      "file": "gift_men_motorbike-0.webp",
+      "requested_file": "Honda CB500 Hornet 2026.jpg",
+      "sha256": "8d25bb8add71047dd2bbc2f774adfdb3d4c3c7e194f503f64f94519c618f40b9",
+      "author": "MotorideSA",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Honda_CB500_Hornet_2026.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_men_motorbike-1.webp",
+      "requested_file": "Yamaha YZF-R7 (55048319395).jpg",
+      "sha256": "6d4bb3ef548642c6fb1077b855700dd88d5fe431236d7e376720c4f14cadd2c0",
+      "author": "Alexandre Prevot from Nancy, France",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YZF-R7_(55048319395).jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ]
+}
