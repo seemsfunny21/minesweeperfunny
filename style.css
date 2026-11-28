@@ -206,3 +206,31 @@ select{display:block;width:100%;min-height:44px;margin:8px 0;padding:10px;border
 .casino-coin-inner strong{font-size:clamp(20px,7vw,34px)}
 .casino-coin-inner small{font-size:10px;color:#4b3b20}
 @media(max-height:720px){.casino-game-body{gap:7px}.casino-extra-visual{padding:9px 7px;gap:6px}.casino-game-toggle{min-height:78px}.casino-game.casino-new-game .casino-game-toggle{min-height:76px}}
+
+/* Compact in-app economy options instead of native dropdowns. */
+.economy-choices{display:grid;gap:6px;width:100%;margin:5px 0 8px;min-width:0}
+.economy-choices>.economy-choice{width:100%;min-width:0;min-height:40px;padding:7px 3px;border:1px solid #4779ab;border-radius:10px;background:#193752;color:#e5efff;font:600 12px/1.2 system-ui;white-space:normal;overflow-wrap:anywhere;box-shadow:none;text-align:center}
+.economy-choices>.economy-choice[aria-pressed=true]{background:linear-gradient(145deg,#266ba7,#245b99);border-color:#9cdbff;box-shadow:inset 0 0 0 1px #8acbff;color:white}
+.economy-choices>.economy-choice:focus-visible{outline:2px solid #92d6ff;outline-offset:2px}
+.economy-choices>.economy-choice:disabled{opacity:.6;cursor:default}
+.economy-wizard-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:8px;width:100%}
+.economy-wizard-actions>button{width:100%;min-width:0;white-space:normal;margin:0}
+.economy-wizard-hint{display:block;color:#abc6df;font-size:11px;line-height:1.35;margin:0 0 8px}
+
+#gameScreen>.hero[hidden]{display:none!important}
+.live-editor{display:block;min-width:0}
+.live-profile-preview{display:grid;gap:6px;overflow:visible}
+.live-preview-head{min-width:0}
+.live-preview-head .premium-profile{padding:7px;margin:0;border-radius:15px}
+.live-preview-head .premium-cover{height:60px}
+.live-preview-head .premium-cover+.premium-identity{margin-top:-38px}
+.live-preview-head .premium-identity{gap:3px;padding:4px 3px}
+.live-preview-head .premium-orbit{width:64px;height:64px;padding:5px}
+.live-preview-head .premium-orbit .initial,.live-preview-head .premium-orbit .avatar-img{width:54px;height:54px}
+.live-preview-head .premium-name{margin:0;font-size:16px}
+.live-preview-head .premium-xp{margin:3px 0}
+.live-preview-head .premium-level{font-size:10px}
+.live-preview-head .profile-title{margin:0}
+.live-profile-preview>.live-controls{position:static;z-index:auto}
+.live-preview-rest>summary{cursor:pointer;color:#a8c9ec;font-size:12px;padding:7px 0}
+@media(min-width:850px){.live-profile-preview{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}.live-preview-rest{grid-column:1/-1}}
