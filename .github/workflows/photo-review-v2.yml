@@ -1,0 +1,35 @@
+name: Stage licensed catalog photo candidates
+on:
+  push:
+    paths:
+      - 'scripts/photo-review-v2.json'
+      - 'scripts/stage_photo_review_v2.py'
+      - '.github/workflows/photo-review-v2.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: photo-review-v2
+  cancel-in-progress: false
+jobs:
+  candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow==11.3.0
+      - run: python scripts/stage_photo_review_v2.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: photo-review-v2
+          path: review-candidates/
+      - name: Save review-only candidate branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add review-candidates
+          git commit -m "Stage licensed catalog images for visual inspection"
+          git push origin HEAD:refs/heads/catalog-photo-review-20261128
