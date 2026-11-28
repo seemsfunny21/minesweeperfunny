@@ -1,0 +1,181 @@
+{
+  "tech_tablet": [
+    {
+      "file": "tech_tablet-0.webp",
+      "requested_file": "20251110 181425 Samsung Galaxy Tab A9 Front.jpg",
+      "sha256": "fb82dabf15a111bd64684d7ce9caac78d03fcdd0d5257ccce1c61cf7e036ebd8",
+      "author": "Saimmx",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:20251110_181425_Samsung_Galaxy_Tab_A9_Front.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "tech_tablet-1.webp",
+      "requested_file": "Front of the Samsung Galaxy Tab S6 Lite.jpg",
+      "sha256": "58daa5dd6f536c8b14007dfc3055b6eaeaa4ddd0f7efcc46ca1f0f06cb02efd7",
+      "author": "Hajoon0102",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Front_of_the_Samsung_Galaxy_Tab_S6_Lite.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "tech_tablet-2.webp",
+      "requested_file": "Samsung Galaxy Tab S8 Ultra.jpg",
+      "sha256": "d307b97812670f677bdc4d1db297b18f05989311cad1c8839c421fed25abd50c",
+      "author": "Dylan240",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Tab_S8_Ultra.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "vehicle_boat": [
+    {
+      "file": "vehicle_boat-0.webp",
+      "requested_file": "Riva Aquarama.jpg",
+      "sha256": "2780c5390e771b78f202d1c6689e915fac935a487c1b8138f83aba88eba23e18",
+      "author": "StuivertjeWisselen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Riva_Aquarama.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "vehicle_boat-1.webp",
+      "requested_file": "Speedboat.jpg",
+      "sha256": "090dc41f58b1b23ce7fe473cf51fba9e603da117031aabf64a5f273c7f0ce4c2",
+      "author": "James E. Petts",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Speedboat.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "vehicle_boat-2.webp",
+      "requested_file": "RivaAquarama.jpg",
+      "sha256": "8bc84cc8978d6883d56e1aaedf54fe9b38facf36a3056f39958190bdbd8e8921",
+      "author": "Spartan7W",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:RivaAquarama.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "travel_islands": [
+    {
+      "file": "travel_islands-0.webp",
+      "requested_file": "Oia Santorini Blue Domes.jpg",
+      "sha256": "fe96ad5535b4b8695a53715f278dce1ddc2563b080f6dc909a5926cbf00e0e58",
+      "author": "Danbu14",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Oia_Santorini_Blue_Domes.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "travel_islands-1.webp",
+      "requested_file": "Dômes bleus à Oia.jpg",
+      "sha256": "3d2b046a3140e2c918a513588c8feb7144a1c12614d8a70b2d9e24f8ba2a9f03",
+      "author": "Anthony Baratier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:D%C3%B4mes_bleus_%C3%A0_Oia.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "vehicle_yacht": [
+    {
+      "file": "vehicle_yacht-0.webp",
+      "requested_file": "Luxury yacht docked at marina with modern buildings and mountains under a soft evening sky.jpg",
+      "sha256": "9f59bcdb5c92af966fe6bcc37c65f4bf31ee844db25fe840795100e1c55caafa",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Luxury_yacht_docked_at_marina_with_modern_buildings_and_mountains_under_a_soft_evening_sky.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "vehicle_yacht-1.webp",
+      "requested_file": "Luxury yachts docked at an upscale marina.jpg",
+      "sha256": "b2f75a37c0da18b897625b93adb592d2650646e485cb1775e5aa1c7a43519a32",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Luxury_yachts_docked_at_an_upscale_marina.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "amenity_sports": [
+    {
+      "file": "amenity_sports-0.webp",
+      "requested_file": "Uwl sports complex aerial view.jpg",
+      "sha256": "36ebfcc13d74763964e6fb6c548fc17fe065d0d5d8e791369848ff2b2d529822",
+      "author": "User:Wikideas1",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Uwl_sports_complex_aerial_view.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "amenity_sports-1.webp",
+      "requested_file": "Sports Complex.jpg",
+      "sha256": "6a1f6bd91c8e9c39a83349b1e6245f88b0589c5c39e55e63fb92b5671c03a184",
+      "author": "Jared L. Stahl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sports_Complex.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "gift_general_book": [
+    {
+      "file": "gift_general_book-0.webp",
+      "requested_file": "Open Book B&W.jpg",
+      "sha256": "c70a4527b869067794fd43ce3caf8b316177c8642f66d28442920e38e515a35c",
+      "author": "Creigpat",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Open_Book_B%26W.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_general_book-1.webp",
+      "requested_file": "An open book is placed in front of a library shelf.jpg",
+      "sha256": "732d3fbf6015e37f6d2df45b1e2af7d057c418eac97cacbfc6c793ddf88fbe31",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:An_open_book_is_placed_in_front_of_a_library_shelf.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "travel_world": [
+    {
+      "file": "travel_world-0.webp",
+      "requested_file": "Globe and Hat.jpg",
+      "sha256": "025b96c0849a5795ccd646e1fa0138bc62e24d766aba4496c6a458521c46c89e",
+      "author": "CaptainKirky16",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Globe_and_Hat.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ]
+}
