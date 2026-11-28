@@ -462,3 +462,36 @@ select{display:block;width:100%;min-height:44px;margin:8px 0;padding:10px;border
 .premium-medal[data-trophy="trophy_dragon"]{border-color:hsl(182 72% 70%);background:linear-gradient(145deg,hsl(182 42% 34%),#162439);box-shadow:0 0 8px hsl(182 70% 60% / .35)}
 .premium-medal[data-trophy="trophy_comet"]{border-color:hsl(219 72% 70%);background:linear-gradient(145deg,hsl(219 42% 34%),#162439);box-shadow:0 0 8px hsl(219 70% 60% / .35)}
 .premium-medal[data-trophy="trophy_infinity"]{border-color:hsl(256 72% 70%);background:linear-gradient(145deg,hsl(256 42% 34%),#162439);box-shadow:0 0 8px hsl(256 70% 60% / .35)}
+
+/* Visible profile effects: explicit layer, stronger contrast and preview-only motion. */
+.premium-profile[class*="effect_"] .premium-identity{position:relative;isolation:isolate}
+.premium-profile[class*="effect_"] .premium-identity::before{content:"";position:absolute;inset:0;z-index:0;opacity:.82;pointer-events:none;animation:none!important;border-radius:12px;overflow:hidden}
+.premium-profile[class*="effect_"] .premium-identity>*{position:relative;z-index:1}
+.premium-profile.effect_stars .premium-identity::before{background:radial-gradient(circle,#fff6c9 0 1.8px,transparent 2.8px) 0 0/37px 39px,radial-gradient(circle,#ffd66d 0 2.5px,transparent 4px) 12px 8px/81px 64px;opacity:.82;}
+.premium-profile.effect_snow .premium-identity::before{background:radial-gradient(circle,#fff 0 2.5px,transparent 3.5px) 0 0/31px 43px,radial-gradient(circle,#c4ebff 0 3px,transparent 4.5px) 8px 11px/57px 67px;opacity:.82;}
+.premium-profile.effect_hearts .premium-identity::before{background:radial-gradient(ellipse at 18% 70%,#ff4c9a99,transparent 45%),radial-gradient(ellipse at 88% 20%,#ff9ace99,transparent 45%);opacity:.82;content:"♥　♡　♥　♡　♥　♡";font-size:23px;letter-spacing:7px;line-height:2;color:#ff9bd0;text-align:center;overflow:hidden;}
+.premium-profile.effect_fire .premium-identity::before{background:radial-gradient(ellipse at 15% 115%,#fff08c 0 10%,#ff7629 20%,transparent 55%),radial-gradient(ellipse at 85% 120%,#ffd769 0 12%,#f23a23 26%,transparent 60%),linear-gradient(0deg,#f65c27bb,transparent 75%);opacity:.82;}
+.premium-profile.effect_electric .premium-identity::before{background:repeating-linear-gradient(122deg,transparent 0 44px,#8feaff 45px 47px,#e1faff 48px 49px,transparent 52px 83px);opacity:.82;}
+.premium-profile.effect_aurora .premium-identity::before{background:linear-gradient(115deg,transparent 4%,#25f2aedb 22%,#2ef3c7bb 30%,transparent 48%,#8976ffc9 65%,#d497ffcc 76%,transparent 96%);opacity:.82;}
+.premium-profile.effect_galaxy .premium-identity::before{background:radial-gradient(ellipse at 75% 55%,#e4adffc9,transparent 40%),radial-gradient(ellipse at 30% 80%,#477cffb9,transparent 52%),radial-gradient(circle,#fff 0 1.3px,transparent 2.4px) 0 0/19px 23px;opacity:.82;}
+.premium-profile.effect_bubbles .premium-identity::before{background:radial-gradient(circle,transparent 0 6px,#8ce8ff 7px 8px,transparent 9px) 0 0/43px 47px,radial-gradient(circle,transparent 0 3px,#c6f7ffcc 4px 5px,transparent 6px) 11px 15px/31px 39px;opacity:.82;}
+.premium-profile.effect_confetti .premium-identity::before{background:repeating-linear-gradient(45deg,transparent 0 12px,#ffd783 13px 15px,transparent 16px 31px) 0 0/25px 27px,radial-gradient(circle,#ff8aca 0 3px,transparent 4px) 13px 6px/43px 31px,radial-gradient(circle,#78edcc 0 2px,transparent 3px) 3px 4px/39px 47px;opacity:.82;}
+.premium-profile.effect_leaves .premium-identity::before{background:radial-gradient(ellipse at 50% 50%,#8df1a9 0 18%,transparent 23%) 0 0/43px 27px,radial-gradient(ellipse,#32b980 0 14%,transparent 20%) 12px 12px/49px 35px;opacity:.82;}
+.premium-profile.effect_rain .premium-identity::before{background:repeating-linear-gradient(115deg,transparent 0 17px,#8fdbffdd 18px 20px,transparent 21px 38px);opacity:.82;}
+.premium-profile.effect_petals .premium-identity::before{background:radial-gradient(ellipse,#ffa6d7 0 16%,transparent 21%) 0 0/38px 44px,radial-gradient(ellipse,#ffd1e7cc 0 11%,transparent 17%) 14px 10px/47px 31px;opacity:.82;}
+.premium-profile.effect_embers .premium-identity::before{background:radial-gradient(circle,#ffd383 0 2px,transparent 4px) 0 0/25px 31px,radial-gradient(ellipse at 50% 100%,#ff682baa,transparent 65%);opacity:.82;}
+.premium-profile.effect_mist .premium-identity::before{background:linear-gradient(0deg,#d4e9ffbb,transparent 38%,#c7e0f8a0 60%,transparent 90%);opacity:.82;}
+.premium-profile.effect_waves .premium-identity::before{background:repeating-radial-gradient(ellipse at 10% 110%,#64dbefd9 0 2px,transparent 4px 17px);opacity:.82;}
+.premium-profile.effect_glitter .premium-identity::before{background:radial-gradient(circle,#ffe18b 0 2px,transparent 4px) 0 0/19px 21px,radial-gradient(circle,#fff5c9 0 1px,transparent 3px) 10px 6px/27px 31px;opacity:.82;}
+.premium-profile.effect_crystal .premium-identity::before{background:repeating-linear-gradient(45deg,transparent 0 21px,#b8f5ffcc 22px 24px,transparent 25px 39px),repeating-linear-gradient(-45deg,transparent 0 26px,#b8f5ff99 27px 29px,transparent 30px 47px);opacity:.82;}
+.premium-profile.effect_rays .premium-identity::before{background:repeating-conic-gradient(from 25deg at 85% 50%,#ffe2a199 0 8deg,transparent 9deg 30deg);opacity:.82;}
+.premium-profile.effect_matrix .premium-identity::before{background:repeating-linear-gradient(0deg,#71e6a599 0 1px,transparent 2px 14px),repeating-linear-gradient(90deg,#71e6a599 0 1px,transparent 2px 14px);opacity:.82;}
+.premium-profile.effect_comets .premium-identity::before{background:repeating-linear-gradient(140deg,transparent 0 35px,#bddaffcc 36px 39px,transparent 40px 75px),radial-gradient(circle,#fff 0 2px,transparent 3px) 0 0/71px 61px;opacity:.82;}
+.premium-profile.effect_prism .premium-identity::before{background:linear-gradient(115deg,transparent 4%,#ff81b9b9 18%,#f9d56db0 31%,#75e7c5b9 46%,#84aaffb9 62%,transparent 91%);opacity:.82;}
+.premium-profile.effect_lightning_gold .premium-identity::before{background:repeating-linear-gradient(130deg,transparent 0 42px,#ffda82 43px 46px,transparent 47px 81px);opacity:.82;}
+.premium-profile.effect_vortex .premium-identity::before{background:repeating-radial-gradient(ellipse at 70% 45%,transparent 0 8px,#b6a4ffb9 9px 12px,transparent 13px 21px);opacity:.82;}
+.premium-profile.effect_cosmic .premium-identity::before{background:radial-gradient(ellipse at 25% 80%,#70c9ffcc,transparent 45%),radial-gradient(ellipse at 80% 30%,#f0b5ffcc,transparent 43%),radial-gradient(circle,#fff 0 1.5px,transparent 3px) 0 0/31px 29px;opacity:.82;}
+.premium-profile.effect_phoenix .premium-identity::before{background:radial-gradient(ellipse at 15% 100%,#ff672ce0,transparent 48%),radial-gradient(ellipse at 85% 100%,#ffc05ad9,transparent 45%),repeating-conic-gradient(from 0deg at 50% 100%,#f98e6088 0 7deg,transparent 8deg 25deg);opacity:.82;}
+@keyframes profile-effect-preview-20261128{0%,100%{opacity:.68}50%{opacity:.95}}
+@media(prefers-reduced-motion:no-preference){.live-sheet .premium-profile[class*="effect_"] .premium-identity::before{animation:profile-effect-preview-20261128 3.4s ease-in-out infinite!important}}
+@media(prefers-reduced-motion:reduce){.premium-profile[class*="effect_"] .premium-identity::before{animation:none!important;opacity:.82}}
