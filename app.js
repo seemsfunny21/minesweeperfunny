@@ -851,17 +851,23 @@ function showInactivePushNotice(key,openSettings,active){
  for(const [name,fn] of [["Ενεργοποίηση",()=>{dismiss();openSettings()}],["Αργότερα",dismiss]]){const b=document.createElement("button");b.type="button";b.textContent=name;b.style.cssText="background:#215780;color:white;border:1px solid #659bc1;border-radius:8px;padding:8px;font:inherit;cursor:pointer";b.onclick=fn;row.append(b)}
  const info=document.createElement("p");info.textContent="Νέα στοιχήματα, υπενθυμίσεις συμμετοχής, αποτελέσματα, πληρωμές και ενημερώσεις του παιχνιδιού.";info.style.cssText="margin:0;color:#d4e5f5;line-height:1.5";title.style.cssText="font-size:17px;line-height:1.3";label.style.justifyContent="center";panel.append(title,info,row,label);box.append(panel);if(panel.animate&&!matchMedia("(prefers-reduced-motion: reduce)").matches)panel.animate([{opacity:0,transform:"scale(.94)"},{opacity:1,transform:"scale(1)"}],{duration:220,easing:"ease-out"});document.body.append(box);
 }
-let startupPushChecking=false,startupPushCheckedToken="";
+let startupPushChecking=false,startupPushCheckedToken="",startupPushRetry=0;
+async function readPushEnabled(){
+ if(!pushSupported()||Notification.permission!=="granted")return false;
+ const reg=await navigator.serviceWorker.getRegistration(new URL("./",location.href).href);
+ if(!reg||!reg.active)return false;
+ const sub=await reg.pushManager.getSubscription();
+ return !!(sub&&(await pushAPI("status",{endpoint:sub.endpoint})).enabled);
+}
 async function checkStartupPush(){
- if(!token||state?.player?.status!=="approved"||!pushSupported()||startupPushChecking||startupPushCheckedToken===token)return;
+ if(!token||state?.player?.status!=="approved"||startupPushChecking||startupPushCheckedToken===token)return;
  startupPushChecking=true;const session=token;
  try{
- let enabled=false;
- if(Notification.permission==="granted"){const reg=await pushRegistration(),sub=await reg.pushManager.getSubscription();if(sub)enabled=!!(await pushAPI("status",{endpoint:sub.endpoint})).enabled}
+ const enabled=await readPushEnabled();
  if(session!==token||state?.player?.status!=="approved")return;
  startupPushCheckedToken=session;
  if(tab!=="Ρυθμίσεις"&&tab!=="Ειδοποιήσεις")showInactivePushNotice("predictions.push.notice.hide",()=>{menuGo("Ρυθμίσεις");document.querySelector(".push-card")?.scrollIntoView({block:"center"})},enabled);
- }catch(e){console.warn("Push status not confirmed",e.message)}finally{startupPushChecking=false}
+ }catch(e){if(++startupPushRetry<=3)setTimeout(checkStartupPush,2500);console.warn("Push status not confirmed",e.message)}finally{startupPushChecking=false}
 }
 function pushSupported(){return "serviceWorker" in navigator&&"PushManager" in window&&"Notification" in window;}
 async function pushRegistration(){const reg=await navigator.serviceWorker.getRegistration(location.pathname.replace(/[^/]*$/,""));if(!reg||!reg.active)throw Error("Η εφαρμογή χρειάζεται ανανέωση.");return reg;}
@@ -874,7 +880,7 @@ function notifications(parent=screen){
  const controls=el("div",undefined,"odds push-controls");test.classList.add("push-test");controls.append(enable,disable);c.append(status,controls,test,msg);enable.disabled=disable.disabled=test.disabled=true;
  if(!pushSupported()){status.textContent="Δεν υποστηρίζονται push σε αυτό το περιβάλλον. Στο iPhone πρόσθεσε πρώτα την εφαρμογή στην οθόνη έναρξης.";return;}
  let working=false;
- async function update(){try{const reg=await pushRegistration(),sub=await reg.pushManager.getSubscription(),enabled=!!(sub&&Notification.permission==="granted"&&(await pushAPI("status",{endpoint:sub.endpoint})).enabled);status.textContent=enabled?"✓ Οι ειδοποιήσεις είναι ενεργές":"Οι ειδοποιήσεις είναι ανενεργές";enable.disabled=enabled||working;disable.disabled=!sub||working;test.disabled=!enabled||working;}catch(e){status.textContent=e.message;enable.disabled=working;disable.disabled=working;test.disabled=true;}}
+ async function update(){try{const enabled=await readPushEnabled(),reg=await navigator.serviceWorker.getRegistration(new URL("./",location.href).href),sub=reg?await reg.pushManager.getSubscription():null;status.textContent=enabled?"✓ Οι ειδοποιήσεις είναι ενεργές":"Οι ειδοποιήσεις είναι ανενεργές";enable.disabled=enabled||working;disable.disabled=!sub||working;test.disabled=!enabled||working;}catch(e){status.textContent=e.message;enable.disabled=working;disable.disabled=working;test.disabled=true;}}
  async function act(op){if(working)return;working=true;enable.disabled=disable.disabled=test.disabled=true;msg.textContent="";try{if(op==="enable"){await enablePush();msg.textContent="Οι ειδοποιήσεις ενεργοποιήθηκαν.";}else if(op==="disable"){await disablePush();msg.textContent="Οι ειδοποιήσεις απενεργοποιήθηκαν.";}else{const reg=await pushRegistration(),sub=await reg.pushManager.getSubscription();if(!sub)throw Error("Ενεργοποίησε πρώτα τις ειδοποιήσεις.");await pushAPI("test",{endpoint:sub.endpoint});msg.textContent="Η δοκιμαστική ειδοποίηση στάλθηκε."}}catch(e){msg.textContent=e.message;}finally{working=false;await update();}}
  update();c.append(el("small","Νέα γεγονότα, υπενθύμιση στις 23:00 αν δεν έχεις δελτίο, εγγραφές, δάνεια, δώρα και αποτελέσματα."));
 }
