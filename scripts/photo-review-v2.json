@@ -1,56 +1,31 @@
 {
-  "gift_men_football": [
-    "Home Uniform front.jpg",
-    "Adidas France national football team home jersey.JPG",
-    "Shirt of TPE Football Home 2015.jpg"
-  ],
-  "gift_women_ring": [
-    "Classic Diamond Engagement Ring.jpg",
-    "Diamond ring.JPG",
-    "Gold and diamond engagement ring.jpg"
-  ],
-  "bike_pro": [
-    "Colnago V3-RS Dura-Ace Di2 Princeton Carbon.jpg",
-    "Road bike Orbea Orca Aero 2020.jpg"
-  ],
-  "amenity_pool": [
-    "Swimming pool with house.jpg",
-    "Private Swimming Pool.jpg"
-  ],
   "tech_tablet": [
-    "Samsung Tablet.jpg",
-    "Galaxy tab.jpg",
-    "Tablet Computer.jpg"
+    "20251110 181425 Samsung Galaxy Tab A9 Front.jpg",
+    "Front of the Samsung Galaxy Tab S6 Lite.jpg",
+    "Samsung Galaxy Tab S8 Ultra.jpg"
   ],
-  "pet_fish": [
-    "A freshwater aquarium containing plants and small fish.jpg",
-    "Freshwater aquarium.jpg",
-    "Freshwater plant aquarium.jpg"
+  "vehicle_boat": [
+    "Riva Aquarama.jpg",
+    "Speedboat.jpg",
+    "RivaAquarama.jpg"
   ],
-  "gift_general_ticket": [
-    "Concert ticket (2852819026).jpg",
-    "Concert Ticket (15713298194).jpg",
-    "Mozart concert ticket.jpg"
+  "travel_islands": [
+    "Oia Santorini Blue Domes.jpg",
+    "Dômes bleus à Oia.jpg"
   ],
-  "gift_general_flowers": [
-    "A woven basket filled with freshly cut flowers.jpg",
-    "Rose Flower Basket.jpg"
+  "vehicle_yacht": [
+    "Luxury yacht docked at marina with modern buildings and mountains under a soft evening sky.jpg",
+    "Luxury yachts docked at an upscale marina.jpg"
   ],
-  "gift_women_cosmetics": [
-    "Skin Care Set.jpg",
-    "Skin care products.jpg"
+  "amenity_sports": [
+    "Uwl sports complex aerial view.jpg",
+    "Sports Complex.jpg"
   ],
-  "tech_gaming": [
-    "ABS PC and monitor setup.jpg",
-    "Frontansicht des PC's von VyLone Reaz.jpg"
+  "gift_general_book": [
+    "Open Book B&W.jpg",
+    "An open book is placed in front of a library shelf.jpg"
   ],
-  "tech_premium": [
-    "Dual monitor setup in a gaming room with keyboard and mouse in focus.jpg",
-    "Simple Setup Image.jpg"
-  ],
-  "gift_women_bag": [
-    "Handbage.jpg",
-    "A little handbag.jpg",
-    "A handbag.jpg"
+  "travel_world": [
+    "Globe and Hat.jpg"
   ]
 }
