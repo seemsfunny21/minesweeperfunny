@@ -466,18 +466,25 @@ function appearancePage(){
  const draft=liveDraft&&liveDraft.id===p.id?liveDraft:liveDraft={id:p.id,...baseline()};
  let category=appearanceTab;
  const editor=el("div",undefined,"live-editor"),controls=el("div",undefined,"card live-controls"),preview=el("div",undefined,"live-profile-preview"),previewHead=el("div",undefined,"live-preview-head"),choices=el("div",undefined,"live-choices"),tabs=el("div",undefined,"live-tabs"),action=el("div",undefined,"live-actions"),status=el("small","","live-status");
- setAppearanceHero(true);section("Ζωντανή προεπισκόπηση");screen.append(button("‹ Πίσω",moreBack,"secondary"),editor);controls.append(tabs,choices,action,status);preview.append(previewHead,controls);editor.append(preview);
+ setAppearanceHero(true);section("Η εμφάνισή μου");screen.append(button("‹ Πίσω",moreBack,"secondary"));
+ const sheet=el("section",undefined,"live-sheet"),header=el("div",undefined,"live-sheet-header"),close=button("×",()=>moreBack(),"live-sheet-close"),product=el("h3","","live-sheet-product"),categoryDetails=el("details",undefined,"live-sheet-categories");
+ close.setAttribute("aria-label","Κλείσιμο προεπισκόπησης");header.append(el("h2","Ζωντανή προεπισκόπηση"),close);sheet.setAttribute("role","dialog");sheet.setAttribute("aria-label","Ζωντανή προεπισκόπηση");editor.classList.add("live-sheet-overlay");editor.addEventListener("click",e=>{if(e.target===editor)moreBack()});categoryDetails.append(el("summary","Κατηγορία εμφάνισης"),tabs);controls.append(choices,status,action,categoryDetails);preview.append(previewHead,controls);sheet.append(header,product,preview);editor.append(sheet);screen.append(editor);
  const get=key=>key==="frame"?draft.frame:key==="trophy"?draft.trophy:draft.appearance[key]??null;
  const set=(key,code)=>{if(key==="frame")draft.frame=code;else if(key==="trophy")draft.trophy=code;else draft.appearance[key]=code;};
  function drawPreview(){
   const rest=preview.querySelector(".live-preview-rest"),wasOpen=!!rest?.open;
-  previewHead.replaceChildren(el("small","ΖΩΝΤΑΝΗ ΠΡΟΕΠΙΣΚΟΠΗΣΗ · ΔΩΡΕΑΝ","live-preview-label"));
+  previewHead.replaceChildren();
   const compare=el("div",undefined,"live-compare");
   for(const [label,model,cls] of [["Τώρα",baseline(),"live-current"],["Με τη νέα επιλογή",draft,"live-candidate"]]){
    const column=el("div",undefined,"live-compare-column "+cls),card=el("div",undefined,"card premium-profile live-identity-card"),ap=model.appearance||{};
    column.append(el("small",label,"live-compare-label"));
    premiumLook(card,ap);
-   card.append(premiumIdentity(p,cp,ap,model.frame,model.trophy,cls==="live-candidate"));
+   const identity=premiumIdentity(p,cp,ap,model.frame,model.trophy,cls==="live-candidate"),orbit=identity.firstElementChild,info=el("div",undefined,"live-identity-info");
+   for(const node of Array.from(identity.children).slice(1))info.append(node);
+   const coins=el("span","🪙 "+fmt(Number(p.chips||0)),"live-identity-balance");
+   identity.replaceChildren(orbit,info,coins);
+   if(item(ap.background)?.category==="background")card.append(el("div",undefined,"premium-cover-lines live-identity-background"));
+   card.append(identity);
    column.append(card);compare.append(column);
   }
   previewHead.append(compare);
@@ -486,15 +493,15 @@ function appearancePage(){
  }
  function fillFull(detail){const full=el("div");renderFullProfile(full,p,draft);detail.replaceChildren(el("summary","Πλήρης προεπισκόπηση προφίλ"),...Array.from(full.children));}
  function drawControls(){
-  const scroll=choices.scrollLeft;tabs.replaceChildren();choices.replaceChildren();action.replaceChildren();
-  for(const key of appearanceKeys){const cat=shopCategories.find(x=>x[0]===key),b=button(cat[1]+" "+cat[2],()=>{category=appearanceTab=key;drawControls();choices.scrollLeft=0;},key===category?"primary":"");b.setAttribute("aria-pressed",String(key===category));tabs.append(b);}
+  tabs.replaceChildren();choices.replaceChildren();action.replaceChildren();
+  for(const key of appearanceKeys){const cat=shopCategories.find(x=>x[0]===key),b=button(cat[1]+" "+cat[2],()=>{category=appearanceTab=key;drawControls();drawPreview();},key===category?"primary":"");b.setAttribute("aria-pressed",String(key===category));tabs.append(b);}
   const selected=get(category),choose=code=>{set(category,code);drawControls();drawPreview();};
   const options=[null,...(sh.catalog||[]).filter(i=>i.category===category&&(i.active!==false||owned.has(i.code))).sort((a,b)=>Number(a.price)-Number(b.price)).map(i=>i.code)];
-  const pos=Math.max(0,options.indexOf(selected)),selectedItem=item(selected);
-  const option=el("div",undefined,"live-option-label");option.append(el("strong",selectedItem?.name||"Προεπιλογή"),el("small",(pos+1)+" / "+options.length+(selectedItem?(owned.has(selected)?" · ✓ Δικό σου":" · "+fmt(selectedItem.price)+" 🪙"):"")));
+  const pos=Math.max(0,options.indexOf(selected)),selectedItem=item(selected);product.textContent=selectedItem?.name||"Προεπιλογή";categoryDetails.querySelector("summary").textContent="Κατηγορία: "+(shopCategories.find(x=>x[0]===category)?.[2]||"Εμφάνιση");
+  const option=el("div",undefined,"live-option-label");option.append(el("strong",(pos+1)+" / "+options.length));
   const prev=button("‹",()=>choose(options[(pos+options.length-1)%options.length]),"live-option-arrow"),next=button("›",()=>choose(options[(pos+1)%options.length]),"live-option-arrow");prev.setAttribute("aria-label","Προηγούμενη επιλογή");next.setAttribute("aria-label","Επόμενη επιλογή");prev.disabled=next.disabled=options.length<2;
   const select=el("select");select.setAttribute("aria-label","Επιλογή εμφάνισης");for(const code of options){const obj=item(code),o=el("option",obj?obj.name+(owned.has(code)?" · ✓ Δικό σου":" · "+fmt(obj.price)+" 🪙"):"Προεπιλογή");o.value=code??"";select.append(o);}select.value=options[pos]??"";select.onchange=()=>choose(select.value||null);
-  const nav=el("div",undefined,"live-option-nav");nav.append(prev,option,next);choices.append(nav,select);
+  const nav=el("div",undefined,"live-option-nav");nav.append(prev,option,next);choices.append(nav);const quick=el("details",undefined,"live-quick-select");quick.append(el("summary","Όλες οι επιλογές"),select);categoryDetails.querySelector(".live-quick-select")?.remove();categoryDetails.append(quick);
   const i=item(selected),saved=(equippedCode(cp,category)??null)===selected;
   if(selected==="title_custom"){const input=el("input");input.maxLength=60;input.placeholder="Γράψε τον τίτλο σου";input.setAttribute("aria-label","Δοκιμή προσωπικού τίτλου");input.value=draft.appearance.custom_title||"";input.addEventListener("input",()=>{draft.appearance.custom_title=input.value;drawPreview();});action.append(input);}
   const label=selected===null?"Επαναφορά προεπιλογής":owned.has(selected)?selected==="title_custom"?"Αποθήκευση τίτλου":saved?"✓ Ενεργό":"Εφαρμογή δωρεάν":"Αγορά · "+fmt(i?.price||0)+" 🪙";
@@ -506,7 +513,7 @@ function appearancePage(){
   },"primary");
   apply.disabled=(saved&&selected!=="title_custom")||(!!i&&!owned.has(selected)&&Number(sh.available)<Number(i.price));
   action.append(apply,button("Επαναφορά δοκιμής",()=>{Object.assign(draft,baseline());drawControls();drawPreview();},"secondary"));
-  status.textContent=i&&!owned.has(selected)&&Number(sh.available)<Number(i.price)?"Δεν επαρκούν οι διαθέσιμες μάρκες. Η δοκιμή παραμένει δωρεάν.":"Μόνο η ρητή αγορά ή εφαρμογή αποθηκεύει αλλαγές.";
+  status.textContent="Προεπισκόπηση χωρίς χρέωση"+(i&&!owned.has(selected)?" · "+fmt(i.price)+" 🪙":"")+(i&&!owned.has(selected)&&Number(sh.available)<Number(i.price)?" · Ανεπαρκείς μάρκες":"");
  }
  const presets=el("div",undefined,"live-actions"),prefs=profilePrefs(p.id);
  function drawPresets(){presets.replaceChildren();presets.append(el("small","Αποθηκευμένοι συνδυασμοί · τοπικά στη συσκευή · μόνο προεπισκόπηση"));
