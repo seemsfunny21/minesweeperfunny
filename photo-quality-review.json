@@ -190,10 +190,11 @@
   },
   "travel_world": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Seattle_(WA,_USA),_P-I_Globe_--_2022_--_1708.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Travel._Trip._Vacation._Top_view_airplane_with_touristic_map_(52136224054).jpg",
-    "visual_review": "needs_improvement",
-    "review_artifact": 15060301760
+    "previous": "https://commons.wikimedia.org/wiki/File:Travel._Trip._Vacation._Top_view_airplane_with_touristic_map_(52136224054).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sunset_view_from_an_airplane_window_above_the_clouds.jpg",
+    "visual_review": "actual_candidate_inspected_20261128_aesthetic",
+    "note": "Real passenger-window view of sunrise and clouds; colorful long-haul travel atmosphere, no miniature plane or watermark.",
+    "sha256": "39eae211fb18c566c42eb5132aff1a4ca596fbfddf34d5ebbd1c6c07468dbffb"
   },
   "gift_general_holiday": {
     "status": "replaced",
@@ -225,17 +226,19 @@
   },
   "gift_men_car": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Kyosho_BMW_760Li_(E66)_-_open_front.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:KYOSHO_BMW_M3.JPG",
-    "visual_review": "acceptable_at_thumbnail_size",
-    "review_artifact": 15060301760
+    "previous": "https://commons.wikimedia.org/wiki/File:KYOSHO_BMW_M3.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:BMW_M3_E92_coupe_front.jpg",
+    "visual_review": "actual_candidate_inspected_20261128_aesthetic",
+    "note": "Real red BMW M3 in bright daylight, clear front three-quarter view; not a miniature.",
+    "sha256": "bff452f75a9007e38f623cd3b1a31c3f4baeb885b6bdcb09478753dae7dfe93f"
   },
   "gift_men_motorbike": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:2016_Yamaha_XV1600_Wild_Star.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Yzr500_tamyia.JPG",
-    "visual_review": "approved_candidate_contact_sheet",
-    "sha256": "9c9004d4797c993c5b2ba6cdccd5f74cfbd0d79c9b37bb158fb4d701717e88a8"
+    "previous": "https://commons.wikimedia.org/wiki/File:Yzr500_tamyia.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YZF-R6_Cropped.jpg",
+    "visual_review": "actual_candidate_inspected_20261128_aesthetic",
+    "note": "Real blue Yamaha sport motorcycle, complete vehicle clearly visible; not a miniature.",
+    "sha256": "33401137b38df888e3dca5f9d3bae48192768763927d15f434a0af41cf56ff5d"
   },
   "gift_men_gaming": {
     "status": "replaced",

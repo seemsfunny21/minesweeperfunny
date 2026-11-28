@@ -1,0 +1,29 @@
+[
+  {
+    "code": "travel_world",
+    "path": "images/travel/travel_world.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Sunset_view_from_an_airplane_window_above_the_clouds.jpg",
+    "author": "Salwa Farwaneh Dameh",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "old": "https://commons.wikimedia.org/wiki/File:Travel._Trip._Vacation._Top_view_airplane_with_touristic_map_(52136224054).jpg"
+  },
+  {
+    "code": "gift_men_car",
+    "path": "images/gifts/men/gift_men_car.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:BMW_M3_E92_coupe_front.jpg",
+    "author": "Mikolaj Kirschke",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "old": "https://commons.wikimedia.org/wiki/File:KYOSHO_BMW_M3.JPG"
+  },
+  {
+    "code": "gift_men_motorbike",
+    "path": "images/gifts/men/gift_men_motorbike.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YZF-R6_Cropped.jpg",
+    "author": "Alpacaaviator",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Yzr500_tamyia.JPG"
+  }
+]
