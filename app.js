@@ -519,14 +519,15 @@ function trophies(){
 }
 
 function openMember(p){menuGo("Προφίλ",()=>{profileTarget=p.id;});}
+function normalizeMemberSearch(value){return String(value??'').trim().normalize('NFD').replace(/\p{M}/gu,'').toLocaleLowerCase('el').replace(/ς/g,'σ');}
 function members(){
  const people=(state.players||[]).slice().sort((a,b)=>a.nickname.localeCompare(b.nickname,"el"));
  section("Μέλη",people.length+" μέλη");
  const search=el("input");search.type="search";search.placeholder="Αναζήτηση ονόματος";search.setAttribute("aria-label","Αναζήτηση μέλους");
  const list=el("div",undefined,"members-list");screen.append(search,list);
  const draw=()=>{
-  list.replaceChildren();const term=search.value.trim().toLocaleLowerCase("el");
-  for(const p of people.filter(p=>p.nickname.toLocaleLowerCase("el").includes(term))){
+  list.replaceChildren();const term=normalizeMemberSearch(search.value);
+  for(const p of people.filter(p=>normalizeMemberSearch(p.nickname).includes(term))){
    const cp=cosmetics(p.id),ap=cp.appearance||{},trophy=item(cp.trophy),title=item(ap.title),name=el("strong",p.nickname+(trophy?.category==="trophy"?" "+trophy.icon:"")),b=button("",()=>openMember(p),"member-choice member-showcase"),head=el("div",undefined,"member-showcase-head"),info=el("div",undefined,"member-showcase-info");
    b.setAttribute("aria-label","Προβολή προφίλ "+p.nickname);
    for(const key of ["background","effect"])if(item(ap[key])?.category===key)b.classList.add(ap[key]);
@@ -887,7 +888,7 @@ function notifications(parent=screen){
 function extra(k){section(k);if(k==="Ειδοποιήσεις"||k==="Ρυθμίσεις"){notifications();return;}notice("Η λειτουργία δεν έχει ακόμη ενεργοποιηθεί.");}
 const pages={"Chat":chatPage,"Εργαλεία Admin":adminToolsPage,"Σημερινά αποτελέσματα":todayResults,"Οδηγός παιχνιδιού":helpGuide,"Καζίνο":casino,"Η εμφάνισή μου":appearancePage,"Μέλη":members,"Γεγονότα":events,"Δελτίο":ticket,"Τράπεζα":bank,"Κατάταξη":ranking,"Περισσότερα":more,"Προφίλ":()=>profile((state.players||[]).find(p=>p.id===profileTarget)||state.player),"Τρόπαια":trophies,"Κατάστημα":trophies,"Διαχείριση":admin,"Παραιτήσεις":departures};
 const nav=[["🎯","Γεγονότα"],["🎫","Δελτίο"],["🎰","Καζίνο"],["🏅","Κατάταξη"],["👤","Προφίλ"],["☰","Περισσότερα"]];
-function show(k){if(!state||state.player.status!=="approved"||resetOpen)return;const enteringAdmin=k==="Διαχείριση"&&tab!==k&&state.player.is_admin;if(k!=="Chat")chatView=null;if(k!=="Η εμφάνισή μου"&&!(k==="Κατάστημα"&&appearanceKeys.includes(shopTab)))liveDraft=null;tab=k;clock();screen.replaceChildren();for(const b of $("tabs").children)b.setAttribute("aria-selected",String(b.dataset.tab===k||b.dataset.tab==="Περισσότερα"&&!nav.some(n=>n[1]===k)));(pages[k]||(()=>extra(k)))();updateInboxBadges();attachFirstHelp(k);if(enteringAdmin&&!refreshing&&!busy)void refresh();}
+function show(k){if(!state||state.player.status!=="approved"||resetOpen)return;const enteringAdmin=k==="Διαχείριση"&&tab!==k&&state.player.is_admin,memberSearch=k==="Μέλη"&&tab===k?screen.querySelector('input[type="search"]')?.value:null;if(k!=="Chat")chatView=null;if(k!=="Η εμφάνισή μου"&&!(k==="Κατάστημα"&&appearanceKeys.includes(shopTab)))liveDraft=null;tab=k;clock();screen.replaceChildren();for(const b of $("tabs").children)b.setAttribute("aria-selected",String(b.dataset.tab===k||b.dataset.tab==="Περισσότερα"&&!nav.some(n=>n[1]===k)));(pages[k]||(()=>extra(k)))();if(memberSearch!=null){const search=screen.querySelector('input[type="search"]');if(search){search.value=memberSearch;search.dispatchEvent(new Event("input"));}}updateInboxBadges();attachFirstHelp(k);if(enteringAdmin&&!refreshing&&!busy)void refresh();}
 // Each user-initiated screen transition is a real browser history entry.
 // Rendering or background synchronization does not add entries.
 // Each user-initiated screen transition is a real browser history entry.
