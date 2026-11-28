@@ -85,31 +85,35 @@
   },
   "vehicle_bike": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Man_riding_a_bicycle_in_a_snowstorm_in_Quebec_city,_Quebec,_Canada.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
-    "visual_review": "needs_improvement",
-    "review_artifact": 15060301760
+    "previous": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Nishiki_207_city_hybrid_bike.jpg",
+    "visual_review": "actual_candidate_inspected_20261128_aesthetic",
+    "note": "Modern practical city bicycle with basket and rear rack.",
+    "sha256": "2220d203e3354cd0619d917914b8d5bed23c2ffff4e8a5cee344bffd0684311c"
   },
   "gift_men_bike": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Man_riding_a_bicycle_in_a_snowstorm_in_Quebec_city,_Quebec,_Canada.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
-    "visual_review": "needs_improvement",
-    "review_artifact": 15060301760
+    "previous": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Nishiki_207_city_hybrid_bike.jpg",
+    "visual_review": "actual_candidate_inspected_20261128_aesthetic",
+    "note": "Clear actual city bicycle, also offered as a virtual gift.",
+    "sha256": "2220d203e3354cd0619d917914b8d5bed23c2ffff4e8a5cee344bffd0684311c"
   },
   "vehicle_roadbike": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Britannica_Bicycle_Road-Racer.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Giant_Road_Bike.jpg",
-    "visual_review": "needs_improvement",
-    "review_artifact": 15060301760
+    "previous": "https://commons.wikimedia.org/wiki/File:Giant_Road_Bike.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Felt_BS_road_bicycle.jpg",
+    "visual_review": "actual_candidate_inspected_20261128_aesthetic",
+    "note": "Complete road bicycle in bright daylight, clear profile.",
+    "sha256": "68b763d7ae9c3a6ebc0a038fd74bd8afb47ee20dc9cae714ab8fd0aeb4c66e02"
   },
   "bike_carbon": {
     "status": "replaced",
-    "previous": null,
-    "source": "https://commons.wikimedia.org/wiki/File:Rennrad_Racing_Bicycle_noBG.jpg",
-    "visual_review": "needs_improvement",
-    "review_artifact": 15060301760
+    "previous": "https://commons.wikimedia.org/wiki/File:Rennrad_Racing_Bicycle_noBG.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cube_Litening_Aero_C68X_SLT,_Cyclingworld_Europe_2024,_Meerbusch_(P1170876).jpg",
+    "visual_review": "actual_candidate_inspected_20261128_aesthetic",
+    "note": "Modern Cube carbon aero road bicycle, clearly visible side view.",
+    "sha256": "1e4c983f89ec21ac3b03b41d9fca077dec106ea3775eae637f19a3243a1ab93a"
   },
   "tech_laptop": {
     "status": "replaced",
@@ -603,5 +607,29 @@
     "visual_review": "reviewed_actual_candidate_image_20261128",
     "note": "Recognizable blue-domed Santorini churches and clear sea in daylight.",
     "sha256": "3d2b046a3140e2c918a513588c8feb7144a1c12614d8a70b2d9e24f8ba2a9f03"
+  },
+  "vehicle_yacht": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:2018_SPb_Azimut_70_Yacht_01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Westport_yacht_at_the_Sag_Harbor_(port_side).jpg",
+    "visual_review": "actual_candidate_inspected_20261128_aesthetic",
+    "note": "Large luxury motor yacht, clean close three-quarter side view.",
+    "sha256": "32a8649cdb8cf1967c50278ca12215790946d33f1f72f21208e9bd7d3706aa77"
+  },
+  "bike_mountain": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Mountain_bicycle.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:EnduroMountainBike.jpg",
+    "visual_review": "actual_candidate_inspected_20261128_aesthetic",
+    "note": "Modern full-suspension mountain bike in woodland.",
+    "sha256": "72d1217493787d5eb38d97aa89ddd3ddbaf4e1b4466adb0fb2e15128ba14149c"
+  },
+  "bike_gravel": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Titanium-frame-gravel-bicycle.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fyxation_Carbon_Adventure.jpg",
+    "visual_review": "actual_candidate_inspected_20261128_aesthetic",
+    "note": "Clearly visible modern gravel bike, side view with natural blurred background.",
+    "sha256": "cb0993f8486f1ae26810f9b50b27e473061d44b9a987ad9696c53e33007e83a8"
   }
 }

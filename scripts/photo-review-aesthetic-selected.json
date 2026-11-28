@@ -1,0 +1,65 @@
+[
+  {
+    "code": "vehicle_yacht",
+    "path": "images/luxury/vehicle_yacht.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Westport_yacht_at_the_Sag_Harbor_(port_side).jpg",
+    "author": "Mr.choppers",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:2018_SPb_Azimut_70_Yacht_01.jpg"
+  },
+  {
+    "code": "vehicle_bike",
+    "path": "images/bicycles/vehicle_bike.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Nishiki_207_city_hybrid_bike.jpg",
+    "author": "Vogler",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg"
+  },
+  {
+    "code": "gift_men_bike",
+    "path": "images/gifts/men/gift_men_bike.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Nishiki_207_city_hybrid_bike.jpg",
+    "author": "Vogler",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg"
+  },
+  {
+    "code": "bike_mountain",
+    "path": "images/bicycles/bike_mountain.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:EnduroMountainBike.jpg",
+    "author": "Rianb101",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Mountain_bicycle.jpg"
+  },
+  {
+    "code": "bike_gravel",
+    "path": "images/bicycles/bike_gravel.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Fyxation_Carbon_Adventure.jpg",
+    "author": "Tim Reddington",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Titanium-frame-gravel-bicycle.jpg"
+  },
+  {
+    "code": "vehicle_roadbike",
+    "path": "images/bicycles/vehicle_roadbike.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Felt_BS_road_bicycle.jpg",
+    "author": "Petar Milošević",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Giant_Road_Bike.jpg"
+  },
+  {
+    "code": "bike_carbon",
+    "path": "images/bicycles/bike_carbon.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Cube_Litening_Aero_C68X_SLT,_Cyclingworld_Europe_2024,_Meerbusch_(P1170876).jpg",
+    "author": "Matti Blume",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+    "old": "https://commons.wikimedia.org/wiki/File:Rennrad_Racing_Bicycle_noBG.jpg"
+  }
+]

@@ -211,35 +211,35 @@
   },
   "vehicle_bike": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Nishiki_207_city_hybrid_bike.jpg",
     "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/bicycles/vehicle_bike.webp"
   },
   "bike_mountain": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Mountain_bicycle.jpg",
-    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:EnduroMountainBike.jpg",
+    "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/bicycles/bike_mountain.webp"
   },
   "bike_gravel": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Titanium-frame-gravel-bicycle.jpg",
-    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fyxation_Carbon_Adventure.jpg",
+    "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/bicycles/bike_gravel.webp"
   },
   "vehicle_roadbike": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Giant_Road_Bike.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Felt_BS_road_bicycle.jpg",
     "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/bicycles/vehicle_roadbike.webp"
   },
   "bike_carbon": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Rennrad_Racing_Bicycle_noBG.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cube_Litening_Aero_C68X_SLT,_Cyclingworld_Europe_2024,_Meerbusch_(P1170876).jpg",
     "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/bicycles/bike_carbon.webp"
@@ -358,9 +358,9 @@
   },
   "vehicle_yacht": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:2018_SPb_Azimut_70_Yacht_01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Westport_yacht_at_the_Sag_Harbor_(port_side).jpg",
     "license": "CC BY-SA 4.0",
-    "representative": false,
+    "representative": true,
     "path": "images/luxury/vehicle_yacht.webp"
   },
   "vehicle_jet": {
@@ -519,7 +519,7 @@
   },
   "gift_men_bike": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:A_city_bike.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Nishiki_207_city_hybrid_bike.jpg",
     "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/gifts/men/gift_men_bike.webp"
