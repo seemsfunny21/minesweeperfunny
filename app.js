@@ -45,7 +45,7 @@ async function api(action,extra={}){
  if(delta&&data.state_delta===1){const next=mergeStateParts(previous,data);if(seq>=stateAcceptedId){stateAcceptedId=seq;statePartsCache=next.parts;stateHashes=next.hashes;void persistAvatars(next.parts,next.hashes,data.changed||{},owner,seq);}return next.result;}
  return data;
 }
-function toggleGame(yes){$("gameScreen").hidden=!yes;$("tabs").hidden=!yes;$("profileButton").hidden=!yes;auth.hidden=yes;if(yes){auth.replaceChildren();cancelAuthPin();}if(!yes){screen.replaceChildren();$("profileButton").replaceChildren();}}
+function toggleGame(yes){if(!yes)document.getElementById("startup-push-notice")?.remove();$("gameScreen").hidden=!yes;$("tabs").hidden=!yes;$("profileButton").hidden=!yes;auth.hidden=yes;if(yes){auth.replaceChildren();cancelAuthPin();}if(!yes){screen.replaceChildren();$("profileButton").replaceChildren();}}
 function feedback(t){const f=$("feedback");if(f)f.textContent=t;}
 let authPinTimer=null;
 function cancelAuthPin(){if(authPinTimer!==null){clearTimeout(authPinTimer);authPinTimer=null;}}
@@ -840,6 +840,29 @@ function departures(){
 
 const PUSH_API="https://zrbmsziipzabnniqcpav.supabase.co/functions/v1/predictions-push";
 async function pushAPI(action,data={}){const r=await fetch(PUSH_API,{method:"POST",headers:{"Content-Type":"application/json","X-Predictions-Session":token},body:JSON.stringify({action,...data}),signal:AbortSignal.timeout(20000)});const j=await r.json();if(!r.ok||!j.ok)throw Error(j.error||"Πρόβλημα ειδοποιήσεων.");return j;}
+function showInactivePushNotice(key,openSettings,active){
+ const id="startup-push-notice";if(active){document.getElementById(id)?.remove();return}
+ let hidden=false;try{hidden=localStorage.getItem(key)==="1"}catch{}
+ if(hidden||window.__pushNoticeDismissed||document.getElementById(id)||!document.body)return;
+ const box=document.createElement("aside");box.id=id;box.setAttribute("aria-label","Ειδοποιήσεις");box.style.cssText="position:fixed;top:max(8px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);width:min(92%,360px);z-index:90;background:#173650;color:#fff;border:1px solid #659bc1;border-radius:12px;padding:10px;box-shadow:0 4px 18px #0005;font:13px system-ui;display:grid;gap:7px;box-sizing:border-box";
+ const title=document.createElement("strong");title.textContent="🔕 Οι ειδοποιήσεις είναι ανενεργές";const row=document.createElement("div");row.style.cssText="display:grid;grid-template-columns:1fr 1fr;gap:6px";
+ const label=document.createElement("label"),check=document.createElement("input");check.type="checkbox";check.style.cssText="width:16px;height:16px;flex:none";label.style.cssText="display:flex;align-items:center;gap:6px;font-size:12px";label.append(check,document.createTextNode("Να μην εμφανιστεί ξανά"));
+ function dismiss(){if(check.checked)try{localStorage.setItem(key,"1")}catch{}window.__pushNoticeDismissed=true;box.remove()}
+ for(const [name,fn] of [["Ενεργοποίηση",()=>{dismiss();openSettings()}],["Αργότερα",dismiss]]){const b=document.createElement("button");b.type="button";b.textContent=name;b.style.cssText="background:#215780;color:white;border:1px solid #659bc1;border-radius:8px;padding:8px;font:inherit;cursor:pointer";b.onclick=fn;row.append(b)}
+ box.append(title,row,label);document.body.append(box);
+}
+let startupPushChecking=false,startupPushCheckedToken="";
+async function checkStartupPush(){
+ if(!token||state?.player?.status!=="approved"||!pushSupported()||startupPushChecking||startupPushCheckedToken===token)return;
+ startupPushChecking=true;const session=token;
+ try{
+ let enabled=false;
+ if(Notification.permission==="granted"){const reg=await pushRegistration(),sub=await reg.pushManager.getSubscription();if(sub)enabled=!!(await pushAPI("status",{endpoint:sub.endpoint})).enabled}
+ if(session!==token||state?.player?.status!=="approved")return;
+ startupPushCheckedToken=session;
+ if(tab!=="Ρυθμίσεις"&&tab!=="Ειδοποιήσεις")showInactivePushNotice("predictions.push.notice.hide",()=>{menuGo("Ρυθμίσεις");document.querySelector(".push-card")?.scrollIntoView({block:"center"})},enabled);
+ }catch(e){console.warn("Push status not confirmed",e.message)}finally{startupPushChecking=false}
+}
 function pushSupported(){return "serviceWorker" in navigator&&"PushManager" in window&&"Notification" in window;}
 async function pushRegistration(){const reg=await navigator.serviceWorker.getRegistration(location.pathname.replace(/[^/]*$/,""));if(!reg||!reg.active)throw Error("Η εφαρμογή χρειάζεται ανανέωση.");return reg;}
 function decodePushKey(s){const base=(s+"=".repeat((4-s.length%4)%4)).replace(/-/g,"+").replace(/_/g,"/");return Uint8Array.from(atob(base),c=>c.charCodeAt(0));}
@@ -926,7 +949,7 @@ async function refresh(draw=false){
  const next=await api("state");if(started!==revision||sessionToken!==token||resetOpen||(!draw&&busy))return;
  state=next;rememberLoginProfiles(state);
  if(state.player.status==="pending"){if(draw||oldStatus!=="pending")pending();return;}
- toggleGame(true);$("profileButton").replaceChildren(avatar(state.player));clock();updateInboxBadges();if(chatView?.alive())chatView.updateInbox?.();
+ toggleGame(true);void checkStartupPush();$("profileButton").replaceChildren(avatar(state.player));clock();updateInboxBadges();if(chatView?.alive())chatView.updateInbox?.();
  if(draw||oldStatus!=="approved"){const key=new URLSearchParams(location.search).get("open"),routes={events:"Γεγονότα",tickets:"Δελτίο",bank:"Τράπεζα",profile:"Προφίλ",admin:"Διαχείριση",chat:"Chat",...(window.self!==window.top?{adminTools:"Εργαλεία Admin"}:{})};if(key&&routes[key]){const u=new URL(location.href);u.searchParams.delete("open");history.replaceState(null,"",u);if(key==="profile")profileTarget=null;show(["admin","adminTools"].includes(key)&&!state.player.is_admin?"Γεγονότα":routes[key]);}else show(tab);}
  else if(!["INPUT","SELECT","TEXTAREA"].includes(document.activeElement?.tagName)){
  const gChanged=oldGame!==JSON.stringify(state.game),bChanged=oldBank!==JSON.stringify(state.bank),sChanged=oldShop!==JSON.stringify(state.shop),dChanged=oldDeparture!==JSON.stringify(state.departure);
@@ -941,4 +964,4 @@ function activity(){const wasIdle=Date.now()-lastInteraction>=IDLE_AFTER_MS;last
 for(const evt of ["pointerdown","keydown","touchstart"])document.addEventListener(evt,activity,{passive:true});
 window.addEventListener("storage",e=>{if(e.key===KEY||e.key===null)location.reload()});if(token){sessionLoading();refresh(true);}else authForm();lastBoundary=refreshBoundary();setInterval(backgroundTick,1000*15);
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"){lastInteraction=Date.now();if(token&&!busy&&!resetOpen&&Date.now()-lastStateRequest>=60000&&stateAutoBudget(true))refresh();if(chatView?.alive())chatView.load();}});
-if("serviceWorker" in navigator)navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).catch(()=>{});
+if("serviceWorker" in navigator)navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).then(()=>checkStartupPush()).catch(()=>{});
