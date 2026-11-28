@@ -127,10 +127,11 @@
   },
   "amenity_pool": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Intex_pool,_Interboot_2020,_Friedrichshafen_(IB200178).jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Pool_in_the_back_yard_-_Mid-City_New_Orleans_2010.jpg",
-    "visual_review": "needs_improvement",
-    "review_artifact": 15060301760
+    "previous": "https://commons.wikimedia.org/wiki/File:Pool_in_the_back_yard_-_Mid-City_New_Orleans_2010.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Private_Swimming_Pool.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Actual in-ground private pool and landscaped garden.",
+    "sha256": "852f8597a7e2d34bc6fbf191e465422180ba777e1b723bba7988567afdcf88e4"
   },
   "home_mansion": {
     "status": "replaced",
@@ -464,10 +465,11 @@
   },
   "gift_general_ticket": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Cinema_ticket_stub,_Merida_Yucatan_1977.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:2026_Poland_movie_theater_ticket_Multikino_Katowice.jpg",
-    "visual_review": "approved_candidate_contact_sheet",
-    "sha256": "30830a8de1cdc0f17a16728b4d865094b047c032339e6a9d36c3e57485111ed7"
+    "previous": "https://commons.wikimedia.org/wiki/File:2026_Poland_movie_theater_ticket_Multikino_Katowice.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Concert_ticket_(2852819026).jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Actual concert admission ticket, not a cinema receipt.",
+    "sha256": "aa1c740038ff5f6979a46972a14b1edac8578152199f0fa65d76a1b9a2f3e332"
   },
   "gift_women_luxurybag": {
     "status": "replaced",
@@ -482,5 +484,91 @@
     "source": "https://commons.wikimedia.org/wiki/File:Xiaomi_Redmi_Note_14_4G_running_HyperOS_3.1.png",
     "visual_review": "approved_candidate_contact_sheet",
     "sha256": "264a505f38217c2e9d1ed0142448802a8c228cb380a409df83d6ae831420ab43"
+  },
+  "gift_men_football": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:DZL_grip_Sock_%26_Nike_Football_Image.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Adidas_France_national_football_team_home_jersey.JPG",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Real football jersey; whole shirt visible.",
+    "sha256": "2a261956bf011cc48e22abbd85531b724ea4af4c498b46b2b6698130c8e096bd"
+  },
+  "gift_women_ring": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Pandora,_Atlas,_Rings_-_Rev_232_(24579092143).png",
+    "source": "https://commons.wikimedia.org/wiki/File:Classic_Diamond_Engagement_Ring.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Clear single ring, gemstone and band visible.",
+    "sha256": "16fce734a46c61c1f71a1e08523c108674f10ff4798dfd863e941aa115548828"
+  },
+  "bike_pro": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Transport_bicycle_racing,_Velo_24,_Berlin_(VB243663).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Colnago_V3-RS_Dura-Ace_Di2_Princeton_Carbon.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Modern Colnago professional road-racing bicycle, full side view.",
+    "sha256": "d0148bb28b2ea5397105a3520f2ca5c4932e753aa065b6b99bc0ac98e210b25a"
+  },
+  "pet_fish": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Exotic_goldfish_diversity.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Freshwater_aquarium.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Planted freshwater aquarium with visible fish.",
+    "sha256": "e9064d1bb667347f7e8c90d0c5e8bd6749c9737aadde7f47355dc358208d00e1"
+  },
+  "gift_general_flowers": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Rose_Flower_Basket.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Real flower baskets, distinct from the ordinary bouquet.",
+    "sha256": "734895731dd5814589bd2042c3aab3c9e8c139c78462249628db8ceba9cf825c"
+  },
+  "gift_women_cosmetics": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Cosmetics-1078712_1280.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Skin_Care_Set.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "A genuine set of personal-care products arranged as a gift.",
+    "sha256": "d94aae4d19275314a5591af39468400df1e5f12485b8ba03de0e5d536f2948bc"
+  },
+  "tech_gaming": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Gaming_computers_(1).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Frontansicht_des_PC%27s_von_VyLone_Reaz.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Single modern RGB gaming PC tower.",
+    "sha256": "5871a370c249ac9e815085bf242b8be13386a6e114c7b13da8e3136e16177c61"
+  },
+  "tech_premium": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:ABS_PC_and_monitor_setup.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Complete modern gaming setup with desktop, monitor, keyboard and chair.",
+    "sha256": "1421d912759c84a0c436f3b1094b80d61cf7283afc70e9099dde6be81bfcd9af"
+  },
+  "gift_women_bag": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Handbag_at_Nordstrom_Rack_-_Santa_Rosa_-_December_2022_-_Sarah_Stierch.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Handbage.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Recognizable handbags, preferable to retail display; lower tier than luxury handbag.",
+    "sha256": "0b8e9934eaff97104f0f9aeb68895fc13c6a5e126ca9ab84b8d41706fbf17b21"
+  },
+  "amenity_spa": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Whirlpool_bestway_lay-z-spa_Miami.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:YHI_Spa_treatment_room_at_Paradisus_by_Meli%C3%A1_Bali.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Recognizable luxury spa treatment room, not a covered inflatable tub."
+  },
+  "gift_flower": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Red_Rose_Flower_IITMandi_Himachal_Aug19_D72_11473.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Single flower rather than a full bouquet; the rose is a representative example."
   }
 }

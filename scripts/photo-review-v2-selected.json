@@ -1,0 +1,119 @@
+[
+  {
+    "code": "gift_men_football",
+    "path": "images/gifts/men/gift_men_football.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Adidas_France_national_football_team_home_jersey.JPG",
+    "author": "BrokenSphere",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "old": "https://commons.wikimedia.org/wiki/File:DZL_grip_Sock_%26_Nike_Football_Image.png"
+  },
+  {
+    "code": "gift_women_ring",
+    "path": "images/gifts/women/gift_women_ring.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Classic_Diamond_Engagement_Ring.jpg",
+    "author": "Petragems",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Pandora,_Atlas,_Rings_-_Rev_232_(24579092143).png"
+  },
+  {
+    "code": "bike_pro",
+    "path": "images/bicycles/bike_pro.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Colnago_V3-RS_Dura-Ace_Di2_Princeton_Carbon.jpg",
+    "author": "Glory Cycles",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Transport_bicycle_racing,_Velo_24,_Berlin_(VB243663).jpg"
+  },
+  {
+    "code": "amenity_pool",
+    "path": "images/amenities/amenity_pool.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Private_Swimming_Pool.jpg",
+    "author": "Alexisrael at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "old": "https://commons.wikimedia.org/wiki/File:Pool_in_the_back_yard_-_Mid-City_New_Orleans_2010.jpg"
+  },
+  {
+    "code": "pet_fish",
+    "path": "images/pets/pet_fish.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Freshwater_aquarium.jpg",
+    "author": "Ranjith-chemmad",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Exotic_goldfish_diversity.jpg"
+  },
+  {
+    "code": "gift_general_ticket",
+    "path": "images/gifts/general/gift_general_ticket.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Concert_ticket_(2852819026).jpg",
+    "author": "David Pursehouse from Kawasaki, Japan",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "old": "https://commons.wikimedia.org/wiki/File:2026_Poland_movie_theater_ticket_Multikino_Katowice.jpg"
+  },
+  {
+    "code": "gift_general_flowers",
+    "path": "images/gifts/general/gift_general_flowers.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Rose_Flower_Basket.jpg",
+    "author": "Deepika Govindaraj",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg"
+  },
+  {
+    "code": "gift_women_cosmetics",
+    "path": "images/gifts/women/gift_women_cosmetics.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Skin_Care_Set.jpg",
+    "author": "WGW2007",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Cosmetics-1078712_1280.jpg"
+  },
+  {
+    "code": "tech_gaming",
+    "path": "images/technology/tech_gaming.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Frontansicht_des_PC%27s_von_VyLone_Reaz.jpg",
+    "author": "VyLone Reaz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Gaming_computers_(1).jpg"
+  },
+  {
+    "code": "tech_premium",
+    "path": "images/technology/tech_premium.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:ABS_PC_and_monitor_setup.jpg",
+    "author": "Masterandbeef",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg"
+  },
+  {
+    "code": "gift_women_bag",
+    "path": "images/gifts/women/gift_women_bag.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Handbage.jpg",
+    "author": "Saidatul Soleha",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "old": "https://commons.wikimedia.org/wiki/File:Handbag_at_Nordstrom_Rack_-_Santa_Rosa_-_December_2022_-_Sarah_Stierch.jpg"
+  },
+  {
+    "code": "amenity_spa",
+    "path": "images/amenities/amenity_spa.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:YHI_Spa_treatment_room_at_Paradisus_by_Meli%C3%A1_Bali.jpg",
+    "author": "Paradisus Bali",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Whirlpool_bestway_lay-z-spa_Miami.jpg"
+  },
+  {
+    "code": "gift_flower",
+    "path": "images/gifts/general/gift_flower.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Red_Rose_Flower_IITMandi_Himachal_Aug19_D72_11473.jpg",
+    "author": "This Photo was taken by Timothy A. Gonsalves . Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page , for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract .",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg"
+  }
+]
