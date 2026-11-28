@@ -535,3 +535,8 @@ select{display:block;width:100%;min-height:44px;margin:8px 0;padding:10px;border
 .live-sheet .premium-profile.effect_phoenix .premium-identity::before{animation:fx-phoenix 6s linear infinite!important}
 }
 @media(prefers-reduced-motion:reduce){.premium-profile[class*="effect_"] .premium-identity::before{animation:none!important;opacity:.86}}
+
+/* Keep all six appearance categories visible immediately below the comparison. */
+.live-sheet .live-controls>.live-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:0 0 8px;width:100%;min-width:0}
+.live-sheet .live-controls>.live-tabs>button{width:100%;min-width:0;min-height:36px;margin:0;padding:7px 3px;white-space:normal;overflow-wrap:anywhere;line-height:1.2;font-size:12px}
+.live-sheet .live-controls>.live-tabs>button[aria-pressed="true"]{outline:2px solid #90caff;outline-offset:-2px}
