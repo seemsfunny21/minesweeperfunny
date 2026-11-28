@@ -115,5 +115,59 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "old": "https://commons.wikimedia.org/wiki/File:Rose_and_carnation_flower_bouquet_01.jpg"
+  },
+  {
+    "code": "tech_tablet",
+    "path": "images/technology/tech_tablet.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Tab_S8_Ultra.jpg",
+    "author": "Dylan240",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "old": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg"
+  },
+  {
+    "code": "gift_general_tablet",
+    "path": "images/gifts/general/gift_general_tablet.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Tab_S8_Ultra.jpg",
+    "author": "Dylan240",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "old": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg"
+  },
+  {
+    "code": "vehicle_boat",
+    "path": "images/luxury/vehicle_boat.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Riva_Aquarama.jpg",
+    "author": "StuivertjeWisselen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Motorboat_Ryds_435DL_and_cloud_reflections_in_S%C3%A4mstad_harbor_3.jpg"
+  },
+  {
+    "code": "travel_islands",
+    "path": "images/travel/travel_islands.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:D%C3%B4mes_bleus_%C3%A0_Oia.jpg",
+    "author": "Anthony Baratier",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Skyline.jpg"
+  },
+  {
+    "code": "amenity_sports",
+    "path": "images/amenities/amenity_sports.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Uwl_sports_complex_aerial_view.jpg",
+    "author": "User:Wikideas1",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "old": "https://commons.wikimedia.org/wiki/File:Private_tennis_court,_Velwell_Road,_Exeter_-_geograph.org.uk_-_5882168.jpg"
+  },
+  {
+    "code": "gift_general_book",
+    "path": "images/gifts/general/gift_general_book.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:An_open_book_is_placed_in_front_of_a_library_shelf.jpg",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "old": "https://www.pexels.com/photo/top-view-of-a-book-lying-on-the-table-12189613/"
   }
 ]

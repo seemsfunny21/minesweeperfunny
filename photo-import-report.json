@@ -169,9 +169,9 @@
   },
   "travel_islands": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Skyline.jpg",
-    "license": "CC BY-SA 2.0",
-    "representative": false,
+    "source": "https://commons.wikimedia.org/wiki/File:D%C3%B4mes_bleus_%C3%A0_Oia.jpg",
+    "license": "CC BY-SA 4.0",
+    "representative": true,
     "path": "images/travel/travel_islands.webp"
   },
   "travel_paris": {
@@ -260,16 +260,16 @@
   },
   "tech_tablet": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Tab_S8_Ultra.jpg",
     "license": "CC0",
-    "representative": false,
+    "representative": true,
     "path": "images/technology/tech_tablet.webp"
   },
   "gift_general_tablet": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Tab_S8_Ultra.jpg",
     "license": "CC0",
-    "representative": false,
+    "representative": true,
     "path": "images/gifts/general/gift_general_tablet.webp"
   },
   "tech_laptop": {
@@ -344,7 +344,7 @@
   },
   "vehicle_boat": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Motorboat_Ryds_435DL_and_cloud_reflections_in_S%C3%A4mstad_harbor_3.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Riva_Aquarama.jpg",
     "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/luxury/vehicle_boat.webp"
@@ -456,8 +456,8 @@
   },
   "amenity_sports": {
     "status": "saved",
-    "source": "https://commons.wikimedia.org/wiki/File:Private_tennis_court,_Velwell_Road,_Exeter_-_geograph.org.uk_-_5882168.jpg",
-    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Uwl_sports_complex_aerial_view.jpg",
+    "license": "CC BY-SA 4.0",
     "representative": true,
     "path": "images/amenities/amenity_sports.webp"
   },
@@ -806,8 +806,8 @@
   },
   "gift_general_book": {
     "status": "saved",
-    "source": "https://www.pexels.com/photo/top-view-of-a-book-lying-on-the-table-12189613/",
-    "license": "Pexels License",
+    "source": "https://commons.wikimedia.org/wiki/File:An_open_book_is_placed_in_front_of_a_library_shelf.jpg",
+    "license": "CC BY 2.0",
     "representative": true,
     "path": "images/gifts/general/gift_general_book.webp"
   },

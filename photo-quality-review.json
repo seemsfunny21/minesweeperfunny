@@ -365,11 +365,11 @@
   },
   "gift_general_book": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Princess_Marys_Gift_Book-0009.png",
-    "source": "https://www.pexels.com/photo/top-view-of-a-book-lying-on-the-table-12189613/",
-    "visual_review": "acceptable_at_thumbnail_size",
-    "sha256": "50d53e0f690452e12238a550bfff0b7b07da8fc3db3cb11ad63c811119510e59",
-    "review_artifact": 15060301760
+    "previous": "https://www.pexels.com/photo/top-view-of-a-book-lying-on-the-table-12189613/",
+    "source": "https://commons.wikimedia.org/wiki/File:An_open_book_is_placed_in_front_of_a_library_shelf.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Large visible open book with library context.",
+    "sha256": "732d3fbf6015e37f6d2df45b1e2af7d057c418eac97cacbfc6c793ddf88fbe31"
   },
   "gift_general_puzzle": {
     "status": "replaced",
@@ -423,10 +423,11 @@
   },
   "amenity_sports": {
     "status": "replaced",
-    "previous": "https://commons.wikimedia.org/wiki/File:Azrou_Sports_Complex.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Private_tennis_court,_Velwell_Road,_Exeter_-_geograph.org.uk_-_5882168.jpg",
-    "visual_review": "approved_candidate_contact_sheet",
-    "sha256": "de184c3308822ddc5ed8b5428c291ea6046b66fd69dda3ac30abddea57e76ed9"
+    "previous": "https://commons.wikimedia.org/wiki/File:Private_tennis_court,_Velwell_Road,_Exeter_-_geograph.org.uk_-_5882168.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Uwl_sports_complex_aerial_view.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Aerial view of a genuine multi-field sports complex; representative of facility, not ownership.",
+    "sha256": "36ebfcc13d74763964e6fb6c548fc17fe065d0d5d8e791369848ff2b2d529822"
   },
   "gift_women_earrings": {
     "status": "replaced",
@@ -570,5 +571,37 @@
     "source": "https://commons.wikimedia.org/wiki/File:Red_Rose_Flower_IITMandi_Himachal_Aug19_D72_11473.jpg",
     "visual_review": "reviewed_actual_candidate_image_20261128",
     "note": "Single flower rather than a full bouquet; the rose is a representative example."
+  },
+  "tech_tablet": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Tab_S8_Ultra.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Front-facing tablet with its display on, large and clearly visible.",
+    "sha256": "d307b97812670f677bdc4d1db297b18f05989311cad1c8839c421fed25abd50c"
+  },
+  "gift_general_tablet": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:20251110_181454_-_Samsung_Galaxy_Tab_A9_Back.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_Tab_S8_Ultra.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Same actual device as shop tablet; front-facing active display.",
+    "sha256": "d307b97812670f677bdc4d1db297b18f05989311cad1c8839c421fed25abd50c"
+  },
+  "vehicle_boat": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Motorboat_Ryds_435DL_and_cloud_reflections_in_S%C3%A4mstad_harbor_3.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Riva_Aquarama.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Recognizable Riva speedboat, not a fishing dinghy.",
+    "sha256": "2780c5390e771b78f202d1c6689e915fac935a487c1b8138f83aba88eba23e18"
+  },
+  "travel_islands": {
+    "status": "replaced",
+    "previous": "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Skyline.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:D%C3%B4mes_bleus_%C3%A0_Oia.jpg",
+    "visual_review": "reviewed_actual_candidate_image_20261128",
+    "note": "Recognizable blue-domed Santorini churches and clear sea in daylight.",
+    "sha256": "3d2b046a3140e2c918a513588c8feb7144a1c12614d8a70b2d9e24f8ba2a9f03"
   }
 }
