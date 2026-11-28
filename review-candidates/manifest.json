@@ -1,0 +1,356 @@
+{
+  "gift_men_football": [
+    {
+      "file": "gift_men_football-0.webp",
+      "requested_file": "Home Uniform front.jpg",
+      "sha256": "a7493c81ab84d83b63482c5e5ebb0e77ab9264f8d5680181e9a4616ba89f46f3",
+      "author": "Oscar ruval",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Home_Uniform_front.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_men_football-1.webp",
+      "requested_file": "Adidas France national football team home jersey.JPG",
+      "sha256": "2a261956bf011cc48e22abbd85531b724ea4af4c498b46b2b6698130c8e096bd",
+      "author": "BrokenSphere",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Adidas_France_national_football_team_home_jersey.JPG",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_men_football-2.webp",
+      "requested_file": "Shirt of TPE Football Home 2015.jpg",
+      "sha256": "ba86dc4034b4088412f9baa80c1bbf54abd42d1e7b6cce3765a96d8c0a5dc979",
+      "author": "Dai Yuliang",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Shirt_of_TPE_Football_Home_2015.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "gift_women_ring": [
+    {
+      "file": "gift_women_ring-0.webp",
+      "requested_file": "Classic Diamond Engagement Ring.jpg",
+      "sha256": "16fce734a46c61c1f71a1e08523c108674f10ff4798dfd863e941aa115548828",
+      "author": "Petragems",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Classic_Diamond_Engagement_Ring.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_women_ring-1.webp",
+      "requested_file": "Diamond ring.JPG",
+      "sha256": "fc2a5980d5f55495b25a100b21838cf2b338582cbd3637908d249da754cdc189",
+      "author": "Mauro Cateb",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Diamond_ring.JPG",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_women_ring-2.webp",
+      "requested_file": "Gold and diamond engagement ring.jpg",
+      "sha256": "64dd0d7de625ad58934e11f486c0695103b01fbfa35be8557ffa05b24adfdc1e",
+      "author": "Wyatt Tyrone Smith",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Gold_and_diamond_engagement_ring.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "bike_pro": [
+    {
+      "file": "bike_pro-0.webp",
+      "requested_file": "Colnago V3-RS Dura-Ace Di2 Princeton Carbon.jpg",
+      "sha256": "d0148bb28b2ea5397105a3520f2ca5c4932e753aa065b6b99bc0ac98e210b25a",
+      "author": "Glory Cycles",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Colnago_V3-RS_Dura-Ace_Di2_Princeton_Carbon.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "bike_pro-1.webp",
+      "requested_file": "Road bike Orbea Orca Aero 2020.jpg",
+      "sha256": "3beb5dfc35e470f8a8c1cd1be563fd3d57850685b193e2c096e85d8201485db9",
+      "author": "Pieter Werken",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Road_bike_Orbea_Orca_Aero_2020.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "amenity_pool": [
+    {
+      "file": "amenity_pool-0.webp",
+      "requested_file": "Swimming pool with house.jpg",
+      "sha256": "0fea8d1ff57404643692ea7305ba31854438e73615bb0edcf658936565b3fc59",
+      "author": "Rubini Manikandan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Swimming_pool_with_house.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "amenity_pool-1.webp",
+      "requested_file": "Private Swimming Pool.jpg",
+      "sha256": "852f8597a7e2d34bc6fbf191e465422180ba777e1b723bba7988567afdcf88e4",
+      "author": "Alexisrael at English Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Private_Swimming_Pool.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "tech_tablet": [
+    {
+      "file": "tech_tablet-0.webp",
+      "requested_file": "Samsung Tablet.jpg",
+      "sha256": "77a20e0cbe56682ad40a917ea700f4b525862a19b7479b43c7c58223f91a4ed6",
+      "author": "KA KIT",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Samsung_Tablet.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "tech_tablet-1.webp",
+      "requested_file": "Galaxy tab.jpg",
+      "sha256": "53ca6a43748004b1e6bf44b8b9a588e3037add5329291ab7cd51d1e37a4a142b",
+      "author": "KA KIT",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Galaxy_tab.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "tech_tablet-2.webp",
+      "requested_file": "Tablet Computer.jpg",
+      "sha256": "181b110a13664c3c41cd54a0047610c1d00af51c98f8b25bd747c310ca053af0",
+      "author": "KA KIT",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tablet_Computer.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "pet_fish": [
+    {
+      "file": "pet_fish-0.webp",
+      "requested_file": "A freshwater aquarium containing plants and small fish.jpg",
+      "sha256": "e36f4fbfc7e5ed6bec2b6f15244b0fce38361413328ed6d4231ffd1018a01003",
+      "author": "Netha Hussain",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:A_freshwater_aquarium_containing_plants_and_small_fish.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "pet_fish-1.webp",
+      "requested_file": "Freshwater aquarium.jpg",
+      "sha256": "e9064d1bb667347f7e8c90d0c5e8bd6749c9737aadde7f47355dc358208d00e1",
+      "author": "Ranjith-chemmad",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Freshwater_aquarium.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "pet_fish-2.webp",
+      "requested_file": "Freshwater plant aquarium.jpg",
+      "sha256": "a74b40ad3848c41cd68dd2ed9acfd9f832a4e64a85ebd76d351590272cc34c2b",
+      "author": "Sandhiya Rangasami",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Freshwater_plant_aquarium.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "gift_general_ticket": [
+    {
+      "file": "gift_general_ticket-0.webp",
+      "requested_file": "Concert ticket (2852819026).jpg",
+      "sha256": "aa1c740038ff5f6979a46972a14b1edac8578152199f0fa65d76a1b9a2f3e332",
+      "author": "David Pursehouse from Kawasaki, Japan",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Concert_ticket_(2852819026).jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_general_ticket-1.webp",
+      "requested_file": "Concert Ticket (15713298194).jpg",
+      "sha256": "5fc810847cd2c05b83ff5468c427a4fabb123429249270ef8ed74a481b361664",
+      "author": "Amanda Jean Thomas",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Concert_Ticket_(15713298194).jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_general_ticket-2.webp",
+      "requested_file": "Mozart concert ticket.jpg",
+      "sha256": "accbd66c0be4c45aec6ea1f0d73d11b75e87e996f37ca76f692058ae1e235221",
+      "author": "Actormusicus",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Mozart_concert_ticket.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "gift_general_flowers": [
+    {
+      "file": "gift_general_flowers-0.webp",
+      "requested_file": "A woven basket filled with freshly cut flowers.jpg",
+      "sha256": "2ad2a1298051c1f238b03342d71106fcede80911127da25a39bb03514fffbf32",
+      "author": "পাপৰি বৰা",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:A_woven_basket_filled_with_freshly_cut_flowers.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_general_flowers-1.webp",
+      "requested_file": "Rose Flower Basket.jpg",
+      "sha256": "734895731dd5814589bd2042c3aab3c9e8c139c78462249628db8ceba9cf825c",
+      "author": "Deepika Govindaraj",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Rose_Flower_Basket.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "gift_women_cosmetics": [
+    {
+      "file": "gift_women_cosmetics-0.webp",
+      "requested_file": "Skin Care Set.jpg",
+      "sha256": "d94aae4d19275314a5591af39468400df1e5f12485b8ba03de0e5d536f2948bc",
+      "author": "WGW2007",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Skin_Care_Set.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_women_cosmetics-1.webp",
+      "requested_file": "Skin care products.jpg",
+      "sha256": "65cd839b337b9a37a7c3c08fa78512d1b574b01a9ab262f0420da4e950719c25",
+      "author": "Charlie.Smatt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Skin_care_products.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "tech_gaming": [
+    {
+      "file": "tech_gaming-0.webp",
+      "requested_file": "ABS PC and monitor setup.jpg",
+      "sha256": "1421d912759c84a0c436f3b1094b80d61cf7283afc70e9099dde6be81bfcd9af",
+      "author": "Masterandbeef",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:ABS_PC_and_monitor_setup.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "tech_gaming-1.webp",
+      "requested_file": "Frontansicht des PC's von VyLone Reaz.jpg",
+      "sha256": "5871a370c249ac9e815085bf242b8be13386a6e114c7b13da8e3136e16177c61",
+      "author": "VyLone Reaz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Frontansicht_des_PC%27s_von_VyLone_Reaz.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "tech_premium": [
+    {
+      "file": "tech_premium-0.webp",
+      "requested_file": "Dual monitor setup in a gaming room with keyboard and mouse in focus.jpg",
+      "sha256": "f095e50d6511dce1f71c4578920f7ececf952395289de0002add4deb1608850e",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dual_monitor_setup_in_a_gaming_room_with_keyboard_and_mouse_in_focus.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "tech_premium-1.webp",
+      "requested_file": "Simple Setup Image.jpg",
+      "sha256": "f944a3abca795c6407579d40e1a5a705f7d9847ddba0f66855a4eb76c5d65e51",
+      "author": "Muhammed-Huseyin Arikan",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Simple_Setup_Image.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "gift_women_bag": [
+    {
+      "file": "gift_women_bag-0.webp",
+      "requested_file": "Handbage.jpg",
+      "sha256": "0b8e9934eaff97104f0f9aeb68895fc13c6a5e126ca9ab84b8d41706fbf17b21",
+      "author": "Saidatul Soleha",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Handbage.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_women_bag-1.webp",
+      "requested_file": "A little handbag.jpg",
+      "sha256": "b16776a1892598243d9b4de09064858137282e610cb20c914b2af852c21d0762",
+      "author": "Pearlmnguni",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:A_little_handbag.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_women_bag-2.webp",
+      "requested_file": "A handbag.jpg",
+      "sha256": "1a92903701f6d38d27d05d30bf58bc5cd87c119c16a8b243f7a1dd7f6b2bc9ff",
+      "author": "ALHASSAN MOHAMED NURIDEEN",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:A_handbag.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ]
+}
