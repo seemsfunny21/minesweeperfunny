@@ -540,3 +540,6 @@ select{display:block;width:100%;min-height:44px;margin:8px 0;padding:10px;border
 .live-sheet .live-controls>.live-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:0 0 8px;width:100%;min-width:0}
 .live-sheet .live-controls>.live-tabs>button{width:100%;min-width:0;min-height:36px;margin:0;padding:7px 3px;white-space:normal;overflow-wrap:anywhere;line-height:1.2;font-size:12px}
 .live-sheet .live-controls>.live-tabs>button[aria-pressed="true"]{outline:2px solid #90caff;outline-offset:-2px}
+
+/* Account-level notification preferences. */
+.push-preferences{margin-top:14px;padding-top:10px;border-top:1px solid #477fbd55}.push-preferences h3{margin:0 0 6px}.push-pref-list{display:grid;grid-template-columns:1fr;gap:4px;margin:9px 0}.push-pref-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 7px;border:1px solid #477fbd44;border-radius:8px;min-width:0;font-size:13px}.push-pref-row span{min-width:0;overflow-wrap:anywhere}.push-pref-row input[type=checkbox]{width:21px;height:21px;flex:0 0 21px;margin:0;accent-color:#69b7ff}.push-preferences>button{width:100%;margin:4px 0 6px}
