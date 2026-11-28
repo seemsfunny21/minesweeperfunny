@@ -947,7 +947,30 @@ function notifications(parent=screen){
  let working=false;
  async function update(){try{const enabled=await readPushEnabled(),reg=await navigator.serviceWorker.getRegistration(new URL("./",location.href).href),sub=reg?await reg.pushManager.getSubscription():null;status.textContent=enabled?"✓ Οι ειδοποιήσεις είναι ενεργές":"Οι ειδοποιήσεις είναι ανενεργές";enable.disabled=enabled||working;disable.disabled=!sub||working;test.disabled=!enabled||working;}catch(e){status.textContent=e.message;enable.disabled=working;disable.disabled=working;test.disabled=true;}}
  async function act(op){if(working)return;working=true;enable.disabled=disable.disabled=test.disabled=true;msg.textContent="";try{if(op==="enable"){await enablePush();msg.textContent="Οι ειδοποιήσεις ενεργοποιήθηκαν.";}else if(op==="disable"){await disablePush();msg.textContent="Οι ειδοποιήσεις απενεργοποιήθηκαν.";}else{const reg=await pushRegistration(),sub=await reg.pushManager.getSubscription();if(!sub)throw Error("Ενεργοποίησε πρώτα τις ειδοποιήσεις.");await pushAPI("test",{endpoint:sub.endpoint});msg.textContent="Η δοκιμαστική ειδοποίηση στάλθηκε."}}catch(e){msg.textContent=e.message;}finally{working=false;await update();}}
- update();c.append(el("small","Νέα γεγονότα, υπενθύμιση στις 23:00 αν δεν έχεις δελτίο, εγγραφές, δάνεια, δώρα και αποτελέσματα."));
+ update();
+ const prefs=el("div",undefined,"push-preferences");c.append(prefs);prefs.append(el("h3","Τι ειδοποιήσεις θέλεις;"),el("small","Οι επιλογές ισχύουν για τον λογαριασμό σου σε όλες τις συσκευές."));
+ const categories=[
+ ["Νέα στοιχήματα / γεγονότα",["round","event"]],
+ ["Κοινό chat",["chat"]],
+ ["Προσωπικά μηνύματα",["private_chat"]],
+ ["Μηνύματα Κουβά",["bot_chat"]],
+ ["Ημερήσια κλήρωση",["draw"]],
+ ["Υπενθύμιση δελτίου στις 20:00",["reminder"]],
+ ["Επιβεβαίωση αποτελεσμάτων",["vote_morning","vote_noon","vote_final"]],
+ ["Αποτελέσματα δελτίων",["settled","won"]],
+ ["Ιδιωτικά δώρα",["gift"]],
+ ["Τράπεζα / δάνεια",["loan_request","loan_accepted","loan_repaid"]],
+ ["Έγκριση λογαριασμού",["approved"]],
+ ...(state.player.is_admin?[["Νέα αιτήματα εγγραφής",["registration"]]]:[])
+ ];
+ const prefStatus=el("small","Φόρτωση επιλογών…","muted"),list=el("div",undefined,"push-pref-list"),save=button("Αποθήκευση επιλογών",savePrefs,"primary");save.disabled=true;prefs.append(list,save,prefStatus);
+ let disabled=new Set(),prefWorking=false,loaded=false;
+ const inputs=[];
+ for(const [label,keys] of categories){const row=el("label",undefined,"push-pref-row"),check=el("input");check.type="checkbox";check.disabled=true;row.append(el("span",label),check);list.append(row);inputs.push({check,keys});}
+ function syncPrefs(){for(const {check,keys} of inputs){check.checked=keys.every(k=>!disabled.has(k));check.indeterminate=!check.checked&&keys.some(k=>!disabled.has(k));check.disabled=!loaded||prefWorking;}save.disabled=!loaded||prefWorking;}
+ async function loadPrefs(){try{const r=await pushAPI("preferences");disabled=new Set(r.disabled||[]);loaded=true;prefStatus.textContent="Επίλεξε μόνο όσα θέλεις να λαμβάνεις.";}catch(e){prefStatus.textContent=e.message;}finally{syncPrefs();}}
+ async function savePrefs(){if(!loaded||prefWorking)return;prefWorking=true;const next=new Set(disabled);for(const {check,keys} of inputs)for(const k of keys){if(check.checked)next.delete(k);else if(!check.indeterminate)next.add(k);}syncPrefs();try{const r=await pushAPI("set_preferences",{disabled:[...next]});disabled=new Set(r.disabled||[]);prefStatus.textContent="✓ Οι επιλογές αποθηκεύτηκαν.";}catch(e){prefStatus.textContent=e.message;}finally{prefWorking=false;syncPrefs();}}
+ loadPrefs();
 }
 function credentialSettings(){
  const c=card();c.append(el("h3","Αλλαγή PIN / κωδικού"),el("p","Ο ίδιος λογαριασμός χρησιμοποιείται στις εφαρμογές εργασίας.","muted"));
