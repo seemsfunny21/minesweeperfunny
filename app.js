@@ -361,8 +361,8 @@ function premiumTier(i){return Math.max(1,Math.min(6,Number(i?.level)||([1000,30
 function premiumLook(c,ap){for(const k of ["background","effect"])if(item(ap[k])?.category===k)c.classList.add(ap[k]);c.style.setProperty("--profile-accent",premiumAccents[ap.color]||"#78baff");if(item(ap.color)?.category==="color")c.dataset.accent=ap.color;}
 function premiumIdentity(p,cp,ap,frame=cp.frame,trophyCode=cp.trophy,candidate=false){
  const c=el("div",undefined,"premium-identity");const orbit=el("div",undefined,"premium-orbit");orbit.append(avatar(p,frame??null));if(frame&&item(frame)?.category==="frame")orbit.dataset.frame=frame;
- const trophy=item(trophyCode);if(trophy?.category==="trophy"){const medal=el("span",trophy.icon,"premium-medal");medal.title=trophy.name;medal.dataset.tier=String(premiumTier(trophy));orbit.append(medal);}
  const name=el("h3",p.nickname,"premium-name");if(item(ap.color)?.category==="color")name.classList.add(ap.color);
+ const trophy=item(trophyCode);if(trophy?.category==="trophy"){const medal=el("span",trophy.icon,"premium-medal");medal.title=trophy.name;medal.setAttribute("aria-label",trophy.name);medal.dataset.tier=String(premiumTier(trophy));name.append(document.createTextNode(" "),medal);}
  c.append(orbit,name);const title=shownTitle(ap)||(candidate&&ap.title==="title_custom"?"✍️ Ο δικός σου τίτλος":"");if(title)c.append(el("p",title,"profile-title premium-ribbon"));c.append(el("small","Επίπεδο "+levelOf(cp)+" · "+titleOf(cp),"premium-level"));return c;
 }
 function premiumItem(i,label,large=false){
