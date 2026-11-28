@@ -1,0 +1,118 @@
+{
+  "travel_world": [
+    {
+      "file": "travel_world-0.webp",
+      "requested_file": "Sunset view from an airplane window above the clouds.jpg",
+      "sha256": "39eae211fb18c566c42eb5132aff1a4ca596fbfddf34d5ebbd1c6c07468dbffb",
+      "author": "Salwa Farwaneh Dameh",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunset_view_from_an_airplane_window_above_the_clouds.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "travel_world-1.webp",
+      "requested_file": "Sunset on plane (Unsplash).jpg",
+      "sha256": "018e9b30deeea6f2b95420311adf0c33f97df5237cfb9e876355ea048efeef01",
+      "author": "Jacky Lo hclojacky",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunset_on_plane_(Unsplash).jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "travel_world-2.webp",
+      "requested_file": "Going Somewhere (27763261).jpeg",
+      "sha256": "066ba9b60c4da2f83e802b635f51cdb6a6697b52d4fc2777009a0e17c6417fd7",
+      "author": "Peti Morgan Lpsnz",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Going_Somewhere_(27763261).jpeg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "travel_world-3.webp",
+      "requested_file": "Sunset from a plane (Unsplash).jpg",
+      "sha256": "d8fd9db4644bd021bb03b6a84d156baa8d4a63f1b6b10bf1b698a094b1341cf0",
+      "author": "Paul-Vincent Roll paviro",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunset_from_a_plane_(Unsplash).jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "gift_men_car": [
+    {
+      "file": "gift_men_car-0.webp",
+      "requested_file": "BMW F80 M3 front Red.jpg",
+      "sha256": "36381da9a8fdeff9ce27e8fd05a26b9a8d8f7ee4331add4e469e2e52d7c8589d",
+      "author": "Mattsbeamer",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:BMW_F80_M3_front_Red.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_men_car-1.webp",
+      "requested_file": "BMW M3 E92 coupe front.jpg",
+      "sha256": "bff452f75a9007e38f623cd3b1a31c3f4baeb885b6bdcb09478753dae7dfe93f",
+      "author": "Mikolaj Kirschke",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:BMW_M3_E92_coupe_front.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_men_car-2.webp",
+      "requested_file": "BMW M3 Coupé (E92) front.JPG",
+      "sha256": "0b18a1e3281d0aebf613622d495a826d8f162a398822538280e9df68abafe3ce",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:BMW_M3_Coup%C3%A9_(E92)_front.JPG",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ],
+  "gift_men_motorbike": [
+    {
+      "file": "gift_men_motorbike-0.webp",
+      "requested_file": "Yamaha YZF-R6 Cropped.jpg",
+      "sha256": "33401137b38df888e3dca5f9d3bae48192768763927d15f434a0af41cf56ff5d",
+      "author": "Alpacaaviator",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Yamaha_YZF-R6_Cropped.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_men_motorbike-1.webp",
+      "requested_file": "Yamaha motorcycle - 25 April 2026.jpg",
+      "sha256": "659f3eb8caafff8c1b94e96e221a28c9a11f27aa41ea4f0723726772c69f72be",
+      "author": "Aethonatic",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Yamaha_motorcycle_-_25_April_2026.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    },
+    {
+      "file": "gift_men_motorbike-2.webp",
+      "requested_file": "2strokemaniac.jpg",
+      "sha256": "56e7b56a3f41dd3b4038d6c6228b6bab3ac96d956d8b0363ff4619a865ff7040",
+      "author": "Yadusneha",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:2strokemaniac.jpg",
+      "representative": true,
+      "modified": "Resized and converted to WebP; centered on 480×480 canvas"
+    }
+  ]
+}
