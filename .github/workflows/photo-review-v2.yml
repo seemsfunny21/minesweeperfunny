@@ -32,4 +32,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add review-candidates
           git commit -m "Stage licensed catalog images for visual inspection"
-          git push origin HEAD:refs/heads/catalog-photo-review-20261128b
+          git push origin HEAD:refs/heads/catalog-photo-review-20261128c

@@ -1,31 +1,45 @@
 {
-  "tech_tablet": [
-    "20251110 181425 Samsung Galaxy Tab A9 Front.jpg",
-    "Front of the Samsung Galaxy Tab S6 Lite.jpg",
-    "Samsung Galaxy Tab S8 Ultra.jpg"
-  ],
-  "vehicle_boat": [
-    "Riva Aquarama.jpg",
-    "Speedboat.jpg",
-    "RivaAquarama.jpg"
-  ],
-  "travel_islands": [
-    "Oia Santorini Blue Domes.jpg",
-    "Dômes bleus à Oia.jpg"
-  ],
   "vehicle_yacht": [
-    "Luxury yacht docked at marina with modern buildings and mountains under a soft evening sky.jpg",
-    "Luxury yachts docked at an upscale marina.jpg"
-  ],
-  "amenity_sports": [
-    "Uwl sports complex aerial view.jpg",
-    "Sports Complex.jpg"
-  ],
-  "gift_general_book": [
-    "Open Book B&W.jpg",
-    "An open book is placed in front of a library shelf.jpg"
+    "Azimut Marmolada 01.jpg",
+    "Azimut Marmolada 02.jpg",
+    "Luxury yacht.jpg",
+    "Azimut.jpg",
+    "Westport yacht at the Sag Harbor (port side).jpg"
   ],
   "travel_world": [
+    "Travel (67916263).jpeg",
+    "Travel luggage.png",
     "Globe and Hat.jpg"
+  ],
+  "vehicle_bike": [
+    "California city bicycle side view.JPG",
+    "Nishiki 207 city hybrid bike.jpg",
+    "City bike.jpg"
+  ],
+  "bike_mountain": [
+    "EnduroMountainBike.jpg",
+    "Mountain bike.JPG",
+    "Cube-fahrrad.jpg"
+  ],
+  "bike_gravel": [
+    "Look 765 Gravel Bicycle.jpg",
+    "Fyxation Carbon Adventure.jpg",
+    "Booda Bike Hiker.jpg"
+  ],
+  "vehicle_roadbike": [
+    "Felt BS road bicycle.jpg",
+    "Giant Roadbike.jpg"
+  ],
+  "bike_carbon": [
+    "Cube Litening Aero C68X SLT, Cyclingworld Europe 2024, Meerbusch (P1170876).jpg",
+    "Road bike Orbea Orca Aero 2020.jpg"
+  ],
+  "gift_men_car": [
+    "Toyota Corolla (E210) sedan IMG 4189.jpg",
+    "Porsche 911 992.jpg"
+  ],
+  "gift_men_motorbike": [
+    "Honda CB500 Hornet 2026.jpg",
+    "Yamaha YZF-R7 (55048319395).jpg"
   ]
 }
